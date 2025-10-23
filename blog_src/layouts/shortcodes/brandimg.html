@@ -1,0 +1,93 @@
+{{/* 
+  Shortcode: brandimg
+  Источник: data/brand_images.json  { "path": "/images/brand/", "files": [...] }
+
+  Параметры (необязательные):
+    - include: "webp,svg,jpg"  (что разрешать; по умолчанию: webp)
+    - match: "cover-16x9"      (подстрока для фильтрации имён файлов)
+    - alt: "Custom ALT text"   (если передан — используем как есть)
+    - class: "extra-classes"   (доп.классы для <figure>)
+*/}}
+
+{{ $data := site.Data.brand_images }}
+{{ if not $data }}
+  {{ errorf "brandimg: data/brand_images.json not found" }}
+{{ end }}
+
+{{/* Нормализуем base path (с ведущим '/') */}}
+{{ $path := cond (hasPrefix $data.path "/") $data.path (printf "/%s" $data.path) }}
+{{ $files := $data.files }}
+
+{{/* Разрешённые форматы */}}
+{{ $inc := .Get "include" | default "webp" }}
+{{ $allow := (split (lower $inc) ",") }}
+
+{{/* Фильтрация по расширениям */}}
+{{ $filtered := slice }}
+{{ range $files }}
+  {{ $name := . | lower }}
+  {{ $ext  := (replaceRE ".*\\.(\\w+)$" "$1" $name) }}
+  {{ if in $allow $ext }}
+    {{ $filtered = $filtered | append . }}
+  {{ end }}
+{{ end }}
+
+{{/* Доп.фильтр по подстроке match (например, cover-16x9) */}}
+{{ $match := .Get "match" }}
+{{ if $match }}
+  {{ $m := lower $match }}
+  {{ $tmp := slice }}
+  {{ range $filtered }}
+    {{ $n := . | lower }}
+    {{ if (in $n $m) }}
+      {{ $tmp = $tmp | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $filtered = $tmp }}
+{{ end }}
+
+{{ if not (len $filtered) }}
+  {{ errorf "brandimg: no files matched filters. include=%q, match=%q" $inc $match }}
+{{ end }}
+
+{{/* Детерминированный выбор (фиксированный для каждой страницы) */}}
+{{ $seed := add (len .Page.Title) (len .Page.RelPermalink) }}
+{{ $idx  := mod $seed (len $filtered) }}
+{{ $choice := index $filtered $idx }}
+
+{{/* === ALT-приоритет ===
+   1) параметр alt из шорткода
+   2) keywords из front matter
+   3) заголовок страницы
+   4) общий fallback
+   (без использования имени файла)
+*/}}
+
+{{ $alt := "" }}
+{{ $altParam := .Get "alt" }}
+{{ if $altParam }}
+  {{ $alt = $altParam }}
+{{ else if .Page.Params.keywords }}
+  {{ $kw := .Page.Params.keywords }}
+  {{ if (reflect.IsSlice $kw) }}
+    {{ $alt = printf "%s — Nailak Cuticle & Nail Oil" (delimit $kw ", ") }}
+  {{ else }}
+    {{ $alt = printf "%s — Nailak Cuticle & Nail Oil" $kw }}
+  {{ end }}
+{{ else if .Page.Title }}
+  {{ $alt = printf "%s — Nailak Blog" .Page.Title }}
+{{ else }}
+  {{ $alt = "Nailak Cuticle & Nail Oil — natural care and hydration" }}
+{{ end }}
+
+{{/* Классы для <figure> */}}
+{{ $extra := .Get "class" | default "" }}
+{{ $classes := (print "brand-image " $extra) | strings.TrimSpace }}
+
+<figure class="{{ $classes | safeHTMLAttr }}">
+  <img
+    src="{{ (printf "%s%s" $path $choice) | absURL }}"
+    alt="{{ $alt | safeHTML }}"
+    loading="lazy"
+    decoding="async">
+</figure>

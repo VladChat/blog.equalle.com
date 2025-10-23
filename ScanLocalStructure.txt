@@ -1,0 +1,58 @@
+1) Снимем точную структуру проекта (локально)
+Вариант A — PowerShell (Windows
+----------------------
+
+
+# 🧭 Перейти в корень проекта
+cd "C:\Users\vladi\Documents\blog.equalle.com"
+
+# 📝 Создаём общий отчёт
+$report = ".\__report.txt"
+"=== BLOG.NAILAK.COM — PROJECT STRUCTURE REPORT ===" | Out-File -Encoding utf8 $report
+"Generated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" | Out-File -Append -Encoding utf8 $report
+"`n" | Out-File -Append -Encoding utf8 $report
+
+# 1️⃣ Полное дерево
+"--- FULL TREE ---" | Out-File -Append -Encoding utf8 $report
+Get-ChildItem -Recurse | Sort-Object FullName | ForEach-Object {
+    "{0,-110} {1,8} bytes  {2}" -f $_.FullName, $_.Length, $_.LastWriteTime
+} | Out-File -Append -Encoding utf8 $report
+"`n`n" | Out-File -Append -Encoding utf8 $report
+
+# 2️⃣ Шаблоны Hugo
+"--- LAYOUTS ---" | Out-File -Append -Encoding utf8 $report
+Get-ChildItem -Recurse blog_src\layouts -File | Sort-Object FullName | ForEach-Object {
+    $_.FullName
+} | Out-File -Append -Encoding utf8 $report
+"`n`n" | Out-File -Append -Encoding utf8 $report
+
+# 3️⃣ Partials
+"--- PARTIALS ---" | Out-File -Append -Encoding utf8 $report
+Get-ChildItem -Recurse blog_src\layouts\partials -File | Sort-Object FullName | ForEach-Object {
+    $_.FullName
+} | Out-File -Append -Encoding utf8 $report
+"`n`n" | Out-File -Append -Encoding utf8 $report
+
+# 4️⃣ CSS файлы
+"--- CSS ASSETS ---" | Out-File -Append -Encoding utf8 $report
+Get-ChildItem -Recurse blog_src\assets\css -File | Sort-Object FullName | ForEach-Object {
+    $_.FullName
+} | Out-File -Append -Encoding utf8 $report
+"`n`n" | Out-File -Append -Encoding utf8 $report
+
+# 5️⃣ JS файлы
+"--- JS ASSETS ---" | Out-File -Append -Encoding utf8 $report
+Get-ChildItem -Recurse blog_src\assets\js -File | Sort-Object FullName | ForEach-Object {
+    $_.FullName
+} | Out-File -Append -Encoding utf8 $report
+"`n`n" | Out-File -Append -Encoding utf8 $report
+
+# 6️⃣ JSON data
+"--- DATA FILES ---" | Out-File -Append -Encoding utf8 $report
+Get-ChildItem -Recurse blog_src\data -File | Sort-Object FullName | ForEach-Object {
+    $_.FullName
+} | Out-File -Append -Encoding utf8 $report
+"`n`n" | Out-File -Append -Encoding utf8 $report
+
+# ✅ Готово
+Write-Host "Отчёт сохранён в: $report"

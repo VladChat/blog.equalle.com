@@ -1,0 +1,932 @@
+﻿=== BLOG.NAILAK.COM — PROJECT STRUCTURE REPORT ===
+Generated: 2025-10-23 16:48:55
+
+
+--- FULL TREE ---
+C:\Users\vladi\Documents\blog.nailak.com\.github                                                                      1 bytes  10/17/2025 7:17:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\.github\workflows                                                            1 bytes  10/19/2025 5:08:12 PM
+C:\Users\vladi\Documents\blog.nailak.com\.github\workflows\blog-build.yml                                          3402 bytes  10/21/2025 11:46:14 AM
+C:\Users\vladi\Documents\blog.nailak.com\.github\workflows\blog-writer.yml                                         1619 bytes  10/20/2025 10:08:55 PM
+C:\Users\vladi\Documents\blog.nailak.com\.gitignore                                                                 255 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\__report.txt                                                               111 bytes  10/23/2025 4:48:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src                                                                     1 bytes  10/21/2025 11:14:39 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src.-bak.zip                                                      1232434 bytes  10/19/2025 10:32:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src.zip                                                           3340783 bytes  10/21/2025 11:49:41 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\.hugo_build.lock                                                    0 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\__init__.py                                                         0 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\__pycache__                                                         1 bytes  10/18/2025 10:06:18 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\__pycache__\__init__.cpython-313.pyc                              158 bytes  10/18/2025 10:06:18 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets                                                              1 bytes  10/17/2025 7:17:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\blog                                                         1 bytes  10/17/2025 7:17:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\blog\js                                                      1 bytes  10/17/2025 9:28:44 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\blog\js\theme-toggle.js                                   2246 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css                                                          1 bytes  10/17/2025 10:22:21 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\brand-overrides.css                                      0 bytes  10/17/2025 10:08:16 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom                                                   1 bytes  10/21/2025 7:53:25 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\accordion.css                                  1972 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\accordion-faq.css                              1327 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\badges-responsive-fix.css                       667 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\brandimg.css                                    763 bytes  10/22/2025 12:52:05 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\colors.css                                     5764 bytes  10/17/2025 11:44:30 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\header-fix.css                                  431 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\home-cards.css                                 5439 bytes  10/17/2025 11:00:50 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\icons-progress.css                             2287 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\mascot.css                                     2781 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\nailak-categories.css                           539 bytes  10/18/2025 9:17:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\pagination.css                                  240 bytes  10/17/2025 10:36:58 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\progress.css                                    291 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\related.css                                     504 bytes  10/18/2025 9:21:16 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\related-posts.css                              2811 bytes  10/19/2025 12:54:04 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\section-design.css                             2923 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\theme-fixes.css                                  29 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\typography-merged.css                          3303 bytes  10/17/2025 10:57:50 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\z99-nailak-override.css                        6827 bytes  10/20/2025 8:02:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\extend_head.css                                       1751 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\extended-blocked                                         1 bytes  10/17/2025 10:09:24 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\extended-blocked\brand-overrides.css                  1598 bytes  10/17/2025 10:20:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\head.css                                               642 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\mascot.css                                            1059 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\section-design.css                                    2467 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js                                                           1 bytes  10/17/2025 9:28:44 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom                                                    1 bytes  10/17/2025 9:28:44 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\accordion.js                                    9157 bytes  10/20/2025 8:36:39 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\accordion-faq.js                                6404 bytes  10/19/2025 1:14:14 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\home-cards.js                                   1600 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\icons-progress.js                               2787 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\mascot.js                                       2688 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\progress.js                                      697 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\section-design.js                                720 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\gtm-head.js                                             342 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\mascot.js                                                24 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\section-fadein.js                                       673 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\config                                                              1 bytes  10/18/2025 11:32:01 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\config.yml                                                       2210 bytes  10/22/2025 10:08:36 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\config\prompt_template.txt                                       3313 bytes  10/20/2025 10:38:55 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\config\prompt_template-optima.txt                                3223 bytes  10/18/2025 11:23:04 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\config\prompt_template-original.txt                              6311 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\config\Promt-short.txt                                           2331 bytes  10/18/2025 11:26:18 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\config\writer_config.json                                         665 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content                                                             1 bytes  10/22/2025 4:29:49 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\_index.md                                                1040 bytes  10/22/2025 7:36:21 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\cuticle-oil                                                 1 bytes  10/22/2025 6:55:30 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\cuticle-oil\bottle.webp                                296748 bytes  10/21/2025 6:47:09 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\cuticle-oil\cuticle-oil.css                              5936 bytes  10/22/2025 7:11:16 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\cuticle-oil\dropper.webp                                81426 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\cuticle-oil\hands.webp                                  57058 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\cuticle-oil\hero.svg                                     7438 bytes  6/12/2021 12:01:40 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\cuticle-oil\index.md                                     6057 bytes  10/22/2025 7:03:06 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\cuticle-oil\packshot.webp                               73872 bytes  10/21/2025 7:03:07 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\editorial                                                   1 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\editorial\author1.webp                                 444790 bytes  10/21/2025 7:11:17 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\editorial\author2.webp                                 182932 bytes  10/22/2025 1:38:04 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\editorial\author3.webp                                 124390 bytes  10/22/2025 1:51:35 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\editorial\author4.webp                                 107404 bytes  10/22/2025 1:56:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\editorial\index.md                                       3651 bytes  10/22/2025 7:52:19 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\editorial\lst_6 - Copy.jpg                            2517271 bytes  6/16/2021 7:30:43 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts                                                       1 bytes  10/18/2025 11:29:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025                                                  1 bytes  10/17/2025 7:17:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025\10                                               1 bytes  10/18/2025 11:52:49 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025\10\glossy-pop-newsletter-lancome-is-making-moves-to-become-every-brides-go-to-glam.md     6644 bytes  10/18/2025 11:44:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025\10\icymi-maria-grazia-chiuri-returns-to-fendi-boy-smells-opens-first-flagship-pop-u.md     7350 bytes  10/18/2025 11:47:16 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025\10\kylie-jenner-reheated-the-king-kylie-aesthetic-with-her-10-year-anniversary-coll.md     8180 bytes  10/21/2025 8:13:09 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025\10\the-best-celebrity-bobs-to-wear-in-any-season-how-to-prevent-hangnails-jojoba-oi.md     7367 bytes  10/18/2025 11:07:32 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025\10\this-tiktok-viral-bodycare-brand-lives-up-to-the-hype-vegan-nail-care-products-v.md     6849 bytes  10/18/2025 10:41:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025\10\ulta-beautys-marketplace-launch-sparks-customer-backlash-nail-oil-vs-cuticle-cre.md     8288 bytes  10/18/2025 11:32:52 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\posts\2025\10\we-re-moving-non-toxic-nail-care-jojoba-oil-for-cuticles.md     7113 bytes  10/18/2025 11:01:38 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\privacy-policy.md                                        1114 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\content\terms.md                                                  905 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data                                                                1 bytes  10/21/2025 8:03:26 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data\brand_images.json                                            588 bytes  10/21/2025 8:11:39 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data\keywords.json                                               1708 bytes  10/18/2025 11:06:52 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data\rss.json                                                    3501 bytes  10/19/2025 8:02:04 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data\state.json                                                    82 bytes  10/18/2025 11:52:20 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts                                                             1 bytes  10/21/2025 7:41:58 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default                                                    1 bytes  10/18/2025 9:31:30 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\_markup                                            1 bytes  10/18/2025 9:31:30 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\_markup\render-heading.html                      607 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\baseof.html                                     1051 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\list.html                                       3425 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\single.html                                     4979 bytes  10/21/2025 4:18:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\sitemap.xml                                     1811 bytes  10/19/2025 10:20:48 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\index.html                                               5972 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials                                                    1 bytes  10/21/2025 4:22:20 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\author.html                                      598 bytes  10/21/2025 4:32:52 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom                                             1 bytes  10/19/2025 4:29:52 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\accordion.html                             43 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\accordion-faq.html                       1229 bytes  10/19/2025 4:29:52 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\aff-rotator.html                          560 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\colors.html                                 1 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\header-fix.html                             1 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\home-cards.html                            71 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\icons-progress.html                      2896 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\mascot.html                              2496 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\progress.html                               2 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\section-design.html                       137 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\extend_head.html                                5667 bytes  10/21/2025 8:00:10 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\gtm-body.html                                    246 bytes  10/22/2025 1:00:49 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\gtm-head.html                                    707 bytes  10/22/2025 1:15:57 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\head.html                                      10390 bytes  10/22/2025 1:02:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\jsonld.html                                     1241 bytes  10/21/2025 5:13:29 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\mascot.html                                     4118 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\nailak-categories.html                           218 bytes  10/18/2025 9:17:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\pagination.html                                  485 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\related.html                                     612 bytes  10/20/2025 9:45:14 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\templates                                          1 bytes  10/19/2025 4:29:50 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\templates\schema_json.html                      2947 bytes  10/21/2025 5:52:52 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\shortcodes                                                  1 bytes  10/21/2025 7:42:24 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\shortcodes\brandimg.html                                 3231 bytes  10/21/2025 9:59:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\README.md                                                        6197 bytes  10/17/2025 7:06:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts                                                             1 bytes  10/20/2025 10:18:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\requirements.txt                                          144 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer                                                      1 bytes  10/21/2025 8:53:25 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer.py                                                 849 bytes  10/19/2025 7:18:03 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer.zip                                              43167 bytes  10/20/2025 10:18:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__init__.py                                         10 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__                                          1 bytes  10/18/2025 11:01:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\__init__.cpython-313.pyc               173 bytes  10/18/2025 9:53:00 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\config_loader.cpython-313.pyc         2556 bytes  10/18/2025 9:53:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\llm.cpython-313.pyc                   4028 bytes  10/18/2025 10:53:44 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\main.cpython-313.pyc                  9423 bytes  10/18/2025 10:41:18 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\main-local.cpython-313.pyc            7857 bytes  10/18/2025 11:01:12 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\posts.cpython-313.pyc                 3772 bytes  10/18/2025 9:53:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\qa.cpython-313.pyc                    6979 bytes  10/18/2025 9:53:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\rss_fetch.cpython-313.pyc             2707 bytes  10/18/2025 9:53:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\__pycache__\yaml_utils.cpython-313.pyc            1937 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\brandimg_injector.py                              6511 bytes  10/22/2025 12:33:31 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\config_loader.py                                  2031 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\llm.py                                            3422 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\main.py                                          10603 bytes  10/21/2025 9:01:08 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\main-local.py                                     5042 bytes  10/18/2025 11:01:06 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\posts.py                                          2582 bytes  10/20/2025 10:31:26 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\qa.py                                             5347 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\rss_fetch.py                                      9726 bytes  10/20/2025 10:30:47 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\scripts\writer\yaml_utils.py                                      969 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static                                                              1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff                                                          1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\aff-cards.json                                       11117 bytes  10/17/2025 6:13:06 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\aff-rotator.css                                       2521 bytes  10/22/2025 4:25:50 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\aff-rotator.js                                        3144 bytes  10/22/2025 4:19:24 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img                                                      1 bytes  10/17/2025 7:17:14 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176                                                  1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil.webp                              8978 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil1.webp                             7212 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil10.webp                            7222 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil11.webp                           11032 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil12.webp                            7542 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil13.webp                            1756 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil14.webp                            3710 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil15.webp                            8342 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil16.webp                            4382 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil17.webp                            5524 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil18.webp                            5850 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil19.webp                            3012 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil2.webp                             5012 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil20.webp                            7642 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil21.webp                            3088 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil22.webp                            8368 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil23.webp                            9572 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil24.webp                            4482 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil25.webp                            9242 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil26.webp                            7500 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil27.webp                            4806 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil3.webp                             5082 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil4.webp                             6334 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil5.webp                             4370 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil6.webp                             3474 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil7.webp                             4566 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil8.webp                             5424 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\176\cuticle-oil9.webp                             5826 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88                                                   1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil.webp                               3304 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil1.webp                              2760 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil10.webp                             2820 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil11.webp                             3768 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil12.webp                             2770 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil13.webp                              688 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil14.webp                             1216 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil15.webp                             2802 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil16.webp                             1594 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil17.webp                             1970 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil18.webp                             2280 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil19.webp                             1054 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil2.webp                              1954 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil20.webp                             2874 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil21.webp                             1224 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil22.webp                             2816 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil23.webp                             3144 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil24.webp                             1430 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil25.webp                             3142 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil26.webp                             2770 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil27.webp                             1758 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil3.webp                              1758 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil4.webp                              2370 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil5.webp                              1598 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil6.webp                              1232 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil7.webp                              1688 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil8.webp                              1946 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\aff\img\88\cuticle-oil9.webp                              2144 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\blog                                                         1 bytes  10/17/2025 7:17:14 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\blog\icons                                                   1 bytes  10/20/2025 6:15:53 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\blog\icons\ai-circuit.svg                                  330 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\blog\icons\doctor-rehab.svg                              52808 bytes  10/20/2025 6:15:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\blog\icons\doctor-rehab-back.svg                           299 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\blog\icons\idea-light.svg                                  305 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\blog\icons\leaf-eco.svg                                    295 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\blog\icons\travel-luggage.svg                              302 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\css                                                          1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\css\section-design.css                                    2467 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\favicon.svg                                             120409 bytes  10/14/2025 6:55:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons                                                        1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons\android-chrome-192x192.png                         28170 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons\apple-touch-icon.png                               25969 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons\favicon.ico                                        14305 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons\favicon.svg                                       120409 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons\favicon-32.png                                      2450 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons\favicon-512.png                                    90157 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons\mask-icon.svg                                        614 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\icons\site.webmanifest                                     392 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images                                                       1 bytes  10/21/2025 7:48:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand                                                 1 bytes  10/21/2025 7:48:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\1200x270.webp                               44996 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\1200x270-2.webp                             24072 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\1900-500.webp                               56496 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\2048x1152.webp                              55446 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\2048x512.webp                               27416 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\2208x368.webp                               21208 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\300x60.webp                                  3682 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\3citrus.webp                               132738 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\lst_6.webp                                  81426 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\lst_8.webp                                  52296 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\Lst-1.webp                                  57058 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\Lst-2.webp                                  57000 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\Lst-3.webp                                  78942 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\Lst-4.webp                                 129436 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\Lst-5.webp                                  72868 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\nailak_bottle_spin.webp                    296748 bytes  10/21/2025 6:47:09 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\nailak-circle.svg                           52915 bytes  10/20/2025 6:58:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\nailak-cover-16x9.webp                     142968 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\nailak-cover-1x1.webp                      124868 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\nailak-cover-4x3.webp                       80026 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\productbox.webp                             73872 bytes  10/21/2025 7:03:07 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\Trada-3000x750.webp                         39112 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\brand\VlaconAlone.webp                            16156 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial                                             1 bytes  10/22/2025 2:40:00 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\author1.webp                           444790 bytes  10/21/2025 7:11:17 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\author2.webp                           182932 bytes  10/22/2025 1:38:04 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\author3.webp                           124390 bytes  10/22/2025 1:51:35 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\author4.jpg                            587652 bytes  10/22/2025 1:55:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\author4.webp                           107404 bytes  10/22/2025 1:56:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\autor2.jpg                            1037037 bytes  4/20/2025 6:57:07 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\black_fullsize.jpg                      63129 bytes  10/22/2025 2:26:24 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\index.md                                 3604 bytes  10/22/2025 1:58:01 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\lst_6 - Copy.jpg                      2517271 bytes  6/16/2021 7:30:43 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\nailak_portrait_rounded_2.webp           7030 bytes  10/21/2025 7:11:17 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder                                  1 bytes  10/22/2025 2:35:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\Animated_240x240.gif       1093890 bytes  8/11/2021 8:10:04 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\Citrus_Fresh_Box_Flacon_W.jpg   854720 bytes  6/22/2021 10:39:56 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\lst_6.jpg                  2517271 bytes  6/16/2021 7:30:43 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\lst_8.jpg                  2265000 bytes  6/16/2021 7:30:50 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\Lst-1.jpg                  2034981 bytes  6/16/2021 7:30:41 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\Lst-2.jpg                  1903049 bytes  6/16/2021 7:30:37 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\Lst-3.jpg                  1888753 bytes  6/16/2021 7:30:47 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\Lst-4.jpg                  2408459 bytes  6/16/2021 7:30:47 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\New folder\Lst-5.jpg                  2031854 bytes  6/16/2021 7:30:44 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\nina.jpg                                10034 bytes  5/31/2021 12:54:15 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images                                1 bytes  10/22/2025 2:39:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_1_1.png             601716 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_1_2.png             641742 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_1_3.png             666680 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_1_4.png             579665 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_2_1.png             585069 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_2_1.zip            7308070 bytes  10/22/2025 2:33:19 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_2_2.png             727149 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_2_3.png             661635 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_2_4.png             610057 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_3_1.png             527030 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_3_2.png             549315 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_3_3.png             571096 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\split_images\split_3_4.png             594556 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\editorial\white_fullsize.jpg                      63127 bytes  10/22/2025 2:26:50 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\logo                                                  1 bytes  10/21/2025 6:58:44 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\logo\logo-rectand.svg                              7438 bytes  6/12/2021 12:01:40 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\logo\logo-sq.svg                                   7404 bytes  3/6/2021 8:22:09 AM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\og                                                    1 bytes  10/22/2025 8:46:51 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\og\default.jpg                                   107052 bytes  10/22/2025 8:42:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\images\og\default.webp                                   71010 bytes  10/22/2025 8:46:06 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\js                                                           1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\static\js\section-fadein.js                                       673 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes                                                              1 bytes  10/17/2025 7:17:14 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod                                                     1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\.github                                             1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\.github\ISSUE_TEMPLATE                              1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\.github\ISSUE_TEMPLATE\bug.yaml                  4042 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\.github\ISSUE_TEMPLATE\config.yml                 234 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\.github\ISSUE_TEMPLATE\enhancement.yaml          1586 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\.github\PULL_REQUEST_TEMPLATE.md                 1791 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\.github\workflows                                   1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\.github\workflows\gh-pages.yml                   1920 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets                                              1 bytes  10/17/2025 7:17:15 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css                                          1 bytes  10/17/2025 7:17:15 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common                                   1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\404.css                         200 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\archive.css                     651 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\footer.css                     1039 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\header.css                     1374 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\main.css                       1063 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\post-entry.css                 1773 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\post-single.css                6586 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\profile-mode.css                689 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\search.css                      782 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\common\terms.css                       324 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\core                                     1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\core\license.css                       193 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\core\reset.css                        1342 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\core\theme-vars.css                    886 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\core\zmedia.css                       1023 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\extended                                 1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\extended\blank.css                     239 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\extended\icons-progress.css            686 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\extended\New Text Document.txt         224 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\includes                                 1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\includes\chroma-mod.css                303 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\includes\chroma-styles.css            5012 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\css\includes\scroll-bar.css               1333 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\js                                           1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\js\fastsearch.js                          5781 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\js\fuse.basic.min.js                     15400 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\js\icons-progress.js                      1717 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\assets\js\license.js                              193 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\go.mod                                             55 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n                                                1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ar.yaml                                      546 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\be.yaml                                      805 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\bg.yaml                                      322 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\bn.yaml                                      695 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ca.yaml                                      313 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ckb.yaml                                     473 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\cs.yaml                                      498 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\da.yaml                                      435 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\de.yaml                                      517 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\el.yaml                                      624 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\en.yaml                                      486 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\eo.yaml                                      378 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\es.yaml                                      512 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\fa.yaml                                      474 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\fi.yaml                                      512 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\fr.yaml                                      505 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\he.yaml                                      543 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\hi.yaml                                      367 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\hr.yaml                                      543 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\hu.yaml                                      275 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\id.yaml                                      500 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\it.yaml                                      509 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ja.yaml                                      505 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ko.yaml                                      506 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ku.yaml                                      391 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\mn.yaml                                      411 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ms.yaml                                      439 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\nl.yaml                                      509 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\no.yaml                                      504 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\oc.yaml                                      497 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\pa.yaml                                      582 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\pl.yaml                                      517 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\pnb.yaml                                     533 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\pt.yaml                                      523 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ro.yaml                                      499 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\ru.yaml                                      805 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\sk.yaml                                      496 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\sv.yaml                                      440 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\sw.yaml                                      502 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\th.yaml                                      614 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\tr.yaml                                      508 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\uk.yaml                                      454 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\uz.yaml                                      315 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\vi.yaml                                      533 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\zh.yaml                                      493 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\i18n\zh-tw.yaml                                   492 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\images                                              1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\images\screenshot.png                          141511 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\images\tn.png                                   15898 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts                                             1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default                                    1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\_markup                            1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\_markup\render-image.html        730 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\archives.html                   2812 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\baseof.html                      757 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\index.json                       341 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\list.html                       4048 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\rss.xml                         3504 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\search.html                     1030 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\single.html                     2226 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_default\terms.html                       643 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_internal                                   1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\_internal\pagination.html                 505 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\404.html                                   85 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials                                    1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\anchored_headings.html           212 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\author.html                      316 bytes  10/19/2025 10:43:09 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\breadcrumbs.html                 692 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\comments.html                    151 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\cover.html                      3042 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\edit_post.html                   692 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\extend_footer.html               169 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\extend_head.html                 313 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\footer.html                     4276 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\head.html                       7367 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\header.html                     7466 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\home_info.html                   425 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\index_profile.html              2853 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\post_canonical.html              599 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\post_meta.html                   836 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\post_nav_links.html              543 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\share_icons.html               10188 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\social_icons.html                320 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\svg.html                      181894 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\templates                          1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\templates\_funcs                   1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\templates\_funcs\get-page-images.html     1434 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\templates\opengraph.html        2624 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\templates\schema_json.html      3951 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\templates\twitter_cards.html     1207 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\toc.html                        4430 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\partials\translation_list.html            627 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\robots.txt                                164 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\shortcodes                                  1 bytes  10/17/2025 9:28:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\shortcodes\collapse.html                  298 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\shortcodes\figure.html                   1435 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\shortcodes\inTextImg.html                 181 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\shortcodes\ltr.html                       286 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\shortcodes\rawhtml.html                    32 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\layouts\shortcodes\rtl.html                       286 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\LICENSE                                          1123 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\README.md                                        4795 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\themes\PaperMod\theme.toml                                       1138 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_srcbak2.zip                                                       1234269 bytes  10/20/2025 12:54:09 PM
+C:\Users\vladi\Documents\blog.nailak.com\blog_src-last.zip                                                      1315950 bytes  10/20/2025 9:26:07 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs                                                                         1 bytes  10/22/2025 7:26:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\404.html                                                            11457 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff                                                                     1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\aff-cards.json                                                  11117 bytes  10/17/2025 6:13:06 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\aff-rotator.css                                                  2521 bytes  10/22/2025 4:25:50 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\aff-rotator.js                                                   3144 bytes  10/22/2025 4:19:24 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img                                                                 1 bytes  10/17/2025 7:17:14 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176                                                             1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil.webp                                         8978 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil1.webp                                        7212 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil10.webp                                       7222 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil11.webp                                      11032 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil12.webp                                       7542 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil13.webp                                       1756 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil14.webp                                       3710 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil15.webp                                       8342 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil16.webp                                       4382 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil17.webp                                       5524 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil18.webp                                       5850 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil19.webp                                       3012 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil2.webp                                        5012 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil20.webp                                       7642 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil21.webp                                       3088 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil22.webp                                       8368 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil23.webp                                       9572 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil24.webp                                       4482 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil25.webp                                       9242 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil26.webp                                       7500 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil27.webp                                       4806 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil3.webp                                        5082 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil4.webp                                        6334 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil5.webp                                        4370 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil6.webp                                        3474 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil7.webp                                        4566 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil8.webp                                        5424 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\176\cuticle-oil9.webp                                        5826 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88                                                              1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil.webp                                          3304 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil1.webp                                         2760 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil10.webp                                        2820 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil11.webp                                        3768 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil12.webp                                        2770 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil13.webp                                         688 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil14.webp                                        1216 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil15.webp                                        2802 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil16.webp                                        1594 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil17.webp                                        1970 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil18.webp                                        2280 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil19.webp                                        1054 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil2.webp                                         1954 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil20.webp                                        2874 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil21.webp                                        1224 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil22.webp                                        2816 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil23.webp                                        3144 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil24.webp                                        1430 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil25.webp                                        3142 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil26.webp                                        2770 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil27.webp                                        1758 bytes  10/17/2025 12:24:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil3.webp                                         1758 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil4.webp                                         2370 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil5.webp                                         1598 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil6.webp                                         1232 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil7.webp                                         1688 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil8.webp                                         1946 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\aff\img\88\cuticle-oil9.webp                                         2144 bytes  10/17/2025 11:56:22 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\assets                                                                  1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\assets\css                                                              1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\assets\css\stylesheet.0f9c60859d0e3ae60a1efcc4d3e0ae9e87c37d36193358bd4f4d2f06f5db7a65.css    18185 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog                                                                    1 bytes  10/17/2025 7:17:14 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog\icons                                                              1 bytes  10/20/2025 6:15:53 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog\icons\ai-circuit.svg                                             330 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog\icons\doctor-rehab.svg                                         52808 bytes  10/20/2025 6:15:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog\icons\doctor-rehab-back.svg                                      299 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog\icons\idea-light.svg                                             305 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog\icons\leaf-eco.svg                                               295 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog\icons\nailak-circle.svg                                        52808 bytes  10/20/2025 6:15:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\blog\icons\travel-luggage.svg                                         302 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories                                                              1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories\index.html                                               11748 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories\index.xml                                                  877 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories\news                                                         1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories\news\index.html                                          21874 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories\news\index.xml                                            9781 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories\news\page                                                    1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories\news\page\1                                                  1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\categories\news\page\1\index.html                                     306 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css                                                                     1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom                                                              1 bytes  10/22/2025 12:52:05 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom\brandimg.min.7ed90766548a7a5c2c3c5061191de513ff1efd22f5e98a7489827df0e918d76f.css      745 bytes  10/22/2025 12:46:55 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom\brandimg.min.9bb4fc780f4f64e3f34007e3fcfbf0126e26d0f8e48b674a81d675664808d83b.css      356 bytes  10/22/2025 12:49:26 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom\brandimg.min.a31d95809fdd313c652fb150be1448b4788f1fd5b093611d47c054d211595197.css      625 bytes  10/22/2025 12:50:30 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom\brandimg.min.a75db592b877e5a96b0cae00d18f75a0773cf5a31abda97d781265ab71a1d28f.css      184 bytes  10/21/2025 8:07:55 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom\brandimg.min.e411f3b851b9beb7cb818da0b2444042c29f8bd6f5ae12255f160c8148090726.css      486 bytes  10/22/2025 12:42:34 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom\brandimg.min.e6fbf0e64d468754460127e4d1e95c4ed175df520c8ceedf79f8f43f000d403f.css      394 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.03f549ca593191136769df5ec36819e29915c78bfb15f3d9d677ba0803dd7a75.css    34693 bytes  10/20/2025 7:06:41 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.1b08a1717c9056a85f94307eda8e221e92f0e340ca41182dfcc50c562c159675.css    35023 bytes  10/20/2025 7:35:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.238596bf44f9d07cdfbc69f5c28be8617b082d3d15df971140de1040df0689fe.css    35225 bytes  10/21/2025 8:07:55 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.27ff46cbee567c94c50083529ea38b9ffcba33e8c87181053fa31299bce055ae.css    34854 bytes  10/20/2025 7:20:51 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.4e41cbb0fbb687fefea27b4f3839d0fb7035882dfc9fccce37b770d96d680a3c.css    35041 bytes  10/21/2025 7:53:25 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.5ac3328f24500d062cf60805b224db6595da770bb7ff35d82ce9f09000736d25.css    35786 bytes  10/22/2025 12:46:55 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.60b5ea7662a3482f518197181329d7f98395f36675d04f973867d1705427b20a.css    35397 bytes  10/22/2025 12:49:26 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.6abd45d1e4e9b1405b7df19e4817ad9c6207a3d7d75f87ba0e57ff0b7146f3bf.css    35435 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.798dd6b421dcc89bdf0d5ee424477bbadef7a5f17b76d8252906f3a68329398a.css    35045 bytes  10/20/2025 7:57:46 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.a11d621a2ce26d7804b94d795b20636ab161831234c9157a45879f081dfbb910.css    34856 bytes  10/20/2025 7:14:55 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.adb5075abacf3f54375f00bd06263800d5c0f30fc81b7a13f62cadd5183df680.css    35527 bytes  10/22/2025 12:42:34 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.bd913208d117b765e92b4211a3acb05f994681e2171f98bceb8890504cb10700.css    34248 bytes  10/20/2025 8:05:48 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.cd823f08d613934a8312b16514f400fef0473b737c1a10feedde0fab4c0f44d0.css    34856 bytes  10/20/2025 7:12:41 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.f1620ec3693250de6e25290b0449f95dfdd89b3733fe0119fbfa6d146d61450e.css    35666 bytes  10/22/2025 12:50:30 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\custom-bundle.min.fb59531a32909f776172bf53a58f305588b5ddffa4fe0af65ae5a0b4bbc5aaa5.css    35022 bytes  10/20/2025 7:29:18 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\css\section-design.css                                               2467 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil                                                             1 bytes  10/22/2025 6:55:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\1900-500.webp                                           56496 bytes  10/22/2025 4:59:40 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\bottle.webp                                            296748 bytes  10/22/2025 7:26:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\cuticle-oil.css                                          5936 bytes  10/22/2025 7:26:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\dropper.webp                                            81426 bytes  10/22/2025 7:26:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\hands.webp                                              57058 bytes  10/22/2025 7:26:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\hero.svg                                                 7438 bytes  10/22/2025 7:26:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\hero.webp                                               56496 bytes  10/22/2025 6:55:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\index.html                                              19383 bytes  10/22/2025 7:52:20 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\lst_6.webp                                              81426 bytes  10/22/2025 5:06:10 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\Lst-1.webp                                              57058 bytes  10/22/2025 5:05:53 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\nailak_bottle_spin.webp                                296748 bytes  10/22/2025 5:06:24 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\nailak_bottle_spin.zip                                 604378 bytes  10/22/2025 6:55:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\Nailak-Land-Color logo-nobackground-rectand.svg          7438 bytes  10/22/2025 5:11:16 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\New Text Document.txt                                       0 bytes  10/22/2025 6:55:18 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\packshot.webp                                           73872 bytes  10/22/2025 7:26:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\page-source-nailak.txt                                 315807 bytes  10/22/2025 6:55:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\cuticle-oil\productbox.webp                                         73872 bytes  10/22/2025 5:06:36 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial                                                               1 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\author1.webp                                             444790 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\author2.webp                                             182932 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\author3.webp                                             124390 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\author4.webp                                             107404 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\index.html                                                17254 bytes  10/22/2025 7:52:19 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\index.xml                                                   560 bytes  10/21/2025 3:41:57 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\lst_6 - Copy.jpg                                        2517271 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\page                                                          1 bytes  10/21/2025 3:41:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\page\1                                                        1 bytes  10/21/2025 3:41:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\editorial\page\1\index.html                                           288 bytes  10/21/2025 3:41:57 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\favicon.svg                                                        120409 bytes  10/14/2025 6:55:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons                                                                   1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons\android-chrome-192x192.png                                    28170 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons\apple-touch-icon.png                                          25969 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons\favicon.ico                                                   14305 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons\favicon.svg                                                  120409 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons\favicon-32.png                                                 2450 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons\favicon-512.png                                               90157 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons\mask-icon.svg                                                   614 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\icons\site.webmanifest                                                392 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images                                                                  1 bytes  10/21/2025 7:48:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\1200x270.webp                                                44996 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\1200x270-2.webp                                              24072 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\1900-500.webp                                                56496 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\2048x1152.webp                                               55446 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\2048x1152-2.webp                                             55446 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\2048x512.webp                                                27416 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\2208x368.webp                                                21208 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\300x60.webp                                                   3682 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\3citrus.webp                                                132738 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\3ofCitrus.webp                                              132738 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand                                                            1 bytes  10/21/2025 7:48:33 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\1200x270.webp                                          44996 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\1200x270-2.webp                                        24072 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\1900-500.webp                                          56496 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\2048x1152.webp                                         55446 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\2048x512.webp                                          27416 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\2208x368.webp                                          21208 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\300x60.webp                                             3682 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\3citrus.webp                                          132738 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\lst_6 .webp                                            81426 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\lst_6.webp                                             81426 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\lst_8.webp                                             52296 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\Lst-1.webp                                             57058 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\Lst-2.webp                                             57000 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\Lst-3.webp                                             78942 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\Lst-4.webp                                            129436 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\Lst-5.webp                                             72868 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\nailak_bottle_spin.webp                               296748 bytes  10/21/2025 6:47:09 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\nailak-circle.svg                                      52915 bytes  10/20/2025 6:58:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\nailak-cover-16x9.webp                                142968 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\nailak-cover-1x1.webp                                 124868 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\nailak-cover-4x3.webp                                  80026 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\productbox.webp                                        73872 bytes  10/21/2025 7:03:07 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\Trada-3000x750.webp                                    39112 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\brand\VlaconAlone.webp                                       16156 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\buttle.gif                                                 1093890 bytes  10/21/2025 6:34:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Color logo - no background-square.svg                         7404 bytes  3/6/2021 8:22:09 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial                                                        1 bytes  10/22/2025 2:40:00 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\author1.webp                                      444790 bytes  10/21/2025 7:11:17 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\author2.webp                                      182932 bytes  10/22/2025 1:38:04 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\author3.webp                                      124390 bytes  10/22/2025 1:51:35 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\author4.jpg                                       587652 bytes  10/22/2025 1:55:22 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\author4.webp                                      107404 bytes  10/22/2025 1:56:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\autor2.jpg                                       1037037 bytes  4/20/2025 6:57:07 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\black_fullsize.jpg                                 63129 bytes  10/22/2025 2:26:24 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\index.md                                            3604 bytes  10/22/2025 1:58:01 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\lst_6 - Copy.jpg                                 2517271 bytes  6/16/2021 7:30:43 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\nailak_portrait_rounded.webp                        7030 bytes  10/21/2025 7:08:10 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\nailak_portrait_rounded_1.webp                    444790 bytes  10/21/2025 7:11:17 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\nailak_portrait_rounded_2.webp                      7030 bytes  10/21/2025 7:11:17 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder                                             1 bytes  10/22/2025 2:35:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\Animated_240x240.gif                  1093890 bytes  8/11/2021 8:10:04 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\Citrus_Fresh_Box_Flacon_W.jpg          854720 bytes  6/22/2021 10:39:56 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\lst_6.jpg                             2517271 bytes  6/16/2021 7:30:43 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\lst_8.jpg                             2265000 bytes  6/16/2021 7:30:50 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\Lst-1.jpg                             2034981 bytes  6/16/2021 7:30:41 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\Lst-2.jpg                             1903049 bytes  6/16/2021 7:30:37 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\Lst-3.jpg                             1888753 bytes  6/16/2021 7:30:47 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\Lst-4.jpg                             2408459 bytes  6/16/2021 7:30:47 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\New folder\Lst-5.jpg                             2031854 bytes  6/16/2021 7:30:44 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\nina.jpg                                           10034 bytes  5/31/2021 12:54:15 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\NinaSv2000.jpg                                   3465112 bytes  9/4/2021 6:11:35 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images                                           1 bytes  10/22/2025 2:39:54 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_1_1.png                        601716 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_1_2.png                        641742 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_1_3.png                        666680 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_1_4.png                        579665 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_2_1.png                        585069 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_2_1.zip                       7308070 bytes  10/22/2025 2:33:19 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_2_2.png                        727149 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_2_3.png                        661635 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_2_4.png                        610057 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_3_1.png                        527030 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_3_2.png                        549315 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_3_3.png                        571096 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\split_images\split_3_4.png                        594556 bytes  10/22/2025 2:25:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\editorial\white_fullsize.jpg                                 63127 bytes  10/22/2025 2:26:50 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Leaderboard_Ad_Flambee_4_.webp                                5196 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\logo                                                             1 bytes  10/21/2025 6:58:44 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\logo\logo-rectand.svg                                         7438 bytes  6/12/2021 12:01:40 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\logo\logo-sq.svg                                              7404 bytes  3/6/2021 8:22:09 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\logo\nailak-circle.svg                                       52915 bytes  10/20/2025 6:58:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\logo-rectand.svg                                              7438 bytes  6/12/2021 12:01:40 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\logo-sq.svg                                                   7404 bytes  3/6/2021 8:22:09 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\lst_6 - Copy.jpg                                           2517271 bytes  6/16/2021 7:30:43 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\lst_6 .jpg                                                 2517271 bytes  6/16/2021 7:30:43 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\lst_6 .webp                                                  81426 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\lst_6 .zip                                                15142687 bytes  10/21/2025 6:35:41 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\lst_8 - Copy.jpg                                           2265000 bytes  6/16/2021 7:30:50 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\lst_8.jpg                                                  2265000 bytes  6/16/2021 7:30:50 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\lst_8.webp                                                   52296 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-1 - Copy.jpg                                           2034981 bytes  6/16/2021 7:30:41 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-1.jpg                                                  2034981 bytes  6/16/2021 7:30:41 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-1.webp                                                   57058 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-2.jpg                                                  1903049 bytes  6/16/2021 7:30:37 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-2.webp                                                   57000 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-3.jpg                                                  1888753 bytes  6/16/2021 7:30:47 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-3.webp                                                   78942 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-4 - Copy.jpg                                           2408459 bytes  6/16/2021 7:30:47 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-4 jpg                                                  2408459 bytes  6/16/2021 7:30:47 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-4.jpg                                                  2408459 bytes  6/16/2021 7:30:47 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-4.webp                                                  129436 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-5 - Copy.jpg                                           2031854 bytes  6/16/2021 7:30:44 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-5.jpg                                                  2031854 bytes  6/16/2021 7:30:44 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Lst-5.webp                                                   72868 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak_bottle_spin.webp                                     296748 bytes  10/21/2025 6:47:09 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak_bottle_spin_optimized.webp                           296748 bytes  10/21/2025 6:47:09 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak_product_box_rounded.webp                              73872 bytes  10/21/2025 7:03:07 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak-bottle-16x9.webp                                     142968 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak-bottle-1x1.webp                                      124868 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak-bottle-4x3.webp                                       80026 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak-circle.svg                                            52915 bytes  10/20/2025 6:58:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak-circle-fixed.svg                                      52915 bytes  10/20/2025 6:58:02 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak-cover-16x9.webp                                      142968 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak-cover-1x1.webp                                       124868 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\nailak-cover-4x3.webp                                        80026 bytes  10/21/2025 5:10:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Nailak-Land-Color logo-nobackground.svg                       7438 bytes  6/12/2021 12:01:40 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Nailak-Land-Color logo-nobackground-rectand.svg               7438 bytes  6/12/2021 12:01:40 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\New folder                                                       1 bytes  10/21/2025 7:05:44 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og                                                               1 bytes  10/22/2025 8:46:51 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og\default.jpg                                              107052 bytes  10/22/2025 8:42:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og\default.svg                                                3958 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og\default.webp                                              71010 bytes  10/22/2025 8:46:06 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og\default-bak.svg                                            3958 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og\default-bak.webp                                          32992 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og\nailak-banner.webp                                       138696 bytes  10/22/2025 8:33:51 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og\nailak-og-optimized.jpg                                  107052 bytes  10/22/2025 8:42:13 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\og\nailak-og-small.webp                                      71010 bytes  10/22/2025 8:46:06 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\productbox.webp                                              73872 bytes  10/21/2025 7:03:07 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\Trada-3000x750.webp                                          39112 bytes  10/21/2025 6:44:23 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\VlaconAlone.jpg                                             346476 bytes  6/22/2021 12:46:53 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\images\VlaconAlone.webp                                             16156 bytes  10/21/2025 6:39:59 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\index.html                                                          26894 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\index.json                                                         389446 bytes  10/22/2025 7:52:20 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\index.xml                                                           12667 bytes  10/22/2025 7:52:20 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\js                                                                      1 bytes  10/17/2025 9:28:45 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\js\custom-bundle.min.57fffc51432f9bfbb29fea8834f809a8ba83c732c05d2175d00597793e96b3b9.js    19348 bytes  10/19/2025 6:30:15 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\js\custom-bundle.min.790d5cd9311926aa5ed696924bf73caeec4fb7c179ff21198f0227bf9b108d53.js    22780 bytes  10/20/2025 8:28:48 AM
+C:\Users\vladi\Documents\blog.nailak.com\docs\js\custom-bundle.min.c6da1652839a8d3768220f0c0839dab424c9eff22d7cc9b0648b5ba67bae2fc2.js    21002 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\js\custom-bundle.min.efc5390a875448cf52c7fb1cc44212752fbe93d599469a86a6b8c3dc6b9c8bdf.js    19468 bytes  10/19/2025 6:31:29 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\js\section-fadein.js                                                  673 bytes  10/17/2025 7:06:56 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\page                                                                    1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\page\1                                                                  1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\page\1\index.html                                                     258 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts                                                                   1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025                                                              1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10                                                           1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19                                                        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\glossy-pop-newsletter-lancôme-is-making-moves-to-become-every-brides-go-to-glam-nail-growth-tips-at-home        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\glossy-pop-newsletter-lancôme-is-making-moves-to-become-every-brides-go-to-glam-nail-growth-tips-at-home\index.html    25987 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\icymi-maria-grazia-chiuri-returns-to-fendi-boy-smells-opens-first-flagship-pop-up-what-brands-get-out-of-beauty-new-york-how-to-grow-nails-faster-naturally        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\icymi-maria-grazia-chiuri-returns-to-fendi-boy-smells-opens-first-flagship-pop-up-what-brands-get-out-of-beauty-new-york-how-to-grow-nails-faster-naturally\index.html    28043 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\kylie-jenner-reheated-the-king-kylie-aesthetic-with-her-10-year-anniversary-collection-best-cuticle-oil-brands        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\kylie-jenner-reheated-the-king-kylie-aesthetic-with-her-10-year-anniversary-collection-best-cuticle-oil-brands\index.html    30590 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\the-best-celebrity-bobs-to-wear-in-any-season-how-to-prevent-hangnails        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\the-best-celebrity-bobs-to-wear-in-any-season-how-to-prevent-hangnails\index.html    26237 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\this-tiktok-viral-bodycare-brand-lives-up-to-the-hype-vegan-nail-care-products        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\this-tiktok-viral-bodycare-brand-lives-up-to-the-hype-vegan-nail-care-products\index.html    26438 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\ulta-beautys-marketplace-launch-sparks-customer-backlash-nail-oil-vs-cuticle-cream        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\ulta-beautys-marketplace-launch-sparks-customer-backlash-nail-oil-vs-cuticle-cream\index.html    27255 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\were-moving-non-toxic-nail-care                        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\2025\10\19\were-moving-non-toxic-nail-care\index.html         25873 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\index.html                                                    21691 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\index.xml                                                      9763 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\page                                                              1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\page\1                                                            1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\posts\page\1\index.html                                               276 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\privacy-policy                                                          1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\privacy-policy\index.html                                           16202 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\robots.txt                                                             67 bytes  10/22/2025 7:49:27 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\sitemap.xml                                                          3409 bytes  10/22/2025 7:52:20 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags                                                                    1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\cuticle-oil-benefits                                               1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\cuticle-oil-benefits\index.html                                15042 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\cuticle-oil-benefits\index.xml                                  2126 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\cuticle-oil-benefits\page                                          1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\cuticle-oil-benefits\page\1                                        1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\cuticle-oil-benefits\page\1\index.html                           336 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\how-to-strengthen-brittle-nails                                    1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\how-to-strengthen-brittle-nails\index.html                     15141 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\how-to-strengthen-brittle-nails\index.xml                       2170 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\how-to-strengthen-brittle-nails\page                               1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\how-to-strengthen-brittle-nails\page\1                             1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\how-to-strengthen-brittle-nails\page\1\index.html                369 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\index.html                                                     12376 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\index.xml                                                       2123 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\jojoba-oil-for-cuticles                                            1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\jojoba-oil-for-cuticles\index.html                             20643 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\jojoba-oil-for-cuticles\index.xml                               8390 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\jojoba-oil-for-cuticles\page                                       1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\jojoba-oil-for-cuticles\page\1                                     1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\jojoba-oil-for-cuticles\page\1\index.html                        345 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\natural-nail-care-routine                                          1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\natural-nail-care-routine\index.html                           15087 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\natural-nail-care-routine\index.xml                             2146 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\natural-nail-care-routine\page                                     1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\natural-nail-care-routine\page\1                                   1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\natural-nail-care-routine\page\1\index.html                      351 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\vitamin-e-oil-for-nails                                            1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\vitamin-e-oil-for-nails\index.html                             15069 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\vitamin-e-oil-for-nails\index.xml                               2138 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\vitamin-e-oil-for-nails\page                                       1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\vitamin-e-oil-for-nails\page\1                                     1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\tags\vitamin-e-oil-for-nails\page\1\index.html                        345 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\terms                                                                   1 bytes  10/19/2025 5:58:42 PM
+C:\Users\vladi\Documents\blog.nailak.com\docs\terms\index.html                                                    15645 bytes  10/22/2025 7:49:28 PM
+C:\Users\vladi\Documents\blog.nailak.com\local-server-blog.txt                                                      208 bytes  10/14/2025 10:41:58 PM
+
+
+
+--- LAYOUTS ---
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\_markup\render-heading.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\baseof.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\list.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\single.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\_default\sitemap.xml
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\index.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\author.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\accordion.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\accordion-faq.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\aff-rotator.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\colors.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\header-fix.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\home-cards.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\icons-progress.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\mascot.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\progress.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\section-design.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\extend_head.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\gtm-body.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\gtm-head.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\head.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\jsonld.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\mascot.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\nailak-categories.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\pagination.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\related.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\templates\schema_json.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\shortcodes\brandimg.html
+
+
+
+--- PARTIALS ---
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\author.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\accordion.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\accordion-faq.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\aff-rotator.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\colors.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\header-fix.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\home-cards.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\icons-progress.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\mascot.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\progress.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\custom\section-design.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\extend_head.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\gtm-body.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\gtm-head.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\head.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\jsonld.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\mascot.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\nailak-categories.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\pagination.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\related.html
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\layouts\partials\templates\schema_json.html
+
+
+
+--- CSS ASSETS ---
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\brand-overrides.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\accordion.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\accordion-faq.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\badges-responsive-fix.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\brandimg.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\colors.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\header-fix.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\home-cards.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\icons-progress.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\mascot.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\nailak-categories.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\pagination.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\progress.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\related.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\related-posts.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\section-design.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\theme-fixes.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\typography-merged.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\custom\z99-nailak-override.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\extend_head.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\extended-blocked\brand-overrides.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\head.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\mascot.css
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\css\section-design.css
+
+
+
+--- JS ASSETS ---
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\accordion.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\accordion-faq.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\home-cards.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\icons-progress.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\mascot.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\progress.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\custom\section-design.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\gtm-head.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\mascot.js
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\assets\js\section-fadein.js
+
+
+
+--- DATA FILES ---
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data\brand_images.json
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data\keywords.json
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data\rss.json
+C:\Users\vladi\Documents\blog.nailak.com\blog_src\data\state.json
+
+
+
