@@ -1,6 +1,7 @@
 # ============================================================
 # File: .github/workflows/blog-build.yml
 # Full path: /.github/workflows/blog-build.yml
+# Purpose: Build Hugo site (blog.equalle.com) and deploy to GitHub Pages
 # ============================================================
 
 name: Build Blog
@@ -31,52 +32,46 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 🧩 Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: ${{ github.event.workflow_run.head_branch || github.ref }}
 
-      - name: Show workspace structure
+      - name: 🧱 Show repository structure
         run: |
-          echo "📂 Current workspace: $GITHUB_WORKSPACE"
-          echo "📁 Root contents:"
+          echo "📂 Workspace: $GITHUB_WORKSPACE"
           ls -la $GITHUB_WORKSPACE
-          echo "📁 Checking blog_src directory:"
+          echo "📁 blog_src content:"
           ls -la $GITHUB_WORKSPACE/blog_src || echo "⚠️ blog_src missing!"
 
-      - name: Verify blog_src committed
+      - name: 🔍 Verify blog_src committed
         run: |
           echo "=== Git tracked files (blog_src subset) ==="
           git ls-files | grep blog_src || echo "⚠️ blog_src not tracked in Git!"
 
-      - name: Set up Hugo
+      - name: ⚙️ Set up Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.150.1'
           extended: true
 
-      - name: Prepare static extras
+      - name: 🗂 Prepare static files (.nojekyll + CNAME inside blog_src/static)
         run: |
           mkdir -p $GITHUB_WORKSPACE/blog_src/static
-          echo "blog.equalle.com" > $GITHUB_WORKSPACE/blog_src/static/CNAME
           echo "" > $GITHUB_WORKSPACE/blog_src/static/.nojekyll
-          echo "✅ CNAME and .nojekyll added inside blog_src/static/"
+          echo "blog.equalle.com" > $GITHUB_WORKSPACE/blog_src/static/CNAME
+          echo "✅ CNAME and .nojekyll prepared in blog_src/static"
 
-      - name: Build site with Hugo (absolute paths)
+      - name: 🚀 Build site with Hugo (absolute paths)
         run: |
           echo "📦 Starting Hugo build..."
-          echo "📍 Current directory:"
-          pwd
-          echo "📁 Root contents:"
-          ls -la
-          echo "📁 Checking blog_src/config.yml:"
-          ls -la blog_src/config.yml || echo "❌ config.yml not found here"
-          echo "📁 Checking absolute path:"
-          ls -la $GITHUB_WORKSPACE/blog_src/config.yml || echo "❌ Not found by absolute path"
+          echo "📁 Current dir: $(pwd)"
+          echo "📁 Checking config:"
+          ls -la $GITHUB_WORKSPACE/blog_src/config.yml || echo "⚠️ config.yml missing!"
 
           mkdir -p $GITHUB_WORKSPACE/docs
-          echo "🚀 Running Hugo with absolute paths..."
+
           hugo \
             --config $GITHUB_WORKSPACE/blog_src/config.yml \
             --source $GITHUB_WORKSPACE/blog_src \
@@ -85,11 +80,12 @@ jobs:
 
           echo "" > $GITHUB_WORKSPACE/docs/.nojekyll
           echo "blog.equalle.com" > $GITHUB_WORKSPACE/docs/CNAME
-          echo "✅ Hugo build completed successfully."
-          echo "==== DOCS STRUCTURE (TOP 25 FILES) ===="
-          ls -la $GITHUB_WORKSPACE/docs | head -n 25
 
-      - name: Debug sitemap and recent posts
+          echo "✅ Hugo build completed successfully."
+          echo "==== DOCS STRUCTURE ===="
+          ls -la $GITHUB_WORKSPACE/docs | head -n 30
+
+      - name: 🧾 Debug sitemap and latest files
         run: |
           echo "==== SITEMAP CHECK ===="
           if [ -f docs/sitemap.xml ]; then
@@ -97,10 +93,10 @@ jobs:
           else
             echo "⚠️ sitemap.xml missing!"
           fi
-          echo "==== LAST MODIFIED FILES IN DOCS ===="
+          echo "==== RECENT FILES IN DOCS ===="
           find docs -type f -printf "%T@ %p\n" | sort -n | tail -n 10
 
-      - name: Upload artifact for Pages
+      - name: 🪣 Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
@@ -112,6 +108,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: 🌍 Deploy to GitHub Pages (disable Jekyll)
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Important: disables jekyll-build-pages entirely
+          build_dir: docs
