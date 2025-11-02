@@ -1,5 +1,9 @@
-# .github/workflows/blog-build.yml
+# ============================================================
+# File: .github/workflows/blog-build.yml
 # Full path: /.github/workflows/blog-build.yml
+# Purpose: Build Hugo site from blog_src → docs and deploy to GitHub Pages
+# Includes .nojekyll protection (both workflow + static)
+# ============================================================
 
 name: Build Blog
 
@@ -45,13 +49,14 @@ jobs:
         uses: actions/configure-pages@v5
 
       # CNAME готовим ДО сборки (попадёт в /docs автоматически)
-      - name: Ensure CNAME before build
+      - name: Ensure CNAME and .nojekyll before build
         run: |
           mkdir -p blog_src/static
           echo "blog.equalle.com" > blog_src/static/CNAME
-          echo "CNAME prepared inside static/"
+          echo "" > blog_src/static/.nojekyll
+          echo "✅ CNAME and .nojekyll prepared inside static/"
 
-      # Сборка из blog_src в /docs (используем config.yml в blog_src и кладём результат в ../docs)
+      # Сборка из blog_src в /docs
       - name: Build Hugo → /docs
         working-directory: blog_src
         run: |
@@ -63,7 +68,13 @@ jobs:
             --minify --enableGitInfo \
             --noBuildLock
           # Проверка sitemap по publishDir ("../docs")
-          test -f ../docs/sitemap.xml && echo "sitemap OK" || (echo "sitemap MISSING" && exit 1)
+          test -f ../docs/sitemap.xml && echo "✅ sitemap OK" || (echo "❌ sitemap MISSING" && exit 1)
+
+      # Вариант 1 (дополнительная гарантия): создаём .nojekyll после сборки
+      - name: Disable Jekyll on GitHub Pages (safety step)
+        run: |
+          echo "" > docs/.nojekyll
+          echo "✅ .nojekyll file created in docs/"
 
       - name: Debug sitemap files
         run: |
