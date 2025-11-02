@@ -1,0 +1,20 @@
+{
+  "category_index": 1,
+  "per_category": {
+    "wood-sanding": {
+      "core_idx": 1,
+      "longtail_idx": 0
+    }
+  },
+  "brandimg_index": 2,
+  "brandimg_used": [
+    "01.webp",
+    "02.webp"
+  ],
+  "used_pairs": [
+    {
+      "seed": "wood sanding",
+      "longtail": "how to sand wood without swirl marks"
+    }
+  ]
+}
