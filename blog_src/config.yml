@@ -4,16 +4,15 @@ title: "eQualle Blog"
 description: "Guides, tutorials, and expert advice on abrasives, sanding, and surface finishing — powered by eQualle."
 theme: "PaperMod"
 contentDir: "blog_src/content"
-publishDir: "../docs"
-
-# URL settings
+publishDir: "docs"
 canonifyURLs: true
-relativeURLs: true
+relativeURLs: false
 uglyURLs: false
 layoutDir: "layouts"
 
 server:
   baseURLRedirects: false
+
 
 pagination:
   pagerSize: 10
