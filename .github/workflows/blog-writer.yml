@@ -1,3 +1,6 @@
+# .github/workflows/blog-writer.yml
+# Full path: /.github/workflows/blog-writer.yml
+
 name: Blog Writer
 
 on:
@@ -7,6 +10,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: blog-writer
+  cancel-in-progress: true
 
 jobs:
   writer:
@@ -20,8 +27,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
 
       - name: Install Python deps
+        env:
+          PIP_DISABLE_PIP_VERSION_CHECK: '1'
+          PIP_NO_INPUT: '1'
         run: |
           python -m pip install --upgrade pip
           pip install -r blog_src/scripts/requirements.txt
@@ -29,14 +40,18 @@ jobs:
       - name: Run generator (create Markdown posts)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PYTHONUTF8: '1'
         run: |
           python -m blog_src.scripts.writer.main
 
-      - name: Commit & Push new posts
+      - name: Configure Git user & safe dir
         run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      - name: Commit & Push new posts
+        run: |
           # Добавляем изменения, если они есть
           git add blog_src/content/posts blog_src/data/state.json
 
@@ -46,7 +61,7 @@ jobs:
           # Коммитим новые посты
           git commit -m "Add new blog post [skip ci]"
 
-          # Подтягиваем возможные новые коммиты с GitHub (например, из других workflow)
+          # Подтягиваем возможные коммиты, если параллельно что-то вливали
           git pull --rebase || true
 
           # Отправляем в репозиторий
