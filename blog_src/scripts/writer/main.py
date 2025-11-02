@@ -1,6 +1,7 @@
 # ============================================================
 # File: blog_src/scripts/writer/main.py
 # Full path: C:\Users\vladi\Documents\blog.equalle.com\blog_src\scripts\writer\main.py
+# Purpose: ONLINE (CI/CD) writer; same logic as main_local.py, but LLM routed strictly via llm.py
 # ============================================================
 
 from __future__ import annotations
@@ -9,7 +10,7 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Callable
 
 # === Core helpers (shared with local writer) ===
 from .prompt_builder import build_prompt
@@ -18,7 +19,6 @@ from .video_helpers import (
     _extract_video_description_from_md,
     _strip_llm_video_section,
 )
-from .llm_client import call_llm_local
 from .brandimg_injector import inject_brand_images
 from .taxonomy.auto_tag import build_tags
 from .video_utils import build_video_embed
@@ -28,13 +28,35 @@ from . import posts  # для QA (qa_check_proxy)
 # === New architecture sources (CSE + YouTube) ===
 from .topics_pairs import get_next_pair, record_used_pair     # берём core→longtail из categories.json
 from .google_cse import fetch_sources, build_sources_summary  # Google CSE вместо RSS-статьи
-try:
-    from .rss_video_fetch import find_video_for_article       # YouTube API (не RSS)
-except Exception:
-    find_video_for_article = None
 
 # === Online config (CI/CD) ===
-from .config_loader import load_writer_config  # используем общий загрузчик конфигурации для онлайн-среды
+from .config_loader import load_writer_config  # общий загрузчик конфигурации для онлайн-среды
+
+
+# === LLM ROUTING (STRICT: ONLY llm.py) ===
+def _resolve_llm_entry() -> Callable[[str], str]:
+    """
+    Находим точку входа в llm.py. Без fallback на llm_client (онлайн недопустим).
+    Допускаем несколько привычных имён функции.
+    """
+    try:
+        from . import llm  # type: ignore
+    except Exception as e:
+        raise RuntimeError(f"llm.py not found/import failed for online run: {e}")
+
+    for candidate in ("generate", "call", "call_llm", "run", "infer"):
+        fn = getattr(llm, candidate, None)
+        if callable(fn):
+            print(f"[eQualle LLM][ROUTE] ✅ Using llm.py → {candidate}()")
+            return fn
+
+    raise RuntimeError("No suitable entry in llm.py (expected one of: generate/call/call_llm/run/infer).")
+
+_LLM_ENTRY = _resolve_llm_entry()
+
+def _call_llm(prompt: str) -> str:
+    return _LLM_ENTRY(prompt)
+
 
 # === Авторская ротация (как в локальной версии) ===
 AUTHORS = [
@@ -186,7 +208,7 @@ def _pick_next_author(data_dir: Path) -> tuple[str, str]:
 
 def main() -> None:
     print("────────────────────────────────────────────")
-    print("[eQualle Writer][INIT] 🚀 Starting in CSE seed→longtail mode (CI)")
+    print("[eQualle Writer][INIT] 🚀 Starting in CSE seed→longtail mode (CI, strict llm.py)")
 
     # В онлайне используем общий загрузчик конфигурации
     cfg = load_writer_config()
@@ -242,6 +264,11 @@ def main() -> None:
     # === Видео (YouTube API), только выбор. НИЧЕГО из summary здесь не используется. ===
     video_payload: Optional[dict] = None
     video_iframe: str = ""
+    try:
+        from .rss_video_fetch import find_video_for_article  # late import для явного фейла в логах, если модуль отвалился
+    except Exception:
+        find_video_for_article = None
+
     if find_video_for_article:
         print("[eQualle VIDEO][FIND] 🎞️ Looking up YouTube video…")
         try:
@@ -283,9 +310,9 @@ def main() -> None:
     )
     print(f"[eQualle PROMPT][OK] ✅ Using custom prompt_builder ({len(prompt)} chars).")
 
-    # === Генерация ===
-    print("[eQualle LLM][CALL] 🧠 Invoking local LLM once…")
-    article_md: str = call_llm_local(prompt)
+    # === Генерация (СТРОГО через llm.py) ===
+    print("[eQualle LLM][CALL] 🧠 Invoking LLM (llm.py)…")
+    article_md: str = _call_llm(prompt)
     print(f"[eQualle LLM][RETURN] 📜 {len(article_md)} chars generated.")
 
     # === ИЗВЛЕЧЕНИЕ META_DESCRIPTION из текста LLM (и удаление из тела) ===
@@ -356,11 +383,12 @@ def main() -> None:
     # description (если вытащили из META_DESCRIPTION)
     description_line = ""
     if meta_desc:
+        # escape кавычек в YAML
         description_line = f'description: "{meta_desc.replace("\"", "\\\"")}"\n'
 
     fm = (
         "---\n"
-        f'title: "{title_escaped}"\n"
+        f'title: "{title_escaped}"\n'
         f"date: {now.isoformat()}\n"
         "draft: false\n"
         f'slug: "{safe_slug}"\n'
@@ -392,7 +420,7 @@ def _save_draft(content_dir: Path, topic: str):
     title_escaped = topic.replace('"', '\\"')
     fm = (
         "---\n"
-        f'title: "{title_escaped}"\n"
+        f'title: "{title_escaped}"\n'
         f"date: {now.isoformat()}\n"
         "draft: true\n"
         "categories: ['news']\n"
