@@ -184,6 +184,39 @@ def _pick_next_author(data_dir: Path) -> tuple[str, str]:
     state_path.write_text(json.dumps({"index": next_idx}, ensure_ascii=False, indent=2), encoding="utf-8")
     return author["name"], author["style"]
 
+# === УНИВЕРСАЛЬНОЕ ОПРЕДЕЛЕНИЕ КОРНЯ ПРОЕКТА (Windows, локально, GitHub Actions) ===
+def _detect_project_root(this_file: Path) -> Path:
+    # 1) Предпочтительно: найти .git у ближайшего родителя
+    for p in this_file.parents:
+        if (p / ".git").exists():
+            return p
+
+    # 2) Частный случай GitHub Actions: /home/runner/work/<repo>/<repo>/...
+    #    Нужно вернуть /home/runner/work/<repo>
+    parts = this_file.parts
+    if "work" in parts:
+        try:
+            i = parts.index("work")
+            # /home/runner/work/<repo>
+            repo = parts[i + 1]
+            return Path("/").joinpath(*parts[: i + 2])
+        except Exception:
+            pass
+
+    # 3) Если каталог репозитория встречается среди родителей по имени
+    for p in this_file.parents:
+        if p.name == "blog.equalle.com":
+            return p
+
+    # 4) Фолбэк: как было раньше (но аккуратнее — не жёстко 3 уровня)
+    #    Ищем родителя, где есть blog_src — это стабильный ориентир.
+    for p in this_file.parents:
+        if (p / "blog_src").exists():
+            return p
+
+    # 5) Самый последний фолбэк — вернуть родителя на несколько уровней вверх
+    return this_file.parents[3]  # соответствует прежней логике
+
 def main() -> None:
     print("────────────────────────────────────────────")
     print("[eQualle Writer][INIT] 🚀 Starting in CSE seed→longtail mode (CI)")
@@ -191,8 +224,8 @@ def main() -> None:
     # В онлайне используем общий загрузчик конфигурации
     cfg = load_writer_config()
 
-    # Абсолютные пути для стабильной работы в CI/CD
-    project_root = Path(__file__).resolve().parents[3]
+    # Абсолютные пути для стабильной работы в CI/CD (универсально)
+    project_root = _detect_project_root(Path(__file__).resolve())
     content_dir = project_root / cfg.get("content_dir", "blog_src/content/posts")
     category_dir = project_root / cfg.get("category_dir", "blog_src/content/categories")
     data_dir = project_root / cfg.get("data_dir", "blog_src/data")
