@@ -1,5 +1,5 @@
 {
-  "category_index": 6,
+  "category_index": 7,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -24,9 +24,13 @@
     "auto-body-sanding": {
       "core_idx": 1,
       "longtail_idx": 0
+    },
+    "wet-sanding-clear-coat": {
+      "core_idx": 1,
+      "longtail_idx": 0
     }
   },
-  "brandimg_index": 12,
+  "brandimg_index": 14,
   "brandimg_used": [
     "01.webp",
     "02.webp",
@@ -39,7 +43,9 @@
     "09.webp",
     "10.webp",
     "11.webp",
-    "12.webp"
+    "12.webp",
+    "13.webp",
+    "14.webp"
   ],
   "used_pairs": [
     {
@@ -65,6 +71,10 @@
     {
       "seed": "auto body sanding",
       "longtail": "best grit sequence for auto body sanding before primer"
+    },
+    {
+      "seed": "wet sanding clear coat",
+      "longtail": "how to wet sand clear coat without burning through edges"
     }
   ]
 }
