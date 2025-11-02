@@ -51,14 +51,17 @@ jobs:
           echo "blog.equalle.com" > blog_src/static/CNAME
           echo "CNAME prepared inside static/"
 
-      # Сборка из blog_src в /docs
+      # Сборка из blog_src в /docs (используем config.yml в blog_src и кладём результат в ../docs)
       - name: Build Hugo → /docs
         working-directory: blog_src
         run: |
           mkdir -p ../docs
-          hugo --destination ../docs \
-               --minify --cleanDestinationDir --enableGitInfo \
-               --noBuildLock
+          hugo \
+            --source . \
+            --config config.yml \
+            --destination ../docs \
+            --minify --enableGitInfo \
+            --noBuildLock
           # Проверка sitemap по publishDir ("../docs")
           test -f ../docs/sitemap.xml && echo "sitemap OK" || (echo "sitemap MISSING" && exit 1)
 
