@@ -1,5 +1,5 @@
 {
-  "category_index": 7,
+  "category_index": 8,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -28,9 +28,13 @@
     "wet-sanding-clear-coat": {
       "core_idx": 1,
       "longtail_idx": 0
+    },
+    "headlight-restoration": {
+      "core_idx": 1,
+      "longtail_idx": 0
     }
   },
-  "brandimg_index": 14,
+  "brandimg_index": 16,
   "brandimg_used": [
     "01.webp",
     "02.webp",
@@ -45,7 +49,9 @@
     "11.webp",
     "12.webp",
     "13.webp",
-    "14.webp"
+    "14.webp",
+    "15.webp",
+    "16.webp"
   ],
   "used_pairs": [
     {
@@ -75,6 +81,10 @@
     {
       "seed": "wet sanding clear coat",
       "longtail": "how to wet sand clear coat without burning through edges"
+    },
+    {
+      "seed": "headlight restoration",
+      "longtail": "complete headlight restoration steps from sanding to coating"
     }
   ]
 }
