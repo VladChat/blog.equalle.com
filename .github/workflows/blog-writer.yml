@@ -53,6 +53,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}   # ← добавлено
           PYTHONUTF8: '1'
         run: |
           echo "[CI] Starting writer pipeline..."
