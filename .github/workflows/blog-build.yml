@@ -2,7 +2,7 @@
 # File: .github/workflows/blog-build.yml
 # Full path: /.github/workflows/blog-build.yml
 # Purpose: Build Hugo site from blog_src → docs and deploy to GitHub Pages
-# Includes .nojekyll protection (both workflow + static)
+# Notes: Verbose logging enabled; .nojekyll created (до и после сборки)
 # ============================================================
 
 name: Build Blog
@@ -39,6 +39,15 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.workflow_run.head_branch || github.ref }}
 
+      - name: Show repo root tree (first level)
+        run: |
+          set -x
+          pwd
+          ls -la
+          echo "==== GIT HEAD ===="
+          git log -1 --oneline
+          echo "=================="
+
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -48,56 +57,90 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      # CNAME готовим ДО сборки (попадёт в /docs автоматически)
+      - name: Print Hugo env & versions
+        run: |
+          set -x
+          hugo version
+          echo "GITHUB_PAGES=${GITHUB_PAGES:-unset}"
+
+      - name: Preview blog_src/config.yml (first 120 lines)
+        run: |
+          echo "==== blog_src/config.yml (head) ===="
+          sed -n '1,120p' blog_src/config.yml || true
+          echo "===================================="
+
       - name: Ensure CNAME and .nojekyll before build
         run: |
+          set -x
           mkdir -p blog_src/static
           echo "blog.equalle.com" > blog_src/static/CNAME
-          echo "" > blog_src/static/.nojekyll
-          echo "✅ CNAME and .nojekyll prepared inside static/"
+          : > blog_src/static/.nojekyll
+          echo "✅ Prepared blog_src/static/{CNAME,.nojekyll}"
+          echo "==== static dir ===="
+          ls -la blog_src/static
 
-      # Сборка из blog_src в /docs
-      - name: Build Hugo → /docs
-        working-directory: blog_src
+      - name: Clean previous docs (safety)
         run: |
-          mkdir -p ../docs
+          set -x
+          rm -rf docs || true
+          mkdir -p docs
+          echo "✅ Clean docs/ ready"
+
+      - name: Build Hugo → /docs (verbose)
+        working-directory: blog_src
+        env:
+          HUGO_ENV: production
+        run: |
+          set -x
+          pwd
+          echo "==== content structure (top) ===="
+          find content -maxdepth 3 -type d | sed -n '1,200p'
+          echo "==== posts present? (md) ===="
+          find content -name "*.md" | wc -l || true
+          echo "==== running hugo ===="
           hugo \
             --source . \
             --config config.yml \
             --destination ../docs \
             --minify --enableGitInfo \
             --noBuildLock
-          # Проверка sitemap по publishDir ("../docs")
+          echo "==== BUILD DONE ===="
           test -f ../docs/sitemap.xml && echo "✅ sitemap OK" || (echo "❌ sitemap MISSING" && exit 1)
 
-      # Вариант 1 (дополнительная гарантия): создаём .nojekyll после сборки
       - name: Disable Jekyll on GitHub Pages (safety step)
         run: |
-          echo "" > docs/.nojekyll
-          echo "✅ .nojekyll file created in docs/"
+          set -x
+          : > docs/.nojekyll
+          echo "✅ .nojekyll created in docs/"
+          ls -la docs | sed -n '1,120p'
 
-      - name: Debug sitemap files
+      - name: List generated posts & key pages
         run: |
-          echo "Sitemap files in build:"
-          find docs -type f -name "sitemap*.xml" -printf "%p (%TY-%Tm-%Td %TH:%TM)\n"
+          set -x
+          echo "==== posts directory tree (up to 4 levels) ===="
+          find docs/posts -maxdepth 4 -type d -print 2>/dev/null || echo "no docs/posts dir"
+          echo "==== sample post index.html paths ===="
+          find docs/posts -name index.html | sed -n '1,20p' || true
+          echo "==== categories pages present ===="
+          find docs/categories -name index.html | sed -n '1,50p' || true
+          echo "==== editorial present ===="
+          ls -la docs/editorial || true
 
-      - name: Show newest <lastmod> in sitemap
+      - name: Sitemap checks
         run: |
+          set -x
           echo "==== newest <lastmod> in sitemap ===="
-          grep -oP "(?<=<lastmod>).*?(?=</lastmod>)" docs/sitemap.xml | sort | tail -n 1 || echo "no lastmod found"
-
-      - name: Show sitemap first lines
-        run: |
+          grep -oP "(?<=<lastmod>).*?(?=</lastmod>)" docs/sitemap.xml | sort | tail -n 1 || true
           echo "==== sitemap preview (first 10 lines) ===="
-          head -n 10 docs/sitemap.xml || echo "sitemap not found"
+          head -n 10 docs/sitemap.xml || true
+          echo "==== URLs with /posts/ in sitemap ===="
+          grep -oP "(?<=<loc>).*?(?=</loc>)" docs/sitemap.xml | grep "/posts/" | sed -n '1,20p' || true
 
-      - name: Sanity check (sitemap exclude + recent content presence)
+      - name: Show docs root listing (top)
         run: |
-          echo "==== search for 'sitemap: exclude' in content ===="
-          (grep -RIn "sitemap:" blog_src/content || true) | sed -n '1,200p'
-          (grep -RIn "exclude:" blog_src/content | grep -i sitemap || true) | sed -n '1,200p'
-          echo "==== recent posts in output (last 3 by mtime) ===="
-          find docs/posts -type d -printf "%T@ %p\n" | sort -n | tail -n 3 | awk '{print $2}'
+          set -x
+          du -h -d1 docs || true
+          ls -la docs | sed -n '1,200p'
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
