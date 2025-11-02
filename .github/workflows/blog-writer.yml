@@ -1,5 +1,7 @@
-# .github/workflows/blog-writer.yml
+# ============================================================
+# File: .github/workflows/blog-writer.yml
 # Full path: /.github/workflows/blog-writer.yml
+# ============================================================
 
 name: Blog Writer
 
@@ -47,9 +49,13 @@ jobs:
 
       - name: Run generator (create Markdown posts)
         env:
+          # === 🔑 Подключаем все ключи и конфигурацию ===
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
           PYTHONUTF8: '1'
         run: |
+          echo "[CI] Starting writer pipeline..."
           python -m blog_src.scripts.writer.main
 
       - name: Configure Git user & safe dir
