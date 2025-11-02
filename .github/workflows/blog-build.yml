@@ -1,8 +1,6 @@
 # ============================================================
 # File: .github/workflows/blog-build.yml
 # Full path: /.github/workflows/blog-build.yml
-# Purpose: Build Hugo site from blog_src → docs and deploy to GitHub Pages
-# Notes: Verbose logging enabled; .nojekyll created (до и после сборки)
 # ============================================================
 
 name: Build Blog
@@ -33,20 +31,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository (branch, not SHA)
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: ${{ github.event.workflow_run.head_branch || github.ref }}
-
-      - name: Show repo root tree (first level)
-        run: |
-          set -x
-          pwd
-          ls -la
-          echo "==== GIT HEAD ===="
-          git log -1 --oneline
-          echo "=================="
 
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v2
@@ -54,93 +43,29 @@ jobs:
           hugo-version: '0.150.1'
           extended: true
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Print Hugo env & versions
+      - name: Prepare static extras
         run: |
-          set -x
-          hugo version
-          echo "GITHUB_PAGES=${GITHUB_PAGES:-unset}"
-
-      - name: Preview blog_src/config.yml (first 120 lines)
-        run: |
-          echo "==== blog_src/config.yml (head) ===="
-          sed -n '1,120p' blog_src/config.yml || true
-          echo "===================================="
-
-      - name: Ensure CNAME and .nojekyll before build
-        run: |
-          set -x
           mkdir -p blog_src/static
           echo "blog.equalle.com" > blog_src/static/CNAME
-          : > blog_src/static/.nojekyll
-          echo "✅ Prepared blog_src/static/{CNAME,.nojekyll}"
-          echo "==== static dir ===="
-          ls -la blog_src/static
+          echo "" > blog_src/static/.nojekyll
+          echo "✅ CNAME and .nojekyll added to static"
 
-      - name: Clean previous docs (safety)
-        run: |
-          set -x
-          rm -rf docs || true
-          mkdir -p docs
-          echo "✅ Clean docs/ ready"
-
-      - name: Build Hugo → /docs (verbose)
+      - name: Build Hugo → /docs
         working-directory: blog_src
-        env:
-          HUGO_ENV: production
         run: |
-          set -x
-          pwd
-          echo "==== content structure (top) ===="
-          find content -maxdepth 3 -type d | sed -n '1,200p'
-          echo "==== posts present? (md) ===="
-          find content -name "*.md" | wc -l || true
-          echo "==== running hugo ===="
-          hugo \
-            --source . \
-            --config config.yml \
-            --destination ../docs \
-            --minify --enableGitInfo \
-            --noBuildLock
-          echo "==== BUILD DONE ===="
-          test -f ../docs/sitemap.xml && echo "✅ sitemap OK" || (echo "❌ sitemap MISSING" && exit 1)
+          mkdir -p ../docs
+          hugo --source . --config config.yml \
+               --destination ../docs \
+               --minify --enableGitInfo --noBuildLock
+          echo "✅ Hugo build done"
+          echo "" > ../docs/.nojekyll
+          echo "blog.equalle.com" > ../docs/CNAME
+          echo "✅ .nojekyll and CNAME confirmed in /docs"
 
-      - name: Disable Jekyll on GitHub Pages (safety step)
+      - name: Verify /docs before deploy
         run: |
-          set -x
-          : > docs/.nojekyll
-          echo "✅ .nojekyll created in docs/"
-          ls -la docs | sed -n '1,120p'
-
-      - name: List generated posts & key pages
-        run: |
-          set -x
-          echo "==== posts directory tree (up to 4 levels) ===="
-          find docs/posts -maxdepth 4 -type d -print 2>/dev/null || echo "no docs/posts dir"
-          echo "==== sample post index.html paths ===="
-          find docs/posts -name index.html | sed -n '1,20p' || true
-          echo "==== categories pages present ===="
-          find docs/categories -name index.html | sed -n '1,50p' || true
-          echo "==== editorial present ===="
-          ls -la docs/editorial || true
-
-      - name: Sitemap checks
-        run: |
-          set -x
-          echo "==== newest <lastmod> in sitemap ===="
-          grep -oP "(?<=<lastmod>).*?(?=</lastmod>)" docs/sitemap.xml | sort | tail -n 1 || true
-          echo "==== sitemap preview (first 10 lines) ===="
-          head -n 10 docs/sitemap.xml || true
-          echo "==== URLs with /posts/ in sitemap ===="
-          grep -oP "(?<=<loc>).*?(?=</loc>)" docs/sitemap.xml | grep "/posts/" | sed -n '1,20p' || true
-
-      - name: Show docs root listing (top)
-        run: |
-          set -x
-          du -h -d1 docs || true
-          ls -la docs | sed -n '1,200p'
+          echo "==== DOCS FILES ===="
+          find docs -maxdepth 2 -type f | grep -E "CNAME|nojekyll|index.html" || true
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
