@@ -1,5 +1,5 @@
 {
-  "category_index": 4,
+  "category_index": 5,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -16,9 +16,13 @@
     "drywall-sanding": {
       "core_idx": 1,
       "longtail_idx": 0
+    },
+    "floor-deck-sanding": {
+      "core_idx": 1,
+      "longtail_idx": 0
     }
   },
-  "brandimg_index": 8,
+  "brandimg_index": 10,
   "brandimg_used": [
     "01.webp",
     "02.webp",
@@ -27,7 +31,9 @@
     "05.webp",
     "06.webp",
     "07.webp",
-    "08.webp"
+    "08.webp",
+    "09.webp",
+    "10.webp"
   ],
   "used_pairs": [
     {
@@ -45,6 +51,10 @@
     {
       "seed": "drywall sanding",
       "longtail": "best grit for drywall sanding before paint"
+    },
+    {
+      "seed": "floor sanding",
+      "longtail": "best grit sequence for hardwood floor sanding"
     }
   ]
 }
