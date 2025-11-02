@@ -39,11 +39,16 @@ jobs:
 
       - name: Show workspace structure
         run: |
-          echo "📂 Current workspace:"
-          pwd
-          ls -la
-          echo "📂 Inside blog_src:"
-          ls -la blog_src || echo "blog_src missing!"
+          echo "📂 Current workspace: $GITHUB_WORKSPACE"
+          echo "📁 Root contents:"
+          ls -la $GITHUB_WORKSPACE
+          echo "📁 Checking blog_src directory:"
+          ls -la $GITHUB_WORKSPACE/blog_src || echo "⚠️ blog_src missing!"
+
+      - name: Verify blog_src committed
+        run: |
+          echo "=== Git tracked files (blog_src subset) ==="
+          git ls-files | grep blog_src || echo "⚠️ blog_src not tracked in Git!"
 
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v2
@@ -53,30 +58,47 @@ jobs:
 
       - name: Prepare static extras
         run: |
-          mkdir -p blog_src/static
-          echo "blog.equalle.com" > blog_src/static/CNAME
-          echo "" > blog_src/static/.nojekyll
-          echo "✅ CNAME and .nojekyll added inside static/"
+          mkdir -p $GITHUB_WORKSPACE/blog_src/static
+          echo "blog.equalle.com" > $GITHUB_WORKSPACE/blog_src/static/CNAME
+          echo "" > $GITHUB_WORKSPACE/blog_src/static/.nojekyll
+          echo "✅ CNAME and .nojekyll added inside blog_src/static/"
 
-      - name: Build site with Hugo (forced root dir)
-        working-directory: ${{ github.workspace }}
+      - name: Build site with Hugo (absolute paths)
         run: |
           echo "📦 Starting Hugo build..."
-          echo "🔍 Config file absolute path check:"
-          ls -la ${{ github.workspace }}/blog_src/config.yml || echo "config.yml not found!"
+          echo "📍 Current directory:"
+          pwd
+          echo "📁 Root contents:"
+          ls -la
+          echo "📁 Checking blog_src/config.yml:"
+          ls -la blog_src/config.yml || echo "❌ config.yml not found here"
+          echo "📁 Checking absolute path:"
+          ls -la $GITHUB_WORKSPACE/blog_src/config.yml || echo "❌ Not found by absolute path"
 
-          mkdir -p ${{ github.workspace }}/docs
+          mkdir -p $GITHUB_WORKSPACE/docs
+          echo "🚀 Running Hugo with absolute paths..."
           hugo \
-            --config ${{ github.workspace }}/blog_src/config.yml \
-            --source ${{ github.workspace }}/blog_src \
-            --destination ${{ github.workspace }}/docs \
+            --config $GITHUB_WORKSPACE/blog_src/config.yml \
+            --source $GITHUB_WORKSPACE/blog_src \
+            --destination $GITHUB_WORKSPACE/docs \
             --minify --enableGitInfo --noBuildLock
 
-          echo "" > ${{ github.workspace }}/docs/.nojekyll
-          echo "blog.equalle.com" > ${{ github.workspace }}/docs/CNAME
+          echo "" > $GITHUB_WORKSPACE/docs/.nojekyll
+          echo "blog.equalle.com" > $GITHUB_WORKSPACE/docs/CNAME
           echo "✅ Hugo build completed successfully."
-          echo "==== DOCS STRUCTURE ===="
-          ls -la ${{ github.workspace }}/docs | head -n 25
+          echo "==== DOCS STRUCTURE (TOP 25 FILES) ===="
+          ls -la $GITHUB_WORKSPACE/docs | head -n 25
+
+      - name: Debug sitemap and recent posts
+        run: |
+          echo "==== SITEMAP CHECK ===="
+          if [ -f docs/sitemap.xml ]; then
+            head -n 10 docs/sitemap.xml
+          else
+            echo "⚠️ sitemap.xml missing!"
+          fi
+          echo "==== LAST MODIFIED FILES IN DOCS ===="
+          find docs -type f -printf "%T@ %p\n" | sort -n | tail -n 10
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
