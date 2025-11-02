@@ -114,15 +114,20 @@ def _clean_question_query(q: str) -> str:
     return " ".join(cleaned_tokens).strip()
 
 
-def _has_keyword(primary_keyword: str, title: str, desc: str) -> bool:
+# ============================================================
+# ✅ Умное сравнение по ключевым словам (3→2→1 совпадение)
+# ============================================================
+def _has_keyword(primary_keyword: str, title: str, desc: str, min_matches: int = 2) -> int:
+    """Возвращает количество найденных совпадений.
+    min_matches используется при фильтрации."""
     if not primary_keyword:
-        return True
+        return 0
     text = f"{title} {desc}".lower()
     tokens = [t for t in re.split(r"\W+", primary_keyword.lower()) if len(t) >= 3]
     if not tokens:
-        return False
+        return 0
     match_count = sum(1 for t in tokens if t in text)
-    return match_count >= 2
+    return match_count
 
 
 # ========== CORE SEARCH ==========
@@ -248,23 +253,29 @@ def find_video_for_article(topic_title: str, primary_keyword: str, kw_slug: str,
     try:
         results = search_youtube_smart(topic_title, primary_keyword, kw_slug)
         print(f"[eQualle VideoFeed][DEBUG] Got {len(results)} candidates.")
-        for v in results:
-            title_lower = (v.get("title", "") or "").lower()
-            desc_lower = (v.get("description", "") or "").lower()
-            video_link = v.get("link", f"https://www.youtube.com/watch?v={v.get('id','')}")
-            if any(bad in title_lower for bad in _BAD_TERMS):
-                print(f"[eQualle VideoFeed][FILTER] ⏭️ Skip (bad term) '{v['title'][:40]}' — {video_link}")
-                continue
-            if len(desc_lower) < 5:
-                print(f"[eQualle VideoFeed][FILTER] ⏭️ Skip (too short) '{v['title'][:40]}' — {video_link}")
-                continue
-            if not _has_keyword(primary_keyword, title_lower, desc_lower):
-                print(f"[eQualle VideoFeed][FILTER] ⏭️ Skip (no match) '{v['title'][:40]}' — {video_link}")
-                continue
-            print(f"[eQualle VideoFeed][RESULT] ✅ Selected video: '{v['title']}' — {video_link}")
-            print(f"[eQualle VideoFeed][RESULT] 🔎 Found via: {v.get('source', 'unknown')}")
-            return enrich_video_info(v)
-        print("[eQualle VideoFeed][WARN] ⚠️ No suitable YouTube result found.")
+
+        # Пробуем последовательно 3 → 2 → 1 совпадение
+        for min_match in (3, 2, 1):
+            print(f"[eQualle VideoFeed][FILTER] 🔍 Trying match level ≥{min_match}")
+            for v in results:
+                title_lower = (v.get("title", "") or "").lower()
+                desc_lower = (v.get("description", "") or "").lower()
+                video_link = v.get("link", f"https://www.youtube.com/watch?v={v.get('id','')}")
+                if any(bad in title_lower for bad in _BAD_TERMS):
+                    print(f"[eQualle VideoFeed][FILTER] ⏭️ Skip (bad term) '{v['title'][:40]}' — {video_link}")
+                    continue
+                if len(desc_lower) < 5:
+                    print(f"[eQualle VideoFeed][FILTER] ⏭️ Skip (too short) '{v['title'][:40]}' — {video_link}")
+                    continue
+                matches = _has_keyword(primary_keyword, title_lower, desc_lower)
+                if matches < min_match:
+                    print(f"[eQualle VideoFeed][FILTER] ⏭️ Skip (no match≥{min_match}) '{v['title'][:40]}' — {video_link}")
+                    continue
+                print(f"[eQualle VideoFeed][RESULT] ✅ Selected video: '{v['title']}' — {video_link}")
+                print(f"[eQualle VideoFeed][RESULT] 🔎 Found via: {v.get('source', 'unknown')} | Keyword matches: {matches}")
+                print(f"[eQualle VideoFeed][RESULT] 💡 Match threshold met: ≥{min_match}")
+                return enrich_video_info(v)
+        print("[eQualle VideoFeed][WARN] ⚠️ No suitable YouTube result found at any level.")
     except Exception as e:
         print(f"[eQualle VideoFeed][ERROR] ❌ Exception during YouTube search: {e}")
     print("[eQualle VideoFeed][END] 🚫 No video selected — returning None.")
