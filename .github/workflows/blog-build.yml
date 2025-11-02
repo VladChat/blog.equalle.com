@@ -37,6 +37,14 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.workflow_run.head_branch || github.ref }}
 
+      - name: Show workspace structure
+        run: |
+          echo "📂 Current workspace:"
+          pwd
+          ls -la
+          echo "📂 Inside blog_src:"
+          ls -la blog_src || echo "blog_src missing!"
+
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -50,17 +58,25 @@ jobs:
           echo "" > blog_src/static/.nojekyll
           echo "✅ CNAME and .nojekyll added inside static/"
 
-      - name: Build site with Hugo (root call)
+      - name: Build site with Hugo (forced root dir)
         working-directory: ${{ github.workspace }}
         run: |
           echo "📦 Starting Hugo build..."
-          mkdir -p docs
-          hugo --config blog_src/config.yml --source blog_src --destination docs --minify --enableGitInfo --noBuildLock
-          echo "" > docs/.nojekyll
-          echo "blog.equalle.com" > docs/CNAME
+          echo "🔍 Config file absolute path check:"
+          ls -la ${{ github.workspace }}/blog_src/config.yml || echo "config.yml not found!"
+
+          mkdir -p ${{ github.workspace }}/docs
+          hugo \
+            --config ${{ github.workspace }}/blog_src/config.yml \
+            --source ${{ github.workspace }}/blog_src \
+            --destination ${{ github.workspace }}/docs \
+            --minify --enableGitInfo --noBuildLock
+
+          echo "" > ${{ github.workspace }}/docs/.nojekyll
+          echo "blog.equalle.com" > ${{ github.workspace }}/docs/CNAME
           echo "✅ Hugo build completed successfully."
           echo "==== DOCS STRUCTURE ===="
-          ls -la docs | head -n 25
+          ls -la ${{ github.workspace }}/docs | head -n 25
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
