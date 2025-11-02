@@ -25,27 +25,76 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Post-checkout info
+        run: |
+          echo "────────────────────────────────────────────"
+          echo "[CI] Repository checked out."
+          echo "[CI] GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
+          echo "[CI] GITHUB_REF_NAME:   $GITHUB_REF_NAME"
+          echo "[CI] Workspace:         $GITHUB_WORKSPACE"
+          echo "────────────────────────────────────────────"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
+      - name: Python runtime info
+        run: |
+          echo "────────────────────────────────────────────"
+          echo "[CI] Python runtime diagnostics:"
+          python --version
+          which python
+          pip --version
+          echo "────────────────────────────────────────────"
+
       - name: Install Python deps
         env:
           PIP_DISABLE_PIP_VERSION_CHECK: '1'
           PIP_NO_INPUT: '1'
         run: |
+          echo "[CI] Installing Python dependencies..."
           python -m pip install --upgrade pip
           pip install -r blog_src/scripts/requirements.txt
+          echo "[CI] Dependencies installed."
+          echo "[CI] Verifying key packages are present:"
+          python - << 'PY'
+import importlib, sys
+pkgs = [
+  "openai",
+  "googleapiclient.discovery",
+  "dotenv",
+  "feedparser",
+  "bs4",
+  "markdown",
+  "tenacity",
+  "yaml",
+  "slugify",
+  "requests",
+]
+missing = []
+for p in pkgs:
+    try:
+        importlib.import_module(p)
+        print(f"[OK] {p}")
+    except Exception as e:
+        print(f"[MISS] {p} -> {e}")
+        missing.append(p)
+print("[CI] Package verification complete.")
+sys.exit(0 if not missing else 1)
+PY
 
       - name: Syntax check (py_compile)
         run: |
+          echo "[CI] Starting syntax check (compileall)..."
           python - << 'PY'
-          import compileall, sys
-          ok = compileall.compile_dir('blog_src/scripts', force=True, quiet=1)
-          sys.exit(0 if ok else 1)
-          PY
+import compileall, sys
+ok = compileall.compile_dir('blog_src/scripts', force=True, quiet=1)
+print(f"[CI] compileall result: {'OK' if ok else 'FAIL'}")
+sys.exit(0 if ok else 1)
+PY
+          echo "[CI] Syntax check finished."
 
       - name: Run generator (create Markdown posts)
         env:
@@ -53,31 +102,50 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}   # ← добавлено
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
           PYTHONUTF8: '1'
         run: |
+          echo "────────────────────────────────────────────"
           echo "[CI] Starting writer pipeline..."
+          echo "[CI] Env keys present (names only):"
+          for k in OPENAI_API_KEY GOOGLE_API_KEY GOOGLE_CSE_ID YT_API_KEY; do
+            if [ -n "${!k}" ]; then
+              echo " - $k=SET"
+            else
+              echo " - $k=MISSING"
+            fi
+          done
+          echo "────────────────────────────────────────────"
           python -m blog_src.scripts.writer.main
+          status=$?
+          echo "────────────────────────────────────────────"
+          echo "[CI] Writer pipeline exit code: $status"
+          exit $status
 
       - name: Configure Git user & safe dir
         run: |
+          echo "[CI] Configuring git identity and safe.directory..."
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "[CI] Git configured."
 
       - name: Commit & Push new posts
         run: |
-          # Добавляем изменения, если они есть
-          git add blog_src/content/posts blog_src/content/categories blog_src/data/state.json
+          echo "[CI] Preparing commit for new/updated content..."
+          git add blog_src/content/posts blog_src/content/categories blog_src/data/state.json || true
 
-          # Если нет изменений — выходим
-          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          if git diff --cached --quiet; then
+            echo "[CI] No changes to commit."
+            exit 0
+          fi
 
-          # Коммитим новые посты
+          echo "[CI] Changes detected — committing..."
           git commit -m "Add new blog post $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
 
-          # Подтягиваем возможные коммиты, если параллельно что-то вливали
+          echo "[CI] Rebasing with remote (if needed)..."
           git pull --rebase || true
 
-          # Отправляем в репозиторий
+          echo "[CI] Pushing changes to origin..."
           git push
+          echo "[CI] Push completed."
