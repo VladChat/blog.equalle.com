@@ -356,11 +356,13 @@ def main() -> None:
     # description (если вытащили из META_DESCRIPTION)
     description_line = ""
     if meta_desc:
-        description_line = f'description: "{meta_desc.replace(\'"\', \'\\\\\"\')}"\n'
+        # безопасное экранирование кавычек для YAML-строки
+        safe_meta = meta_desc.replace('"', '\\"')
+        description_line = f'description: "{safe_meta}"\n'
 
     fm = (
         "---\n"
-        f'title: "{title_escaped}"\n"
+        f'title: "{title_escaped}"\n'
         f"date: {now.isoformat()}\n"
         "draft: false\n"
         f'slug: "{safe_slug}"\n'
@@ -392,7 +394,7 @@ def _save_draft(content_dir: Path, topic: str):
     title_escaped = topic.replace('"', '\\"')
     fm = (
         "---\n"
-        f'title: "{title_escaped}"\n"
+        f'title: "{title_escaped}"\n'
         f"date: {now.isoformat()}\n"
         "draft: true\n"
         "categories: ['news']\n"
