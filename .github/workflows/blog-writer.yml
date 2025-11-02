@@ -59,7 +59,7 @@ jobs:
           pip install -r blog_src/scripts/requirements.txt
           echo "[CI] Dependencies installed."
           echo "[CI] Verifying key packages are present:"
-          python - << 'PY'
+          python - <<EOF
 import importlib, sys
 pkgs = [
   "openai",
@@ -83,17 +83,17 @@ for p in pkgs:
         missing.append(p)
 print("[CI] Package verification complete.")
 sys.exit(0 if not missing else 1)
-PY
+EOF
 
       - name: Syntax check (py_compile)
         run: |
           echo "[CI] Starting syntax check (compileall)..."
-          python - << 'PY'
+          python - <<EOF
 import compileall, sys
 ok = compileall.compile_dir('blog_src/scripts', force=True, quiet=1)
 print(f"[CI] compileall result: {'OK' if ok else 'FAIL'}")
 sys.exit(0 if ok else 1)
-PY
+EOF
           echo "[CI] Syntax check finished."
 
       - name: Run generator (create Markdown posts)
