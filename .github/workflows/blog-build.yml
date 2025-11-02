@@ -48,28 +48,21 @@ jobs:
           mkdir -p blog_src/static
           echo "blog.equalle.com" > blog_src/static/CNAME
           echo "" > blog_src/static/.nojekyll
-          echo "✅ CNAME and .nojekyll prepared inside static/"
+          echo "✅ CNAME and .nojekyll added into static/"
 
-      - name: Build site with Hugo (main step)
+      - name: Build site with Hugo (root-relative config)
         run: |
           echo "📦 Starting Hugo build..."
           mkdir -p docs
           hugo \
-            --source blog_src \
-            --config blog_src/config.yml \
-            --destination docs \
+            --source ./blog_src \
+            --config ./blog_src/config.yml \
+            --destination ./docs \
             --minify --enableGitInfo --noBuildLock
-          echo "" > docs/.nojekyll
-          echo "blog.equalle.com" > docs/CNAME
-          echo "✅ Hugo build completed and docs prepared."
-
-      - name: Verify docs output
-        run: |
-          echo "==== DOCS STRUCTURE ===="
-          ls -la docs | head -n 50
-          echo "==== VERIFY CNAME/.nojekyll ===="
-          cat docs/CNAME || echo "CNAME missing"
-          test -f docs/.nojekyll && echo ".nojekyll OK" || echo "missing .nojekyll"
+          echo "" > ./docs/.nojekyll
+          echo "blog.equalle.com" > ./docs/CNAME
+          echo "✅ Hugo build completed successfully."
+          ls -la ./docs | head -n 20
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
