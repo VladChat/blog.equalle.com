@@ -48,24 +48,28 @@ jobs:
           mkdir -p blog_src/static
           echo "blog.equalle.com" > blog_src/static/CNAME
           echo "" > blog_src/static/.nojekyll
-          echo "✅ CNAME and .nojekyll added to static"
+          echo "✅ CNAME and .nojekyll prepared inside static/"
 
-      - name: Build Hugo → /docs
-        working-directory: blog_src
+      - name: Build site with Hugo (main step)
         run: |
-          mkdir -p ../docs
-          hugo --source . --config config.yml \
-               --destination ../docs \
-               --minify --enableGitInfo --noBuildLock
-          echo "✅ Hugo build done"
-          echo "" > ../docs/.nojekyll
-          echo "blog.equalle.com" > ../docs/CNAME
-          echo "✅ .nojekyll and CNAME confirmed in /docs"
+          echo "📦 Starting Hugo build..."
+          mkdir -p docs
+          hugo \
+            --source blog_src \
+            --config blog_src/config.yml \
+            --destination docs \
+            --minify --enableGitInfo --noBuildLock
+          echo "" > docs/.nojekyll
+          echo "blog.equalle.com" > docs/CNAME
+          echo "✅ Hugo build completed and docs prepared."
 
-      - name: Verify /docs before deploy
+      - name: Verify docs output
         run: |
-          echo "==== DOCS FILES ===="
-          find docs -maxdepth 2 -type f | grep -E "CNAME|nojekyll|index.html" || true
+          echo "==== DOCS STRUCTURE ===="
+          ls -la docs | head -n 50
+          echo "==== VERIFY CNAME/.nojekyll ===="
+          cat docs/CNAME || echo "CNAME missing"
+          test -f docs/.nojekyll && echo ".nojekyll OK" || echo "missing .nojekyll"
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
