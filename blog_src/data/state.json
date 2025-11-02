@@ -1,5 +1,5 @@
 {
-  "category_index": 8,
+  "category_index": 9,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -32,9 +32,13 @@
     "headlight-restoration": {
       "core_idx": 1,
       "longtail_idx": 0
+    },
+    "metal-polishing-rust-repair": {
+      "core_idx": 1,
+      "longtail_idx": 0
     }
   },
-  "brandimg_index": 16,
+  "brandimg_index": 18,
   "brandimg_used": [
     "01.webp",
     "02.webp",
@@ -51,7 +55,9 @@
     "13.webp",
     "14.webp",
     "15.webp",
-    "16.webp"
+    "16.webp",
+    "17.webp",
+    "18.webp"
   ],
   "used_pairs": [
     {
@@ -85,6 +91,10 @@
     {
       "seed": "headlight restoration",
       "longtail": "complete headlight restoration steps from sanding to coating"
+    },
+    {
+      "seed": "metal polishing",
+      "longtail": "grit progression for aluminum before buffing"
     }
   ]
 }
