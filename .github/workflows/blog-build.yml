@@ -1,8 +1,9 @@
-# ============================================================
-# File: .github/workflows/blog-build.yml
+# .github/workflows/blog-build.yml
 # Full path: /.github/workflows/blog-build.yml
-# Purpose: Build Hugo site (blog.equalle.com) and deploy to GitHub Pages
-# ============================================================
+# Purpose: Build Hugo site from blog_src → docs, commit docs back to repo,
+# and print detailed logs after EVERY step.
+# NOTE: Paths trigger only on blog_src/** changes to avoid loops when we
+# commit docs/** from CI.
 
 name: Build Blog
 
@@ -13,14 +14,9 @@ on:
       - 'blog_src/**'
       - '.github/workflows/blog-build.yml'
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Blog Writer"]
-    types: [completed]
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: blog-build-${{ github.ref }}
@@ -28,89 +24,115 @@ concurrency:
 
 jobs:
   build:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🧩 Checkout repository
+      # 1) Checkout
+      - name: ⬇️ Checkout repository (branch, not SHA)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ github.event.workflow_run.head_branch || github.ref }}
-
-      - name: 🧱 Show repository structure
+          ref: ${{ github.ref }}
+      - name: 🧾 Log after checkout
         run: |
-          echo "📂 Workspace: $GITHUB_WORKSPACE"
-          ls -la $GITHUB_WORKSPACE
-          echo "📁 blog_src content:"
-          ls -la $GITHUB_WORKSPACE/blog_src || echo "⚠️ blog_src missing!"
+          echo "🗂  GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          echo "🔗 Current branch: $(git rev-parse --abbrev-ref HEAD)"
+          echo "🔖 Latest commit:  $(git log -1 --pretty='%h %an — %s')"
+          echo "📁 Top-level tree:"
+          ls -la | sed -n '1,200p'
+          echo "📁 blog_src tree (1 level):"
+          find blog_src -maxdepth 2 -type d -print | sed -n '1,200p' || true
+          echo "📄 blog_src/config.yml exists?"
+          test -f blog_src/config.yml && echo "✅ YES" || (echo "❌ NO" && exit 1)
 
-      - name: 🔍 Verify blog_src committed
-        run: |
-          echo "=== Git tracked files (blog_src subset) ==="
-          git ls-files | grep blog_src || echo "⚠️ blog_src not tracked in Git!"
-
-      - name: ⚙️ Set up Hugo
+      # 2) Hugo tool
+      - name: 🛠 Set up Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.150.1'
           extended: true
-
-      - name: 🗂 Prepare static files (.nojekyll + CNAME inside blog_src/static)
+      - name: 🧾 Log after Hugo setup
         run: |
-          mkdir -p $GITHUB_WORKSPACE/blog_src/static
-          echo "" > $GITHUB_WORKSPACE/blog_src/static/.nojekyll
-          echo "blog.equalle.com" > $GITHUB_WORKSPACE/blog_src/static/CNAME
-          echo "✅ CNAME and .nojekyll prepared in blog_src/static"
+          hugo version
+          echo "----- HUGO ENV -----"
+          hugo env || true
+          echo "----- CONFIG HEAD -----"
+          head -n 40 blog_src/config.yml | sed -n '1,200p'
+          echo "----------------------"
 
-      - name: 🚀 Build site with Hugo (absolute paths)
+      # 3) Pre-create static CNAME/.nojekyll inside blog_src/static (so hugo copies them)
+      - name: 🧱 Prepare CNAME & .nojekyll in blog_src/static
         run: |
-          echo "📦 Starting Hugo build..."
+          set -e
+          mkdir -p blog_src/static
+          echo "blog.equalle.com" > blog_src/static/CNAME
+          : > blog_src/static/.nojekyll
+          echo "✅ Prepared:"
+          ls -la blog_src/static | sed -n '1,200p'
+
+      # 4) Clean docs/ before build (fresh build)
+      - name: 🧹 Clean docs directory before build
+        run: |
+          rm -rf docs
+          mkdir -p docs
+          echo "✅ docs/ ready (empty):"
+          ls -la docs
+
+      # 5) Build
+      - name: 📦 Build Hugo → docs
+        run: |
+          set -e
           echo "📁 Current dir: $(pwd)"
-          echo "📁 Checking config:"
-          ls -la $GITHUB_WORKSPACE/blog_src/config.yml || echo "⚠️ config.yml missing!"
-
-          mkdir -p $GITHUB_WORKSPACE/docs
-
+          echo "🚀 Running Hugo build..."
           hugo \
-            --config $GITHUB_WORKSPACE/blog_src/config.yml \
-            --source $GITHUB_WORKSPACE/blog_src \
-            --destination $GITHUB_WORKSPACE/docs \
+            --config "$GITHUB_WORKSPACE/blog_src/config.yml" \
+            --source "$GITHUB_WORKSPACE/blog_src" \
+            --destination "$GITHUB_WORKSPACE/docs" \
             --minify --enableGitInfo --noBuildLock
+          echo "✅ Hugo build finished."
 
-          echo "" > $GITHUB_WORKSPACE/docs/.nojekyll
-          echo "blog.equalle.com" > $GITHUB_WORKSPACE/docs/CNAME
-
-          echo "✅ Hugo build completed successfully."
-          echo "==== DOCS STRUCTURE ===="
-          ls -la $GITHUB_WORKSPACE/docs | head -n 30
-
-      - name: 🧾 Debug sitemap and latest files
+      # 6) Post-build verification logs
+      - name: 🔍 Post-build logs & sanity checks
         run: |
-          echo "==== SITEMAP CHECK ===="
-          if [ -f docs/sitemap.xml ]; then
-            head -n 10 docs/sitemap.xml
+          set -e
+          echo "==== DOCS ROOT (first 200 entries) ===="
+          ls -la docs | sed -n '1,200p'
+          echo "==== Ensure critical files exist ===="
+          test -f docs/index.html && echo "✅ docs/index.html OK" || (echo "❌ docs/index.html missing" && exit 1)
+          test -f docs/CNAME && echo "✅ docs/CNAME OK" || (echo "❌ docs/CNAME missing (should be copied from static)" && exit 1)
+          test -f docs/.nojekyll && echo "✅ docs/.nojekyll OK" || (echo "❌ docs/.nojekyll missing (should be copied from static)" && exit 1)
+          echo "==== Sitemap quick check ===="
+          test -f docs/sitemap.xml && echo "✅ sitemap.xml present" || (echo "❌ sitemap.xml missing" && exit 1)
+          echo "Newest <lastmod>:"
+          grep -oP "(?<=<lastmod>).*?(?=</lastmod>)" docs/sitemap.xml | sort | tail -n 1 || true
+          echo "One sample URL from sitemap:"
+          grep -oP "(?<=<loc>).*?(?=</loc>)" docs/sitemap.xml | head -n 5
+          echo "==== Posts structure (if any) ===="
+          if [ -d docs/posts ]; then
+            find docs/posts -maxdepth 3 -type d | sed -n '1,200p'
+            echo "Sample post index.html (if exists):"
+            find docs/posts -name index.html | head -n 1 | xargs -r head -n 10 || true
           else
-            echo "⚠️ sitemap.xml missing!"
+            echo "⚠️ docs/posts directory not found (ok if you have no posts yet)."
           fi
-          echo "==== RECENT FILES IN DOCS ===="
-          find docs -type f -printf "%T@ %p\n" | sort -n | tail -n 10
 
-      - name: 🪣 Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v3
+      # 7) Commit docs back to repo so Pages (main:/docs) can serve fresh site
+      - name: 🧩 Commit built docs back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          path: docs
+          commit_message: "Build site to docs [skip ci]"
+          file_pattern: docs/**
+      - name: 🧾 Log after commit
+        run: |
+          echo "Last commit touching docs/:"
+          git log -1 --name-status -- docs | sed -n '1,200p'
+          echo "Git status:"
+          git status --porcelain=v1
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: 🌍 Deploy to GitHub Pages (disable Jekyll)
-        id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          # Important: disables jekyll-build-pages entirely
-          build_dir: docs
+      # 8) Final explicit summary
+      - name: 📣 Summary
+        run: |
+          echo "✅ Build completed."
+          echo "🔗 Pages is configured to deploy from 'main:/docs'."
+          echo "📌 Ensure repo Settings → Pages: Source=Deploy from a branch, Branch=main, Folder=/docs"
+          echo "🌐 Custom domain is provided by docs/CNAME → blog.equalle.com"
