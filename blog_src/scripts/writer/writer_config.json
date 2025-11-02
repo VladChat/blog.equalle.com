@@ -1,0 +1,14 @@
+{
+  "content_dir": "blog_src/content/posts",
+  "category_dir": "blog_src/content/categories",
+  "data_dir": "blog_src/data",
+  "min_words": 1200,
+  "google_cse": {
+    "results": 6,
+    "gl": "us",
+    "lr": "lang_en"
+  },
+  "video": {
+    "min_desc_len": 25
+  }
+}

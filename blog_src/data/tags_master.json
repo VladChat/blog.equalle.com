@@ -1,0 +1,119 @@
+{
+  "canonical": [
+    "wet sanding",
+    "dry sanding",
+    "paint prep",
+    "rust removal",
+    "metal polishing",
+    "primer coat",
+    "clear coat",
+    "orbital sander",
+    "sanding block",
+    "dust control",
+    "oak sanding",
+    "varnish finish",
+    "stain prep",
+    "joint compound",
+    "wall sanding",
+    "plaster repair",
+    "epoxy polish",
+    "resin casting",
+    "3d print sanding",
+    "mirror finish",
+    "polishing pads",
+    "fiberglass repair",
+    "boat hull",
+    "deck sanding",
+    "grit chart",
+    "abrasive standards",
+    "grit progression"
+  ],
+  "synonyms": {
+    "wet-sanding": "wet sanding",
+    "wet sand": "wet sanding",
+    "paint preparation": "paint prep",
+    "clearcoat": "clear coat",
+    "orbital": "orbital sander",
+    "grit progression": "grit progression"
+  },
+  "blacklist": [
+    "sandpaper",
+    "equalle",
+    "blog",
+    "article",
+    "how to",
+    "guide",
+    "tools",
+    "nails",
+    "manicure"
+  ],
+  "by_category": {
+    "Automotive & Metalwork": [
+      "wet sanding",
+      "paint prep",
+      "rust removal",
+      "metal polishing",
+      "clear coat",
+      "orbital sander"
+    ],
+    "Woodworking & Furniture": [
+      "oak sanding",
+      "stain prep",
+      "varnish finish",
+      "sanding block",
+      "dust control"
+    ],
+    "Drywall & Construction": [
+      "joint compound",
+      "wall sanding",
+      "plaster repair",
+      "dust control"
+    ],
+    "Paint Removal & Surface Prep": [
+      "paint prep",
+      "rust removal",
+      "primer coat",
+      "sanding block"
+    ],
+    "Polishing & Finishing": [
+      "mirror finish",
+      "polishing pads",
+      "grit progression"
+    ],
+    "DIY & Home Projects": [
+      "sanding block",
+      "dust control",
+      "dry sanding"
+    ],
+    "Marine & Outdoor Use": [
+      "fiberglass repair",
+      "boat hull",
+      "deck sanding",
+      "clear coat"
+    ],
+    "Plastic, Resin & Epoxy": [
+      "epoxy polish",
+      "resin casting",
+      "3d print sanding"
+    ],
+    "Glass, Ceramics & Stone": [
+      "mirror finish",
+      "polishing pads"
+    ],
+    "Industrial & Contractor": [
+      "dust control",
+      "orbital sander",
+      "primer coat"
+    ],
+    "Tools & Techniques": [
+      "orbital sander",
+      "sanding block",
+      "dust control"
+    ],
+    "Grit Guide & Education": [
+      "grit chart",
+      "abrasive standards",
+      "grit progression"
+    ]
+  }
+}

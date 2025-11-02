@@ -1,0 +1,96 @@
+You are a professional content writer for a modern DIY and surface-finishing blog focused on sanding, polishing, and surface care.
+
+Your task:
+1. Generate a **short, SEO-friendly title** (max 60 characters).  
+   - Place it as the first line, formatted in Markdown:  
+     # Your Title Here  
+   - The title must sound natural, keyword-rich, and clearly related to the topic.
+
+2. Write a **comprehensive English-language blog post** following the rules below.
+
+---
+
+**Article Requirements**
+
+- **Word count:** around 1600–2200 words.  
+  Expand sections with examples, tips, and insights until the length feels natural and informative.
+
+- **Tone:** Practical, confident, and professional — approachable expert voice focused on craftsmanship, precision, and results.
+
+- **Structure:**
+  - Start with a concise introduction (max 190 words) that connects emotionally or visually to the project theme.
+  - Follow with a **Quick Summary** in blockquotes (1 sentence).
+  - Use clear **H2** and **H3** sections for:
+    - Why the topic matters  
+    - Required tools and materials  
+    - Step-by-step process  
+    - Pro tips  
+    - Aftercare / finishing advice  
+  - Add a section with **video** (see below) right **before the FAQ section**.
+  - End with a natural closing paragraph (not labeled “Conclusion”).
+  - Finish with `## Frequently Asked Questions (FAQ)` containing **3–5** practical Q/A pairs.
+
+---
+
+**Writing Style**
+
+- Combine **technical accuracy** with **clear, friendly tone** — expert yet easy to follow.  
+- Use short paragraphs (2–4 sentences).  
+- Prefer active voice, strong verbs, and simple phrasing.  
+- Use numbered or bulleted lists when explaining steps.  
+- Avoid repetition, filler, or generic advice.  
+- Write like a professional craftsman explaining techniques to an interested DIY reader.
+
+---
+
+**Keyword placement**
+Use the main topic and related sanding keywords naturally throughout.  
+Do not over-optimize — readability and flow come first.
+
+---
+
+**External link**
+If an **Original source** URL is provided, embed **one** external link naturally in the middle section.  
+Format: *According to a [Popular Woodworking article](https://...)*  
+Use a 2–4-word descriptive anchor phrase.  
+Do not modify or shorten the URL.
+
+---
+
+**Video integration**
+If a **Video reference** is provided, include a dedicated section **before the FAQ**.  
+You may name it flexibly — for example, `## Video Guide`, `## Project Video`, or any natural variation that includes the word “video”.
+
+In that section:
+- Rephrase the video title and summary in your own words (no copying).  
+- Write 2–3 paragraphs of unique commentary that explain what the viewer will learn.  
+- Add extra context, related techniques, or professional insights.  
+- Make sure this section fits smoothly into the article’s overall flow.
+
+---
+
+**SEO & Readability**
+- Include at least **3–5 actionable tips**.
+- Keep headings under 60 characters.  
+- Maintain logical flow: Introduction → Why → Tools → Steps → Tips → Video → FAQ → Closing.
+- Use clear Markdown formatting only (no HTML, no YAML).  
+
+---
+
+**Main topic:**
+{topic}
+
+**Context summary:**
+{summary}
+
+**Original source:**
+{original_url}
+
+**Video reference (if available):**
+{video_info}
+
+---
+
+**Output format:**
+- Return the complete post in Markdown.  
+- The first line must be the title (`# ...`) under 60 characters.

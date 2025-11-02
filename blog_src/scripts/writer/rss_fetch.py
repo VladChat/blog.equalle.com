@@ -1,221 +1,178 @@
-# blog_src/scripts/rss_fetch.py
+# blog_src/scripts/writer/rss_fetch.py
 # -*- coding: utf-8 -*-
 """
-Получение новой темы из RSS с дедупликацией и подробным логированием.
+Unified RSS picker with categories-based keywords.
 
-Ключевые моменты:
-- Ротация RSS-источников (state["last_rss"])
-- Дедупликация по state["seen"] (с нормализацией URL)
-- Просмотр нескольких фидов по очереди, пока не найдём новый пост
-- Подробный лог: что загрузили, сколько записей, что пропущено, что выбрано
-- Аккуратное обновление state.json (ограничение размера "seen")
+Key features:
+- Loads keywords from blog_src/data/categories.json via topics.py
+- Rotates through RSS feeds (state.json: last_rss) and uses category-first keyword rotation (in topics.py)
+- Deduplicates by normalized link in state['seen']
+- Returns (topic, summary, original_url, keyword, category_name, category_slug)
+- Verbose logs matching existing style
 """
+from __future__ import annotations
 
 import json
-import pathlib
-import urllib.parse
-import feedparser
+import re
+from pathlib import Path
 
-STATE_PATH = pathlib.Path("blog_src/data/state.json")
-RSS_PATH = pathlib.Path("blog_src/data/rss.json")
-KEYWORDS_PATH = pathlib.Path("blog_src/data/keywords.json")
+try:
+    import feedparser  # type: ignore
+except Exception:
+    feedparser = None
 
-# Максимум запоминаемых ссылок (чтобы state.json не разрастался)
-SEEN_MAX = 500
-# Сколько записей в каждом фиде проверяем максимум
-MAX_ENTRIES_PER_FEED = 15
-# Сколько фидов подряд пытаемся обойти за один запуск (обычно хватит всех)
-MAX_FEEDS_TO_SCAN = 999999  # по сути "все", оставил как явный лимит
+DATA_DIR = Path("blog_src/data")
+RSS_FILE = DATA_DIR / "rss.json"
+STATE_FILE = DATA_DIR / "state.json"
+
+# Import keyword/category logic
+from .topics import load_keywords_and_topics, get_next_keyword_and_category
 
 
-# === 📦 Утилиты работы с JSON ===
-def load_json(path: pathlib.Path, default):
-    """Безопасно загружает JSON или возвращает default (с логом)."""
+def _load_json(path: Path, default):
     try:
-        text = path.read_text(encoding="utf-8")
-        data = json.loads(text)
-        print(f"📥 Loaded JSON: {path} (size={len(text)} chars)")
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        print(f"📥 Loaded JSON: {path.as_posix()} (size={len(json.dumps(data, ensure_ascii=False))} chars)")
         return data
+    except FileNotFoundError:
+        print(f"ℹ️ {path.name} not found, using default.")
+        return default
     except Exception as e:
-        print(f"⚠️ Failed to load JSON at {path}: {e}. Using default.")
+        print(f"⚠️ Failed to read {path.name}: {e} — using default.")
         return default
 
 
-def save_json(path: pathlib.Path, data):
-    """Сохраняет JSON с отступами и UTF-8."""
-    try:
-        path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-        print(f"💾 Saved JSON: {path}")
-    except Exception as e:
-        print(f"❌ Failed to save JSON at {path}: {e}")
+def _save_json(path: Path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"💾 Saved JSON: {path.as_posix()}")
 
 
-# === 🔗 Нормализация URL для лучшей дедупликации ===
-def normalize_url(url: str) -> str:
-    """
-    Удаляем UTM/трекинговые параметры и приводим к предсказуемому виду.
-    Это сокращает ложные дубликаты.
-    """
-    if not url:
-        return url
-    try:
-        parsed = urllib.parse.urlsplit(url.strip())
-        q = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
-        # фильтруем типичные трекинговые параметры
-        filtered = [(k, v) for (k, v) in q if k.lower() not in {
-            "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
-            "gclid", "fbclid", "igshid"
-        }]
-        new_query = urllib.parse.urlencode(filtered, doseq=True)
-        normalized = urllib.parse.urlunsplit((
-            parsed.scheme.lower(),
-            parsed.netloc.lower(),
-            parsed.path.rstrip("/"),
-            new_query,
-            ""  # fragment убираем
-        ))
-        return normalized
-    except Exception:
-        return url.strip()
+def _normalize_url(u: str) -> str:
+    u = (u or "").strip()
+    u = re.sub(r"#.*$", "", u)
+    u = re.sub(r"/+$", "", u)
+    return u
 
 
-# === 🧠 Основная функция получения новой темы ===
+def _extract_feeds(data) -> list[str]:
+    if isinstance(data, list):
+        return [str(x).strip() for x in data if str(x).strip()]
+    if isinstance(data, dict) and "feeds" in data:
+        return [str(x).strip() for x in data["feeds"] if str(x).strip()]
+    return []
+
+
+def _entry_summary(entry) -> str:
+    for key in ("summary", "description", "content"):
+        v = entry.get(key)
+        if isinstance(v, str) and v.strip():
+            return v
+        if isinstance(v, list) and v and isinstance(v[0], dict) and v[0].get("value"):
+            return v[0]["value"]
+    return ""
+
+
 def get_latest_topic():
-    """
-    Загружает RSS-ленты из rss.json и возвращает первую ещё не использованную статью.
-    🔹 Пропускает уже встречавшиеся ссылки (state["seen"])
-    🔹 Ротирует RSS-источники и keyword-индекс
-    🔹 Идёт по фидам по очереди, пока не найдёт новый пост
-    Возвращает: (topic_with_keyword, summary, original_url)
-    """
+    # Load state and inputs
+    state = _load_json(STATE_FILE, {"last_rss": -1, "seen": []})
+    rss_data = _load_json(RSS_FILE, [])
+    feeds = _extract_feeds(rss_data)
 
-    # 1) Загружаем данные
-    rss_list = load_json(RSS_PATH, [])
-    keywords = load_json(KEYWORDS_PATH, [])
-    state = load_json(STATE_PATH, {"last_keyword": -1, "last_rss": -1, "seen": []})
-
-    if not rss_list:
-        raise RuntimeError("⚠️ rss.json is empty")
-    if not keywords:
-        raise RuntimeError("⚠️ keywords.json is empty")
-
-    # 2) Подготовка состояния
-    last_rss = int(state.get("last_rss", -1))
-    last_keyword = int(state.get("last_keyword", -1))
-    seen_raw = state.get("seen", [])
-    # нормализуем уже виденные URL
-    seen = {normalize_url(u) for u in seen_raw if isinstance(u, str) and u.strip()}
+    # Only for stats in logs (we don't use this list for rotation anymore)
+    keywords_flat, _topics_flat = load_keywords_and_topics()
 
     print("───────────────────────────────")
     print("🚀 RSS Picker starting")
-    print(f"📚 RSS sources: {len(rss_list)} | 🧠 seen cache: {len(seen)} | 🔑 keywords: {len(keywords)}")
-    print(f"🔁 Start rotation from RSS index: {last_rss + 1} (mod {len(rss_list)})")
+    print(f"📚 RSS sources: {len(feeds)} | 🧠 seen cache: {len(state.get('seen', []))} | 🔑 keywords: {len(keywords_flat)}")
 
-    # 3) Перебор фидов с ротацией
-    feeds_scanned = 0
-    selected = None
-    selected_feed_index = None
-    selected_feed_url = None
+    if not feeds or feedparser is None:
+        print("⚠️ No feeds configured or feedparser not available.")
+        # Return full 6-tuple (placeholders for keyword/category)
+        return "Daily eQualle Update", "", None, "", None, ""
 
-    while feeds_scanned < min(len(rss_list), MAX_FEEDS_TO_SCAN):
-        rss_index = (last_rss + 1 + feeds_scanned) % len(rss_list)
-        rss_url = rss_list[rss_index]
-        feeds_scanned += 1
+    # Rotation index for feeds
+    last_rss = int(state.get("last_rss", -1))
+    next_rss = (last_rss + 1) % len(feeds) if feeds else 0
 
+    print(f"🔁 Start rotation from RSS index: {next_rss} (mod {len(feeds)})")
+
+    chosen = None
+    chosen_feed_idx = None
+    for step in range(len(feeds)):
+        feed_idx = (next_rss + step) % len(feeds)
+        feed_url = feeds[feed_idx]
         print("───────────────────────────────")
-        print(f"🌐 Checking RSS feed [{rss_index}]: {rss_url}")
-
-        feed = feedparser.parse(rss_url)
-
-        # Ловим парсерные предупреждения (bozo)
-        if getattr(feed, "bozo", 0):
-            print(f"⚠️ feedparser bozo=True for {rss_url}: {getattr(feed, 'bozo_exception', None)}")
-
-        entries = getattr(feed, "entries", []) or []
-        print(f"📦 Entries found: {len(entries)}")
-
-        if not entries:
-            print("⏭️ No entries in this feed. Moving on.")
+        print(f"🌐 Checking RSS feed [{feed_idx}]: {feed_url}")
+        try:
+            parsed = feedparser.parse(feed_url)
+        except Exception as e:
+            print(f"⚠️ feedparser error: {e}")
             continue
 
-        # 4) Перебираем записи в этом фиде
-        checked = 0
+        entries = getattr(parsed, "entries", []) or []
+        print(f"📦 Entries found: {len(entries)}")
+        new_entry = None
         skipped = 0
-        for entry in entries[:MAX_ENTRIES_PER_FEED]:
-            checked += 1
-            raw_link = (entry.get("link") or "").strip()
-            if not raw_link:
-                print("⚪ Entry without link — skip")
+        seen_set = set(_normalize_url(s) for s in state.get("seen", []))
+
+        for entry in entries:
+            link = _normalize_url(str(entry.get("link", "")))
+            if not link:
                 skipped += 1
                 continue
-
-            link = normalize_url(raw_link)
-            if link in seen:
-                print(f"🔁 Seen already: {raw_link}")
+            if link in seen_set:
                 skipped += 1
                 continue
-
-            # Нашли новую
-            selected = entry
-            selected_feed_index = rss_index
-            selected_feed_url = rss_url
-            print(f"✅ Selected NEW article after checking {checked} entries "
-                  f"(skipped {skipped}) in feed [{rss_index}]")
+            new_entry = entry
             break
 
-        if selected:
+        if new_entry:
+            chosen = new_entry
+            chosen_feed_idx = feed_idx
+            print(f"✅ Selected NEW article after checking {skipped + 1} entries (skipped {skipped}) in feed [{feed_idx}]")
             break
+        else:
+            print(f"⏭️ No new entries in feed [{feed_idx}] (skipped {skipped})")
 
-        print(f"⏭️ No new articles in feed [{rss_index}] (checked {checked}, skipped {skipped}). Next feed...")
+    if not chosen:
+        print("⚠️ No new articles found in all feeds — returning placeholder.")
+        # Return full 6-tuple (placeholders for keyword/category)
+        return "Daily eQualle Update", "", None, "", None, ""
 
-    # 5) Если ничего не нашли во всех фидах — fallback
-    if not selected:
-        fallback_index = (last_rss + 1) % len(rss_list)
-        fallback_url = rss_list[fallback_index]
-        feed = feedparser.parse(fallback_url)
-        entries = getattr(feed, "entries", []) or []
-        print("───────────────────────────────")
-        print("⚠️ No NEW articles across all feeds (all seen).")
-        if not entries:
-            raise RuntimeError("❌ No entries available in fallback feed either — nothing to publish.")
-        selected = entries[0]
-        selected_feed_index = fallback_index
-        selected_feed_url = fallback_url
-        print(f"♻️ Reusing MOST RECENT article from feed [{fallback_index}]: {selected.get('link','')}")
+    # Compose output from chosen entry
+    topic = str(chosen.get("title", "") or "").strip() or "Daily eQualle Update"
+    summary = _entry_summary(chosen)
+    orig_link = _normalize_url(str(chosen.get("link", "")).strip()) or None
 
-    # 6) Формируем результат
-    topic = (selected.get("title") or "Untitled").strip()
-    summary = (selected.get("summary") or "").strip()
-    orig_link = (selected.get("link") or "").strip()
+    # Advance feed rotation & update seen
+    state["last_rss"] = int(chosen_feed_idx if chosen_feed_idx is not None else next_rss)
+    if orig_link:
+        seen = state.get("seen", [])
+        seen.append(orig_link)
+        # keep last 500 seen
+        state["seen"] = seen[-500:]
+    _save_json(STATE_FILE, state)
 
-    # 7) Ротация ключевых слов
-    keyword_index = (last_keyword + 1) % len(keywords)
-    keyword = keywords[keyword_index]
+    # Keyword + category (category-first rotation handled inside topics.py)
+    keyword, kw_cat, kw_slug = get_next_keyword_and_category()
 
-    # 8) Обновляем состояние и сохраняем
-    state["last_rss"] = selected_feed_index
-    state["last_keyword"] = keyword_index
-    state["keyword_index"] = keyword_index  # keep fields in sync
-
-    # Линку добавляем в seen только если это действительно новая (не fallback-повтор)
-    if orig_link and normalize_url(orig_link) not in seen:
-        state_seen = state.get("seen", [])
-        state_seen.append(orig_link)
-        if len(state_seen) > SEEN_MAX:
-            state_seen = state_seen[-SEEN_MAX:]
-        state["seen"] = state_seen
-
-    save_json(STATE_PATH, state)
-
-    # 9) Итоговый лог
     print("───────────────────────────────")
-    print(f"📰 RSS Source: {selected_feed_url}")
+    print(f"📰 RSS Source: {feeds[state['last_rss']] if feeds else '(none)'}")
     print(f"🧩 Topic: {topic}")
     print(f"📄 Summary: {summary[:250]}{'...' if len(summary) > 250 else ''}")
     print(f"🔗 Link: {orig_link}")
-    print(f"🎯 Using keyword: {keyword} (index {keyword_index})")
-    print(f"🔄 last_rss -> {state['last_rss']} | 🔑 last_keyword -> {state['last_keyword']}")
+    print(f"🎯 Using keyword: {keyword} | category: {kw_cat or '(auto)'} ({kw_slug})")
+    print(f"🔄 last_rss -> {state['last_rss']}")
     print(f"🗂 seen size -> {len(state.get('seen', []))}")
     print("───────────────────────────────")
 
-    return f"{topic} — {keyword}", summary, orig_link
+    # Return: provide topic, summary, link, plus keyword and its category/slug
+    return topic, summary, orig_link, keyword, kw_cat, kw_slug
+
+
+# For standalone quick check
+if __name__ == "__main__":
+    get_latest_topic()

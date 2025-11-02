@@ -1,9 +1,0 @@
-cd documents/blog.equalle.com
-
-hugo server -s blog_src --disableFastRender --buildDrafts
-
-hugo server -s documents/blog.equalle.com/blog_src --disableFastRender --buildDrafts
-
-
-http://localhost:1313/
-

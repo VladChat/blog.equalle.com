@@ -56,7 +56,7 @@ def _get_next_image() -> str:
     """Возвращает следующий файл по очереди, циклично записывая индекс в state.json."""
     files = _load_brand_images()
     if not files:
-        return "nailak-cover-16x9.webp"
+        return "equalle-cover-16x9.webp"
 
     state = _load_state()
     idx = state.get("brandimg_index", 0)
@@ -77,8 +77,8 @@ def _derive_alt(markdown_text: str) -> str:
     m = re.search(r"^#\s+(.+)$", markdown_text, re.MULTILINE)
     if m:
         title = m.group(1).strip()
-        return f"{title} — Nailak Cuticle & Nail Oil"
-    return "Nailak Cuticle & Nail Oil — natural care and hydration"
+        return f"{title} — Sandpaper Sheets"
+    return "eQualle Sandpaper Sheets — Silicon Carbide Abrasive for Wet or Dry Use"
 
 
 # === Основная функция ===

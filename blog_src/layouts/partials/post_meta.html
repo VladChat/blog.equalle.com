@@ -1,0 +1,30 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (printf "<span>%d min read</span>" .ReadingTime)) }}
+{{- end }}
+
+{{- /* Word count intentionally omitted for cleaner layout */ -}}
+
+{{- if not (.Param "hideAuthor") -}}
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice (printf "<span>by %s</span>" .)) }}
+{{- end }}
+{{- end }}
+
+{{- /* NEW: Add linked category if exists */ -}}
+{{- with .Params.categories }}
+  {{- $cat := index . 0 }}
+  {{- $catURL := printf "categories/%s/" ($cat | urlize) | absURL }}
+  {{- $scratch.Add "meta" (slice (printf "<span>in <a href='%s'>%s</a></span>" $catURL $cat)) }}
+{{- end }}
+
+<span class="post-meta">
+  {{- with ($scratch.Get "meta") -}}
+    {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+  {{- end -}}
+</span>

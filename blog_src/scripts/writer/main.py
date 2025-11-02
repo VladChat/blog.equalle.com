@@ -1,276 +1,408 @@
+# ============================================================
+# File: blog_src/scripts/writer/main.py
+# Full path: C:\Users\vladi\Documents\blog.equalle.com\blog_src\scripts\writer\main.py
+# ============================================================
+
+from __future__ import annotations
+
 import json
 import re
-from .brandimg_injector import inject_brand_images  # NEW
-
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional
 
-from . import llm
-from . import posts
-from .rss_fetch import get_latest_topic  # ✅ теперь возвращает уже свежую, неиспользованную статью
-from .config_loader import load_writer_config
+# === Core helpers (shared with local writer) ===
+from .prompt_builder import build_prompt
+from .video_helpers import (
+    _make_section_title,
+    _extract_video_description_from_md,
+    _strip_llm_video_section,
+)
+from .llm_client import call_llm_local
+from .brandimg_injector import inject_brand_images
+from .taxonomy.auto_tag import build_tags
+from .video_utils import build_video_embed
+from .link_injector import inject_product_link_after_video_source  # вставляем ТОЛЬКО если есть видео
+from . import posts  # для QA (qa_check_proxy)
 
-# === 📂 Пути и файлы данных ===
-DATA_DIR = Path("blog_src/data")
-KEYWORDS_FILE = DATA_DIR / "keywords.json"
-STATE_FILE = DATA_DIR / "state.json"
-CONTENT_DIR = Path("blog_src/content/posts")
+# === New architecture sources (CSE + YouTube) ===
+from .topics_pairs import get_next_pair, record_used_pair     # берём core→longtail из categories.json
+from .google_cse import fetch_sources, build_sources_summary  # Google CSE вместо RSS-статьи
+try:
+    from .rss_video_fetch import find_video_for_article       # YouTube API (не RSS)
+except Exception:
+    find_video_for_article = None
 
+# === Online config (CI/CD) ===
+from .config_loader import load_writer_config  # используем общий загрузчик конфигурации для онлайн-среды
 
-# === 📄 Загрузка шаблона промпта ===
-def load_prompt_template() -> str:
-    """Читает текстовый шаблон для генерации промпта."""
-    with open("blog_src/config/prompt_template.txt", "r", encoding="utf-8") as f:
-        return f.read()
+# === Авторская ротация (как в локальной версии) ===
+AUTHORS = [
+    {
+        "name": "Mark Jensen",
+        "style": (
+            "You are Mark Jensen — Senior Technical Writer for eQualle Blog. "
+            "Write in a precise, professional, and highly technical tone. "
+            "Focus on surface preparation, abrasive performance, and sanding workflows. "
+            "Use expert terminology but keep explanations clear for advanced readers."
+        ),
+    },
+    {
+        "name": "David Chen",
+        "style": (
+            "You are David Chen — Product Engineer & Reviewer for eQualle Blog. "
+            "Write analytically and fact-based, like an engineer reviewing tools. "
+            "Emphasize testing, performance evaluation, and material science behind abrasives. "
+            "Use objective comparisons and reliable data."
+        ),
+    },
+    {
+        "name": "Lucas Moreno",
+        "style": (
+            "You are Lucas Moreno — Workshop & DIY Specialist for eQualle Blog. "
+            "Write in a confident, hands-on, and workshop-oriented tone. "
+            "Give step-by-step project instructions, practical tips, and real-life sanding advice "
+            "for hobbyists and professionals alike."
+        ),
+    },
+    {
+        "name": "Emily Novak",
+        "style": (
+            "You are Emily Novak — Content Editor & Research Lead for eQualle Blog. "
+            "Write in a calm, educational, and reader-focused tone. "
+            "Prioritize clarity, organization, and helpful explanations. "
+            "Bridge technical depth with accessible language for general audiences."
+        ),
+    },
+]
 
-
-# === 🔑 Загрузка ключевых слов ===
-def load_keywords() -> list:
-    """Загружает keywords.json — основную базу тем и SEO ключей."""
-    with open(KEYWORDS_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-# === 💾 Работа с состоянием ===
-def load_state() -> dict:
-    """Загружает state.json, если нет — создаёт дефолтную структуру."""
-    try:
-        with open(STATE_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        return {"keyword_index": 0, "seen": []}
-
-
-def save_state(state: dict) -> None:
-    """Сохраняет state.json с безопасным созданием каталога."""
-    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2)
-
-
-# === 🧩 Формирование промпта ===
-def build_prompt(topic: str, summary: str, original_url: str | None = None) -> str:
+# === Helpers: TitleCase и Meta Description ===
+def _title_case(text: str) -> str:
     """
-    Собирает текст промпта для модели.
-    Добавляет контекст и ссылку на оригинальный источник, если есть.
+    Приводит заголовок к Title Case, при этом сохраняет акронимы из исходной строки (например, DIY, UV).
     """
-    template = load_prompt_template()
-    topic_block = topic
-    if original_url:
-        topic_block += f"\n\nOriginal source: {original_url}"
-    if summary:
-        topic_block += f"\n\nContext: {summary}"
-    else:
-        topic_block += "\n\nContext: "
-    return template.format(topic=topic_block)
+    base = re.sub(r"\s+", " ", (text or "").strip())
+    tc = base.title()
+    # восстановим акронимы (2+ символов в UPPERCASE) из оригинала
+    for w in set(re.findall(r"\b[0-9A-Z]{2,}\b", base)):
+        tc = re.sub(rf"\b{re.escape(w.title())}\b", w, tc)
+    return tc
 
-
-# === 🏷 Нормализация тега ===
-def _norm_tag(s: str) -> str:
-    """Преобразует строку в безопасный тег (латиница, дефисы, без мусора)."""
-    s = (s or "").strip().lower()
-    if not s:
+def _clean_meta_description(desc: str, title: str) -> str:
+    """
+    Чистим META_DESCRIPTION: убираем повтор заголовка в начале, ограничиваем ~160 символами по слову.
+    """
+    if not desc:
         return ""
-    out = []
-    prev_dash = False
-    for ch in s:
-        if ch.isalnum():
-            out.append(ch)
-            prev_dash = False
-        else:
-            if not prev_dash:
-                out.append("-")
-                prev_dash = True
-    t = "".join(out).strip("-")
-    while "--" in t:
-        t = t.replace("--", "-")
-    return t[:40]
-
-
-# === 🧠 Извлечение вторичного ключа из статьи ===
-def _extract_secondary_from_article(md_text: str, all_keywords: list) -> str:
-    """Пытается найти вторичный ключ в тексте статьи (по keywords.json)."""
-    if not md_text or not all_keywords:
-        return ""
-    text_low = md_text.lower()
-    for kw in all_keywords:
-        if kw.lower() in text_low:
-            return _norm_tag(kw)
-    return ""
-
-
-# === 🧠 Альтернатива: вторичный ключ из заголовка ===
-def _extract_secondary_from_topic(topic: str, all_keywords: list) -> str:
-    """Если в тексте ничего не нашли — ищем совпадение в заголовке."""
-    if not topic or not all_keywords:
-        return ""
-    topic_low = topic.lower()
-    for kw in all_keywords:
-        if kw.lower() in topic_low:
-            return _norm_tag(kw)
-    return ""
-
-
-# === 🧹 Очистка фраз для meta keywords ===
-def _clean_phrase_for_meta(s: str) -> str:
-    """Делает фразу безопасной для meta keywords."""
-    if not s:
-        return ""
-    s = re.sub(r"\s+", " ", str(s).strip())
-    s = re.sub(r"^[,;|/]+", "", s)
-    s = re.sub(r"[,;|/]+$", "", s)
+    s = desc.strip().strip('"').strip()
+    # если начинается с заголовка — убираем его
+    if s.lower().startswith((title or "").strip().lower()):
+        s = s[len(title):].lstrip(" —:|,.-")
+    # ограничение 160 символов без обрыва слова
+    max_len = 160
+    if len(s) > max_len:
+        cut = s[:max_len]
+        last_space = cut.rfind(" ")
+        if last_space > 60:  # чтобы не обрубить слишком коротко
+            cut = cut[:last_space]
+        s = cut
     return s
 
+def _slugify(s: str) -> str:
+    s = (s or "").strip().lower()
+    s = re.sub(r"[^a-z0-9\-\s]", "", s)
+    s = re.sub(r"\s+", "-", s)
+    s = re.sub(r"-+", "-", s).strip("-")
+    return s[:80] if len(s) > 80 else s
 
-# === 🚀 Главная функция ===
-def main():
+def _safe_slug_from_string(text: str) -> str:
+    base = re.sub(r"(\d+)x(\d+)", r"\1-by-\2", text)
+    base = re.sub(r"[^a-zA-Z0-9\-]+", "-", base)
+    base = re.sub(r"-+", "-", base).strip("-").lower()
+    return base
+
+def _ensure_dir(p: Path) -> None:
+    p.mkdir(parents=True, exist_ok=True)
+
+def _ensure_category_index(category_dir: Path, cat_slug: str, cat_name: str) -> None:
+    """
+    Создаёт content/categories/<slug>/_index.md если отсутствует.
+    Это нужно, чтобы категории не попадали в директорию постов.
+    """
+    idx = category_dir / cat_slug / "_index.md"
+    if not idx.exists():
+        _ensure_dir(idx.parent)
+        fm = (
+            "---\n"
+            f'title: "{cat_name}"\n'
+            "layout: list\n"
+            "---\n"
+        )
+        idx.write_text(fm, encoding="utf-8")
+        print(f"[eQualle CATEGORY][CREATE] ✅ {idx}")
+
+def _strip_any_llm_video_sections(md: str) -> str:
+    """
+    На всякий случай удаляем любые секции вида '## Video...' из LLM-текста,
+    если видео не найдено (чтобы не появлялась пустая секция).
+    """
+    pattern = re.compile(r"(?mi)^\s*##\s*video[^\n]*\n(?:.*\n)*?(?=^\s*##\s+|\Z)")
+    new_md = re.sub(pattern, "", md)
+    if new_md != md:
+        print("[eQualle VIDEO][CLEAN] 🧹 Removed stray LLM 'Video' section (no video selected).")
+    return new_md
+
+def _inject_iframe_before_faq_or_end(article_md: str, video_iframe: str) -> tuple[str, str]:
+    """
+    Вставляет iframe:
+      1) ПЕРЕД секцией FAQ (## Frequently Asked Questions | ## FAQ)
+      2) Иначе — в конец статьи
+    Возвращает (новый_md, стратегия)
+    """
+    if not video_iframe:
+        return article_md, "skip:no_iframe"
+
+    faq_hdr_re = re.compile(r"(?mi)^\s*##\s*(?:frequently\s+asked\s+questions|faq)\b.*$")
+    m_faq = faq_hdr_re.search(article_md)
+    if m_faq:
+        insert_pos = m_faq.start()
+        new_md = article_md[:insert_pos].rstrip() + "\n\n" + video_iframe + "\n\n" + article_md[insert_pos:]
+        return new_md, "before_faq"
+
+    return article_md.rstrip() + "\n\n" + video_iframe + "\n", "append_end"
+
+def _pick_next_author(data_dir: Path) -> tuple[str, str]:
+    state_path = data_dir / "author_state.json"
+    idx = 0
+    if state_path.exists():
+        try:
+            idx = (json.loads(state_path.read_text(encoding="utf-8")).get("index", 0)) % len(AUTHORS)
+        except Exception:
+            idx = 0
+    author = AUTHORS[idx]
+    next_idx = (idx + 1) % len(AUTHORS)
+    state_path.write_text(json.dumps({"index": next_idx}, ensure_ascii=False, indent=2), encoding="utf-8")
+    return author["name"], author["style"]
+
+def main() -> None:
+    print("────────────────────────────────────────────")
+    print("[eQualle Writer][INIT] 🚀 Starting in CSE seed→longtail mode (CI)")
+
+    # В онлайне используем общий загрузчик конфигурации
     cfg = load_writer_config()
-    state = load_state()
 
-    print("───────────────────────────────")
-    print("🚀 Starting Nailak writer")
+    # Абсолютные пути для стабильной работы в CI/CD
+    project_root = Path(__file__).resolve().parents[3]
+    content_dir = project_root / cfg.get("content_dir", "blog_src/content/posts")
+    category_dir = project_root / cfg.get("category_dir", "blog_src/content/categories")
+    data_dir = project_root / cfg.get("data_dir", "blog_src/data")
+    categories_path = data_dir / "categories.json"
+    state_path = data_dir / "state.json"
 
-    # === 1️⃣ Загрузка ключевых слов ===
-    try:
-        keywords = load_keywords()
-        print(f"✅ Loaded {len(keywords)} keywords")
-    except Exception as e:
-        print(f"⚠️ Could not load keywords.json: {e}")
-        keywords = []
+    print(f"[eQualle PATH][INFO] content_dir={content_dir}")
+    print(f"[eQualle PATH][INFO] category_dir={category_dir}")
+    print(f"[eQualle PATH][INFO] data_dir={data_dir}")
+    print(f"[eQualle PATH][CHECK] content_dir exists? {content_dir.exists()}")
+    if content_dir.exists():
+        print(f"[eQualle PATH][ABS]   content_dir={content_dir.resolve()}")
 
-    idx = max(0, int(state.get("keyword_index", 0)))
-    primary_keyword = keywords[idx] if keywords and idx < len(keywords) else ""
-    print(f"🎯 Current primary keyword: {primary_keyword}")
-    print("───────────────────────────────")
+    # === Автор ===
+    author_name, author_style = _pick_next_author(data_dir)
+    print(f"[eQualle AUTHOR][PICK] ✍️ {author_name}")
 
-    # === 2️⃣ Получение новой статьи через улучшенный rss_fetch ===
-    print("🧭 Fetching RSS feed...")
-    topic, summary, original_url = get_latest_topic()
-    topic = topic or "Daily Nailak Update"
-    summary = summary or ""
-    original_url = original_url or None
+    # === Пара core→longtail из categories.json ===
+    cat, seed, longtail = get_next_pair(categories_path, state_path)
+    print("────────────────────────────────────────────")
+    print(f"[eQualle PAIR][SELECT] 📌 Category={cat.name} ({cat.slug})")
+    print(f"[eQualle PAIR][SEED]   🌱 Seed={seed}")
+    print(f"[eQualle PAIR][LONG]   🔎 LongTail={longtail}")
+    _ensure_category_index(category_dir, cat.slug, cat.name)
 
-    # 🔹 Проверку дубликатов теперь делает rss_fetch.py — здесь не нужно
+    # === Источники (Google CSE) ===
+    print("[eQualle CSE][FETCH] 🌐 Querying Google CSE…")
+    results = fetch_sources(
+        seed,
+        longtail,
+        n=int(cfg.get("google_cse", {}).get("results", 6)),
+        gl=cfg.get("google_cse", {}).get("gl", "us"),
+        lr=cfg.get("google_cse", {}).get("lr", "lang_en"),
+    )
+    print(f"[eQualle CSE][RESULT] 🔗 {len(results)} sources fetched.")
+    for i, r in enumerate(results, 1):
+        print(f"   [{i}] {r['title']} — {r['url']}")
+    sources_summary = build_sources_summary(results)
+    print(f"[eQualle CSE][SUMMARY] 📄 {len(sources_summary)} chars summary built.")
 
-    # === 3️⃣ Логирование данных ===
-    print("📰 Topic received:")
-    print(f"Title: {topic}")
-    print(f"Summary: {summary[:400]}{'...' if len(summary) > 400 else ''}")
-    print(f"Original URL: {original_url if original_url else '(none)'}")
-    print("───────────────────────────────")
-
-    # === 4️⃣ Формируем промпт ===
-    prompt = build_prompt(topic, summary, original_url)
-    print("🧩 Final topic-context sent to GPT:")
-    print(prompt[:600] + ("..." if len(prompt) > 600 else ""))
-    print("───────────────────────────────")
-
-    # === 5️⃣ Генерация статьи ===
-    max_attempts = 3
-    for attempt in range(max_attempts):
-        print(f"🤖 Generating article (attempt {attempt + 1}/{max_attempts})...")
-        md_raw = llm.call_llm(prompt)
-        qa_result = posts.qa_check_proxy(md_raw)
-        if qa_result["ok"]:
-            print("✅ QA passed.")
-            # ✅ Автовставка брендовых картинок в середину текста (после 1-й и 3-й секции)
-            md_raw = inject_brand_images(md_raw)
-            break
-        print(f"⚠️ QA failed: {qa_result['errors']}")
+    original_url = results[0]["url"] if results else ""
+    if original_url:
+        print(f"[eQualle CSE][ORIGINAL] 🌐 Primary source → {original_url}")
     else:
-        print("❌ All attempts failed — saving draft.")
-        _save_draft(topic, cfg)
+        print("[eQualle CSE][ORIGINAL] ⚠️ No source URL found (empty results).")
+
+    # === Видео (YouTube API), только выбор. НИЧЕГО из summary здесь не используется. ===
+    video_payload: Optional[dict] = None
+    video_iframe: str = ""
+    if find_video_for_article:
+        print("[eQualle VIDEO][FIND] 🎞️ Looking up YouTube video…")
+        try:
+            v = find_video_for_article(
+                topic_title=longtail,
+                primary_keyword=seed,
+                kw_slug=_slugify(cat.slug),
+            )
+            if v and isinstance(v, dict) and v.get("id"):
+                st_raw = (v.get("section_title") or "").strip()
+                if len(st_raw) < 8:
+                    v["section_title"] = _make_section_title(v)
+                video_payload = {
+                    "id": v.get("id", ""),
+                    "title": v.get("title", ""),
+                    "video_title_rewritten": v.get("video_title_rewritten", ""),
+                    "link": v.get("link", ""),
+                    "published": v.get("published", ""),
+                    "video_description": v.get("video_description") or v.get("description", ""),
+                    "section_title": v.get("section_title"),
+                }
+                print(f"[eQualle VIDEO][OK] ✅ Selected '{(video_payload.get('video_title_rewritten') or video_payload.get('title') or '')[:80]}' ({video_payload['id']})")
+            else:
+                print("[eQualle VIDEO][MISS] 🚫 No suitable video found.")
+        except Exception as e:
+            print(f"[eQualle VIDEO][FAIL] ⚠️ {e}")
+    else:
+        print("[eQualle VIDEO][SKIP] ℹ️ find_video_for_article unavailable; skipping.")
+
+    # === Prompt ===
+    print("[eQualle PROMPT][START] ✍️ Building prompt…")
+    prompt = build_prompt(
+        topic=longtail,
+        summary=sources_summary,
+        original_url=original_url,
+        video=video_payload,            # None если видео нет — и LLM не станет писать секцию
+        style_hint=author_style,
+        main_kw=seed or longtail,       # главный ключ — seed (core), fallback — longtail
+    )
+    print(f"[eQualle PROMPT][OK] ✅ Using custom prompt_builder ({len(prompt)} chars).")
+
+    # === Генерация ===
+    print("[eQualle LLM][CALL] 🧠 Invoking local LLM once…")
+    article_md: str = call_llm_local(prompt)
+    print(f"[eQualle LLM][RETURN] 📜 {len(article_md)} chars generated.")
+
+    # === ИЗВЛЕЧЕНИЕ META_DESCRIPTION из текста LLM (и удаление из тела) ===
+    meta_desc = ""
+    md_meta_match = re.search(r"(?mi)^\s*META_DESCRIPTION:\s*(.+)$", article_md)
+    if md_meta_match:
+        raw_meta = md_meta_match.group(1).strip()
+        page_title_tc_for_meta = _title_case(longtail)
+        meta_desc = _clean_meta_description(raw_meta, page_title_tc_for_meta)
+        article_md = re.sub(r"(?mi)^\s*META_DESCRIPTION:.*\n?", "", article_md)
+        print(f"[eQualle META][OK] 📝 Extracted description ({len(meta_desc)} chars).")
+
+    # === Чистка двойных видео-секций ===
+    if video_payload:
+        extracted = _extract_video_description_from_md(article_md, video_payload)
+        if extracted:
+            video_payload["video_description"] = extracted[:500].strip()
+            print(f"[eQualle VIDEO][DESC] ✂️ Extracted from LLM: {video_payload['video_description'][:100]}...")
+        article_md = _strip_llm_video_section(article_md, video_payload)
+    else:
+        article_md = _strip_any_llm_video_sections(article_md)
+
+    # === QA + Brand images ===
+    qa_result = posts.qa_check_proxy(article_md)
+    if not qa_result.get("ok"):
+        print(f"[eQualle QA][FAIL] ⚠️ {qa_result.get('errors')}")
+        _save_draft(content_dir, longtail)
         return
+    print("[eQualle QA][OK] ✅ Passed.")
+    article_md = inject_brand_images(article_md)
 
-    # === 6️⃣ Формирование тегов ===
-    secondary_tag = _extract_secondary_from_article(md_raw, keywords) or _extract_secondary_from_topic(topic, keywords)
-    if not secondary_tag and keywords:
-        secondary_tag = _norm_tag(keywords[(idx + 1) % len(keywords)])
+    # === Вставка iframe (ТОЛЬКО если видео найдено) — ПЕРЕД FAQ, иначе в конец ===
+    if video_payload:
+        video_iframe = build_video_embed(video_payload)
+        article_md, strategy = _inject_iframe_before_faq_or_end(article_md, video_iframe)
+        print(f"[eQualle VIDEO][EMBED] ✅ Iframe injection strategy: {strategy}")
 
-    base_tags = []
-    for i in range(2, 5):
-        if len(keywords) > i:
-            base_tags.append(_norm_tag(keywords[(idx + i) % len(keywords)]))
+        # Product link — вставляем ТОЛЬКО если был вставлен блок видео (как раньше)
+        try:
+            article_md = inject_product_link_after_video_source(article_md, context=f"{cat.name} | {seed} | {longtail}")
+            print("[eQualle LINK][OK] 🔗 Product link injected after 'Video source:'.")
+        except Exception as e:
+            print(f"[eQualle LINK][FAIL] ⚠️ {e}")
+    else:
+        print("[eQualle VIDEO][EMBED][SKIP] ℹ️ No video — no section, no product-link anchor.")
 
-    keyword_tag = _norm_tag(primary_keyword)
-    tags_list = []
-    for t in [keyword_tag, secondary_tag, *base_tags]:
-        if t and t not in tags_list:
-            tags_list.append(t)
-    if not tags_list:
-        tags_list = ["nail-care"]
+    # === Теги ===
+    try:
+        auto_tags = build_tags(body_text=article_md, category_name=cat.name, max_tags=10)
+    except Exception:
+        auto_tags = []
+    print(f"[eQualle TAGS][OK] 🏷️ {auto_tags}")
 
-    tags_yaml = ", ".join("'" + t.replace("'", "''") + "'" for t in tags_list)
-
-    # === 7️⃣ Формирование meta keywords ===
-    primary_phrase = _clean_phrase_for_meta(primary_keyword)
-    secondary_phrase = _clean_phrase_for_meta(secondary_tag.replace("-", " "))
-    meta_keywords_parts = []
-    if primary_phrase:
-        meta_keywords_parts.append(primary_phrase)
-    if secondary_phrase and secondary_phrase.lower() not in {p.lower() for p in meta_keywords_parts}:
-        meta_keywords_parts.append(secondary_phrase)
-    keywords_yaml_items = "".join([f'  - "{k}"\n' for k in meta_keywords_parts])
-    keywords_block = f"keywords:\n{keywords_yaml_items}" if meta_keywords_parts else "keywords: []\n"
-
-    # === 8️⃣ Сохраняем пост ===
+    # === Сохранение поста ===
     now = datetime.now(timezone.utc)
-    slug_source = f"{topic} {primary_keyword}".strip()
-    slug = posts.make_slug(slug_source)
-    out_path = CONTENT_DIR / f"{now.year}/{now.month:02d}/{slug}.md"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
+    slug_source = f"{longtail} {seed}".strip()
+    safe_slug = _safe_slug_from_string(posts.make_slug(slug_source))
+    out_path = content_dir / f"{now.year}/{now.month:02d}/{safe_slug}.md"
+    _ensure_dir(out_path.parent)
 
-    title_escaped = topic.replace('"', '\\"')
+    # Title → Title Case
+    title_tc = _title_case(longtail)
+    title_escaped = title_tc.replace('"', '\\"')
+
+    tags_yaml = ", ".join("'" + t.replace("'", "''") + "'" for t in auto_tags or [])
+    categories_line = f"categories: ['{cat.name}']"
+
+    # description (если вытащили из META_DESCRIPTION)
+    description_line = ""
+    if meta_desc:
+        description_line = f'description: "{meta_desc.replace("\"", "\\\"")}"\n'
 
     fm = (
-        f"---\n"
+        "---\n"
         f'title: "{title_escaped}"\n'
         f"date: {now.isoformat()}\n"
-        f"draft: false\n"
-        f"categories: ['news']\n"
+        "draft: false\n"
+        f'slug: "{safe_slug}"\n'
+        f"{categories_line}\n"
         f"tags: [{tags_yaml}]\n"
-        f"{keywords_block}"
-        f'author: "Nailak Editorial"\n'
-        f"---\n\n"
+        f'author: "{author_name}"\n'
+        f"{description_line}"
+        "---\n\n"
     )
-
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(fm + md_raw)
+    with out_path.open("w", encoding="utf-8") as f:
+        f.write(fm + article_md.strip() + "\n")
 
     print("🧾 Front-matter preview:")
     print(fm)
-    print(f"✓ New post saved: {out_path}")
-    print("───────────────────────────────")
-    # NOTE: rss_fetch now advances and saves keyword index.
-    # (Manual bump removed to avoid double-advance and desync)
+    print(f"[eQualle SAVE][OK] ✅ {out_path}")
 
+    # === Обновляем state для пары ===
+    record_used_pair(state_path, seed, longtail)
+    print("[eQualle STATE][OK] 💾 Pair recorded.")
+    print("────────────────────────────────────────────")
+    print("[eQualle DONE] 🎉 All steps completed successfully.")
+    print(f"[eQualle OUTPUT] 📄 {out_path}")
 
-# === 📝 Сохранение черновика при сбое ===
-def _save_draft(topic: str, cfg: dict):
-    """Сохраняет черновик, если QA не прошёл или GPT не дал результата."""
+def _save_draft(content_dir: Path, topic: str):
     now = datetime.now(timezone.utc)
     fallback_slug = re.sub(r"[^a-zA-Z0-9-]+", "-", topic.lower()) + "-draft"
-    out_path = CONTENT_DIR / f"{now.year}/{now.month:02d}/{fallback_slug}.md"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-
+    out_path = content_dir / f"{now.year}/{now.month:02d}/{fallback_slug}.md"
+    _ensure_dir(out_path.parent)
     title_escaped = topic.replace('"', '\\"')
-
     fm = (
-        f"---\n"
-        f'title: "{title_escaped}"\n'
+        "---\n"
+        f'title: "{title_escaped}"\n"
         f"date: {now.isoformat()}\n"
-        f"draft: true\n"
-        f"categories: ['news']\n"
-        f"tags: ['draft']\n"
-        f'author: "Nailak Editorial"\n'
-        f"---\n\n"
-        f"(Auto-saved draft after QA failures)\n\n"
+        "draft: true\n"
+        "categories: ['news']\n"
+        "tags: ['draft']\n"
+        'author: "eQualle Editorial"\n'
+        "---\n\n"
+        "(Auto-saved draft after QA failure)\n\n"
     )
-
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(fm)
+    out_path.write_text(fm, encoding="utf-8")
     print(f"📝 Draft saved: {out_path}")
-
 
 if __name__ == "__main__":
     main()

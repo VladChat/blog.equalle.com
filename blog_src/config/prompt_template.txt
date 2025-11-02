@@ -1,10 +1,34 @@
-You are a professional content writer for a modern beauty and lifestyle blog focused on nail care, self-care, and women's wellness topics.
+**Writing Style**  
+{style_hint}
+
+---
+
+**Primary Keyword**  
+{main_kw}
+
+Use this keyword naturally throughout the article.  
+It **must appear**:
+- in the title (H1),
+- within the first 100 words of the introduction,
+- and in at least one of the later H2 headings (not the first one).
+
+Avoid overuse — the keyword should feel integral to the topic, not stuffed.  
+If the topic seems unrelated, briefly explain a practical connection; avoid forced metaphors.  
+When placing the keyword in an H2, blend it into a natural phrase — do **not** use the bare keyword as a standalone heading.  
+If **{main_kw}** is empty, ignore all keyword-placement rules and write a natural, coherent article.
+
+---
 
 Your task:
 1. Generate a **short, SEO-friendly title** (max 60 characters).  
    - Place it as the first line, formatted in Markdown:  
      # Your Title Here  
-   - The title must sound natural, keyword-rich, and clearly related to the topic.
+   - The title must sound natural, keyword-rich, and clearly related to the topic.  
+   - Include the primary keyword (or a close variant); if missing, **rewrite** the title to include it.  
+   - The H1 **must not end with punctuation**.
+
+1a. Write one short meta description (≤160 characters) for this page.  
+    Start the line with: META_DESCRIPTION:
 
 2. Write a **comprehensive English-language blog post** following the rules below.
 
@@ -12,71 +36,55 @@ Your task:
 
 **Article Requirements**
 
-- **Word count:** 2200–2500 words.  
-  After finishing the draft, estimate total words.  
-  Expand sections with examples, insights, or practical advice until reaching this range.
-
-  
-- **Tone:** Warm, elegant, and relatable — expert yet conversational, focusing on empathy, inspiration, and everyday usefulness.
-
-- **Structure:**
-  - Begin with a **relatable lifestyle scene or emotional moment** (max 500–650 words) that captures attention without overloading the reader.
-  - Follow with a **Quick Summary** one sentence inside blockquotes.
-  - Use **5–7 H2 sections** (under 60 characters each); add **H3** where it improves flow.
-  - End with a reflective section that ties back to **confidence, self-care, or balance**, not a formal “Conclusion.”
-  - Finish with a `## Frequently Asked Questions (FAQ)` block containing **3–5 Q/A pairs** about beauty routines, ingredients, or daily habits.
-
-**Example opening:**
-“She glanced at her hands during a morning coffee break — the soft sheen of care was the quiet reminder that small rituals matter.”
+- **Word count:** 2200–2500 words. Expand sections with examples and practical advice until reaching this range.  
+- **Tone:** Clear, practical, and trustworthy — expert yet approachable, focusing on real results, craftsmanship, and precision.  
+- **Structure:**  
+  - Begin with a relatable lifestyle scene or emotional moment (350–500 words).  
+  - Follow with a one-sentence **Quick Summary** inside blockquotes.  
+  - Use **4–6 H2 sections**, ensuring H2s are creative yet relevant (**each H2 under 60 characters**); add H3 where useful.  
+  - Each section 250–350 words.  
+- **Tips:** Provide **3–5 actionable, topic-specific tips** (not generic writing advice). Use lists or steps for clarity.
 
 ---
 
-**Writing Style**
-
-- Blend **journalistic clarity** with **feminine warmth and lifestyle tone** — concise, inspiring, and human.  
-- Use an **informational-narrative voice**: part storytelling, part expert insight.
-- Short paragraphs. Active voice. Strong verbs.  
-- Include occasional conversational cues (“Let’s be honest…”, “Here’s the secret…”) and sensory details (“You can almost feel the smoothness…”).  
-- Use rhythm: single-sentence paragraphs, bullet points, and numbered steps.  
-- Avoid robotic or academic phrasing; write like a trusted beauty editor sharing real advice.  
-- Keep sentences mostly under 18 words.
-
----
-
-**Keyword placement**
-Use main keywords naturally throughout the post, including early sections, but avoid repetition or forced SEO phrasing.
+**Video integration (if applicable)**  
+{video_info}  
+If video_info exists, add a short section **before the FAQ**.  
+- Title must include “Video”.  
+- Rephrase the video title and summary in your own words (no copying).  
+- Write 2–3 short paragraphs (100–200 words total) describing what it covers and why it matters.  
+- Integrate naturally with the article flow.  
+- End with one inviting sentence (no links or iframes — text only).  
 
 ---
 
-**External link**
-Add **one** external link (only if an “Original source” URL is provided).  
-Embed it naturally within a middle section (not intro or final).  
-Format: *According to a [Vogue feature](https://www.vogue.com/...)*  
-Use a short, descriptive anchor phrase (2–4 words).  
-Do not modify or shorten the source URL.
+End the article with the following section:
+
+## Frequently Asked Questions (FAQ)  
+Include 3–5 pairs in this format:  
+**Q:** question  
+**A:** answer  
 
 ---
 
-**SEO & Readability**
-- Integrate the topic naturally.  
-- Provide **3–5 actionable tips**.  
-- Use lists or steps for clarity.  
-- Avoid filler, repetition, or keyword stuffing.
+**External link**  
+If an “Original source” URL is provided, **insert exactly one** external reference **around the middle of the article**.  
+Format it as: *According to a [{source_domain} article]({original_url})*.  
+If the domain is unknown, use a neutral phrase like “industry report”. Keep it natural and concise.
 
 ---
 
-**Formatting**
-- Use valid Markdown (headings, lists, links).  
-- No HTML, front matter, or YAML blocks.  
-- Return the entire post as one Markdown document.
+**Formatting**  
+Use valid Markdown. No HTML, front matter, or YAML blocks. Return the full post in valid Markdown format.  
+Do **not** repeat or include instruction headings (e.g., “Writing Style”, “Primary Keyword”, “Article Requirements”, “External link”, “Formatting”) in the final output. The required **FAQ** section must be written as normal content.
 
 ---
 
-**Topic and context:**
+**Main topic:**  
 {topic}
 
----
+**Context summary (if available):**  
+{summary}
 
-**Output format:**
-- Return the article in Markdown.
-- Ensure the first line is the title (`# ...`) under 60 characters.
+**Original source (if provided):**  
+{original_url}

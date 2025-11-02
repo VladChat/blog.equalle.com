@@ -9,18 +9,18 @@
   },
   "headline": {{ .Title | jsonify }},
   "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Summary | plainify | truncate 160 | jsonify }}{{ end }},
-  "image": {{ with .Params.featuredImage }}{{ . | absURL | jsonify }}{{ else }}{{ printf "%simages/nailak-cover.jpg" .Site.BaseURL | jsonify }}{{ end }},
+  "image": {{ with .Params.featuredImage }}{{ . | absURL | jsonify }}{{ else }}{{ printf "%simages/cover.webp" .Site.BaseURL | jsonify }}{{ end }},
   "author": {
     "@type": "Person",
-    "name": "Nailak Editorial",
+    "name": "eQualle Editorial",
     "url": "{{ .Site.BaseURL }}editorial/"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Nailak",
+    "name": "eQualle",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ .Site.BaseURL }}images/logo-nailak.png"
+      "url": "{{ .Site.BaseURL }}images/logo.png"
     }
   },
   "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",

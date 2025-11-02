@@ -1,0 +1,39 @@
+{{/* File: blog_src/layouts/page/categories.html */}}
+{{/* === Categories Page — identical style to HomePage, but hides empty categories === */}}
+{{ define "main" }}
+
+{{ partial "extend_head.html" . }}
+<link rel="stylesheet" href="{{ "/css/blog-list.css" | relURL }}">
+
+<section class="list-page">
+
+  <!-- === HERO STRIP === -->
+  <div class="list-page-header">
+    <h1 class="page-title">Explore Sandpaper Categories</h1>
+    <div class="page-intro">
+      <p style="font-size:1.1rem; line-height:1.6; margin:0;">
+        Learn everything about sanding, polishing, and surface finishing — organized into professional categories for every project type.
+      </p>
+    </div>
+  </div>
+
+  <!-- === Category List (filtered to show only non-empty categories) === -->
+  <div class="post-list">
+    {{ $site := .Site }}
+    {{ range $i, $cat := $site.Data.categories.categories }}
+      {{/* Считаем, сколько постов используют эту категорию */}}
+      {{ $count := len ( where $site.RegularPages "Params.categories" "intersect" (slice $cat.name) ) }}
+      {{ if gt $count 0 }}
+        <article class="post-card">
+          <a href="/categories/{{ $cat.slug }}/">
+            <h2 class="post-card-title">{{ $cat.name }}</h2>
+            <p class="post-card-summary">{{ $cat.description }}</p>
+          </a>
+        </article>
+      {{ end }}
+    {{ end }}
+  </div>
+
+</section>
+
+{{ end }}

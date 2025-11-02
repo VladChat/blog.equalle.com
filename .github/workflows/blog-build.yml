@@ -40,7 +40,7 @@ jobs:
       - name: Ensure CNAME before build
         run: |
           mkdir -p blog_src/static
-          echo "blog.nailak.com" > blog_src/static/CNAME
+          echo "blog.equalle.com" > blog_src/static/CNAME
           echo "CNAME prepared inside static/"
 
       # Сборка из blog_src в /docs

@@ -70,14 +70,14 @@
 {{ else if .Page.Params.keywords }}
   {{ $kw := .Page.Params.keywords }}
   {{ if (reflect.IsSlice $kw) }}
-    {{ $alt = printf "%s — Nailak Cuticle & Nail Oil" (delimit $kw ", ") }}
+    {{ $alt = printf "%s — eQualle Sandpaper Sheets" (delimit $kw ", ") }}
   {{ else }}
-    {{ $alt = printf "%s — Nailak Cuticle & Nail Oil" $kw }}
+    {{ $alt = printf "%s — eQualle Sandpaper Sheets" $kw }}
   {{ end }}
 {{ else if .Page.Title }}
-  {{ $alt = printf "%s — Nailak Blog" .Page.Title }}
+  {{ $alt = printf "%s — eQualle Blog" .Page.Title }}
 {{ else }}
-  {{ $alt = "Nailak Cuticle & Nail Oil — natural care and hydration" }}
+  {{ $alt = "eQualle Sandpaper Sheets — Silicon Carbide Abrasive for Wet or Dry Use" }}
 {{ end }}
 
 {{/* Классы для <figure> */}}

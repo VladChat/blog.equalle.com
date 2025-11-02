@@ -35,13 +35,13 @@
      2) Страница поста (BlogPosting)
      ========================= */}}
 {{ if .IsPage }}
-  {{- $authorName := .Params.author | default ( .Site.Params.author | default "Nailak Editorial" ) -}}
+  {{- $authorName := .Params.author | default ( .Site.Params.author | default "eQualle Editorial" ) -}}
   {{- $img := "" -}}
   {{- with .Params.featuredImage }}{{ $img = . }}{{ end -}}
   {{- $images := cond (ne $img "") (slice ($img | absURL)) (slice
-        (printf "%simages/nailak-cover-1x1.webp" .Site.BaseURL)
-        (printf "%simages/nailak-cover-4x3.webp" .Site.BaseURL)
-        (printf "%simages/nailak-cover-16x9.webp" .Site.BaseURL)
+        (printf "%simages/cover-1x1.webp" .Site.BaseURL)
+        (printf "%simages/cover-4x3.webp" .Site.BaseURL)
+        (printf "%simages/cover-16x9.webp" .Site.BaseURL)
     ) -}}
 
   {{- $published := ( .PublishDate | default .Date ) -}}

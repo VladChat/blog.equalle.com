@@ -1,31 +1,105 @@
-.related-section {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--divider);
+
+/* === (B) Related Posts: брендовый градиент + hover === */
+/* Широкая «страхующая сетка» селекторов — берём и контейнеры, и ссылки/карточки */
+.related, .related-posts {
+  --rel-bg-1: var(--brand-blue);
+  --rel-bg-2: var(--brand-cyan);
 }
 
-.related-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--primary-accent);
-  margin-bottom: 0.5rem;
+/* Карточки/ссылки внутри блока Related — окрашиваем в зелёный градиент */
+.related a,
+.related .card,
+.related .post-item,
+.related-posts a,
+.related-posts .card,
+.related-posts .post-item {
+  background: linear-gradient(135deg, var(--rel-bg-1), var(--rel-bg-2)) !important;
+  color: #fff !important;
+  border: 0 !important;
+  transition: filter .2s ease, box-shadow .2s ease;
 }
 
-.related-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Hover-эффект для Related: чуть ярче + мягкая тень */
+.related a:hover,
+.related .card:hover,
+.related .post-item:hover,
+.related-posts a:hover,
+.related-posts .card:hover,
+.related-posts .post-item:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 8px 18px rgba(47,94,63,.25);
+}
+
+/* Бейдж «NEXT»/иконки внутри Related — сохраняем читаемость */
+.related [class*="badge"],
+.related-posts [class*="badge"],
+.related .status,
+.related-posts .status,
+.related .next,
+.related-posts .next,
+.related .plus,
+.related-posts .plus,
+.related svg {
+  color: #fff !important;
+  /* если есть собственный фон бейджа — делаем его полупрозрачным светлым */
+  background: rgba(255,255,255,.16);
+}
+
+/* === Hero icon placement (perfect circular like Luggage Scale) === */
+.post-header {
+  position: relative;
+  overflow: visible; /* чтобы не обрезалось за радиус блока */
+}
+
+.hero-icon-corner {
+  position: absolute;
+  bottom: 1rem;   /* немного выше нижнего края внутри зелёной плашки */
+  right: 1.5rem;  /* сбалансированный отступ справа */
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  width: auto;
+  height: auto;
 }
 
-.related-list a {
-  text-decoration: none;
-  color: var(--primary);
-  transition: color 0.2s ease;
+/* ✅ фиксированный круг 64×64 — идентично старому SVG */
+.hero-icon-corner img.hero-bottle {
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain; /* cover иногда растягивает */
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.related-list a:hover {
-  color: var(--hover-accent);
+.hero-icon-corner img.hero-bottle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* === Адаптив === */
+@media (max-width: 960px) {
+  .hero-icon-corner {
+    bottom: 0.8rem;
+    right: 1rem;
+  }
+  .hero-icon-corner img.hero-bottle {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-icon-corner {
+    bottom: 0.6rem;
+    right: 0.8rem;
+  }
+  .hero-icon-corner img.hero-bottle {
+    width: 50px;
+    height: 50px;
+  }
 }

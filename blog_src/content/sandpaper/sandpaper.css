@@ -1,0 +1,152 @@
+/* blog_src/content/sandpaper/sandpaper.css */
+/* === eQualle Sandpaper — v6 (perfect hero alignment, no white gaps) === */
+
+:root {
+  --brand-blue: #004b6b;
+  --brand-cyan: #1ba7c6;
+  --brand-gray: #2e2e2e;
+  --brand-light: #f6f9fb;
+  --brand-border: #d4dadf;
+  --btn-text-light: #ffffff;
+  --btn-text-dark: #0f0f0f;
+  color-scheme: light dark;
+}
+
+/* === Anti-Flicker === */
+.nko-container, .nko-container *,
+.fade-in, .js-fade, [data-fade], .reveal-on-scroll {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* === Layout === */
+.nko-container { max-width:1080px; margin:0 auto; padding:0 20px; }
+.nko-section { margin:52px 0; }
+.nko-muted { color:#5b5b5b; }
+.nko-h1 { font-size:clamp(32px,5vw,46px); font-weight:800; color:var(--brand-blue); margin:12px 0 10px; }
+.nko-lead { font-size:1.05rem; line-height:1.6; color:#333; max-width:800px; }
+
+/* === HERO (fixed height and fit) === */
+.nko-hero {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--brand-light);
+  aspect-ratio: 1200 / 630;
+  display: block;
+}
+.nko-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.nko-hero-box { display: none !important; }
+
+/* === Headings === */
+.nko-h2 {
+  font-size: clamp(1.6rem,2.2vw,2rem);
+  font-weight: 800;
+  margin: 0 0 1rem;
+  color: var(--brand-blue);
+  position: relative;
+}
+.nko-h2::after {
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  left:0;
+  width:64px;
+  height:3px;
+  border-radius:2px;
+  background: linear-gradient(90deg,var(--brand-blue),var(--brand-cyan));
+}
+.nko-h3 { font-size:clamp(1.1rem,1.8vw,1.25rem); font-weight:700; color:var(--brand-blue); margin:.25rem 0 .75rem; }
+
+/* === Media row === */
+.nko-media-row {
+  display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:16px;
+}
+.nko-media-item img {
+  width:100%; max-width:300px; border-radius:14px; object-fit:cover; display:block;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.nko-media-item img:hover {
+  transform:scale(1.03);
+  box-shadow:0 6px 16px rgba(0,75,107,.25);
+}
+
+/* === Dual video layout === */
+.nko-video-row {
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  gap:28px;
+  margin-top:24px;
+}
+.nko-video-row iframe {
+  width:520px;
+  height:292px; /* 16:9 */
+  border-radius:14px;
+  box-shadow:0 3px 12px rgba(0,0,0,.1);
+  max-width:100%;
+}
+
+/* === CTA === */
+.nko-cta {
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:24px;
+  align-items:center;
+}
+.nko-cta img {
+  width:100%;
+  border-radius:16px;
+  object-fit:contain;
+  background:#fff;
+  box-shadow:0 3px 12px rgba(0,0,0,.06);
+  display:block;
+}
+
+/* === Button === */
+.nko-btn {
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  font-weight:700; padding:12px 26px; border-radius:30px;
+  background:linear-gradient(135deg,var(--brand-blue),var(--brand-cyan));
+  color:var(--btn-text-light)!important; text-decoration:none;
+  box-shadow:0 3px 10px rgba(0,75,107,.25);
+  transition:all .25s ease;
+}
+.nko-btn:hover {
+  transform:translateY(-1px);
+  background:linear-gradient(135deg,#026c97,#29b7d8);
+  box-shadow:0 5px 16px rgba(0,75,107,.35);
+}
+
+/* === Dark theme === */
+html.dark .nko-h2,body.dark .nko-h2,
+html.dark .nko-h3,body.dark .nko-h3 { color:#f5f5f5; }
+html.dark .nko-card,body.dark .nko-card { background:#141619;border-color:#222; }
+html.dark .nko-lead,body.dark .nko-lead { color:#cfd8dc; }
+html.dark .nko-btn,body.dark .nko-btn {
+  background:linear-gradient(135deg,var(--brand-cyan),#47d1ef);
+  color:var(--btn-text-dark)!important;
+  box-shadow:0 3px 10px rgba(27,167,198,.35);
+}
+
+/* === Responsive === */
+@media(max-width:860px){
+  .nko-cta{grid-template-columns:1fr;gap:20px;}
+  .nko-video-row iframe{width:100%;height:auto;aspect-ratio:16/9;}
+}
+@media(max-width:640px){
+  .nko-media-row{flex-direction:column;align-items:center;gap:10px;}
+  .nko-section{margin:36px 0;}
+}
+.nko-hero {
+  background: #000000;  /* теперь фон под картинкой черный */
+}

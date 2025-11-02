@@ -1,0 +1,213 @@
+"""
+rss_video_fetch.py — YouTube RSS video fetcher for eQualle blog
+
+Purpose:
+  - Read YouTube RSS feed URLs from /data/rss_video.json
+  - Parse each feed and collect new video IDs, titles, links, and dates
+  - Skip already used videos (tracked in /data/video_state.json)
+  - Return a list of fresh, unused videos to embed in posts
+"""
+
+from __future__ import annotations
+
+import json
+import random
+import xml.etree.ElementTree as ET
+from pathlib import Path
+from urllib.request import urlopen
+from urllib.error import URLError, HTTPError
+
+# === Paths (eQualle style) ===
+ROOT_DIR: Path = Path(__file__).resolve().parents[2]   # .../blog_src
+DATA_DIR: Path = ROOT_DIR / "data"
+RSS_FILE: Path = DATA_DIR / "rss_video.json"
+STATE_FILE: Path = DATA_DIR / "video_state.json"
+
+
+# === Helpers ===
+def load_json(path: Path, default):
+    if path.exists():
+        try:
+            with path.open("r", encoding="utf-8") as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            print(f"[eQualle VideoFeed][WARN] Failed to parse {path}, using default.")
+    else:
+        print(f"[eQualle VideoFeed][INFO] {path} not found, using default.")
+    return default
+
+
+def save_json(path: Path, data) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def parse_youtube_feed(feed_url: str) -> list[dict]:
+    """Return list of videos (id, title, link, published, description) from a YouTube RSS feed."""
+    try:
+        with urlopen(feed_url) as response:
+            xml_data = response.read()
+    except (URLError, HTTPError) as e:
+        print(f"[eQualle VideoFeed][ERROR] Cannot fetch feed: {feed_url} — {e}")
+        return []
+
+    try:
+        root = ET.fromstring(xml_data)
+    except ET.ParseError as e:
+        print(f"[eQualle VideoFeed][ERROR] Failed to parse XML from {feed_url}: {e}")
+        return []
+
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "yt": "http://www.youtube.com/xml/schemas/2015",
+        "media": "http://search.yahoo.com/mrss/",
+    }
+
+    videos: list[dict] = []
+    for entry in root.findall("atom:entry", ns):
+        vid = entry.find("yt:videoId", ns)
+        title = entry.find("atom:title", ns)
+        link = entry.find("atom:link", ns)
+        published = entry.find("atom:published", ns)
+        desc = entry.find("media:group/media:description", ns)
+
+        if vid is None or title is None:
+            continue
+
+        video_id = (vid.text or "").strip()
+        title_text = (title.text or "").strip()
+        link_url = (
+            link.attrib.get("href")
+            if link is not None
+            else f"https://www.youtube.com/watch?v={video_id}"
+        )
+        description_text = (desc.text or "").strip() if desc is not None else ""
+
+        videos.append({
+            "id": video_id,
+            "title": title_text,
+            "link": link_url,
+            "published": (published.text if published is not None else ""),
+            "description": description_text,
+        })
+
+        # === LOG EACH VIDEO PARSED ===
+        print(
+            f"[eQualle VideoFeed][PARSE] id={video_id}, title='{title_text[:50]}', "
+            f"desc={'OK' if description_text else '(none)'}"
+        )
+
+    return videos
+
+
+def enrich_video_info(video: dict) -> dict:
+    """Add cleaned title, short section title, and description summary."""
+    raw_title = (video.get("title") or "").strip()
+    desc = (video.get("description") or "").strip()
+
+    # короткое имя секции
+    keywords = ["Spotlight", "Insight", "Demo", "Guide", "Review"]
+    section_title = (
+        f"{raw_title.split()[0]} {random.choice(keywords)} Video"
+        if raw_title
+        else "Video Insights"
+    )
+
+    # короткое описание (2 предложения максимум)
+    short_desc_parts = desc.split(". ")
+    if len(short_desc_parts) > 2:
+        desc_short = ". ".join(short_desc_parts[:2]) + "."
+    else:
+        desc_short = desc or "Watch this short overview video."
+
+    enriched = {
+        **video,
+        "section_title": section_title,
+        "video_description": desc_short,
+        "video_title_rewritten": raw_title.replace("YouTube", "").strip(),
+    }
+
+    # === LOG ENRICHED RESULT ===
+    print(
+        f"[eQualle VideoFeed][ENRICH] {enriched['id']} → "
+        f"title='{enriched['video_title_rewritten']}', "
+        f"desc_len={len(desc_short)}"
+    )
+
+    return enriched
+
+
+def fetch_all_videos() -> list[dict]:
+    feeds: list[str] = load_json(RSS_FILE, [])
+    state: dict = load_json(STATE_FILE, {"used": [], "queue": []})
+
+    print(f"[eQualle VideoFeed][INFO] Fetching from {len(feeds)} YouTube feeds...")
+    new_videos: list[dict] = []
+
+    for url in feeds:
+        for v in parse_youtube_feed(url):
+            if (
+                v["id"]
+                and v["id"] not in state["used"]
+                and all(q.get("id") != v["id"] for q in state["queue"])
+            ):
+                new_videos.append(v)
+
+    random.shuffle(new_videos)
+    print(f"[eQualle VideoFeed][INFO] Found {len(new_videos)} new videos.")
+    if new_videos:
+        state["queue"].extend(new_videos)
+        save_json(STATE_FILE, state)
+    return new_videos
+
+
+def get_unused_video() -> dict | None:
+    """Return one enriched, unused video (and mark as used)."""
+    state: dict = load_json(STATE_FILE, {"used": [], "queue": []})
+
+    if not state["queue"]:
+        print("[eQualle VideoFeed][INFO] Queue empty — refetching video feeds.")
+        fetch_all_videos()
+        state = load_json(STATE_FILE, {"used": [], "queue": []})
+
+    if not state["queue"]:
+        print("[eQualle VideoFeed][WARN] No new videos found.")
+        return None
+
+    video = state["queue"].pop(0)
+    vid = video.get("id")
+    if vid:
+        state["used"].append(vid)
+    save_json(STATE_FILE, state)
+
+    enriched = enrich_video_info(video)
+    print(
+        f"[eQualle VideoFeed][SELECTED] id={enriched.get('id')} "
+        f"title='{enriched.get('video_title_rewritten')}' "
+        f"desc_preview='{(enriched.get('video_description') or '')[:80]}'"
+    )
+    return enriched
+
+
+def main() -> None:
+    """Manual test runner with concise logs (useful in CI or locally)."""
+    print(f"[eQualle VideoFeed] ROOT_DIR={ROOT_DIR}")
+    print(f"[eQualle VideoFeed] RSS_FILE={RSS_FILE}")
+    print(f"[eQualle VideoFeed] STATE_FILE={STATE_FILE}")
+
+    fetched = fetch_all_videos()
+    sample = get_unused_video()
+
+    print(f"[eQualle VideoFeed][INFO] Fetch cycle complete. {len(fetched)} fetched.")
+    if sample:
+        print(
+            f"[eQualle VideoFeed][SAMPLE] {sample.get('section_title')} — "
+            f"{sample.get('link', '')}"
+        )
+    else:
+        print("[eQualle VideoFeed] No sample available.")
+
+
+if __name__ == "__main__":
+    main()

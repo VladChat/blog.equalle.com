@@ -1,0 +1,264 @@
+/* File: blog_src/assets/css/custom/homepage.css */
+/* === eQualle Homepage Styles (clean, compact v4) === */
+
+/* ============================================================
+   [1] HERO SECTION
+   ------------------------------------------------------------
+   Header background and title styling at the top of homepage.
+   ============================================================ */
+
+/* === RESTORED HERO GRADIENT (from Nailak) === */
+.list-page-header {
+  background: linear-gradient(180deg, rgba(0,198,255,0.10), transparent 90%);
+  border-radius: var(--radius);
+  padding: 2rem 1.25rem 2.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+body.dark .list-page-header {
+  background: linear-gradient(180deg, rgba(0,198,255,0.12), rgba(0,0,0,0.10));
+}
+
+.list-page-header .page-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--brand-blue);
+  margin-bottom: 0.5rem;
+}
+
+/* [1.1] HERO IMAGE BACKGROUND OVERRIDE
+   ------------------------------------------------------------
+/* --- Hero image inside circle frame (improved spacing) --- */
+.list-page-header .nailak-hero img,
+.list-page-header .equalle-hero img,
+.list-page-header .hero-image img {
+  display: block;
+  width: 120px;
+  height: 120px;
+
+  /* общий стиль */
+  border-radius: 50%;
+  background: radial-gradient(circle at center,
+              rgba(255,255,255,0.35) 0%,
+              rgba(255,255,255,0.05) 100%) !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.20);
+
+  /* ключевое изменение: отступ внутрь круга */
+  padding: 10px;                   /* увеличивает внутреннее расстояние */
+  background-clip: content-box;    /* фон не заходит под padding */
+  object-fit: contain;             /* изображение полностью видно */
+}
+body.dark .list-page-header .nailak-hero img,
+body.dark .list-page-header .equalle-hero img,
+body.dark .list-page-header .hero-image img {
+  background: radial-gradient(circle at center,
+              rgba(40,40,40,0.45) 0%,
+              rgba(0,0,0,0.15) 100%) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.40);
+}
+
+
+
+
+/* ============================================================
+   [2] POST GRID
+   ------------------------------------------------------------
+   Responsive grid for latest posts: 1 column mobile, 2 desktop.
+   ============================================================ */
+.post-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 860px) {
+  .post-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+/* ============================================================
+   [3] POST CARD DESIGN
+   ------------------------------------------------------------
+   Compact version (~22% lower height). Adjusted padding,
+   line-height and min-height only for homepage.
+   ============================================================ */
+.post-card {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--content);
+  line-height: 1.45;
+  transition: all 0.25s ease;
+}
+@media (min-width: 860px) {
+  /* reduced height lock (270px → 210px) */
+  .post-card { min-height: 210px; }
+}
+.post-card:hover,
+.post-card:focus-within {
+  transform: translateY(-3px);
+  border-color: rgba(0,177,210,0.45);
+  box-shadow: 0 8px 22px rgba(0,177,210,0.18);
+}
+
+
+/* ============================================================
+   [4] POST TITLE + LINKS
+   ------------------------------------------------------------
+   Title color/behavior and two-line clamp for card titles.
+   ============================================================ */
+.post-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--link-color);
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+
+  /* limit title to 2 lines with ellipsis */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* maximum 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.post-card a:hover .post-card-title {
+  color: var(--link-hover);
+}
+body.dark .post-card-title {
+  color: #004E7C;
+}
+body.dark .post-card a:hover .post-card-title {
+  color: #00B1D2;
+}
+
+
+/* ============================================================
+   [5] POST SUMMARY
+   ------------------------------------------------------------
+   Four-line clamp, justified alignment, compact spacing.
+   ============================================================ */
+.post-card-summary {
+  color: var(--content);
+  line-height: 1.38;
+  font-size: 0.94rem;
+  margin-bottom: 0.7rem;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body.dark .post-card-summary { color: var(--secondary); }
+
+
+/* ============================================================
+   [6] POST META
+   ------------------------------------------------------------
+   Small footer line (date + read time) under summary.
+   ============================================================ */
+.post-card-meta {
+  font-size: 0.82rem;
+  color: var(--secondary);
+  opacity: .9;
+  margin-top: 0.25rem;
+}
+
+
+/* ============================================================
+   [7] PAGINATION
+   ------------------------------------------------------------
+   Button-style pagination below posts list.
+   ============================================================ */
+nav.pagination {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  margin: 1.5rem 0 0;
+  flex-wrap: wrap;
+}
+nav.pagination a {
+  background: var(--entry);
+  color: var(--link-color);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .45rem .75rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+nav.pagination a:hover {
+  background: var(--brand-blue);
+  color: #fff;
+  border-color: transparent;
+}
+nav.pagination a.active {
+  background: var(--brand-blue);
+  color: #fff;
+  pointer-events: none;
+}
+nav.pagination a.disabled {
+  opacity: .45;
+  pointer-events: none;
+}
+
+
+/* ============================================================
+   [8] CATEGORY GRID FIX (HomePage only)
+   ------------------------------------------------------------
+   Prevents category cards from inheriting min-height from
+   post-card rules. Creates compact 3-line layout.
+   ============================================================ */
+.home-categories .categories-grid {
+  align-items: start; /* stop stretching to equal height */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.home-categories .post-card {
+  min-height: auto;       /* cancel 210px constraint */
+  height: auto;
+  padding: 0.65rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.home-categories .post-card-title {
+  margin-bottom: 0.35rem;
+  line-height: 1.28;
+  font-size: 1rem;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home-categories .post-card-summary {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--secondary);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* exactly 3 lines visible */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+
+/* ============================================================
+   END OF FILE (v4)
+   ============================================================ */

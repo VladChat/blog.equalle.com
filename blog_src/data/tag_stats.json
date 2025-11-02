@@ -1,0 +1,152 @@
+{
+  "sanding block": {
+    "count": 44,
+    "status": "popular"
+  },
+  "dust control": {
+    "count": 43,
+    "status": "popular"
+  },
+  "stain prep": {
+    "count": 16,
+    "status": "normal"
+  },
+  "varnish finish": {
+    "count": 16,
+    "status": "normal"
+  },
+  "oak sanding": {
+    "count": 16,
+    "status": "normal"
+  },
+  "clear coat": {
+    "count": 21,
+    "status": "normal"
+  },
+  "paint prep": {
+    "count": 17,
+    "status": "normal"
+  },
+  "wet sanding": {
+    "count": 15,
+    "status": "normal"
+  },
+  "rust removal": {
+    "count": 18,
+    "status": "normal"
+  },
+  "metal polishing": {
+    "count": 8,
+    "status": "normal"
+  },
+  "orbital sander": {
+    "count": 23,
+    "status": "normal"
+  },
+  "wall sanding": {
+    "count": 7,
+    "status": "normal"
+  },
+  "joint compound": {
+    "count": 7,
+    "status": "normal"
+  },
+  "plaster repair": {
+    "count": 7,
+    "status": "normal"
+  },
+  "primer coat": {
+    "count": 15,
+    "status": "normal"
+  },
+  "grit progression": {
+    "count": 17,
+    "status": "normal"
+  },
+  "mirror finish": {
+    "count": 17,
+    "status": "normal"
+  },
+  "polishing pads": {
+    "count": 16,
+    "status": "normal"
+  },
+  "dry sanding": {
+    "count": 10,
+    "status": "normal"
+  },
+  "deck sanding": {
+    "count": 7,
+    "status": "normal"
+  },
+  "boat hull": {
+    "count": 7,
+    "status": "normal"
+  },
+  "fiberglass repair": {
+    "count": 7,
+    "status": "normal"
+  },
+  "epoxy polish": {
+    "count": 7,
+    "status": "normal"
+  },
+  "3d print sanding": {
+    "count": 7,
+    "status": "normal"
+  },
+  "resin casting": {
+    "count": 7,
+    "status": "normal"
+  },
+  "grit chart": {
+    "count": 7,
+    "status": "normal"
+  },
+  "abrasive standards": {
+    "count": 7,
+    "status": "normal"
+  },
+  "grit-100": {
+    "count": 1
+  },
+  "grit-120": {
+    "count": 3
+  },
+  "grit-180": {
+    "count": 2
+  },
+  "grit-220": {
+    "count": 2
+  },
+  "grit-320": {
+    "count": 2
+  },
+  "grit-1500": {
+    "count": 2
+  },
+  "grit-40": {
+    "count": 1
+  },
+  "grit-240": {
+    "count": 1
+  },
+  "grit-400": {
+    "count": 2
+  },
+  "grit-1000": {
+    "count": 1
+  },
+  "grit-3000": {
+    "count": 1
+  },
+  "grit-800": {
+    "count": 3
+  },
+  "grit-60": {
+    "count": 1
+  },
+  "grit-600": {
+    "count": 1
+  }
+}

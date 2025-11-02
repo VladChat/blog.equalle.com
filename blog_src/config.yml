@@ -1,11 +1,11 @@
-baseURL: "https://blog.nailak.com/"
-title: "Nailak Blog"
+baseURL: "https://blog.equalle.com/"
+title: "eQualle Blog"
 
-description: "Beauty advice from the Nailak — learn how to create salon-quality results at home. Cuticle oil, strengthen nails, and cuticle oil"
+description: "Guides, tutorials, and expert advice on abrasives, sanding, and surface finishing — powered by eQualle."
 theme: "PaperMod"
 publishDir: "../docs"
 
-# URL настройки
+# URL settings
 canonifyURLs: true
 relativeURLs: true
 uglyURLs: false
@@ -50,24 +50,34 @@ taxonomies:
   category: categories
   tag: tags
 
+related:
+  includeNewer: true
+  threshold: 60
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 40
+
 params:
   disableAnchoredHeadings: true
   env: production
-  title: "Nailak Blog"
-  tagline: "Beauty and Wellness Tips"
-  description: "Expert tips on nail and cuticle care, product insights, and self-care routines from Nailak — vegan, cruelty-free nail oil made in the USA."
-  keywords: ["nail care", "cuticle oil", "nail oil", "vegan nail oil", "nail health", "Nailak", "hand care", "natural oils", "vitamin E", "squalane"]
-  customFooterText: "© 2025 Nailak Blog. All rights reserved."
+  title: "eQualle Blog"
+  tagline: "Abrasives, Sanding & Surface Finishing"
+  description: "Expert guides, DIY sanding tips, and surface finishing insights — powered by eQualle."
+  keywords: ["sandpaper", "abrasives", "sanding", "surface finishing", "polishing", "DIY", "eQualle", "wet or dry use", "silicon carbide", "grit guide"]
+  customFooterText: "© 2025 eQualle Blog. All rights reserved."
   defaultTheme: auto
   ShowReadingTime: true
   ShowWordCount: true
   centerTheme: true
-  author: "Nailak Editorial"
+  author: "eQualle Editorial"
 
   label:
-    text: "Nailak"
-    icon: "favicon.svg"
-    iconHeight: 38
+    text: "eQualle"
+    icon: "favicon.png"
+    iconHeight: 48
 
   assets:
     favicon: "/icons/favicon.svg"
@@ -86,7 +96,7 @@ params:
     includeNewer: true
     sortByDate: false
 
-# Разрешаем вставку HTML в Markdown (нужно для <figure> и <img>)
+# Allow raw HTML in Markdown (for <figure>, <img>, etc.)
 markup:
   goldmark:
     renderer:
@@ -98,8 +108,17 @@ menu:
       name: Home
       url: /
       weight: 1
+    - identifier: categories
+      name: Categories
+      url: /categories
+      weight: 2
+      
+    - identifier: editorial 
+      name: Authors
+      url: /editorial/
+      weight: 3
 
     - identifier: shop 
-      name: Nails Oil
-      url: /cuticle-oil/
-      weight: 2
+      name: Shop sandpaper
+      url: /sandpaper/
+      weight: 4

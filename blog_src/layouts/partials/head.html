@@ -1,4 +1,5 @@
-﻿<!-- layouts/partials/head.html -->
+﻿<!-- File: layouts/partials/head.html -->
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,50 +8,34 @@
 {{ partial "gtm-head.html" . }}
 <!-- End Google Tag Manager -->
 
-{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
+{{/* =========================================
+     Robots: индексируем только в проде и если не задан robotsNoIndex
+     ========================================= */}}
+{{- $isProd := or hugo.IsProduction (eq site.Params.env "production") -}}
+{{- $indexable := and $isProd (ne .Params.robotsNoIndex true) -}}
+{{- if $indexable -}}
 <meta name="robots" content="index, follow">
-{{- else }}
+{{- else -}}
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
-{{- /* ===== Title (safe word-trim, total ≤ ~60) ===== */ -}}
-{{- /* Бренды: полный (для главной) и короткий (для постов) */ -}}
-{{- $brandFull := site.Title -}}                               {{/* e.g. "Nailak Blog – Beauty and Wellness Tips" */}}
-{{- $brand := site.Params.title | default site.Title -}}       {{/* e.g. "Nailak Blog" (короткий бренд) */}}
-
-{{- /* Разделитель между названием поста и брендом */ -}}
-{{- $sepTitle := " — " -}}
-
-{{- /* Ограничение длины только для ЧАСТИ поста, чтобы не резать бренд */ -}}
-{{- $maxTotal := 58 -}}
-{{- $suffix := printf "%s%s" $sepTitle $brand -}}
-{{- $maxCore := sub $maxTotal (len $suffix) -}}
-{{- if lt $maxCore 0 }}{{- $maxCore = 0 -}}{{- end -}}
-
-{{- /* Трим по словам для названия поста */ -}}
-{{- $tRaw := .Title | plainify -}}
-{{- $ts := newScratch -}}
-{{- $ts.Set "acc" "" -}}
-{{- range (split $tRaw " ") -}}
-  {{- $cand := cond (eq ($ts.Get "acc") "") . (printf "%s %s" ($ts.Get "acc") .) -}}
-  {{- if le (len $cand) $maxCore -}} {{- $ts.Set "acc" $cand -}} {{- end -}}
-{{- end -}}
-{{- $titleCore := cond (gt (len $tRaw) 0) (($ts.Get "acc") | default $tRaw) "" -}}
-
+{{/* =========================================
+     TITLE: без обрезки и без бренда в конце для постов/страниц
+     Главная — полный бренд (site.Title)
+     ========================================= */}}
 <title>
   {{- if .IsHome -}}
-    {{- /* Главная: полный слоган */ -}}
-    {{- $brandFull -}}
+    {{- site.Title -}}
+  {{- else if or .IsSection .IsPage -}}
+    {{- .Title | plainify -}}
   {{- else -}}
-    {{- /* Посты/страницы: "Название — Короткий бренд" */ -}}
-    {{- if .Title -}}{{- $titleCore -}}{{- $sepTitle -}}{{- end -}}{{- $brand -}}
+    {{- site.Title -}}
   {{- end -}}
 </title>
 
-
-{{- /* ===== Meta ===== */ -}}
-
-<!-- 🔽 BEGIN FIXED KEYWORDS BLOCK (stable, no apply) -->
+{{/* =========================================
+     KEYWORDS: оставляем ваш стабильный блок
+     ========================================= */}}
 {{- $kws := slice -}}
 {{- if .IsHome -}}
   {{- if site.Params.keywords -}}
@@ -72,7 +57,6 @@
   {{- end -}}
 {{- end -}}
 
-{{- /* trim + фильтрация пустых + уникализация */ -}}
 {{- $clean := slice -}}
 {{- range $kws -}}
   {{- $v := trim . " \t\r\n" -}}
@@ -82,7 +66,6 @@
 {{- end -}}
 {{- $clean = uniq $clean -}}
 
-{{- /* ручная нормализация без apply */ -}}
 {{- $normalized := slice -}}
 {{- range $clean -}}
   {{- $normalized = $normalized | append (trim . " \t\r\n") -}}
@@ -91,32 +74,23 @@
 {{- if gt (len $normalized) 0 -}}
   <meta name="keywords" content="{{ delimit $normalized ", " | safeHTML }}">
 {{- end -}}
-<!-- 🔼 END FIXED KEYWORDS BLOCK -->
+
+{{/* =========================================
+     DESCRIPTION: фронт-маттер .Description → .Summary (160)
+     (OG/Twitter описания рендерятся отдельными паршалами ниже — не дублируем)
+     ========================================= */}}
+{{- $descBase := .Description | default (plainify .Summary) -}}
+{{- $desc := cond (gt (len $descBase) 180) (truncate 180 $descBase) $descBase -}}
+<meta name="description" content="{{ $desc }}">
 
 
+{{/* Автор — приводим к одной строке */}}
+<meta name="author" content="{{ (partial "author.html" . ) | plainify }}">
 
-
-{{- /* ===== Description (safe word-trim, ≤ ~149, no ellipsis) ===== */ -}}
-{{- $ds := newScratch -}}
-{{- if .Description -}}
-  {{- $ds.Set "base" (.Description | plainify) -}}
-{{- else if or .IsPage .IsSection -}}
-  {{- $ds.Set "base" (.Summary | plainify) -}}
-{{- else -}}
-  {{- with site.Params.description }}{{ $ds.Set "base" (. | plainify) }}{{ end -}}
-{{- end -}}
-{{- if not ($ds.Get "base") -}}
-  {{- $ds.Set "base" (printf "%s - %s" $titleCore $brand) -}}
-{{- end -}}
-{{- $ds.Set "acc" "" -}}
-{{- $maxDesc := 125 -}}
-{{- range (split ($ds.Get "base") " ") -}}
-  {{- $cand := cond (eq ($ds.Get "acc") "") . (printf "%s %s" ($ds.Get "acc") .) -}}
-  {{- if le (len $cand) $maxDesc -}} {{- $ds.Set "acc" $cand -}} {{- end -}}
-{{- end -}}
-<meta name="description" content="{{- $ds.Get "acc" -}}">
-<meta name="author" content="{{ (partial "author.html" . ) }}">
+{{/* Каноникал: приоритет фронт-маттер .Params.canonicalURL */}}
 <link rel="canonical" href="{{ if .Params.canonicalURL }}{{ trim .Params.canonicalURL " " }}{{ else }}{{ .Permalink }}{{ end }}">
+
+{{/* Верификации поисковиков (если заданы) */}}
 {{- if site.Params.analytics.google.SiteVerificationTag }}
 <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
 {{- end }}
@@ -130,9 +104,9 @@
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
 
-{{- /* Styles */}}
-
-{{- /* includes */}}
+{{/* =========================================
+     СТИЛИ (как у вас, с fingerprinting)
+     ========================================= */}}
 {{- $includes := slice }}
 {{- $includes = $includes | append (" " | resources.FromString "assets/css/includes-blank.css")}}
 
@@ -149,16 +123,12 @@
 {{- $license_css := (resources.Get "css/core/license.css") }}
 {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 
-{{- /* markup.highlight.noClasses should be set to `false` */}}
 {{- $chroma_styles := (resources.Get "css/includes/chroma-styles.css") }}
 {{- $chroma_mod := (resources.Get "css/includes/chroma-mod.css") }}
 
-{{- /* order is important */}}
 {{- $core := (slice $theme_vars $reset $common $chroma_styles $chroma_mod $includes_all $media) | resources.Concat "assets/css/core.css" | resources.Minify }}
 {{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify }}
 
-{{- /* bundle all required css */}}
-{{- /* Add extended css after theme style */ -}}
 {{- $stylesheet := (slice $license_css $core $extended) | resources.Concat "assets/css/stylesheet.css"  }}
 
 {{- if not site.Params.assets.disableFingerprinting }}
@@ -168,7 +138,9 @@
   <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
 {{- end }}
 
-{{- /* Search */}}
+{{/* =========================================
+     Поиск (как у вас)
+     ========================================= */}}
 {{- if (eq .Layout `search`) -}}
   <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
   {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
@@ -183,7 +155,9 @@
   {{- end }}
 {{- end -}}
 
-{{- /* Favicons */}}
+{{/* =========================================
+     Favicons
+     ========================================= */}}
 <link rel="icon" href="{{ site.Params.assets.favicon | default "favicon.ico" | absURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ site.Params.assets.favicon16x16 | default "favicon-16x16.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ site.Params.assets.favicon32x32 | default "favicon-32x32.png" | absURL }}">
@@ -192,15 +166,15 @@
 <meta name="theme-color" content="{{ site.Params.assets.theme_color | default "#2e2e33" }}">
 <meta name="msapplication-TileColor" content="{{ site.Params.assets.msapplication_TileColor | default "#2e2e33" }}">
 
-{{- /* RSS */}}
+{{/* =========================================
+     RSS/alternate
+     ========================================= */}}
 {{- range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ .Name }}">
 {{- end -}}
 {{- range .AllTranslations -}}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{- end -}}
-
-<!-- Hreflang defaults for single-language site -->
 <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default">
 
 <noscript>
@@ -232,8 +206,12 @@
 
 {{- partial "extend_head.html" . -}}
 
-{{- /* Misc */}}
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+{{/* =========================================
+     PROD-только блок: аналитика + OG/Twitter/Schema
+     ВНИМАНИЕ: здесь НЕ дублируем og:* / twitter:* руками,
+     это делает templates/opengraph.html и templates/twitter_cards.html
+     ========================================= */}}
+{{- if $isProd }}
   {{- partial "google_analytics.html" . }}
   {{- partial "templates/opengraph.html" . }}
   {{- partial "templates/twitter_cards.html" . }}

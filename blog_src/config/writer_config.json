@@ -1,12 +1,12 @@
 {
   "language": "en",
   "generation": {
-    "post_length_min": 1800,
+    "post_length_min": 1400,
     "post_length_max": 2200,
-    "subheading_interval": 250,
-    "h2_max_chars": 60,
-    "h3_max_chars": 60,
-    "title_max_chars": 60,
+    "subheading_interval": 230,
+    "h2_max_chars": 65,
+    "h3_max_chars": 65,
+    "title_max_chars": 65,
     "description_max_chars": 160
   },
   "internal_links_min": 1,
@@ -20,10 +20,10 @@
   "categories_allowed": [],
   "categories_per_post": 1,
   "qa_thresholds": {
-    "min_words": 1000,
+    "min_words": 500,
     "max_words": 5000,
     "min_subheadings": 5,
-    "require_faq": true,
+    "require_faq": false,
     "require_internal_links": false
   }
 }

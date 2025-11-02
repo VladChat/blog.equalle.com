@@ -1,0 +1,87 @@
+{{/* File: blog_src/layouts/category/list.html */}}
+{{ define "main" }}
+{{ partial "extend_head.html" . }}
+
+<link rel="stylesheet" href="{{ "/css/blog-list.css" | relURL }}">
+
+<section class="list-page">
+  <div class="list-page-header">
+    <h2 class="page-title">{{ .Title }}</h2>
+    {{ with .Params.description }}
+      <p>{{ . }}</p>
+    {{ end }}
+  </div>
+
+  <style>
+    /* Ровно 4 строки описания — как на главной */
+    .post-card-summary {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+    }
+  </style>
+
+  <div class="post-list">
+    {{ $cat := .Title }}
+    {{ $all := where .Site.RegularPages "Params.categories" "intersect" (slice $cat) }}
+    {{ $paginator := .Paginate $all }}
+
+    {{ if gt (len $paginator.Pages) 0 }}
+      {{ range $paginator.Pages }}
+        <article class="post-card">
+          <a href="{{ .RelPermalink }}">
+            <h2 class="post-card-title">{{ .Title }}</h2>
+
+            {{ with .Summary }}
+              <p class="post-card-summary">{{ . | plainify }}</p>
+            {{ end }}
+
+           <!-- UPDATED meta line: date · N min read · by Author -->
+<p class="post-card-meta">
+  {{ .Date.Format "January 2, 2006" }}
+  {{ if gt .ReadingTime 0 }} &middot; {{ .ReadingTime }} min read{{ end }}
+  {{ with .Param "author" }} &middot; by {{ . }}{{ end }}
+</p>
+
+          </a>
+        </article>
+      {{ end }}
+    {{ else }}
+      <p style="color: var(--secondary); text-align: center; margin-top: 3rem;">No posts found.</p>
+    {{ end }}
+  </div>
+
+  {{ if gt $paginator.TotalPages 1 }}
+    {{ $baseURL := .Site.BaseURL }}
+    {{ $basePath := replaceRE `^https?://[^/]+` "" $baseURL }}
+    {{ if not (strings.HasSuffix $basePath "/") }}
+      {{ $basePath = printf "%s/" $basePath }}
+    {{ end }}
+
+    <nav class="pagination">
+      {{ if $paginator.HasPrev }}
+        {{ $prevNum := sub $paginator.PageNumber 1 }}
+        {{ $prevHref := cond (eq $prevNum 1) $basePath (printf "%spage/%d/" $basePath $prevNum) }}
+        <a class="prev" href="{{ $prevHref }}">« Prev</a>
+      {{ else }}
+        <a class="prev disabled">« Prev</a>
+      {{ end }}
+
+      {{ range $paginator.Pagers }}
+        {{ $n := .PageNumber }}
+        {{ $href := cond (eq $n 1) $basePath (printf "%spage/%d/" $basePath $n) }}
+        <a class="{{ if eq $n $paginator.PageNumber }}active{{ end }}" href="{{ $href }}">{{ $n }}</a>
+      {{ end }}
+
+      {{ if $paginator.HasNext }}
+        {{ $nextNum := add $paginator.PageNumber 1 }}
+        {{ $nextHref := cond (eq $nextNum 1) $basePath (printf "%spage/%d/" $basePath $nextNum) }}
+        <a class="next" href="{{ $nextHref }}">Next »</a>
+      {{ else }}
+        <a class="next disabled">Next »</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+</section>
+{{ end }}

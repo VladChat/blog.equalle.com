@@ -1,0 +1,1489 @@
+{
+  "categories": [
+    {
+      "name": "Wood sanding",
+      "slug": "wood-sanding",
+      "description": "Practical sanding methods for solid wood: surface leveling, grain preparation, and grit selection that delivers clean cuts and predictable finishing results.",
+      "score": 95,
+      "parent": "Woodworking",
+      "keywords": {
+        "core": {
+          "wood sanding": [
+            "how to sand wood without swirl marks",
+            "best sandpaper grits for sanding wood",
+            "remove planer and mill marks before finishing",
+            "hand sanding vs orbital sander on solid wood",
+            "how to sand end grain for a uniform appearance",
+            "sanding technique to avoid rounding sharp edges",
+            "sanding tips for softwoods like pine and fir",
+            "how to check sanding progress with raking light",
+            "vacuum and tack cloth routine between sanding steps",
+            "how to sand plywood without cutting through veneer",
+            "dust extraction setup for clean wood sanding",
+            "prepare bare wood surface for oil or varnish"
+          ],
+          "grain preparation": [
+            "raise the grain with water before final sanding",
+            "identify grain direction before sanding surfaces",
+            "dealing with reversing grain when sanding panels",
+            "minimize grain tear out using correct sanding blocks",
+            "prepping grain for even stain penetration on hardwoods",
+            "wipe with water or alcohol to reveal hidden scratches",
+            "how to sand figured wood with difficult grain patterns",
+            "grain preparation workflow for water based finishes",
+            "should you sand again after grain raising and why",
+            "how to read grain under angled lighting during prep",
+            "match end grain appearance to face grain by sanding",
+            "avoid burnishing the grain before applying stain"
+          ],
+          "surface leveling": [
+            "how to level uneven wood panels by sanding only",
+            "flatten glued up panels with long sanding blocks",
+            "remove high spots without creating low spots",
+            "sanding strategy for cupped or twisted boards",
+            "level a tabletop after glue squeeze out and scraping",
+            "sanding versus hand planing for surface leveling",
+            "blend patched or filled areas level to surrounding wood",
+            "fix minor dips and ridges with controlled cross passes",
+            "use pencil scribble method to spot remaining low areas",
+            "level veneer surfaces safely without sanding through",
+            "when to stop sanding during leveling to avoid dish out",
+            "techniques to keep broad surfaces flat while sanding"
+          ],
+          "grit progression": [
+            "recommended grit progression for bare wood projects",
+            "when to switch grits during the sanding process",
+            "is it okay to skip grits in wood sanding sequence",
+            "final sanding grit before oil or polyurethane",
+            "grit progression differences for hardwood vs softwood",
+            "how to choose starting grit for rough lumber cleanup",
+            "verify scratch removal before moving up to next grit",
+            "grit progression for belt sander and orbital sander",
+            "adjust sanding sequence for water based finishes",
+            "how many passes per grit for consistent results",
+            "grit progression for refinishing pre stained furniture",
+            "common grit mistakes that cause stain blotching"
+          ],
+          "cross-grain scratch removal": [
+            "how to find hidden cross grain scratches before finishing",
+            "remove orbital swirls and cross scratches efficiently",
+            "lighting techniques to reveal fine sanding scratches",
+            "sanding methods to avoid cross grain marks on boards",
+            "blend out cross scratches before applying stain or dye",
+            "fix scratches that appear after first finish coat",
+            "hand sand with the grain to erase machine swirl marks",
+            "use rigid sanding blocks to control scratch pattern",
+            "when to drop back a grit to remove stubborn scratches",
+            "pre finish inspection with mineral spirits for defects",
+            "prevent cross scratches near edges and corners",
+            "remove 120 grit trenches fully before moving to 180"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Furniture Refinishing",
+      "slug": "furniture-refinishing",
+      "description": "Step-by-step furniture restoration: safe finish removal, controlled sanding sequences, and surface prep that helps stains and topcoats lay smooth and even.",
+      "score": 93,
+      "parent": "Woodworking",
+      "keywords": {
+        "core": {
+          "furniture refinishing": [
+            "step by step furniture refinishing process at home",
+            "strip or sand first when refinishing furniture pieces",
+            "how to refinish antique furniture without losing character",
+            "choose between oil polyurethane or lacquer finishes",
+            "hand sanding versus orbital sander for furniture refinishing",
+            "dust control and workspace setup for refinishing furniture",
+            "how long to wait between coats during refinishing",
+            "refinishing veneered furniture without sanding through veneer",
+            "repair small dents before refinishing furniture surfaces",
+            "how to scuff sand furniture between topcoat layers",
+            "use of tack cloth and vacuum during refinishing",
+            "common refinishing mistakes and how to avoid them",
+            "how to blend repaired areas during furniture refinishing"
+          ],
+          "furniture restoration": [
+            "how to repair chipped or lifting veneer before refinishing",
+            "fix dents and white rings before applying new finish",
+            "reglue loose joints and stabilize wobbly chairs",
+            "color matching stain on restored furniture repairs",
+            "clean old finishes without fully stripping them",
+            "restore finish with scuff sanding and a fresh recoat",
+            "blend new finish with old surfaces for seamless look",
+            "how to remove wax build up before restoration",
+            "maintain patina while restoring vintage furniture",
+            "refinish furniture legs and spindles evenly",
+            "fill deep scratches so they do not telegraph through finish",
+            "when to choose partial restoration over full stripping",
+            "restoration sanding tips for curved and detailed parts"
+          ],
+          "wood finish removal": [
+            "how to remove polyurethane or varnish safely from furniture",
+            "identify lacquer shellac or oil finishes before stripping",
+            "chemical stripper versus sanding for finish removal",
+            "heat gun technique for lifting old finish layers",
+            "neutralize stripper residue before sanding bare wood",
+            "remove paint from furniture without gouging the wood",
+            "best grit sandpaper after chemical stripping",
+            "wipe surface with mineral spirits to check for residue",
+            "how to clean off wax or oil finish before restaining",
+            "strip finish from veneered surfaces without damage",
+            "combine scraping and sanding for efficient finish removal",
+            "avoid softening glue joints when using heat or chemicals",
+            "prep the surface immediately after stripping for even stain"
+          ],
+          "grain filling": [
+            "how to apply grain filler on open pore woods like oak",
+            "difference between oil and water based grain fillers",
+            "apply grain filler across or with the grain correctly",
+            "tint grain filler to match darker stain colors",
+            "sand back grain filler between coats without burn through",
+            "grain filling sequence before sealing and staining",
+            "slurry sanding method for filling grain on tabletops",
+            "grain filling for piano or mirror like finishes",
+            "dry time for grain filler before sanding smooth",
+            "grain filling tips for mahogany walnut and oak surfaces",
+            "repair pinholes that appear after filler dries",
+            "common grain filler application mistakes to avoid",
+            "how to remove excess grain filler before it hardens"
+          ],
+          "stain preparation": [
+            "what grit to sand furniture before applying stain",
+            "raise the grain before staining to prevent roughness",
+            "use pre stain conditioner to prevent blotching on pine",
+            "vacuum and tack cloth steps before staining furniture",
+            "how wood moisture content affects stain absorption",
+            "test stain color on hidden area or scrap piece first",
+            "sand end grain lightly to prevent dark stain spots",
+            "remove swirl marks before applying stain or sealer",
+            "choose final sanding grit for oil versus water based stains",
+            "how long to wait after sanding before staining furniture",
+            "clean surface oils or wax before applying stain coats",
+            "edge and profile sanding tips before finishing",
+            "when to sand lightly between stain and clear coat layers"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Trim & Molding Sanding",
+      "slug": "trim-molding-sanding",
+      "description": "Clean up baseboards, casing, and profiles with controlled hand sanding and sponges, removing fibers and nibs so primer and paint bond smoothly and uniformly.",
+      "score": 82,
+      "parent": "Woodworking",
+      "keywords": {
+        "core": {
+          "trim sanding": [
+            "what grit to sand interior trim before painting",
+            "how to scuff sand glossy trim for better adhesion",
+            "avoid rounding sharp edges while sanding trim",
+            "sanding trim between coats of primer and enamel",
+            "hand sanding versus sponge for door casings and jambs",
+            "how to sand tight inside corners on window trim",
+            "should you sand before or after applying caulk on trim",
+            "final sanding grit for enamel painted interior trim",
+            "dust control setup when sanding interior trim work",
+            "use raking light to reveal missed scratches on trim",
+            "vacuum and tack cloth routine after sanding trim",
+            "how to prep previously painted trim without gouging"
+          ],
+          "molding sanding": [
+            "how to sand crown molding profiles without flattening",
+            "sanding techniques for curved and detailed molding",
+            "use profile sanding grips matched to molding contours",
+            "remove brush marks and sags on painted molding by sanding",
+            "best grit progression for raw wood molding before finish",
+            "degrosser versus sanding for molding repaint prep",
+            "blend scarf joints on molding so seams disappear",
+            "repair dents then sand molding flush and smooth",
+            "sand chair rail without damaging beaded edges",
+            "support long molding during sanding to prevent chatter",
+            "how to sand returns and miters on decorative molding",
+            "inspect molding profiles with raking light for defects"
+          ],
+          "baseboard sanding": [
+            "how to sand baseboards before repainting rooms",
+            "best grit to scuff sand previously painted baseboards",
+            "sand caulk lines on baseboards smooth and flush",
+            "remove paint drips and runs on baseboards by sanding",
+            "sanding baseboards with minimal household dust spread",
+            "how to sand inside corners of baseboards neatly",
+            "prep stained baseboards for a recoat with light sanding",
+            "sand wood filler on baseboards perfectly flat to surface",
+            "avoid scuffing adjacent wall while sanding baseboards",
+            "use a flat sanding block to keep baseboards true",
+            "edge and floor protection tips when sanding baseboards",
+            "sand quarter round and shoe molding without flat spots"
+          ],
+          "profile sanding": [
+            "how to sand detailed trim profiles without rounding over",
+            "use hard blocks to protect crisp inside corners on profiles",
+            "flexible foam for sanding convex and concave trim shapes",
+            "custom sanding blocks for beads coves and ogee profiles",
+            "mark with pencil lines to track sanding on complex profiles",
+            "choose abrasive cords and micro files for tight details",
+            "hand sand with the grain on profiled trim components",
+            "avoid cross grain scratches on finely detailed profiles",
+            "drop back a grit to erase stubborn profile scratches",
+            "wrap sandpaper around dowels for small radius profiles",
+            "use raking light to inspect profile scratches before paint",
+            "when to switch from sponge to rigid block on profiles"
+          ],
+          "sponge for trim": [
+            "best sanding sponge grit for trim surface prep",
+            "extra fine sanding sponge between coats on trim paint",
+            "when to choose sanding sponge versus paper on trim work",
+            "sanding sponge techniques for corners and curved casings",
+            "how to clean and unclog a sanding sponge during prep",
+            "dust channeling sanding sponges reduce clogging on paint",
+            "pick sponge grit for scuff sanding hard enamel finishes",
+            "thin versus thick sanding sponges for tight trim areas",
+            "use folded paper or sponge for narrow edge profiles",
+            "extend sanding sponge life by using light pressure",
+            "use sponges to denib primer and topcoats on trim",
+            "how to sand rosettes and decorative blocks with sponges"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Drywall Sanding",
+      "slug": "drywall-sanding",
+      "description": "Flatten joints, blend seams, and feather patches using mesh, poles, and dust control so walls and ceilings hit a paint-ready smoothness with minimal cleanup.",
+      "score": 88,
+      "parent": "Interior Prep",
+      "keywords": {
+        "core": {
+          "drywall sanding": [
+            "best grit for drywall sanding before paint",
+            "mesh versus paper for sanding drywall joints",
+            "how to avoid ridges and gouges when sanding",
+            "sanding inside corners without damaging tape",
+            "how to sand ceilings without swirl marks",
+            "when to stop sanding and switch to priming",
+            "use raking light to spot sanding defects",
+            "how to sand patches flush with surrounding wall",
+            "erase sanding scratches that show after primer",
+            "repair paper fuzzing from over sanding drywall",
+            "sanding strategy for factory versus cut edges",
+            "safe sanding technique around electrical boxes"
+          ],
+          "joint compound sanding": [
+            "how long to wait before sanding joint compound",
+            "best grit for sanding joint compound seams",
+            "feather joint compound edges seamlessly",
+            "sand butt joints flush without creating dips",
+            "sanding between mud coats or after final coat",
+            "remove knife ridges before final sanding",
+            "avoid exposing tape while sanding joint compound",
+            "fix pinholes and bubbles revealed during sanding",
+            "how to sand around inside and outside corners",
+            "repair over sanded joints before priming",
+            "use pencil marks to track sanding progress",
+            "hand sanding versus pole sanding joint compound"
+          ],
+          "wall finishing": [
+            "level 4 versus level 5 wall finish explained",
+            "how to achieve paint ready wall smoothness",
+            "skim coat then sand for ultra smooth walls",
+            "sanding sequence after skim coating large areas",
+            "use primer as a sanding sealer for wall finishing",
+            "spot prime sanded areas to check for defects",
+            "fill pinholes and sand before final prime",
+            "how to feather repairs to disappear on flat paint",
+            "fix flashing and texture mismatch after sanding",
+            "sanding orange peel texture to a smooth finish",
+            "lighting techniques to inspect finished walls",
+            "final sand grit before applying finish coat"
+          ],
+          "dustless drywall sanding": [
+            "set up dustless drywall sanding with shop vac",
+            "choose hepa filter and bag for drywall dust",
+            "mesh discs for airflow in dustless sanding",
+            "connect drywall sander hose without leaks",
+            "control dust with negative pressure and sealing",
+            "wet sanding drywall to minimize airborne dust",
+            "keep vents and returns protected during sanding",
+            "vacuum pole sander heads versus hand sanders",
+            "prevent clogging when sanding joint compound dust",
+            "clean room workflow for dustless sanding results",
+            "choose hose diameter for better suction on sander",
+            "safe mask and respirator options for drywall dust"
+          ],
+          "pole sander drywall": [
+            "figure eight motion for pole sander on walls",
+            "avoid leading edge digging with pole sander",
+            "how to sand ceilings efficiently with a pole",
+            "pressure control to prevent waves with pole sander",
+            "choose grit for pole sanding walls and ceilings",
+            "when to switch from pole sander to hand sanding",
+            "control swivel head to keep pad flat on surface",
+            "extend pole length for high walls safely",
+            "sanding corners and edges without catching tape",
+            "use pencil guide to track pole sanding coverage",
+            "mesh sheets sized and clipped for pole sanders",
+            "connect pole sander to vacuum for dust control"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Floor & Deck Sanding",
+      "slug": "floor-deck-sanding",
+      "description": "Run coarse-to-fine grit progressions to level boards, erase wear, and prep wood floors or decks for stain and finish with consistent color and durable adhesion.",
+      "score": 84,
+      "parent": "Woodworking",
+      "keywords": {
+        "core": {
+          "floor sanding": [
+            "best grit sequence for hardwood floor sanding",
+            "how to sand floors without chatter marks",
+            "avoid dish out and wavy floors while sanding",
+            "drum or belt sander choice for floor refinishing",
+            "how many passes per grit when sanding floors",
+            "use raking light to reveal floor sanding scratches",
+            "final sanding grit before water based floor finish",
+            "how to sand parquet floors across patterns safely",
+            "fix cupped or crowned boards before final sanding",
+            "vacuum and tack between floor sanding grits",
+            "remove pet stains or deep gouges before finishing",
+            "screen and buff after sanding to refine scratch pattern"
+          ],
+          "deck sanding": [
+            "best grit for deck sanding before staining",
+            "remove mill glaze from new deck boards by sanding",
+            "how to sand weathered deck boards without gouging",
+            "orbital versus belt sander for large deck surfaces",
+            "sand railings balusters and posts evenly",
+            "feather edges around fasteners and board ends",
+            "remove flaking stain from deck with sanding sequence",
+            "final grit before applying deck stain or sealer",
+            "sand end grain on deck steps and cutoffs",
+            "wash brighten then sand workflow for old decks",
+            "dust control and cleanup for outdoor deck sanding",
+            "avoid rounding over deck board edges while sanding"
+          ],
+          "wood floor prep": [
+            "moisture and acclimation checks before floor sanding",
+            "set nails and countersink fasteners before sanding",
+            "remove staples adhesives and carpet pad residue",
+            "fill gaps with trowel filler then sand level",
+            "mask baseboards vents and doorways before sanding",
+            "test stain color in inconspicuous area of floor",
+            "water pop technique to improve stain penetration",
+            "vacuum walls and ceilings to keep dust off floors",
+            "choose floor finish and plan grit progression accordingly",
+            "inspect subfloor squeaks and secure boards pre sanding",
+            "safe room isolation and airflow planning for sanding",
+            "prep tools abrasives and lighting for efficient sanding"
+          ],
+          "drum sander": [
+            "how to use a drum sander without gouging the floor",
+            "feather in starts and stops to avoid divots",
+            "diagonal first cut to flatten cupped hardwood floors",
+            "set drum pressure and walking speed for even cut",
+            "select starting grit for heavy finish removal",
+            "change belts often to prevent burn marks and streaks",
+            "avoid stopping with drum down on the floor",
+            "blend drum sander passes to avoid lap lines",
+            "diagnose and fix chatter lines from drum sander",
+            "work with the grain on final passes using drum",
+            "how to keep the machine tracking straight safely",
+            "combine drum and edger sequences to match scratch"
+          ],
+          "edger sanding": [
+            "edge sanding sequence to match the drum sander scratch",
+            "feather from wall edge to blend with field sanding",
+            "choose hard or soft pads for edger control",
+            "avoid edger pigtails and swirl marks",
+            "how to sand tight corners and under radiators",
+            "progression of edger grits after each drum pass",
+            "use a scraper or detail sander in inside corners",
+            "vacuum baseboards and corners between edger passes",
+            "replace edger discs frequently for consistent cut",
+            "how to maintain flatness with an edger near thresholds",
+            "blend stair nosings and transitions with edger sanding",
+            "lighting and pencil guide to verify edge sanding coverage"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Auto Body Sanding",
+      "slug": "auto-body-sanding",
+      "description": "Panel prep and feather-edging for filler, primer, and paint: manage scratches, straighten transitions, and build a uniform surface that finishes cleanly.",
+      "score": 91,
+      "parent": "Automotive",
+      "keywords": {
+        "core": {
+          "auto body sanding": [
+            "best grit sequence for auto body sanding before primer",
+            "how to feather edge old paint without visible steps",
+            "remove 80 grit scratches before applying 2k primer",
+            "sand body filler to final contour before priming",
+            "knock down high spots without creating panel waves",
+            "blend repairs into adjacent panels while sanding",
+            "sand around body lines without flattening crisp edges",
+            "avoid pigtails and swirl marks on automotive panels",
+            "wet sanding versus dry sanding for collision repair panels",
+            "dust extraction setup for sanding automotive panels",
+            "check sanding scratches under raking light before primer",
+            "how to sand plastic bumpers safely without melting"
+          ],
+          "car surface prep": [
+            "proper panel degreasing before sanding and painting",
+            "remove silicone and fisheye contaminants from panels",
+            "scuff sand existing paint for adhesion promoter application",
+            "de nib and scuff blend areas near edges and door jambs",
+            "clean sanding residue from panel gaps seams and trim",
+            "feather stone chips before sealer and basecoat",
+            "treat bare metal spots with etch or epoxy before sanding",
+            "masking strategy to keep dust off adjacent panels",
+            "use gray scuff pads versus paper on tight contours",
+            "tack cloth versus air blow off before sealer application",
+            "temperature and humidity considerations during panel prep",
+            "final wipe procedure with lint free towels before paint"
+          ],
+          "primer sanding": [
+            "best grit to sand epoxy primer before filler or sealer",
+            "how long to wait before sanding 2k primer surfacer",
+            "use dry guide coat when sanding primer to reveal lows",
+            "wet sanding primer versus dry sanding for basecoat prep",
+            "fix sand scratch swelling and primer shrinkage issues",
+            "feather primer edges to hide repair rings and mapping",
+            "what grit to finish primer before spraying basecoat",
+            "avoid edge burn through while sanding primer surfaces",
+            "re prime after sanding through to filler or bare metal",
+            "block sand primer with a consistent crosshatch pattern",
+            "how many coats of primer before final sanding pass",
+            "clean primer dust to prevent fisheyes in paint"
+          ],
+          "block sanding": [
+            "block sanding techniques to straighten wavy panels",
+            "crosshatch block sanding to reveal highs and lows",
+            "choose longboard versus short block for large panels",
+            "match block hardness to convex and concave shapes",
+            "avoid flat spots on crowned areas while block sanding",
+            "use dry guide coat while block sanding body filler",
+            "feather filler edges into metal during blocking",
+            "read highs and lows using pencil grid guide marks",
+            "when to drop back a grit during block sanding stages",
+            "correct arm pressure and stroke length for blocking",
+            "block sand after each primer coat to refine surface",
+            "avoid telegraphing block sanding marks through basecoat"
+          ],
+          "guide coat sanding": [
+            "apply dry guide coat evenly over primer before blocking",
+            "identify low spots and pinholes with guide coat contrast",
+            "reapply guide coat between grits for accurate reading",
+            "powder guide coat versus aerosol for block sanding",
+            "guide coat on body filler versus on primer surfacer",
+            "choose guide coat color for light or dark primers",
+            "troubleshoot lows that persist after multiple passes",
+            "combine guide coat with crosshatch sanding pattern",
+            "recognize highs that need knockdown not more sanding",
+            "when guide coat stops revealing defects before paint",
+            "guide coat technique on plastic bumpers and edges",
+            "clean guide coat residue before sealing and paint"
+          ],
+          "DA vs RO sanding": [
+            "da sander versus random orbital for bodywork preparation",
+            "3 millimeter versus 5 millimeter orbit for auto sanding",
+            "choose 6 inch versus 5 inch discs for da and ro sanders",
+            "minimize pigtails with correct rpm and pad pressure",
+            "select interface pads for curves and panel edges",
+            "vacuum ready da sander setup for effective dust control",
+            "when to switch from da sanding to hand block sanding",
+            "disc grit selection for da versus ro in primer prep",
+            "avoid heat buildup and melting on plastics with da use",
+            "speed control guidelines for finishing passes on ro",
+            "create uniform scuff pattern for blends with da sanding",
+            "troubleshoot swirl marks left by da or ro sanders"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Wet Sanding Clear Coat",
+      "slug": "wet-sanding-clear-coat",
+      "description": "Level orange peel and refine clear coats with fine wet grits, then polish to clarity while controlling edges, burn-through risk, and final gloss uniformity.",
+      "score": 90,
+      "parent": "Automotive",
+      "keywords": {
+        "core": {
+          "wet sanding clear coat": [
+            "how to wet sand clear coat without burning through edges",
+            "soak time for wet sanding paper or discs before use",
+            "soap to water ratio for wet sanding lubrication",
+            "use a soft interface pad to follow panel curves safely",
+            "squeegee technique to check leveling progress while wet",
+            "remove dust nibs in clear coat with localized wet sanding",
+            "how to mask panel edges and body lines before wet sanding",
+            "panel temperature and lubrication tips for wet sanding",
+            "how to prevent pigtails when wet sanding clear coat",
+            "when to switch from 1500 to 2000 grit during wet sanding",
+            "check texture uniformity after wet sanding with raking light",
+            "safe wet sanding workflow for recently repainted panels"
+          ],
+          "clear coat leveling": [
+            "crosshatch sanding pattern for even clear coat leveling",
+            "flatten texture without exposing basecoat on high spots",
+            "blend leveled area into surrounding panel seamlessly",
+            "leveling strategy around edges emblems and door handles",
+            "use guide coat to reveal remaining texture highs in clear",
+            "when to stop leveling and move to refining grits",
+            "correct uneven texture after spot repair clear coat",
+            "level runs and sags in clear coat before polishing",
+            "maintain panel flatness with a rigid block while leveling",
+            "inspect clear coat level under diffuse and point lighting",
+            "edge control techniques to avoid cut through during leveling",
+            "feather transitions so leveling marks do not telegraph"
+          ],
+          "paint polishing": [
+            "compound versus polish differences for clear coat finishing",
+            "choose wool foam or microfiber pads for paint correction",
+            "rotary versus dual action polisher for sanding mark removal",
+            "polishing rpm and arm speed to remove 2000 grit scratches",
+            "finish out haze and micro marring after compounding",
+            "pad priming and on the fly cleaning for consistent cut",
+            "use panel wipe to verify true finish after polishing oils",
+            "inspect finish with a high intensity inspection light",
+            "avoid edge burn and hot spots when machine polishing",
+            "reduce dusting and sling during longer polishing sets",
+            "minimize holograms on dark colors with finishing technique",
+            "final jeweling pass to maximize gloss and clarity"
+          ],
+          "orange peel removal": [
+            "full orange peel removal versus texture match to oem finish",
+            "test spot to determine starting grit for peel removal",
+            "sanding pattern to reduce peel without creating flat spots",
+            "how to remove orange peel on fresh clear safely",
+            "edge masking to protect body lines during peel removal",
+            "use structured finishing abrasives for faster peel leveling",
+            "check peel uniformity with a squeegee after each pass",
+            "avoid dieback by allowing cure time before peel removal",
+            "refine peel removal marks before moving to polishing",
+            "partial peel knockdown for blend areas near edges",
+            "orange peel removal on bumpers and flexible plastics",
+            "finish at 3000 grit to speed polishing after peel removal"
+          ],
+          "2000–3000 grit wet sanding": [
+            "when to choose 2000 versus 3000 grit for clear refining",
+            "step from 1500 to 2000 then 3000 for faster polishing",
+            "expected polishing time after finishing at 3000 grit",
+            "how to read the scratch pattern from 2000 versus 3000 grit",
+            "lubrication tips for consistent 3000 grit finishing passes",
+            "prevent loading of 2000 grit during longer wet sanding",
+            "hand block versus foam interface for 3000 grit finishing",
+            "use finishing discs in 3000 grit for uniform scratch pattern",
+            "transition from 3000 grit sanding to first polishing step",
+            "inspect remaining 2000 grit scratches before stepping to 3000",
+            "blend 2000–3000 grit sanding into adjacent unsanded areas",
+            "avoid post sanding haze before polishing after 3000 grit"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Headlight Restoration",
+      "slug": "headlight-restoration",
+      "description": "Restore lens clarity by wet sanding oxidized plastic through fine grits, then polishing to remove haze and improve nighttime visibility and overall appearance.",
+      "score": 86,
+      "parent": "Automotive",
+      "keywords": {
+        "core": {
+          "headlight restoration": [
+            "complete headlight restoration steps from sanding to coating",
+            "how to tape and mask around headlights before restoration",
+            "choose starting grit for heavily yellowed headlights",
+            "vertical then horizontal sanding pattern for uniform cut",
+            "how to check progress with a squeegee while wet sanding",
+            "avoid burning through lens edges during restoration",
+            "how long to wait between sanding and polishing stages",
+            "panel wipe and degreasing steps before final coating",
+            "test spot method to set grit sequence on a headlight",
+            "when to switch from 1500 to 2000 grit during restoration",
+            "cleanroom tips to keep dust off during headlight refinishing",
+            "final inspection lighting to verify clarity after restoration"
+          ],
+          "lens sanding": [
+            "best wet sanding sequence for plastic headlight lenses",
+            "how long to soak wet dry papers before lens sanding",
+            "use of soft interface pad to follow lens curves safely",
+            "hand block versus palm pad for flat lens sections",
+            "crosshatch sanding to remove previous grit scratches",
+            "how to level factory texture without creating flat spots",
+            "sanding technique for tight corners and lens edges",
+            "prevent pigtails by flushing slurry during lens sanding",
+            "when to step back a grit to erase stubborn scratches",
+            "inspect lens sanding marks with raking light while wet",
+            "how to avoid loading of fine grits during lens sanding",
+            "mesh finishing discs versus paper for final lens refinement"
+          ],
+          "plastic headlight polishing": [
+            "compound versus polish to remove 2000 grit sanding marks",
+            "wool foam or microfiber pad selection for plastic polishing",
+            "dual action versus rotary polishing to finish a headlight",
+            "pad priming and on the fly cleaning for consistent cut",
+            "polishing arm speed and rpm to reduce micro marring",
+            "panel wipe with isopropyl to reveal true finish after polish",
+            "how to avoid heat buildup and edge burn on plastic lenses",
+            "reduce dusting and sling during long polishing sets",
+            "finish down on dark cars without holograms or haze",
+            "final jeweling pass to maximize lens clarity and gloss",
+            "inspect for remaining 1500 grit trails before coating",
+            "troubleshoot polishing haze after insufficient refinement"
+          ],
+          "UV clear coat": [
+            "why uv protective clear coat is required after restoration",
+            "mask edges and body lines before applying uv clear coat",
+            "how many coats and flash times for wipe on uv coatings",
+            "ideal temperature and humidity range for uv clear curing",
+            "avoid orange peel in aerosol clear on headlight lenses",
+            "dust nib control and tack between coats on clear coat",
+            "how long to wait before driving after uv clear application",
+            "when to recoat or strip failed headlight uv layer",
+            "edge control to prevent clear build up on lens borders",
+            "wipe on versus spray on uv coatings pros and cons",
+            "compatibility of uv clear with freshly polished plastic",
+            "uv coating maintenance intervals to extend restoration life"
+          ],
+          "plastic oxidation removal": [
+            "identify hard factory coating versus simple surface oxidation",
+            "starting grit for severe oxidation removal on headlights",
+            "remove yellowed oxidation uniformly before refinement steps",
+            "degrease lenses to eliminate silicone and fisheye issues",
+            "how to eliminate white oxidation haze near lens edges",
+            "safe methods to strip stubborn headlight clear layers",
+            "why toothpaste fixes are temporary for oxidation removal",
+            "check clarity dry versus wet to confirm oxidation removal",
+            "address deep pits and etching before polishing a headlight",
+            "remove road film and insect residue before oxidation sanding",
+            "control heat and pressure while cutting oxidized plastic",
+            "final rinse and panel wipe steps after oxidation removal"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Metal Polishing & Rust Repair",
+      "slug": "metal-polishing-rust-repair",
+      "description": "Remove rust, blend scratches, and polish steel or aluminum with staged abrasives that prepare panels and parts for coating, plating, or a bright finish.",
+      "score": 80,
+      "parent": "Automotive",
+      "keywords": {
+        "core": {
+          "metal polishing": [
+            "grit progression for aluminum before buffing",
+            "choose tripoli versus white rouge for metal polishing",
+            "set up polishing wheels without cross contamination",
+            "how to avoid waves while polishing flat metal panels",
+            "remove oxidation haze from aluminum before final polish",
+            "technique to polish stainless steel to a mirror finish",
+            "prevent black residue when polishing aluminum surfaces",
+            "pad and wheel selection for tight curves and edges",
+            "final jeweling pass to maximize gloss on bare metal",
+            "clean and decontaminate metal before polishing compounds",
+            "reduce heat and discoloration during machine polishing",
+            "inspect scratch direction to confirm ready for polish"
+          ],
+          "rust repair": [
+            "identify surface rust versus scale and perforation",
+            "grind out rust and feather edges for patch repair",
+            "when to cut and weld versus treat with converter",
+            "sandblast versus mechanical sanding for heavy rust",
+            "prepare weld seams and grind smooth before priming",
+            "epoxy primer over treated bare metal before filler",
+            "seal hidden cavities with cavity wax after rust repair",
+            "remove rust under seam sealer and reapply correctly",
+            "neutralize converter residue and clean before primer",
+            "prevent flash rust after sanding by timely epoxy coat",
+            "blend repaired area into surrounding paint after treatment",
+            "long term rust prevention steps after repair is complete"
+          ],
+          "metal surface sanding": [
+            "scratch pattern control for metal panels before primer",
+            "recommended grit sequence for sanding bare steel",
+            "avoid thinning or warping sheet metal while sanding",
+            "block sand body filler flush with surrounding metal",
+            "refine grinder marks with 120 then 180 then 220 grits",
+            "sanding sequence on aluminum before primer or polish",
+            "feather old paint edges smoothly into bare metal",
+            "use interface pads to follow gentle metal curves",
+            "remove mill scale and prepare steel for coating",
+            "final sanding grit before epoxy primer on body panels",
+            "avoid cross contamination between steel and aluminum abrasives",
+            "dust control and cleanliness for metal sanding before paint"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Paint Removal & Surface Prep",
+      "slug": "paint-removal-surface-prep",
+      "description": "Strip failing coatings and build a keyed surface with controlled sanding that improves primer grip, levels texture, and prevents telegraphing through finishes.",
+      "score": 89,
+      "parent": "Finishing",
+      "keywords": {
+        "core": {
+          "paint removal sanding": [
+            "what grit to remove peeling paint from wood trim",
+            "how to sand old paint without gouging the substrate",
+            "feather paint edges after scraping and before priming",
+            "sanding sequence to remove brush drips and sags",
+            "sand exterior siding paint safely before repainting",
+            "remove paint from metal surfaces prior to epoxy primer",
+            "hand scraper and sander workflow for thick paint layers",
+            "dust control methods when dry sanding old paint",
+            "how to sand window sashes without rounding profiles",
+            "when to stop sanding paint and switch to primer",
+            "level remaining paint ridges to avoid telegraphing",
+            "orbital versus hand block for controlled paint removal"
+          ],
+          "surface preparation": [
+            "scuff sand glossy paint to improve primer adhesion",
+            "clean and degrease surfaces before sanding and priming",
+            "remove chalking from aged paint before surface prep steps",
+            "fill repairs then sand flush prior to primer application",
+            "tack cloth and vacuum routine between prep operations",
+            "etch sand bare metal lightly before epoxy or etch primer",
+            "feather drywall patches smooth before final prime coat",
+            "prep previously stained wood for paint with deglosser and sanding",
+            "check moisture and temperature conditions before coating",
+            "inspect with raking light to find remaining prep defects",
+            "mask adjacent areas to protect during sanding and priming",
+            "abrade between coats to maintain mechanical adhesion profile"
+          ],
+          "coating removal": [
+            "strip failing polyurethane then sand residue before refinishing",
+            "remove elastomeric coatings using scrape and sand workflow",
+            "heat gun versus infrared for safe coating removal",
+            "neutralize chemical stripper residue before sanding clean",
+            "remove epoxy floor coatings and profile substrate for repaint",
+            "mechanical versus chemical coating removal pros and cons",
+            "test a small area to choose the best removal method",
+            "avoid substrate damage while removing thick paint build",
+            "strip coatings from metal railings then sand to feather edges",
+            "remove clear finishes from wood without discoloration",
+            "combine scraping and sanding to speed heavy coating removal",
+            "safe disposal and cleanup procedures after coating removal"
+          ],
+          "paint stripping vs sanding": [
+            "when to choose chemical stripping instead of sanding",
+            "hybrid method strip first then sand for smooth substrate",
+            "which method preserves veneer and thin profiles best",
+            "compare dust versus fumes control sanding and stripping",
+            "finish quality differences between stripping and sanding",
+            "tool selection for detailed moldings strip or sand",
+            "cost and time comparison for stripping versus sanding",
+            "impact on stain penetration after stripping versus sanding",
+            "safety considerations for each method on interior projects",
+            "cleanup and waste handling for stripping versus sanding",
+            "lead paint implications choosing strip or sand approach",
+            "how substrate hardness affects method selection"
+          ],
+          "lead-safe sanding": [
+            "epa rrp containment setup for lead paint sanding",
+            "wet sanding techniques to reduce airborne lead dust",
+            "hepa vacuum attachment for sanders during lead work",
+            "proper respirator and ppe for lead safe sanding",
+            "seal rooms with plastic and maintain negative pressure",
+            "post sanding cleanup hepa vacuum and damp wipe protocol",
+            "bag and seal debris according to rrp requirements",
+            "test suspect paint for lead before beginning sanding",
+            "avoid heat guns or open flame on lead coated surfaces",
+            "protect occupants and children during lead hazard work",
+            "documentation and recordkeeping for rrp compliance",
+            "clearance verification after lead safe surface preparation"
+          ]
+        }
+      }
+    },
+
+    {
+      "name": "Between-Coats Sanding",
+      "slug": "between-coats-sanding",
+      "description": "Lightly scuff cured coats to knock down nibs and improve intercoat adhesion, setting up a smoother final finish with fewer defects and easier polishing.",
+      "score": 87,
+      "parent": "Finishing",
+      "keywords": {
+        "core": {
+          "between coats sanding": [
+            "how to scuff sand between finish coats",
+            "best grit for sanding between coats of polyurethane",
+            "remove dust nibs between clear coat layers",
+            "light sanding to improve adhesion between coats",
+            "tack cloth and vacuum steps after scuff sanding",
+            "avoid cutting through color coats when sanding between",
+            "identify raised nibs before sanding",
+            "when to sand between coats of water-based finish",
+            "wipe with mineral spirits to inspect between coats",
+            "recoat timing after sanding for smooth finish",
+            "how to sand between coats on vertical surfaces",
+            "denibbing lacquer and varnish layers correctly"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Polishing & Finishing",
+      "slug": "polishing-finishing",
+      "description": "Refine surfaces from fine sanding to compound and polish, removing haze and micro-scratches to achieve consistent sheen, depth, and long-lasting gloss.",
+      "score": 85,
+      "parent": "Finishing",
+      "keywords": {
+        "core": {
+          "polishing sandpaper": [
+            "difference between compounding and polishing",
+            "remove 2000 grit sanding scratches efficiently",
+            "choose wool foam or microfiber pads",
+            "best polishing sequence after wet sanding",
+            "finish out micro marring and haze",
+            "panel wipe to verify true finish clarity",
+            "reduce swirl marks during polishing",
+            "speed and pressure control for polishers",
+            "final jeweling pass for mirror gloss",
+            "clean pads between polishing sets",
+            "compound residue removal before inspection",
+            "polish edges safely without burn through"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Random Orbital Sanding",
+      "slug": "random-orbital-sanding",
+      "description": "Use RO/DA sanders with proper pad, grit, and technique to cut fast while avoiding swirl marks, maintaining flatness, and improving finish consistency.",
+      "score": 92,
+      "parent": "Tools & Techniques",
+      "keywords": {
+        "core": {
+          "random orbital sanding": [
+            "prevent swirl marks with random orbital sanders",
+            "difference between da and random orbital sanding",
+            "select correct orbit size for performance",
+            "best interface pad for curved surfaces",
+            "vacuum hookup for dustless orbital sanding",
+            "proper hand pressure and speed control",
+            "crosshatch passes for flat panel sanding",
+            "avoid pigtails in random orbital sanding",
+            "grit progression for primer or paint prep",
+            "blend edges smoothly with orbital sander",
+            "use guide coat with orbital sanding",
+            "pad care and maintenance for ro sanders"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Detail Sander Sheets",
+      "slug": "detail-sander-sheets",
+      "description": "Reach corners and tight profiles with triangle and mouse sheets, matching grit to task for precise cleanup, edge control, and minimal rounding of details.",
+      "score": 78,
+      "parent": "Tools & Techniques",
+      "keywords": {
+        "core": {
+          "detail sander sheets": [
+            "best grit sheets for detail sanding tools",
+            "sand tight corners with mouse sander",
+            "replace triangle sheets cleanly and quickly",
+            "avoid rounding edges during detail sanding",
+            "use light pressure to prevent gouging",
+            "sequence grits for profiles and corners",
+            "clean and reuse detail sander pads",
+            "sand delicate moldings with fine sheets",
+            "prepare curved parts with detail sander",
+            "dust collection options for small sanders",
+            "prevent sheet clogging on small tools",
+            "edge sanding tips for precision areas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sanding Blocks",
+      "slug": "sanding-blocks",
+      "description": "Maintain flatness and control pressure by hand with blocks that distribute force evenly, helping produce crisp lines, consistent scratch, and clean edges.",
+      "score": 79,
+      "parent": "Tools & Techniques",
+      "keywords": {
+        "core": {
+          "sanding block": [
+            "when to use sanding blocks versus bare hand",
+            "keep surfaces flat with rigid blocks",
+            "choose cork or rubber blocks for even pressure",
+            "wrap sandpaper correctly on a block",
+            "sand edges straight with block control",
+            "cross sanding method for leveling panels",
+            "block sanding tips for woodworking",
+            "match block hardness to the surface shape",
+            "clean blocks to avoid stray scratches",
+            "use pencil marks to track high spots",
+            "block sanding primer coats before paint",
+            "prevent finger ridges using a block"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sanding Sponges",
+      "slug": "sanding-sponges",
+      "description": "Conform to edges and profiles using flexible sponges that reduce gouging and help de-nib, scuff, and blend surfaces in preparation for paint or finish.",
+      "score": 83,
+      "parent": "Tools & Techniques",
+      "keywords": {
+        "core": {
+          "sanding sponge": [
+            "best grit sponges for trim and profiles",
+            "washable sanding sponges for longer life",
+            "scuff sand between coats with a sponge",
+            "sponge versus paper on curved surfaces",
+            "denibbing with ultra fine sponge abrasives",
+            "clean a sanding sponge to restore cut",
+            "blend primer edges using a sponge",
+            "avoid flattening detail with flexible sponge",
+            "wet sanding sponges for dust control",
+            "sponge grit chart for finishing",
+            "sponge technique for edges and corners",
+            "reuse and maintenance tips for sponges"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sanding Belts & Machines",
+      "slug": "sanding-belts-machines",
+      "description": "Shape and remove stock quickly with belt sanders and matched belts, then refine with progressive grits to prepare parts for assembly or finishing.",
+      "score": 94,
+      "parent": "Tools & Techniques",
+      "keywords": {
+        "core": {
+          "sanding belts": [
+            "grit sequence for wood belt sanding",
+            "track and tension sanding belts properly",
+            "avoid burn marks with belt sanders",
+            "belt sander safety and technique",
+            "select correct belt width for task",
+            "dust extraction setup for belt sanding",
+            "prevent clogging on resinous woods",
+            "align belt joints and maintain flatness",
+            "edge and end grain with belt sander",
+            "flatten glued panels on belt table",
+            "switch from coarse to fine belts",
+            "fix chatter or belt loading issues"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Hook-and-Loop Discs",
+      "slug": "hook-and-loop-discs",
+      "description": "Velcro-backed discs for RO/DA tools that swap fast, hold securely, and pair with interface pads or multi-hole patterns for smoother, cleaner sanding.",
+      "score": 96,
+      "parent": "Abrasives",
+      "keywords": {
+        "core": {
+          "hook and loop sanding discs": [
+            "velcro disc attachment for orbital sanders",
+            "multi hole pattern discs for dust extraction",
+            "clean hook and loop pads to extend life",
+            "best grits for automotive sanding discs",
+            "avoid edge lift at high rpm",
+            "soft interface pad for contour sanding",
+            "psa versus hook and loop disc differences",
+            "replace discs safely during operation",
+            "disc storage and humidity care",
+            "prevent pigtails with quality discs",
+            "match vacuum holes for cleaner sanding",
+            "fine grits for clear coat preparation"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PSA Discs",
+      "slug": "psa-discs",
+      "description": "Pressure-sensitive adhesive discs offer firm backing and strong hold for leveling tasks; choose grits and substrates to balance cut rate and finish quality.",
+      "score": 81,
+      "parent": "Abrasives",
+      "keywords": {
+        "core": {
+          "psa sanding discs": [
+            "apply psa discs without air bubbles",
+            "psa versus hook and loop sanding use cases",
+            "remove psa residue from backing pads",
+            "psa discs for aggressive stock removal",
+            "best grits for leveling primer",
+            "prep backing pad before sticking psa",
+            "avoid tearing discs during removal",
+            "store psa discs to protect adhesive",
+            "heat resistance and lifespan of psa glue",
+            "pair psa discs with firm pads",
+            "choose paper versus film psa discs",
+            "clean backing pad before new disc"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Interface Pads & Backing Pads",
+      "slug": "interface-backing-pads",
+      "description": "Tune contact and contouring with soft or firm pads that manage pressure, follow curves, reduce swirls, and improve consistency across varied surfaces.",
+      "score": 77,
+      "parent": "Tools & Techniques",
+      "keywords": {
+        "core": {
+          "sander interface pad": [
+            "when to use soft versus firm interface pads",
+            "reduce swirls by pairing pad and grit correctly",
+            "follow contours with foam interface pads",
+            "use hard backing pads for flat panels",
+            "multi density pad stacks for tricky shapes",
+            "prevent edge burn through with softer pads",
+            "match pad hole pattern to disc for suction",
+            "switch pads when moving up in grit",
+            "inspect pad wear to maintain flatness",
+            "clean pads to restore hook performance",
+            "use pad savers to prolong backing life",
+            "pad thickness effects on scratch pattern"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Dust Extraction Systems",
+      "slug": "dust-extraction-systems",
+      "description": "Pair multi-hole discs with vacuums and HEPA extractors to lower airborne dust, keep abrasives cutting longer, and leave cleaner, safer work areas.",
+      "score": 82,
+      "parent": "Tools & Techniques",
+      "keywords": {
+        "core": {
+          "dustless sanding": [
+            "set up hepa dust extractors for sanding",
+            "choose hose diameter for best suction",
+            "multi hole discs improve airflow and cut",
+            "seal fittings to prevent vacuum leaks",
+            "use bag plus hepa filter for drywall dust",
+            "negative pressure setup to control dust spread",
+            "wet sanding options to minimize airborne dust",
+            "clean filters to maintain suction power",
+            "antistatic hoses reduce fine dust cling",
+            "vacuum ready sanders and hose adapters",
+            "collect slurry safely during wet sanding",
+            "room cleanup workflow after sanding"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Grit Guide & Education",
+      "slug": "grit-guide-education",
+      "description": "Understand FEPA/CAMI labels, choose starting grits, and plan sequences that remove defects efficiently and leave surfaces ready for coating or polish.",
+      "score": 88,
+      "parent": "Abrasives",
+      "keywords": {
+        "core": {
+          "sandpaper grit chart": [
+            "fepa versus cami grit equivalence",
+            "how to choose a starting grit",
+            "when you can skip intermediate grits",
+            "verify scratch removal before moving up",
+            "final grit selection by finish type",
+            "grit sequence for hardwood versus softwood",
+            "belts discs and sheets grit mapping",
+            "how many passes per grit are needed",
+            "signs you moved up a grit too early",
+            "reading scratch direction under light",
+            "grit progression for primers and clears",
+            "common grit mistakes to avoid"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Grit Range & Classification",
+      "slug": "grit-range-classification",
+      "description": "From coarse to ultra-fine, map grits to tasks, plan step-downs to erase scratches, and avoid skipping stages that leave defects telegraphing through.",
+      "score": 84,
+      "parent": "Abrasives",
+      "keywords": {
+        "core": {
+          "sandpaper grit": [
+            "coarse medium fine and ultra fine definitions",
+            "task matching by grit range",
+            "step down rules to erase deep scratches",
+            "identify grit plateau and adjust sequence",
+            "when to drop back a grit to fix defects",
+            "edge and profile grit selection",
+            "grit changes for water based finishes",
+            "difference between paper and film at fine grits",
+            "loading behavior by grit and substrate",
+            "scratch visibility under different coatings",
+            "finishing at 3000 grit to speed polish",
+            "grit classification quick reference"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ceramic & Premium Abrasives",
+      "slug": "ceramic-premium-abrasives",
+      "description": "Upgrade cut rate and lifespan with ceramic and advanced coated abrasives that resist loading, stay sharp, and finish faster on tough materials.",
+      "score": 83,
+      "parent": "Abrasives",
+      "keywords": {
+        "core": {
+          "ceramic sanding discs": [
+            "when ceramic outperforms aluminum oxide",
+            "longer life versus standard abrasives",
+            "reduced heat and loading on tough materials",
+            "pair ceramics with dust extraction",
+            "pressure and speed settings for ceramics",
+            "film backed ceramics for uniform scratch",
+            "ceramic belts for aggressive stock removal",
+            "cost per job comparison ceramic vs ao",
+            "hybrid stacks ceramic then sic for finish",
+            "ceramic on metals plastics and hardwoods",
+            "interface pad choices with ceramic discs",
+            "safety notes for high cut rate abrasives"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Waterproof & Wet/Dry Paper",
+      "slug": "waterproof-wet-dry-paper",
+      "description": "Use silicon carbide papers wet or dry to control heat, reduce loading, and refine surfaces for paints, clear coats, resins, plastics, and metals.",
+      "score": 90,
+      "parent": "Abrasives",
+      "keywords": {
+        "core": {
+          "wet dry sandpaper": [
+            "soak time for wet sanding papers",
+            "soap to water ratio for lubrication",
+            "flush slurry to prevent loading",
+            "wet sanding sequence 1000 to 3000 grit",
+            "avoid edge burn through while wet sanding",
+            "use soft interface pad for curved areas",
+            "squeegee check to read leveling progress",
+            "switching from 1500 to 2000 grit",
+            "hand block versus foam pad for 3000 grit",
+            "wipe down to inspect true scratch pattern",
+            "dry the panel before moving to polish",
+            "storage and handling of waterproof sheets"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Specialty Abrasives",
+      "slug": "specialty-abrasives",
+      "description": "Select Trizact, microfinishing films, and task-specific abrasives for controlled scratch patterns, repeatable results, and precise surface refinement.",
+      "score": 76,
+      "parent": "Abrasives",
+      "keywords": {
+        "core": {
+          "microfinishing film": [
+            "structured abrasives for predictable cut",
+            "film backed sheets for uniform scratch",
+            "use graded micron steps for polishing",
+            "when to choose trizact style abrasives",
+            "reduce polishing time with fine films",
+            "pad pairing for microfinishing discs",
+            "oil versus water lubrication with films",
+            "inspect haze under strong lighting",
+            "blend film sanding into surrounding area",
+            "film storage to prevent curling",
+            "reuse limits for microfinishing films",
+            "safety and cleanup for fine slurries"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Plastic & Epoxy Sanding",
+      "slug": "plastic-epoxy-sanding",
+      "description": "Flatten cured epoxy and plastics without clogging by using stearated papers, light pressure, and staged grits that refine to a polishable surface.",
+      "score": 86,
+      "parent": "Materials",
+      "keywords": {
+        "core": {
+          "epoxy sanding": [
+            "avoid loading with stearated papers",
+            "let epoxy cure fully before sanding",
+            "start grit for leveling high spots",
+            "refine to 2000–3000 for quick polish",
+            "keep heat low to prevent softening",
+            "wet sanding plastics to control dust",
+            "edge control to avoid rounding details",
+            "hand block for flat epoxy surfaces",
+            "wipe with alcohol to check scratches",
+            "repair pinholes revealed during sanding",
+            "switch to polishing after uniform scratch",
+            "avoid contamination before clear coating"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Resin Polishing",
+      "slug": "resin-polishing",
+      "description": "Progress through fine grits, then compound and polish resin art or countertops to achieve clarity, depth, and durable gloss without haze.",
+      "score": 80,
+      "parent": "Materials",
+      "keywords": {
+        "core": {
+          "resin polishing": [
+            "polish epoxy resin to glass like finish",
+            "remove 1500–2000 grit marks on resin",
+            "choose pad and compound for plastics",
+            "avoid overheating edges during polish",
+            "clean pads to prevent micro marring",
+            "check clarity under strong lighting",
+            "panel wipe to remove polishing oils",
+            "protective coats after resin polish",
+            "fix haze by stepping back to 3000",
+            "avoid contamination from silicone",
+            "microfiber versus foam for final pass",
+            "resin polishing safety and cleanup"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Glass & Ceramics Sanding",
+      "slug": "glass-ceramics-sanding",
+      "description": "Use ultra-fine abrasives and careful pressure to refine glass and ceramic edges, reduce chips, and prepare hard surfaces for subsequent finishing.",
+      "score": 72,
+      "parent": "Materials",
+      "keywords": {
+        "core": {
+          "glass sanding": [
+            "use diamond or sic for glass edges",
+            "progressive micron steps for clarity",
+            "keep surfaces wet to control heat",
+            "reduce chipping with light pressure",
+            "hone ceramic tile edges uniformly",
+            "avoid deep scratches by skipping grits",
+            "inspect under raking light for chips",
+            "clean slurry to see true surface",
+            "final polishing options for glass",
+            "pad backing for rigid flat support",
+            "safety eyewear and cut protection",
+            "dust control for silica containing materials"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Marine Sanding",
+      "slug": "marine-sanding",
+      "description": "Prepare gelcoat and marine coatings in wet environments using compatible abrasives and dust control to improve adhesion and extend finish life.",
+      "score": 70,
+      "parent": "Materials",
+      "keywords": {
+        "core": {
+          "boat sanding": [
+            "sand gelcoat before repairs or coating",
+            "wet sanding to control marine dust",
+            "grit selection for antifouling paint prep",
+            "smooth fairing compound before primer",
+            "edge control around hardware and seams",
+            "vacuum and rinse workflow on boats",
+            "uv exposure considerations for finishes",
+            "polish oxidized gelcoat after sanding",
+            "avoid water intrusion during wet sanding",
+            "select marine safe cleaners for wipe down",
+            "protect surrounding areas from slurry",
+            "check adhesion with taped test patches"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Stone & Concrete Polishing",
+      "slug": "stone-concrete-polishing",
+      "description": "Refine stone, concrete, and tile with staged abrasives that flatten, hone, and polish surfaces for uniform sheen, clarity, and easy maintenance.",
+      "score": 73,
+      "parent": "Materials",
+      "keywords": {
+        "core": {
+          "concrete polishing": [
+            "progress from metal bond to resin pads",
+            "grit steps for honing and polishing",
+            "densifier timing for stronger surface",
+            "slurry management during wet grinding",
+            "edge tool blending with main field",
+            "check flatness before higher grits",
+            "sealer selection after polishing",
+            "repair pinholes before final passes",
+            "inspect gloss under uniform lighting",
+            "avoid ghosting from patch areas",
+            "vacuum extraction for indoor work",
+            "safety ppe for silica dust control"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Abrasive Materials & Compounds",
+      "slug": "abrasive-materials-compounds",
+      "description": "Compare silicon carbide, aluminum oxide, and ceramic grains, understanding cut behavior, loading resistance, and best use cases by substrate.",
+      "score": 75,
+      "parent": "Education",
+      "keywords": {
+        "core": {
+          "silicon carbide sandpaper": [
+            "sic versus aluminum oxide differences",
+            "when to choose ceramic over sic",
+            "cut rate and loading behavior by grain",
+            "open coat versus closed coat impacts",
+            "film versus paper backing with grains",
+            "waterproof binders for wet sanding",
+            "stearates to reduce clogging on paint",
+            "grain selection by wood metal plastic",
+            "compound compatibility with abrasives",
+            "cost versus lifespan tradeoffs",
+            "matching grain to finish goals",
+            "quick reference material compatibility"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Backing Types & Coatings",
+      "slug": "backing-types-coatings",
+      "description": "Choose film or paper backings, open or closed coat, and stearates to balance flexibility, cut rate, loading control, and finish quality.",
+      "score": 74,
+      "parent": "Education",
+      "keywords": {
+        "core": {
+          "open coat sandpaper": [
+            "open versus closed coat applications",
+            "film backing for uniform fine scratches",
+            "paper weight and flexibility differences",
+            "stearated coatings for load resistance",
+            "anti clog design for painted surfaces",
+            "when to choose cloth or fiber backings",
+            "heat resistance of different backings",
+            "adhesion considerations for psa films",
+            "hook performance on worn backing pads",
+            "humidity effects on paper backed discs",
+            "multi hole backings for dust extraction",
+            "backing selection cheat sheet"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Brand & Quality Comparison",
+      "slug": "brand-quality-comparison",
+      "description": "Evaluate disc life, consistency, and finish quality across brands, matching abrasive systems to tasks for better value and predictable results.",
+      "score": 69,
+      "parent": "Education",
+      "keywords": {
+        "core": {
+          "best sandpaper brand": [
+            "compare disc life and cut rate",
+            "consistency of scratch pattern by brand",
+            "loading resistance across manufacturers",
+            "backing pad compatibility issues",
+            "price versus performance over time",
+            "user tests for swirl mark reduction",
+            "support and availability of grits",
+            "vacuum hole alignment by brand systems",
+            "film quality on premium product lines",
+            "warranty or satisfaction policies",
+            "third party test method references",
+            "value picks for common applications"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Eco & Non-Toxic Abrasives",
+      "slug": "eco-non-toxic-abrasives",
+      "description": "Consider lower-VOC binders, reduced dust strategies, and safer abrasive choices that support cleaner workshops and healthier finishing practices.",
+      "score": 66,
+      "parent": "Education",
+      "keywords": {
+        "core": {
+          "eco sandpaper": [
+            "low voc binder options for abrasives",
+            "dust reduction strategies during sanding",
+            "hepa extraction and respirator guidance",
+            "reusable sponges to reduce waste",
+            "recycling options for used abrasives",
+            "safer solvent choices for wipe downs",
+            "shop ventilation best practices",
+            "environmental impacts by abrasive type",
+            "wet sanding to limit airborne particles",
+            "waste handling and disposal tips",
+            "material safety data considerations",
+            "eco friendly workshop checklists"
+          ]
+        }
+      }
+    },
+	{
+  "name": "Hand Sanding Techniques",
+  "slug": "hand-sanding-techniques",
+  "description": "Master precise manual sanding methods for edges, contours, and small surfaces where power tools can’t reach — improving control, surface feel, and finish quality.",
+  "score": 81,
+  "parent": "Tools & Techniques",
+  "keywords": {
+    "core": {
+      "hand sanding": [
+        "how to sand wood by hand for smooth finish",
+        "choose sanding direction to follow the grain",
+        "hand sanding versus power sanding comparison",
+        "wrap sandpaper around dowels for curved edges",
+        "how to keep pressure even during hand sanding",
+        "block or bare hand — when to use each method",
+        "use pencil guide marks to track sanding progress",
+        "hand sanding tips for tight corners and edges",
+        "avoid polishing or burnishing the surface too early",
+        "hand sand between coats to remove small defects",
+        "maintain crisp corners with rigid sanding supports",
+        "final touch sanding for professional surface feel"
+        ]
+       }
+      }
+    },
+    {
+      "name": "Abrasive Innovation & Testing",
+      "slug": "abrasive-innovation-testing",
+      "description": "Explore new grains, coatings, and test methods that benchmark cut rate, loading, and surface quality to improve repeatability and efficiency.",
+      "score": 65,
+      "parent": "Education",
+      "keywords": {
+        "core": {
+          "abrasive testing": [
+            "standardize cut rate test procedures",
+            "measure loading resistance over time",
+            "compare scratch depth at equal grits",
+            "microscope inspection of scratch patterns",
+            "controlled swarf collection for analysis",
+            "coating tech to reduce heat and clogging",
+            "lifecycle cost modeling for abrasives",
+            "repeatability across batches and lots",
+            "accelerated wear testing methods",
+            "field trials on diverse substrates",
+            "data logging for rpm and pressure",
+            "reporting templates for shop testing"
+          ]
+        }
+      }
+    }
+  ]
+}
