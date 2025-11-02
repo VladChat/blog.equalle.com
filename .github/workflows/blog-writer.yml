@@ -73,7 +73,7 @@ jobs:
           git diff --cached --quiet && echo "No changes to commit" && exit 0
 
           # Коммитим новые посты
-          git commit -m "Add new blog post [skip ci]"
+          git commit -m "Add new blog post $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
 
           # Подтягиваем возможные коммиты, если параллельно что-то вливали
           git pull --rebase || true
