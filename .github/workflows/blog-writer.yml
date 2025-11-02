@@ -37,6 +37,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r blog_src/scripts/requirements.txt
 
+      - name: Syntax check (py_compile)
+        run: |
+          python - << 'PY'
+          import compileall, sys
+          ok = compileall.compile_dir('blog_src/scripts', force=True, quiet=1)
+          sys.exit(0 if ok else 1)
+          PY
+
       - name: Run generator (create Markdown posts)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

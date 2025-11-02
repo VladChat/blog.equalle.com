@@ -1,3 +1,6 @@
+# .github/workflows/blog-build.yml
+# Full path: /.github/workflows/blog-build.yml
+
 name: Build Blog
 
 on:
@@ -13,6 +16,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: blog-build-${{ github.ref }}
@@ -35,6 +40,9 @@ jobs:
         with:
           hugo-version: '0.150.1'
           extended: true
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       # CNAME готовим ДО сборки (попадёт в /docs автоматически)
       - name: Ensure CNAME before build
@@ -77,10 +85,18 @@ jobs:
           echo "==== recent posts in output (last 3 by mtime) ===="
           find docs/posts -type d -printf "%T@ %p\n" | sort -n | tail -n 3 | awk '{print $2}'
 
-      - name: Commit & Push built docs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -Af docs/
-          git commit -m "Update docs build [skip ci]" || echo "No changes"
-          git push
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
