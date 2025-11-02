@@ -67,7 +67,7 @@ jobs:
       - name: Commit & Push new posts
         run: |
           # Добавляем изменения, если они есть
-          git add blog_src/content/posts blog_src/data/state.json
+          git add blog_src/content/posts blog_src/content/categories blog_src/data/state.json
 
           # Если нет изменений — выходим
           git diff --cached --quiet && echo "No changes to commit" && exit 0
