@@ -360,7 +360,7 @@ def main() -> None:
 
     fm = (
         "---\n"
-        f'title: "{title_escaped}"\n'
+        f'title: "{title_escaped}"\n"
         f"date: {now.isoformat()}\n"
         "draft: false\n"
         f'slug: "{safe_slug}"\n'

@@ -2,7 +2,7 @@
 # File: blog_src/scripts/writer/topic_fetch/rank_categories_by_trends_safe.py
 # Full path: C:\Users\vladi\Documents\blog.equalle.com\blog_src\scripts\writer\topic_fetch\rank_categories_by_trends_safe.py
 # ============================================================
-"""
+r"""
 Safer Google Trends harvester for category ranking (pytrends) that
 tries to avoid IP throttling / 429 responses.
 
@@ -53,6 +53,10 @@ BACKOFF_BASE = 8.0                # base seconds for exponential backoff on 429
 BACKOFF_JITTER = 3.0              # add up to this value as random jitter
 REQUEST_TIMEOUT = (10, 25)        # (connect, read) timeouts passed to TrendReq
 TRENDREQ_RETRIES = 1              # pytrends internal retries (kept small)
+
+# Scoring weights (kept here to avoid NameError and allow easy tuning)
+WEIGHT_RELATED = 0.5
+WEIGHT_TREND   = 0.5
 
 # IO paths
 OUT_DIR = Path(r"C:\Users\vladi\Documents\blog.equalle.com\blog_src\scripts\writer\topic_fetch\out")
