@@ -1,5 +1,5 @@
 {
-  "category_index": 13,
+  "category_index": 14,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -52,12 +52,14 @@
     "random-orbital-sanding": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "detail-sander-sheets": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 26,
+  "brandimg_index": 28,
   "brandimg_used": [
-    "07.webp",
-    "08.webp",
     "09.webp",
     "10.webp",
     "11.webp",
@@ -75,7 +77,9 @@
     "23.webp",
     "24.webp",
     "25.webp",
-    "26.webp"
+    "26.webp",
+    "27.webp",
+    "28.webp"
   ],
   "used_pairs": [
     {
@@ -129,12 +133,17 @@
     {
       "seed": "random orbital sanding",
       "longtail": "prevent swirl marks with random orbital sanders"
+    },
+    {
+      "seed": "detail sander sheets",
+      "longtail": "best grit sheets for detail sanding tools"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
     "25_pack_Grit 220",
     "25_pack_Grit 800",
+    "50_pack_Grit 220",
     "50_pack_Grit 800"
   ]
 }
