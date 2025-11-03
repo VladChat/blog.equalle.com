@@ -1,5 +1,5 @@
 {
-  "category_index": 18,
+  "category_index": 19,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -72,12 +72,14 @@
     "hook-and-loop-discs": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "psa-discs": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 7,
+  "brandimg_index": 9,
   "brandimg_used": [
-    "17.webp",
-    "18.webp",
     "19.webp",
     "20.webp",
     "21.webp",
@@ -95,7 +97,9 @@
     "04.webp",
     "05.webp",
     "06.webp",
-    "07.webp"
+    "07.webp",
+    "08.webp",
+    "09.webp"
   ],
   "used_pairs": [
     {
@@ -169,17 +173,22 @@
     {
       "seed": "hook and loop sanding discs",
       "longtail": "velcro disc attachment for orbital sanders"
+    },
+    {
+      "seed": "psa sanding discs",
+      "longtail": "apply psa discs without air bubbles"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "50_pack_Grit 800",
-    "25_pack_Grit 220",
     "25_pack_Grit 800",
-    "100_pack_Grit 220",
+    "25_pack_Grit 220",
+    "100_pack_Grit 240",
     "50_pack_Grit 220",
     "50_pack_Grit 240",
+    "25_pack_Grit 240",
     "10_pack_Grit 220",
-    "25_pack_Grit 240"
+    "50_pack_Grit 800",
+    "100_pack_Grit 220"
   ]
 }
