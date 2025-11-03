@@ -1,6 +1,4 @@
 // blog_src/assets/js/custom/accordion.js
-// Аккордеон секций поста из H2 + последующих узлов.
-// Полная версия без “кракозябр”, UTF-8 (без BOM).
 
 document.addEventListener("DOMContentLoaded", function () {
   const postContent = document.querySelector(".post-content");
@@ -60,11 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
       content.style.maxHeight = content.scrollHeight + "px";
       wrapper.scrollIntoView({ behavior: "instant", block: "start" });
     } else {
+      // ✅ Исправленный блок: перенос измерения в следующий кадр
       content.style.maxHeight = "0px";
-      // force reflow
-      // eslint-disable-next-line no-unused-expressions
-      content.offsetHeight;
-      content.style.maxHeight = content.scrollHeight + "px";
+      requestAnimationFrame(() => {
+        const target = content.scrollHeight + "px";
+        content.style.maxHeight = target;
+      });
       const scrollAfter = () =>
         wrapper.scrollIntoView({ behavior: "smooth", block: "start" });
       content.addEventListener("transitionend", scrollAfter, { once: true });
@@ -115,47 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sec.body.forEach(el => content.appendChild(el));
 
     // Вставка рекламного блока сразу после первой секции (отключено)
-    // if (idx === 0) {
-    //   const aff = document.createElement("div");
-    //   aff.innerHTML = `
-    //     <div data-aff-rotator
-    //          data-json="/aff/aff-cards.json"
-    //          data-img-base="/aff/img/88"
-    //          data-img-base2x="/aff/img/176"
-    //          data-mode="random"
-    //          data-count="1"></div>
-    //   `;
-    //   content.appendChild(aff);
-
-    //   // Инициализация ротатора
-    //   const runAff = () => {
-    //     if (window.affRotatorRun) window.affRotatorRun();
-    //     else if (window.runAffRotator) window.runAffRotator();
-    //     else {
-    //       const script = document.createElement("script");
-    //       script.src = new URL("/aff/aff-rotator.js", window.location.origin).href;
-    //       script.async = true;
-    //       script.onload = () => {
-    //         if (window.affRotatorRun) window.affRotatorRun();
-    //         else if (window.runAffRotator) window.runAffRotator();
-    //       };
-    //       document.body.appendChild(script);
-    //     }
-    //   };
-    //   try { runAff(); } catch (e) { /* no-op */ }
-
-    //   // Страховочный пересчёт высоты, пока баннер дорисовывается (отключён)
-    //   // const fixHeight = setInterval(() => {
-    //   //   if (wrapper.classList.contains("open")) {
-    //   //     const h = content.scrollHeight;
-    //   //     if (h > parseInt(content.style.maxHeight || "0", 10)) {
-    //   //       content.style.maxHeight = h + "px";
-    //   //     }
-    //   //   }
-    //   // }, 300);
-    //   // setTimeout(() => clearInterval(fixHeight), 3000);
-    // }
-
+    // if (idx === 0) { ... }
 
     // Начальное открытие первой секции
     requestAnimationFrame(() => {
@@ -179,14 +138,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const b = hdr.querySelector(".read-badge");
         const st = hdr.dataset.status;
         if (!b) return;
-        // перерисуем бейдж
         const replacement = badge(st || "read");
         b.replaceWith(replacement);
       });
 
       if (willOpen) {
         openSection(wrapper, content, header);
-        // Бейдж активного
         const b = header.querySelector(".read-badge");
         if (b) b.replaceWith(badge("reading"));
       } else {
@@ -216,11 +173,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetH2 = postContent.querySelector(`h2#${CSS.escape(id)}`);
       if (targetH2) {
         const targetSection = targetH2.closest(".accordion-section") ||
-                              targetH2.parentElement; // на всякий случай
+                              targetH2.parentElement;
         const header = targetSection?.querySelector(".accordion-header");
         const content = targetSection?.querySelector(".accordion-content");
         if (targetSection && header && content) {
-          // Закрыть прочие
           postContent.querySelectorAll(".accordion-section.open").forEach(secEl => {
             if (secEl !== targetSection) closeSection(secEl);
           });
