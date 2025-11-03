@@ -1,0 +1,140 @@
+{{/* 
+  Main blog layout (index.html replaces _default/list.html)
+  Hugo uses this for /blog/ homepage instead of list.html
+*/}}
+
+{{ define "main" }}
+
+{{ partial "extend_head.html" . }}
+
+{{/* Load CSS files */}}
+
+
+<section class="list-page">
+
+  <!-- === HERO STRIP (Blog Header) === -->
+  <div class="list-page-header">
+    {{ if .Title }}
+      <h1 class="page-title">{{ .Title }}</h1>
+    {{ end }}
+    {{ if .Content }}
+      <div class="page-intro">{{ .Content }}</div>
+    {{ end }}
+  </div>
+
+  <!-- === LATEST POSTS SECTION === -->
+  <h2 class="page-title">Latest Posts</h2>
+
+  {{ $allPages := where .Site.RegularPages "Type" "!=" "page" }}
+  {{ $pages := where $allPages "File.BaseFileName" "not in" (slice "privacy-policy" "terms" "_index") }}
+  {{ $paginator := .Paginate $pages }}
+
+  <div class="post-list">
+    {{ range $paginator.Pages }}
+      <article class="post-card">
+        <a href="{{ .RelPermalink }}">
+
+          {{ with .Params.categories }}
+            <div class="post-card-category">{{ index . 0 }}</div>
+          {{ end }}
+
+          <h2 class="post-card-title">{{ .Title }}</h2>
+          {{ with .Summary }}
+            <p class="post-card-summary">{{ . | plainify }}</p>
+          {{ end }}
+          <p class="post-card-meta">
+  {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read
+  {{- with .Params.author }} · by {{ . }}{{- end }}
+  
+</p>
+
+        </a>
+      </article>
+    {{ else }}
+      <p style="color: var(--secondary); text-align: center; margin-top: 3rem;">No posts found.</p>
+    {{ end }}
+  </div>
+
+  <!-- === Pagination === -->
+  {{ if gt $paginator.TotalPages 1 }}
+    {{ $baseURL := .Site.BaseURL }}
+    {{ $basePath := replaceRE `^https?://[^/]+` "" $baseURL }}
+    {{ if not (strings.HasSuffix $basePath "/") }}
+      {{ $basePath = printf "%s/" $basePath }}
+    {{ end }}
+
+    <nav class="pagination">
+      {{ if $paginator.HasPrev }}
+        {{ $prevNum := sub $paginator.PageNumber 1 }}
+        {{ $prevHref := cond (eq $prevNum 1) $basePath (printf "%spage/%d/" $basePath $prevNum) }}
+        <a class="prev" href="{{ $prevHref }}">« Prev</a>
+      {{ else }}
+        <a class="prev disabled">« Prev</a>
+      {{ end }}
+
+      {{ range $paginator.Pagers }}
+        {{ $n := .PageNumber }}
+        {{ $href := cond (eq $n 1) $basePath (printf "%spage/%d/" $basePath $n) }}
+        <a class="{{ if eq $n $paginator.PageNumber }}active{{ end }}" href="{{ $href }}">{{ $n }}</a>
+      {{ end }}
+
+      {{ if $paginator.HasNext }}
+        {{ $nextNum := add $paginator.PageNumber 1 }}
+        {{ $nextHref := cond (eq $nextNum 1) $basePath (printf "%spage/%d/" $basePath $nextNum) }}
+        <a class="next" href="{{ $nextHref }}">Next »</a>
+      {{ else }}
+        <a class="next disabled">Next »</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+
+
+  <!-- === CATEGORIES SECTION === -->
+  <section class="home-categories">
+    <h2 class="page-title">Explore Categories</h2>
+
+    {{/* 1) Собираем все категории, реально встречающиеся в постах */}}
+    {{ $allPosts := where .Site.RegularPages "Type" "!=" "page" }}
+    {{ $usedNames := slice }}  {{/* нижний регистр имён */}}
+    {{ $usedSlugs := slice }}  {{/* urlize нижнего регистра */}}
+
+    {{ range $allPosts }}
+      {{ with .Params.categories }}
+        {{ range . }}
+          {{ $nameLower := lower . }}
+          {{ $usedNames = $usedNames | append $nameLower }}
+          {{ $usedSlugs = $usedSlugs | append (urlize $nameLower) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ $usedNames = uniq $usedNames }}
+    {{ $usedSlugs = uniq $usedSlugs }}
+
+    {{/* 2) Фильтруем категории из data: оставляем, если совпало ИМЯ или СЛАГ */}}
+    {{ $filteredCats := slice }}
+    {{ range .Site.Data.categories.categories }}
+      {{ $dataName := lower .name }}
+      {{ $dataSlug := lower .slug }}
+      {{ if or (in $usedNames $dataName) (in $usedSlugs $dataSlug) }}
+        {{ $filteredCats = $filteredCats | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{/* 3) Выводим только отфильтрованные категории (JS-пагинация сама подхватит >12) */}}
+    <div class="categories-grid">
+      {{ range $filteredCats }}
+        <article class="post-card">
+          <a href="/categories/{{ .slug }}/" style="text-decoration:none; color:inherit;">
+            <h3 class="post-card-title">{{ .name }}</h3>
+            <p class="post-card-summary">{{ .description }}</p>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+
+
+</section>
+
+{{ end }}
