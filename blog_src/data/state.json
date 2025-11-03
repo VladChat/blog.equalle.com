@@ -1,5 +1,5 @@
 {
-  "category_index": 10,
+  "category_index": 11,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -40,12 +40,14 @@
     "paint-removal-surface-prep": {
       "core_idx": 1,
       "longtail_idx": 0
+    },
+    "between-coats-sanding": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 20,
+  "brandimg_index": 22,
   "brandimg_used": [
-    "01.webp",
-    "02.webp",
     "03.webp",
     "04.webp",
     "05.webp",
@@ -63,7 +65,9 @@
     "17.webp",
     "18.webp",
     "19.webp",
-    "20.webp"
+    "20.webp",
+    "21.webp",
+    "22.webp"
   ],
   "used_pairs": [
     {
@@ -105,6 +109,10 @@
     {
       "seed": "paint removal sanding",
       "longtail": "what grit to remove peeling paint from wood trim"
+    },
+    {
+      "seed": "between coats sanding",
+      "longtail": "how to scuff sand between finish coats"
     }
   ],
   "last_source": "equalle",
