@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import json
 import re
+import os
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -217,6 +219,53 @@ def _detect_project_root(this_file: Path) -> Path:
     # 5) Самый последний фолбэк — вернуть родителя на несколько уровней вверх
     return this_file.parents[3]  # соответствует прежней логике
 
+def _ci_persist_author_state(data_dir: Path) -> None:
+    """
+    Сохраняет обновлённый author_state.json обратно в репозиторий при запуске в CI.
+    Коммит помечен [skip ci], чтобы не создавать бесконечные билды.
+    Безопасно игнорирует ошибки (не валит пайплайн).
+    """
+    try:
+        if os.environ.get("GITHUB_ACTIONS", "").lower() != "true":
+            print("[eQualle AUTHOR][SYNC] ℹ️ Not in CI — skip persist.")
+            return
+
+        author_state_file = data_dir / "author_state.json"
+        if not author_state_file.exists():
+            print("[eQualle AUTHOR][SYNC] ⚠️ author_state.json not found — nothing to persist.")
+            return
+
+        # Настройка git user для CI
+        subprocess.run(
+            ["git", "config", "--global", "user.email", "equalle-bot@users.noreply.github.com"],
+            check=False,
+        )
+        subprocess.run(
+            ["git", "config", "--global", "user.name", "eQualle Bot"],
+            check=False,
+        )
+
+        # Добавляем и коммитим состояние
+        subprocess.run(["git", "add", str(author_state_file)], check=False)
+        subprocess.run(
+            [
+                "git",
+                "commit",
+                "-m",
+                "🌀 Rotate author (CI state) [skip ci]",
+                "--allow-empty",
+            ],
+            check=False,
+        )
+
+        # Пушим в текущую ветку (обычно main)
+        branch = os.environ.get("GITHUB_REF_NAME", "main")
+        subprocess.run(["git", "push", "origin", branch], check=False)
+
+        print("[eQualle AUTHOR][SYNC] ✅ Author rotation state persisted to repo.")
+    except Exception as e:
+        print(f"[eQualle AUTHOR][SYNC][FAIL] ❌ {e}")
+
 def main() -> None:
     print("────────────────────────────────────────────")
     print("[eQualle Writer][INIT] 🚀 Starting in CSE seed→longtail mode (CI)")
@@ -398,7 +447,7 @@ def main() -> None:
         f'title: "{title_escaped}"\n'
         f"date: {now.isoformat()}\n"
         "draft: false\n"
-        f'slug: "{safe_slug}"\n'
+        f'slug: "{safe_slug}"\n"
         f"{categories_line}\n"
         f"tags: [{tags_yaml}]\n"
         f'author: "{author_name}"\n'
@@ -415,6 +464,10 @@ def main() -> None:
     # === Обновляем state для пары ===
     record_used_pair(state_path, seed, longtail)
     print("[eQualle STATE][OK] 💾 Pair recorded.")
+
+    # === Сохраняем ротацию автора в репозиторий (только в CI) ===
+    _ci_persist_author_state(data_dir)
+
     print("────────────────────────────────────────────")
     print("[eQualle DONE] 🎉 All steps completed successfully.")
     print(f"[eQualle OUTPUT] 📄 {out_path}")
@@ -427,12 +480,12 @@ def _save_draft(content_dir: Path, topic: str):
     title_escaped = topic.replace('"', '\\"')
     fm = (
         "---\n"
-        f'title: "{title_escaped}"\n'
+        f'title: "{title_escaped}"\n"
         f"date: {now.isoformat()}\n"
         "draft: true\n"
         "categories: ['news']\n"
         "tags: ['draft']\n"
-        'author: "eQualle Editorial"\n'
+        'author: "eQualle Editorial"\n"
         "---\n\n"
         "(Auto-saved draft after QA failure)\n\n"
     )
