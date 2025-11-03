@@ -1,0 +1,154 @@
+/* File: blog_src/assets/css/custom/blog-index.css */
+/* Source moved from: blog_src/static/css/blog-index.css */
+
+/* ============================================================
+   BLOG HOMEPAGE STYLES — eQualle
+   File: static/css/blog-index.css (final compact clean)
+   ============================================================ */
+
+
+/* ============================================================
+   [1] SECTION TITLES (H2)
+   ============================================================ */
+
+.list-page h2.page-title,
+.home-categories h2.page-title {
+  position: relative;
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 1.8rem 0 1.2rem;
+  color: var(--primary);
+  line-height: 1.4;
+}
+
+/* Gradient underline */
+.list-page h2.page-title::before,
+.home-categories h2.page-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.4rem;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 720px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 78, 124, 0.6) 0%,
+    rgba(0, 177, 210, 0.6) 100%
+  );
+  border-radius: 2px;
+}
+
+
+/* ============================================================
+   [2] POST CARD ADJUSTMENTS (Homepage only)
+   ============================================================ */
+
+.list-page .post-card-title {
+  margin-bottom: 0.7rem;
+  line-height: 1.35;
+}
+.list-page .post-card-summary {
+  margin: 0.25rem 0 0.85rem 0;
+  line-height: 1.46;
+}
+.list-page .post-card-meta {
+  margin-top: 0.55rem !important;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+@media (min-width: 860px) {
+  .list-page .post-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+
+/* ============================================================
+   [3] CATEGORY GRID SECTION (EXPLORE CATEGORIES)
+   ============================================================ */
+
+/* Wrapper aligned with post grid */
+.home-categories {
+  max-width: var(--main-width, 1000px);
+  margin: 3rem auto 0;
+  padding: 0 0.5rem;
+}
+
+/* Grid: same width and gap as posts */
+.home-categories .categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start; /* ensure no stretching */
+}
+
+/* Category card: compact and flexible */
+.home-categories .post-card {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 12px);
+  box-shadow: var(--shadow);
+  padding: 0.6rem 0.7rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-categories .post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Category title */
+.home-categories .post-card-title {
+  margin: 0 0 0.25rem 0;
+  font-weight: 700;
+  line-height: 1.28;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Category description: exactly 3 lines */
+.home-categories .post-card-summary {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 0.84rem;
+  line-height: 1.38;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive grid breakpoints */
+@media (max-width: 960px) {
+  .home-categories .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .home-categories .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .home-categories .categories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================================================
+   END OF FILE (final compact clean)
+   ============================================================ */
