@@ -121,20 +121,21 @@ jobs:
             echo "⚠️ docs/posts directory not found (ok if you have no posts yet)."
           fi
 
-      # 7) Commit docs back to repo so Pages (main:/docs) can serve fresh site
+      # 7) Clean up git tree before commit (avoid rebase errors)
+      - name: 🧹 Clean & sync git tree before commit
+        run: |
+          git add -A
+          git commit -m "CI auto-commit" || true
+          git pull --rebase --autostash || true
+
+      # 8) Commit docs back to repo so Pages (main:/docs) can serve fresh site
       - name: 🧩 Commit built docs back to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Build site to docs [skip ci]"
           file_pattern: docs/**
-      - name: 🧾 Log after commit
-        run: |
-          echo "Last commit touching docs/:"
-          git log -1 --name-status -- docs | sed -n '1,200p'
-          echo "Git status:"
-          git status --porcelain=v1
 
-      # 8) Final explicit summary
+      # 9) Final explicit summary
       - name: 📣 Summary
         run: |
           echo "✅ Build completed."
