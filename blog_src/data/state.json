@@ -1,5 +1,5 @@
 {
-  "category_index": 26,
+  "category_index": 27,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -104,12 +104,14 @@
     "specialty-abrasives": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "plastic-epoxy-sanding": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 23,
+  "brandimg_index": 25,
   "brandimg_used": [
-    "04.webp",
-    "05.webp",
     "06.webp",
     "07.webp",
     "08.webp",
@@ -127,7 +129,9 @@
     "20.webp",
     "21.webp",
     "22.webp",
-    "23.webp"
+    "23.webp",
+    "24.webp",
+    "25.webp"
   ],
   "used_pairs": [
     {
@@ -233,25 +237,30 @@
     {
       "seed": "microfinishing film",
       "longtail": "structured abrasives for predictable cut"
+    },
+    {
+      "seed": "epoxy sanding",
+      "longtail": "avoid loading with stearated papers"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "100_pack_Grit 800",
-    "10_pack_Grit 180",
     "50_pack_Grit 220",
-    "25_pack_Grit 220",
-    "100_pack_Grit 220",
     "10_pack_Grit 220",
-    "100_pack_Grit 180",
+    "50_pack_Grit 240",
     "50_pack_Grit 800",
-    "25_pack_Grit 180",
-    "25_pack_Grit 240",
     "10_pack_Grit 240",
-    "25_pack_Grit 280",
-    "100_pack_Grit 240",
-    "25_pack_Grit 800",
     "50_pack_Grit 180",
-    "50_pack_Grit 240"
+    "100_pack_Grit 220",
+    "25_pack_Grit 180",
+    "25_pack_Grit 800",
+    "100_pack_Grit 800",
+    "100_pack_Grit 180",
+    "25_pack_Grit 220",
+    "25_pack_Grit 240",
+    "100_pack_Grit 240",
+    "50_pack_Grit 280",
+    "25_pack_Grit 280",
+    "10_pack_Grit 180"
   ]
 }
