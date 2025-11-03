@@ -1,5 +1,5 @@
 {
-  "category_index": 27,
+  "category_index": 28,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -108,12 +108,14 @@
     "plastic-epoxy-sanding": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "resin-polishing": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 25,
+  "brandimg_index": 27,
   "brandimg_used": [
-    "06.webp",
-    "07.webp",
     "08.webp",
     "09.webp",
     "10.webp",
@@ -131,7 +133,9 @@
     "22.webp",
     "23.webp",
     "24.webp",
-    "25.webp"
+    "25.webp",
+    "26.webp",
+    "27.webp"
   ],
   "used_pairs": [
     {
@@ -241,26 +245,31 @@
     {
       "seed": "epoxy sanding",
       "longtail": "avoid loading with stearated papers"
+    },
+    {
+      "seed": "resin polishing",
+      "longtail": "polish epoxy resin to glass like finish"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "50_pack_Grit 220",
-    "10_pack_Grit 220",
-    "50_pack_Grit 240",
-    "50_pack_Grit 800",
-    "10_pack_Grit 240",
-    "50_pack_Grit 180",
-    "100_pack_Grit 220",
-    "25_pack_Grit 180",
+    "50_pack_Grit 280",
     "25_pack_Grit 800",
-    "100_pack_Grit 800",
+    "25_pack_Grit 240",
+    "50_pack_Grit 800",
+    "50_pack_Grit 220",
+    "50_pack_Grit 240",
+    "10_pack_Grit 220",
+    "25_pack_Grit 280",
+    "10_pack_Grit 800",
+    "10_pack_Grit 240",
     "100_pack_Grit 180",
     "25_pack_Grit 220",
-    "25_pack_Grit 240",
+    "10_pack_Grit 180",
+    "100_pack_Grit 220",
+    "25_pack_Grit 180",
     "100_pack_Grit 240",
-    "50_pack_Grit 280",
-    "25_pack_Grit 280",
-    "10_pack_Grit 180"
+    "50_pack_Grit 180",
+    "100_pack_Grit 800"
   ]
 }
