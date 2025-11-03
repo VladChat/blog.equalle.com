@@ -1,5 +1,5 @@
 {
-  "category_index": 9,
+  "category_index": 10,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -36,9 +36,13 @@
     "metal-polishing-rust-repair": {
       "core_idx": 1,
       "longtail_idx": 0
+    },
+    "paint-removal-surface-prep": {
+      "core_idx": 1,
+      "longtail_idx": 0
     }
   },
-  "brandimg_index": 18,
+  "brandimg_index": 20,
   "brandimg_used": [
     "01.webp",
     "02.webp",
@@ -57,7 +61,9 @@
     "15.webp",
     "16.webp",
     "17.webp",
-    "18.webp"
+    "18.webp",
+    "19.webp",
+    "20.webp"
   ],
   "used_pairs": [
     {
@@ -95,6 +101,14 @@
     {
       "seed": "metal polishing",
       "longtail": "grit progression for aluminum before buffing"
+    },
+    {
+      "seed": "paint removal sanding",
+      "longtail": "what grit to remove peeling paint from wood trim"
     }
+  ],
+  "last_source": "equalle",
+  "used_links": [
+    "25_pack_Grit 220"
   ]
 }
