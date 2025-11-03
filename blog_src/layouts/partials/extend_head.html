@@ -1,0 +1,50 @@
+<!-- File: blog_src/layouts/partials/extend_head.html -->
+
+{{/* Preconnect to origin */}}
+<link rel="preconnect" href="{{ .Site.BaseURL | replaceRE `/$` `` }}" crossorigin>
+
+{{/* -----------------------------------------------------------
+     Build CSS bundle (custom + blog-index)
+     We append only existing assets to avoid build errors.
+----------------------------------------------------------- */}}
+{{ $assets := slice }}
+{{ with resources.Get "css/custom/custom.css" }}       {{ $assets = $assets | append . }} {{ end }}
+{{ with resources.Get "css/custom/blog-index.css" }}   {{ $assets = $assets | append . }} {{ end }}
+{{ $bundle := $assets | resources.Concat "css/custom-bundle.css" | resources.Minify | resources.Fingerprint }}
+
+{{/* -----------------------------------------------------------
+     Inline critical CSS for post pages (safe minimal skeleton)
+----------------------------------------------------------- */}}
+{{ if eq .Kind "page" }}
+  <style>
+    :root{--font-base:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+    html{scroll-behavior:smooth}
+    body{margin:0;padding:0;background:#fff;color:#222;line-height:1.6;font-family:var(--font-base)}
+    img{max-width:100%;height:auto}
+    h1,h2,h3{font-weight:700;line-height:1.3}
+    a{color:var(--secondary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header.site-header{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1.2rem}
+  </style>
+{{ end }}
+
+{{/* -----------------------------------------------------------
+     Link bundle: async on post pages; normal on others
+----------------------------------------------------------- */}}
+{{ if and $bundle (eq .Kind "page") }}
+  <link rel="stylesheet" href="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}"></noscript>
+{{ else if $bundle }}
+  <link rel="stylesheet" href="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}">
+{{ end }}
+
+{{/* -----------------------------------------------------------
+     homepage.css — only for non-post pages (home, lists, etc)
+----------------------------------------------------------- */}}
+{{ if ne .Kind "page" }}
+  {{ with resources.Get "css/custom/homepage.css" }}
+    {{ $tmpl := . | resources.ExecuteAsTemplate "css/custom/homepage.generated.css" $ }}
+    {{ $home := $tmpl | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $home.Permalink }}" integrity="{{ $home.Data.Integrity }}">
+  {{ end }}
+{{ end }}
