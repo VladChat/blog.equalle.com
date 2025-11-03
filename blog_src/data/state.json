@@ -1,5 +1,5 @@
 {
-  "category_index": 25,
+  "category_index": 26,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -100,12 +100,14 @@
     "waterproof-wet-dry-paper": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "specialty-abrasives": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 21,
+  "brandimg_index": 23,
   "brandimg_used": [
-    "02.webp",
-    "03.webp",
     "04.webp",
     "05.webp",
     "06.webp",
@@ -123,7 +125,9 @@
     "18.webp",
     "19.webp",
     "20.webp",
-    "21.webp"
+    "21.webp",
+    "22.webp",
+    "23.webp"
   ],
   "used_pairs": [
     {
@@ -225,24 +229,29 @@
     {
       "seed": "wet dry sandpaper",
       "longtail": "soak time for wet sanding papers"
+    },
+    {
+      "seed": "microfinishing film",
+      "longtail": "structured abrasives for predictable cut"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "50_pack_Grit 180",
-    "50_pack_Grit 240",
-    "25_pack_Grit 220",
-    "10_pack_Grit 240",
-    "100_pack_Grit 180",
-    "50_pack_Grit 800",
+    "100_pack_Grit 800",
     "10_pack_Grit 180",
-    "25_pack_Grit 180",
+    "50_pack_Grit 220",
+    "25_pack_Grit 220",
     "100_pack_Grit 220",
     "10_pack_Grit 220",
-    "100_pack_Grit 240",
-    "25_pack_Grit 280",
-    "50_pack_Grit 220",
+    "100_pack_Grit 180",
+    "50_pack_Grit 800",
+    "25_pack_Grit 180",
     "25_pack_Grit 240",
-    "25_pack_Grit 800"
+    "10_pack_Grit 240",
+    "25_pack_Grit 280",
+    "100_pack_Grit 240",
+    "25_pack_Grit 800",
+    "50_pack_Grit 180",
+    "50_pack_Grit 240"
   ]
 }
