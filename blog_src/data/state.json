@@ -1,5 +1,5 @@
 {
-  "category_index": 29,
+  "category_index": 30,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -116,12 +116,14 @@
     "glass-ceramics-sanding": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "marine-sanding": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 0,
+  "brandimg_index": 2,
   "brandimg_used": [
-    "10.webp",
-    "11.webp",
     "12.webp",
     "13.webp",
     "14.webp",
@@ -139,7 +141,9 @@
     "26.webp",
     "27.webp",
     "28.webp",
-    "29.webp"
+    "29.webp",
+    "01.webp",
+    "02.webp"
   ],
   "used_pairs": [
     {
@@ -257,28 +261,33 @@
     {
       "seed": "glass sanding",
       "longtail": "use diamond or sic for glass edges"
+    },
+    {
+      "seed": "boat sanding",
+      "longtail": "sand gelcoat before repairs or coating"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "100_pack_Grit 180",
-    "25_pack_Grit 800",
-    "25_pack_Grit 240",
-    "50_pack_Grit 180",
-    "10_pack_Grit 800",
-    "100_pack_Grit 280",
-    "100_pack_Grit 240",
-    "50_pack_Grit 280",
-    "50_pack_Grit 800",
-    "10_pack_Grit 220",
-    "25_pack_Grit 220",
-    "25_pack_Grit 280",
-    "100_pack_Grit 800",
-    "25_pack_Grit 180",
-    "10_pack_Grit 240",
     "10_pack_Grit 180",
-    "50_pack_Grit 220",
+    "10_pack_Grit 220",
+    "100_pack_Grit 180",
+    "100_pack_Grit 800",
+    "25_pack_Grit 220",
+    "10_pack_Grit 800",
+    "25_pack_Grit 180",
+    "50_pack_Grit 800",
     "100_pack_Grit 220",
-    "50_pack_Grit 240"
+    "50_pack_Grit 220",
+    "25_pack_Grit 240",
+    "50_pack_Grit 280",
+    "50_pack_Grit 240",
+    "100_pack_Grit 280",
+    "25_pack_Grit 280",
+    "10_pack_Grit 280",
+    "50_pack_Grit 180",
+    "25_pack_Grit 800",
+    "100_pack_Grit 240",
+    "10_pack_Grit 240"
   ]
 }
