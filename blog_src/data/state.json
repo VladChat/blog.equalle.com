@@ -1,5 +1,5 @@
 {
-  "category_index": 24,
+  "category_index": 25,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -96,12 +96,14 @@
     "ceramic-premium-abrasives": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "waterproof-wet-dry-paper": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 19,
+  "brandimg_index": 21,
   "brandimg_used": [
-    "29.webp",
-    "01.webp",
     "02.webp",
     "03.webp",
     "04.webp",
@@ -119,7 +121,9 @@
     "16.webp",
     "17.webp",
     "18.webp",
-    "19.webp"
+    "19.webp",
+    "20.webp",
+    "21.webp"
   ],
   "used_pairs": [
     {
@@ -217,23 +221,28 @@
     {
       "seed": "ceramic sanding discs",
       "longtail": "when ceramic outperforms aluminum oxide"
+    },
+    {
+      "seed": "wet dry sandpaper",
+      "longtail": "soak time for wet sanding papers"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "50_pack_Grit 800",
-    "50_pack_Grit 220",
-    "25_pack_Grit 180",
-    "25_pack_Grit 800",
     "50_pack_Grit 180",
     "50_pack_Grit 240",
+    "25_pack_Grit 220",
+    "10_pack_Grit 240",
+    "100_pack_Grit 180",
+    "50_pack_Grit 800",
+    "10_pack_Grit 180",
+    "25_pack_Grit 180",
+    "100_pack_Grit 220",
     "10_pack_Grit 220",
     "100_pack_Grit 240",
-    "10_pack_Grit 180",
-    "100_pack_Grit 220",
-    "25_pack_Grit 220",
+    "25_pack_Grit 280",
+    "50_pack_Grit 220",
     "25_pack_Grit 240",
-    "10_pack_Grit 240",
-    "100_pack_Grit 180"
+    "25_pack_Grit 800"
   ]
 }
