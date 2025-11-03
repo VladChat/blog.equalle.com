@@ -1,5 +1,5 @@
 {
-  "category_index": 12,
+  "category_index": 13,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -48,12 +48,14 @@
     "polishing-finishing": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "random-orbital-sanding": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 24,
+  "brandimg_index": 26,
   "brandimg_used": [
-    "05.webp",
-    "06.webp",
     "07.webp",
     "08.webp",
     "09.webp",
@@ -71,7 +73,9 @@
     "21.webp",
     "22.webp",
     "23.webp",
-    "24.webp"
+    "24.webp",
+    "25.webp",
+    "26.webp"
   ],
   "used_pairs": [
     {
@@ -121,11 +125,16 @@
     {
       "seed": "polishing sandpaper",
       "longtail": "difference between compounding and polishing"
+    },
+    {
+      "seed": "random orbital sanding",
+      "longtail": "prevent swirl marks with random orbital sanders"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
+    "25_pack_Grit 220",
     "25_pack_Grit 800",
-    "25_pack_Grit 220"
+    "50_pack_Grit 800"
   ]
 }
