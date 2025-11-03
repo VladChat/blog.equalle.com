@@ -1,6 +1,5 @@
 # ============================================================
 # File: blog_src/scripts/writer/rss_video_fetch.py
-# Full path: C:\Users\vladi\Documents\blog.equalle.com\blog_src\scripts\writer\rss_video_fetch.py
 # ============================================================
 """
 rss_video_fetch.py — YouTube smart video fetcher for eQualle blog
@@ -21,13 +20,13 @@ from __future__ import annotations
 import os
 import re
 import html
+import json
 from pathlib import Path
 from typing import Dict, List, Optional
 
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from dotenv import load_dotenv
-
 
 # ========== ENV & PATH ==========
 _THIS_FILE = Path(__file__).resolve()
@@ -38,24 +37,20 @@ if _BLOG_SRC_DIR.name != "blog_src":
             _BLOG_SRC_DIR = p / "blog_src"
             break
 
-root_env = _THIS_FILE.parents[2] / ".env"
-local_env = _BLOG_SRC_DIR / ".env"
-root_loaded = load_dotenv(dotenv_path=root_env)
-local_loaded = load_dotenv(dotenv_path=local_env)
-
-if root_loaded or local_loaded:
-    print(f"[eQualle VideoFeed][INIT] ✅ .env loaded → {root_env if root_loaded else local_env}")
+# Загружаем только онлайн .env (на уровень выше blog_src)
+env_path = _THIS_FILE.parents[2] / ".env"
+if load_dotenv(dotenv_path=env_path):
+    print(f"[eQualle VideoFeed][INIT] ✅ .env loaded → {env_path}")
 else:
-    print("[eQualle VideoFeed][INIT] ⚠️ No .env file found in expected locations.")
+    print("[eQualle VideoFeed][INIT] ⚠️ .env not found in online path.")
 
 YT_API_KEY = os.getenv("YT_API_KEY")
 if YT_API_KEY:
     print("[eQualle VideoFeed][INIT] 🔑 YT_API_KEY loaded successfully.")
 else:
-    print("[eQualle VideoFeed][INIT] ❌ YT_API_KEY is missing. Add it to your .env.")
+    print("[eQualle VideoFeed][INIT] ❌ YT_API_KEY is missing. Add it to your online .env file.")
 
 _youtube_client = None
-
 
 # ========== YOUTUBE CLIENT ==========
 def _get_youtube():
@@ -174,9 +169,34 @@ def search_youtube_by_query(query: str, max_results: int = 8) -> List[Dict]:
     return out
 
 
+# ========== STATE HELPERS ==========
+def _state_path() -> Path:
+    return _BLOG_SRC_DIR / "data" / "video_state.json"
+
+def _safe_read_state() -> Dict[str, List[str]]:
+    p = _state_path()
+    if p.exists():
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            return {"used": []}
+    return {"used": []}
+
+def _safe_write_state(state: Dict[str, List[str]]) -> None:
+    p = _state_path()
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 # ========== SMART SEARCH ==========
-def search_youtube_smart(topic_title: str, primary_keyword: str, kw_slug: str, max_results: int = 5) -> List[Dict]:
+def search_youtube_smart(topic_title: str, primary_keyword: str, kw_slug: str, max_results: int = 25) -> List[Dict]:
     all_results: List[Dict] = []
+
+    # читаем used video IDs
+    state = _safe_read_state()
+    used_ids = set(state.get("used", []))
+    print(f"[eQualle VideoFeed][STATE] 📒 Loaded {len(used_ids)} used video IDs from state file")
+
     cleaned_title = _clean_question_query(topic_title)
     if cleaned_title:
         print(f"[eQualle VideoFeed][SMART] 🧹 Cleaned title query → '{cleaned_title}'")
@@ -192,6 +212,7 @@ def search_youtube_smart(topic_title: str, primary_keyword: str, kw_slug: str, m
             for r in title_results:
                 r["source"] = "title"
             all_results += title_results
+
     if primary_keyword:
         keyword_query = _sanitize_query(primary_keyword)
         if keyword_query:
@@ -200,16 +221,23 @@ def search_youtube_smart(topic_title: str, primary_keyword: str, kw_slug: str, m
             for r in kw_results:
                 r["source"] = "keyword"
             all_results += kw_results
+
+    # удаляем дубли и уже использованные ID
     seen = set()
     unique = []
     for v in all_results:
         vid = v.get("id")
-        if vid and vid not in seen:
-            seen.add(vid)
-            unique.append(v)
-            if len(unique) >= max_results:
-                break
-    print(f"[eQualle VideoFeed][SMART] ✅ Total unique: {len(unique)} (after dedup).")
+        if not vid or vid in seen:
+            continue
+        if vid in used_ids:
+            print(f"[eQualle VideoFeed][FILTER] ⏭️ Skip already used video ID: {vid}")
+            continue
+        seen.add(vid)
+        unique.append(v)
+        if len(unique) >= max_results:
+            break
+
+    print(f"[eQualle VideoFeed][SMART] ✅ Total unique (unused): {len(unique)} after filtering.")
     return unique
 
 
@@ -274,6 +302,17 @@ def find_video_for_article(topic_title: str, primary_keyword: str, kw_slug: str,
                 print(f"[eQualle VideoFeed][RESULT] ✅ Selected video: '{v['title']}' — {video_link}")
                 print(f"[eQualle VideoFeed][RESULT] 🔎 Found via: {v.get('source', 'unknown')} | Keyword matches: {matches}")
                 print(f"[eQualle VideoFeed][RESULT] 💡 Match threshold met: ≥{min_match}")
+
+                # сохраняем выбранный ID в video_state.json
+                state = _safe_read_state()
+                used_ids = set(state.get("used", []))
+                vid = v.get("id")
+                if vid and vid not in used_ids:
+                    used_ids.add(vid)
+                    state["used"] = list(used_ids)
+                    _safe_write_state(state)
+                    print(f"[eQualle VideoFeed][STATE] 💾 Saved used video ID: {vid}")
+
                 return enrich_video_info(v)
         print("[eQualle VideoFeed][WARN] ⚠️ No suitable YouTube result found at any level.")
     except Exception as e:
