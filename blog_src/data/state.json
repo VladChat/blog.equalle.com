@@ -1,5 +1,5 @@
 {
-  "category_index": 17,
+  "category_index": 18,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -68,12 +68,14 @@
     "sanding-belts-machines": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "hook-and-loop-discs": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 5,
+  "brandimg_index": 7,
   "brandimg_used": [
-    "15.webp",
-    "16.webp",
     "17.webp",
     "18.webp",
     "19.webp",
@@ -91,7 +93,9 @@
     "02.webp",
     "03.webp",
     "04.webp",
-    "05.webp"
+    "05.webp",
+    "06.webp",
+    "07.webp"
   ],
   "used_pairs": [
     {
@@ -161,16 +165,21 @@
     {
       "seed": "sanding belts",
       "longtail": "grit sequence for wood belt sanding"
+    },
+    {
+      "seed": "hook and loop sanding discs",
+      "longtail": "velcro disc attachment for orbital sanders"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "25_pack_Grit 800",
     "50_pack_Grit 800",
-    "25_pack_Grit 240",
     "25_pack_Grit 220",
+    "25_pack_Grit 800",
     "100_pack_Grit 220",
+    "50_pack_Grit 220",
+    "50_pack_Grit 240",
     "10_pack_Grit 220",
-    "50_pack_Grit 220"
+    "25_pack_Grit 240"
   ]
 }
