@@ -1,5 +1,5 @@
 {
-  "category_index": 21,
+  "category_index": 22,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -84,12 +84,14 @@
     "dust-extraction-systems": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "grit-guide-education": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 13,
+  "brandimg_index": 15,
   "brandimg_used": [
-    "23.webp",
-    "24.webp",
     "25.webp",
     "26.webp",
     "27.webp",
@@ -107,7 +109,9 @@
     "10.webp",
     "11.webp",
     "12.webp",
-    "13.webp"
+    "13.webp",
+    "14.webp",
+    "15.webp"
   ],
   "used_pairs": [
     {
@@ -193,20 +197,25 @@
     {
       "seed": "dustless sanding",
       "longtail": "set up hepa dust extractors for sanding"
+    },
+    {
+      "seed": "sandpaper grit chart",
+      "longtail": "fepa versus cami grit equivalence"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "100_pack_Grit 240",
     "25_pack_Grit 240",
-    "25_pack_Grit 220",
+    "10_pack_Grit 220",
+    "100_pack_Grit 240",
+    "50_pack_Grit 800",
     "25_pack_Grit 800",
     "50_pack_Grit 220",
     "25_pack_Grit 180",
-    "10_pack_Grit 240",
     "100_pack_Grit 220",
+    "10_pack_Grit 240",
+    "50_pack_Grit 180",
     "50_pack_Grit 240",
-    "10_pack_Grit 220",
-    "50_pack_Grit 800"
+    "25_pack_Grit 220"
   ]
 }
