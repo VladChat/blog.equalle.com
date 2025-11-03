@@ -158,6 +158,19 @@ def search_youtube_by_query(query: str, max_results: int = 8) -> List[Dict]:
         sn = it.get("snippet", {}) or {}
         if not vid or not sn.get("title"):
             continue
+
+        # --- language filter (skip non-English titles) ---
+        title_raw = sn.get("title", "")
+        desc_raw = sn.get("description", "")
+        # Вычисляем долю нелатинских символов
+        non_latin_ratio = sum(
+            1 for ch in title_raw if not re.match(r"[A-Za-z0-9\s\-\&]", ch)
+        ) / max(1, len(title_raw))
+        if non_latin_ratio > 0.3:
+            print(f"[eQualle VideoFeed][FILTER] ⏭️ Skip non-English title: {title_raw[:60]}")
+            continue
+        # --------------------------------------------------
+
         out.append({
             "id": vid,
             "title": html.unescape(sn.get("title", "").strip()),
