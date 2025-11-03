@@ -20,7 +20,7 @@ from .video_helpers import (
     _extract_video_description_from_md,
     _strip_llm_video_section,
 )
-from .llm import call_llm_local
+from .llm import call_llm as call_llm_local
 from .brandimg_injector import inject_brand_images
 from .taxonomy.auto_tag import build_tags
 from .video_utils import build_video_embed
