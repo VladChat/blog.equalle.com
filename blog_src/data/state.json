@@ -1,5 +1,5 @@
 {
-  "category_index": 11,
+  "category_index": 12,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -44,12 +44,14 @@
     "between-coats-sanding": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "polishing-finishing": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 22,
+  "brandimg_index": 24,
   "brandimg_used": [
-    "03.webp",
-    "04.webp",
     "05.webp",
     "06.webp",
     "07.webp",
@@ -67,7 +69,9 @@
     "19.webp",
     "20.webp",
     "21.webp",
-    "22.webp"
+    "22.webp",
+    "23.webp",
+    "24.webp"
   ],
   "used_pairs": [
     {
@@ -113,10 +117,15 @@
     {
       "seed": "between coats sanding",
       "longtail": "how to scuff sand between finish coats"
+    },
+    {
+      "seed": "polishing sandpaper",
+      "longtail": "difference between compounding and polishing"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
+    "25_pack_Grit 800",
     "25_pack_Grit 220"
   ]
 }
