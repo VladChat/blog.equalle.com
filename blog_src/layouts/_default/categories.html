@@ -9,7 +9,7 @@
 
   <!-- === HERO STRIP === -->
   <div class="list-page-header">
-    <h1 class="page-title">Explore Sandpaper Categories</h1>
+    <h1 class="page-title">Explore Categories</h1>
     <div class="page-intro">
       <p style="font-size:1.1rem; line-height:1.6; margin:0;">
         Learn everything about sanding, polishing, and surface finishing — organized into professional categories for every project type.
@@ -72,6 +72,45 @@
     line-height: 1.4;
     font-size: 0.95rem;
   }
+  <style>
+  /* Сетка как на главной: 4 карточки при стандартной ширине */
+  .post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .post-card {
+    background: var(--card-bg, rgba(255,255,255,0.03));
+    border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+    border-radius: var(--radius, 10px);
+    padding: 1rem;
+    min-height: 150px; /* ниже чем было (180px) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .post-card-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    color: var(--brand-cyan, #4ec7ff);
+  }
+
+  .post-card-summary {
+    color: var(--secondary-text, #ccc);
+    line-height: 1.35;
+    font-size: 0.9rem;
+  }
+</style>
+
 </style>
 
 {{ end }}
