@@ -1,5 +1,5 @@
 {
-  "category_index": 4,
+  "category_index": 5,
   "per_category": {
     "wood-sanding": {
       "core_idx": 2,
@@ -18,7 +18,7 @@
       "longtail_idx": 0
     },
     "floor-deck-sanding": {
-      "core_idx": 1,
+      "core_idx": 2,
       "longtail_idx": 0
     },
     "auto-body-sanding": {
@@ -150,10 +150,8 @@
       "longtail_idx": 1
     }
   },
-  "brandimg_index": 24,
+  "brandimg_index": 26,
   "brandimg_used": [
-    "05.webp",
-    "06.webp",
     "07.webp",
     "08.webp",
     "09.webp",
@@ -171,7 +169,9 @@
     "21.webp",
     "22.webp",
     "23.webp",
-    "24.webp"
+    "24.webp",
+    "25.webp",
+    "26.webp"
   ],
   "used_pairs": [
     {
@@ -337,40 +337,45 @@
     {
       "seed": "joint compound sanding",
       "longtail": "how long to wait before sanding joint compound"
+    },
+    {
+      "seed": "deck sanding",
+      "longtail": "best grit for deck sanding before staining"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "10_pack_Grit 1000",
-    "50_pack_Grit 220",
-    "10_pack_Grit 240",
-    "100_pack_Grit 220",
-    "50_pack_Grit 280",
-    "50_pack_Grit 1000",
     "50_pack_Grit 800",
-    "25_pack_Grit 240",
-    "50_pack_Grit 320",
-    "10_pack_Grit 800",
-    "100_pack_Grit 240",
-    "100_pack_Grit 280",
-    "100_pack_Grit 320",
-    "10_pack_Grit 220",
-    "25_pack_Grit 280",
+    "100_pack_Grit 180",
+    "50_pack_Grit 220",
     "50_pack_Grit 150",
-    "25_pack_Grit 150",
-    "100_pack_Grit 1000",
-    "10_pack_Grit 180",
+    "50_pack_Grit 240",
+    "50_pack_Grit 320",
+    "25_pack_Grit 320",
+    "50_pack_Grit 1000",
+    "10_pack_Grit 1000",
+    "10_pack_Grit 800",
     "100_pack_Grit 800",
+    "25_pack_Grit 1000",
     "10_pack_Grit 280",
+    "25_pack_Grit 240",
     "50_pack_Grit 180",
     "10_pack_Grit 150",
-    "25_pack_Grit 320",
-    "50_pack_Grit 240",
     "25_pack_Grit 220",
+    "10_pack_Grit 320",
+    "100_pack_Grit 280",
+    "10_pack_Grit 180",
+    "10_pack_Grit 220",
+    "10_pack_Grit 240",
+    "100_pack_Grit 220",
+    "100_pack_Grit 320",
     "25_pack_Grit 180",
+    "100_pack_Grit 1000",
+    "100_pack_Grit 240",
     "100_pack_Grit 150",
-    "25_pack_Grit 1000",
-    "100_pack_Grit 180",
+    "25_pack_Grit 150",
+    "25_pack_Grit 280",
+    "50_pack_Grit 280",
     "25_pack_Grit 800"
   ]
 }
