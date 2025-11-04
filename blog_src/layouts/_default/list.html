@@ -1,3 +1,9 @@
+{{/* ============================================================
+File: blog_src/layouts/_default/list.html
+Full path: C:\Users\vladi\Documents\blog.equalle.com\blog_src\layouts\_default\list.html
+Purpose: Category and tag list page (renders posts within category)
+============================================================ */}}
+
 {{ define "main" }}
 <main class="main list-page">
   {{- if not .IsHome }}
@@ -12,7 +18,20 @@
   </header>
   {{- end }}
 
-  {{ $p := .Paginate (.Pages) }}
+  {{/* --- Посты категории (включая fallback по Params.categories) --- */}}
+  {{ $posts := .Pages }}
+  {{ if not (gt (len $posts) 0) }}
+    {{/* Если Hugo не связал таксономию — ищем вручную по Params.categories */}}
+    {{ $catName := .Title | lower }}
+    {{ $all := where site.RegularPages "Type" "!=" "page" }}
+    {{ $posts = where $all "Params.categories" "intersect" (slice .Title) }}
+    {{ if not (gt (len $posts) 0) }}
+      {{/* Вторичная проверка по нижнему регистру */}}
+      {{ $posts = where $all "Params.categories" "intersect" (slice $catName) }}
+    {{ end }}
+  {{ end }}
+  {{ $p := .Paginate $posts }}
+
   {{ if $p.Pages }}
   <section class="list-cards">
     {{ range $p.Pages }}
