@@ -1,5 +1,5 @@
 {
-  "category_index": 30,
+  "category_index": 31,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -120,12 +120,14 @@
     "marine-sanding": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "stone-concrete-polishing": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 2,
+  "brandimg_index": 4,
   "brandimg_used": [
-    "12.webp",
-    "13.webp",
     "14.webp",
     "15.webp",
     "16.webp",
@@ -143,7 +145,9 @@
     "28.webp",
     "29.webp",
     "01.webp",
-    "02.webp"
+    "02.webp",
+    "03.webp",
+    "04.webp"
   ],
   "used_pairs": [
     {
@@ -265,29 +269,34 @@
     {
       "seed": "boat sanding",
       "longtail": "sand gelcoat before repairs or coating"
+    },
+    {
+      "seed": "concrete polishing",
+      "longtail": "progress from metal bond to resin pads"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "10_pack_Grit 180",
-    "10_pack_Grit 220",
+    "25_pack_Grit 180",
+    "25_pack_Grit 800",
+    "25_pack_Grit 220",
     "100_pack_Grit 180",
     "100_pack_Grit 800",
-    "25_pack_Grit 220",
-    "10_pack_Grit 800",
-    "25_pack_Grit 180",
-    "50_pack_Grit 800",
-    "100_pack_Grit 220",
-    "50_pack_Grit 220",
-    "25_pack_Grit 240",
-    "50_pack_Grit 280",
-    "50_pack_Grit 240",
-    "100_pack_Grit 280",
     "25_pack_Grit 280",
-    "10_pack_Grit 280",
+    "10_pack_Grit 180",
     "50_pack_Grit 180",
-    "25_pack_Grit 800",
+    "50_pack_Grit 220",
+    "25_pack_Grit 1000",
+    "50_pack_Grit 800",
+    "10_pack_Grit 240",
+    "10_pack_Grit 220",
+    "25_pack_Grit 240",
+    "10_pack_Grit 280",
+    "50_pack_Grit 240",
+    "100_pack_Grit 220",
+    "100_pack_Grit 280",
+    "50_pack_Grit 280",
     "100_pack_Grit 240",
-    "10_pack_Grit 240"
+    "10_pack_Grit 800"
   ]
 }
