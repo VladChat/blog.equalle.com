@@ -39,6 +39,31 @@ def _normalize(s: str) -> str:
 def _words(s: str) -> List[str]:
     return re.findall(r"[a-z0-9][a-z0-9\-]+", (s or "").lower())
 
+def _slugify(name: str) -> str:
+    """
+    Преобразует имя категории/тега в «чистый» slug с ОДНИМ дефисом между токенами.
+    Примеры:
+      "Trim & Molding Sanding" -> "trim-molding-sanding"
+      "Metal / Rust  Repair"   -> "metal-rust-repair"
+      "Glass+Polish, Finish"   -> "glass-polish-finish"
+    Правила:
+      - приводим к нижнему регистру;
+      - удаляем спецсимволы-делители (& / + ,) заменой на пробел;
+      - схлопываем любые последовательности пробелов в один дефис;
+      - схлопываем повторяющиеся дефисы в один;
+      - обрезаем дефисы по краям.
+    """
+    slug = (name or "").lower()
+    # Заменяем разделители на пробел (чтобы не получить двойные дефисы после следующей строки)
+    slug = re.sub(r"[&/+,]+", " ", slug)
+    # Превращаем любые пробельные последовательности в дефис
+    slug = re.sub(r"\s+", "-", slug)
+    # Схлопываем повторы дефисов (ключевой шаг против "--")
+    slug = re.sub(r"-{2,}", "-", slug)
+    # Разрешаем только [a-z0-9-], всё прочее убираем (не пробел, чтобы не создавать новые дефисы)
+    slug = re.sub(r"[^a-z0-9-]", "", slug)
+    return slug.strip("-")
+
 def _canonize(tag: str, synonyms: Dict[str, str]) -> str:
     t = _normalize(tag)
     return synonyms.get(t, t)
