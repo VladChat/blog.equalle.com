@@ -1,5 +1,5 @@
 {
-  "category_index": 31,
+  "category_index": 32,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -124,12 +124,14 @@
     "stone-concrete-polishing": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "abrasive-materials-compounds": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 4,
+  "brandimg_index": 6,
   "brandimg_used": [
-    "14.webp",
-    "15.webp",
     "16.webp",
     "17.webp",
     "18.webp",
@@ -147,7 +149,9 @@
     "01.webp",
     "02.webp",
     "03.webp",
-    "04.webp"
+    "04.webp",
+    "05.webp",
+    "06.webp"
   ],
   "used_pairs": [
     {
@@ -273,30 +277,35 @@
     {
       "seed": "concrete polishing",
       "longtail": "progress from metal bond to resin pads"
+    },
+    {
+      "seed": "silicon carbide sandpaper",
+      "longtail": "sic versus aluminum oxide differences"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "25_pack_Grit 180",
-    "25_pack_Grit 800",
-    "25_pack_Grit 220",
-    "100_pack_Grit 180",
-    "100_pack_Grit 800",
-    "25_pack_Grit 280",
-    "10_pack_Grit 180",
-    "50_pack_Grit 180",
-    "50_pack_Grit 220",
-    "25_pack_Grit 1000",
-    "50_pack_Grit 800",
-    "10_pack_Grit 240",
-    "10_pack_Grit 220",
-    "25_pack_Grit 240",
-    "10_pack_Grit 280",
-    "50_pack_Grit 240",
     "100_pack_Grit 220",
-    "100_pack_Grit 280",
     "50_pack_Grit 280",
+    "10_pack_Grit 180",
+    "10_pack_Grit 280",
     "100_pack_Grit 240",
-    "10_pack_Grit 800"
+    "10_pack_Grit 220",
+    "10_pack_Grit 800",
+    "25_pack_Grit 1000",
+    "50_pack_Grit 220",
+    "25_pack_Grit 800",
+    "10_pack_Grit 240",
+    "25_pack_Grit 150",
+    "50_pack_Grit 180",
+    "50_pack_Grit 800",
+    "50_pack_Grit 240",
+    "25_pack_Grit 180",
+    "100_pack_Grit 180",
+    "25_pack_Grit 280",
+    "25_pack_Grit 220",
+    "100_pack_Grit 800",
+    "25_pack_Grit 240",
+    "100_pack_Grit 280"
   ]
 }
