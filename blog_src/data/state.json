@@ -1,5 +1,5 @@
 {
-  "category_index": 34,
+  "category_index": 35,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -136,12 +136,14 @@
     "brand-quality-comparison": {
       "core_idx": 0,
       "longtail_idx": 1
+    },
+    "eco-non-toxic-abrasives": {
+      "core_idx": 0,
+      "longtail_idx": 1
     }
   },
-  "brandimg_index": 10,
+  "brandimg_index": 12,
   "brandimg_used": [
-    "20.webp",
-    "21.webp",
     "22.webp",
     "23.webp",
     "24.webp",
@@ -159,7 +161,9 @@
     "07.webp",
     "08.webp",
     "09.webp",
-    "10.webp"
+    "10.webp",
+    "11.webp",
+    "12.webp"
   ],
   "used_pairs": [
     {
@@ -297,33 +301,38 @@
     {
       "seed": "best sandpaper brand",
       "longtail": "compare disc life and cut rate"
+    },
+    {
+      "seed": "eco sandpaper",
+      "longtail": "low voc binder options for abrasives"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "100_pack_Grit 150",
-    "50_pack_Grit 800",
+    "10_pack_Grit 150",
     "25_pack_Grit 180",
-    "25_pack_Grit 800",
     "100_pack_Grit 180",
-    "100_pack_Grit 280",
-    "25_pack_Grit 280",
-    "100_pack_Grit 220",
     "50_pack_Grit 220",
-    "50_pack_Grit 280",
-    "50_pack_Grit 150",
-    "25_pack_Grit 150",
-    "25_pack_Grit 1000",
-    "10_pack_Grit 800",
-    "10_pack_Grit 280",
-    "50_pack_Grit 180",
     "10_pack_Grit 240",
-    "50_pack_Grit 240",
-    "25_pack_Grit 220",
+    "10_pack_Grit 800",
+    "50_pack_Grit 280",
+    "50_pack_Grit 180",
+    "50_pack_Grit 800",
+    "25_pack_Grit 800",
+    "25_pack_Grit 240",
+    "25_pack_Grit 1000",
+    "100_pack_Grit 150",
     "100_pack_Grit 240",
-    "10_pack_Grit 220",
-    "10_pack_Grit 180",
     "100_pack_Grit 800",
-    "25_pack_Grit 240"
+    "25_pack_Grit 220",
+    "10_pack_Grit 280",
+    "100_pack_Grit 280",
+    "25_pack_Grit 150",
+    "50_pack_Grit 150",
+    "10_pack_Grit 180",
+    "100_pack_Grit 220",
+    "10_pack_Grit 220",
+    "50_pack_Grit 240",
+    "25_pack_Grit 280"
   ]
 }
