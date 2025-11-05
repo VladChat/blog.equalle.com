@@ -9,20 +9,12 @@ draft: false
 <!-- blog_src/content/sandpaper/index.md -->
 
 <link rel="stylesheet" href="sandpaper.css">
-<!-- Lite YouTube Embed (лёгкий и быстрый) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/dist/lite-yt-embed.css">
-<script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/dist/lite-yt-embed.js" defer></script>
+
+<!-- Lite YouTube Embed: корректные пути из src/, без лишних импортов -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/src/lite-yt-embed.css">
+<script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/src/lite-yt-embed.js" defer></script>
 
 <main class="nko-container">
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.customElements && !customElements.get("lite-youtube")) {
-    import("https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/dist/lite-yt-embed.esm.js")
-      .catch(() => console.warn("Lite YouTube script failed to load."));
-  }
-});
-</script>
-
 
 <!-- 🛠 HERO -->
 <section class="nko-section nko-hero" aria-label="eQualle Sandpaper">
@@ -34,9 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
   <h2 class="nko-h2">Built for Wood, Auto Body, Metal & More</h2>
   <p class="nko-lead">From aggressive removal to mirror-finish polishing, our 9×11 sheets deliver uniform scratch patterns and predictable results at every stage.</p>
   <div class="nko-media-row">
-    <div class="nko-media-item"><img src="og-equalle-50kb.webp" alt="Sanding wood surface with silicon carbide sheets" loading="lazy"></div>
-    <div class="nko-media-item"><img src="sandpaper-pack.webp" alt="Automotive sanding and headlight restoration example" loading="lazy"></div>
-    <div class="nko-media-item"><img src="og-equalle2.webp" alt="eQualle sandpaper packshot 9x11 in" loading="lazy"></div>
+    <div class="nko-media-item"><img src="og-equalle-50kb.webp" alt="Sanding wood surface with silicon carbide sheets" loading="lazy" width="300" height="200"></div>
+    <div class="nko-media-item"><img src="sandpaper-pack.webp" alt="Automotive sanding and headlight restoration example" loading="lazy" width="300" height="200"></div>
+    <div class="nko-media-item"><img src="og-equalle2.webp" alt="eQualle sandpaper packshot 9x11 in" loading="lazy" width="300" height="200"></div>
   </div>
 </section>
 
@@ -60,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </ul>
 </section>
 
-<!-- 🎥 VIDEO (два рядом → одна колонка на мобильных) -->
+<!-- 🎥 VIDEO (2 в ряд → 1 на мобилках) -->
 <section id="video" class="nko-section anchor" aria-label="How to use eQualle sandpaper">
   <h2 class="nko-h2">How to Use for Best Results</h2>
   <div class="nko-video-row">
@@ -82,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <!-- 🛒 CTA -->
 <section class="nko-section nko-cta">
-  <img src="sandpaper-pack.webp" alt="eQualle 9x11 silicon carbide sandpaper pack" loading="lazy">
+  <img src="sandpaper-pack.webp" alt="eQualle 9x11 silicon carbide sandpaper pack" loading="lazy" width="800" height="520">
   <div>
     <h2 class="nko-h2">Ready for a Smoother Finish?</h2>
     <p class="nko-lead">Choose your grit, sand with confidence, and get pro-level results on wood, metal, and automotive projects.</p>
