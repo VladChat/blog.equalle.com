@@ -9,8 +9,6 @@ draft: false
 <!-- blog_src/content/sandpaper/index.md -->
 
 <link rel="stylesheet" href="sandpaper.css">
-
-<!-- Lite YouTube Embed: корректные пути из src/, без лишних импортов -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/src/lite-yt-embed.css">
 <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/src/lite-yt-embed.js" defer></script>
 
@@ -21,7 +19,7 @@ draft: false
   <img src="hero.webp" alt="eQualle 9x11 silicon carbide sandpaper sheets on a workbench" loading="eager" decoding="async" width="1200" height="630" fetchpriority="high">
 </section>
 
-<!-- 🧰 USE CASES / IMAGERY -->
+<!-- 🧰 USE CASES -->
 <section class="nko-section" aria-label="Built for multiple materials">
   <h2 class="nko-h2">Built for Wood, Auto Body, Metal & More</h2>
   <p class="nko-lead">From aggressive removal to mirror-finish polishing, our 9×11 sheets deliver uniform scratch patterns and predictable results at every stage.</p>
@@ -52,12 +50,12 @@ draft: false
   </ul>
 </section>
 
-<!-- 🎥 VIDEO (2 в ряд → 1 на мобилках) -->
+<!-- 🎥 VIDEO -->
 <section id="video" class="nko-section anchor" aria-label="How to use eQualle sandpaper">
   <h2 class="nko-h2">How to Use for Best Results</h2>
   <div class="nko-video-row">
-    <lite-youtube videoid="kmYQNiuXEnM" params="rel=0&modestbranding=1" title="Sanding tips and workflow — eQualle"></lite-youtube>
-    <lite-youtube videoid="MLymLKIKVRk" params="rel=0&modestbranding=1" title="Sanding demonstration — eQualle"></lite-youtube>
+    <lite-youtube videoid="kmYQNiuXEnM" params="rel=0&modestbranding=1" title="Workflow Demo"></lite-youtube>
+    <lite-youtube videoid="MLymLKIKVRk" params="rel=0&modestbranding=1" title="Product Overview"></lite-youtube>
   </div>
 </section>
 
