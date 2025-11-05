@@ -16,9 +16,7 @@ draft: false
 <section class="nko-section nko-hero" aria-label="eQualle Sandpaper">
   <div class="hero-content">
     <h1 class="nko-h1">Achieve a Smoother Finish</h1>
-    <p class="nko-lead">Professional 9×11″ silicon carbide sheets engineered for performance — cut faster, last longer, and leave surfaces flawless.</p>
-    <a class="nko-btn" href="https://equalle.com/" target="_blank" rel="noopener">Shop Sandpaper →</a>
-  </div>
+    </div>
   <img src="hero.webp" alt="eQualle 9x11 silicon carbide sandpaper sheets on a workbench" loading="eager" decoding="async" width="1200" height="630" fetchpriority="high">
 </section>
 
