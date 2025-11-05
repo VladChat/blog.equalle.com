@@ -1,5 +1,5 @@
 /* blog_src/content/sandpaper/sandpaper.css */
-/* === eQualle Sandpaper — Minimal Landing v10.0 === */
+/* === eQualle Sandpaper — Minimal Landing v10.1 (stable hero) === */
 
 :root {
   --brand-blue: #004b6b;
@@ -28,34 +28,60 @@ body {
 .nko-muted { color: #666; font-size: 0.95rem; }
 .nko-center { text-align: center; }
 
-/* === HERO === */
+/* === HERO (stable, taller, non-cropping) === */
 .nko-hero {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   background: var(--brand-light);
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
+  min-height: 700px;
 }
-.nko-hero img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 16px;
-  margin-top: 24px;
-}
+
 .hero-content {
-  position: relative;
-  z-index: 2;
   max-width: 720px;
   margin: 0 auto;
+  z-index: 2;
+  position: relative;
 }
+
+.nko-hero img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: contain;       /* не обрезает */
+  border-radius: 16px;
+  display: block;
+  margin-top: 24px;
+  background: #fff;
+  z-index: 1;
+}
+
+/* мягкий градиентный фон для читаемости текста */
+.nko-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(255,255,255,0.85), rgba(255,255,255,0.4));
+  z-index: 0;
+  pointer-events: none;
+}
+
+.nko-hero .nko-h1,
+.nko-hero .nko-lead,
+.nko-hero .nko-btn {
+  position: relative;
+  z-index: 3;
+}
+
 .nko-hero p {
   margin: 12px auto 24px;
 }
+
 .nko-hero .nko-btn {
   font-size: 1.05rem;
 }
@@ -158,7 +184,8 @@ body {
     margin: 0 auto;
   }
   .nko-hero {
-    padding: 40px 16px;
+    padding: 60px 16px;
+    min-height: 500px; /* ниже на мобильных */
   }
 }
 
