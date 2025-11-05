@@ -9,12 +9,15 @@ draft: false
 <!-- blog_src/content/sandpaper/index.md -->
 
 <link rel="stylesheet" href="sandpaper.css">
+<!-- Lite YouTube Embed (лёгкий и быстрый) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/dist/lite-yt-embed.css">
+<script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/dist/lite-yt-embed.js" defer></script>
 
 <main class="nko-container">
 
 <!-- 🛠 HERO -->
 <section class="nko-section nko-hero" aria-label="eQualle Sandpaper">
-  <img src="hero.webp" alt="eQualle 9x11 silicon carbide sandpaper sheets on a workbench" loading="eager" decoding="async" width="1200" height="630">
+  <img src="hero.webp" alt="eQualle 9x11 silicon carbide sandpaper sheets on a workbench" loading="eager" decoding="async" width="1200" height="630" fetchpriority="high">
 </section>
 
 <!-- 🧰 USE CASES / IMAGERY -->
@@ -48,12 +51,12 @@ draft: false
   </ul>
 </section>
 
-<!-- 🎥 VIDEO (два рядом) -->
+<!-- 🎥 VIDEO (два рядом → одна колонка на мобильных) -->
 <section id="video" class="nko-section anchor" aria-label="How to use eQualle sandpaper">
   <h2 class="nko-h2">How to Use for Best Results</h2>
   <div class="nko-video-row">
-    <iframe src="https://www.youtube.com/embed/kmYQNiuXEnM" title="Sanding tips and workflow — eQualle" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/MLymLKIKVRk" title="Sanding demonstration — eQualle" allowfullscreen></iframe>
+    <lite-youtube videoid="kmYQNiuXEnM" params="rel=0&modestbranding=1" title="Sanding tips and workflow — eQualle"></lite-youtube>
+    <lite-youtube videoid="MLymLKIKVRk" params="rel=0&modestbranding=1" title="Sanding demonstration — eQualle"></lite-youtube>
   </div>
 </section>
 
