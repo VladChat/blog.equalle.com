@@ -1,9 +1,11 @@
-# .github/workflows/blog-build.yml
+# ============================================================
+# File: .github/workflows/blog-build.yml
 # Full path: /.github/workflows/blog-build.yml
 # Purpose: Build Hugo site from blog_src → docs, commit docs back to repo,
 # and print detailed logs after EVERY step.
 # NOTE: Paths trigger only on blog_src/** changes to avoid loops when we
 # commit docs/** from CI.
+# ============================================================
 
 name: Build Blog
 
@@ -28,7 +30,8 @@ concurrency:
 
 jobs:
   build:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    # Запускаем джоб всегда, КРОМЕ случая, когда событие = workflow_run и оно НЕ success.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -135,7 +138,16 @@ jobs:
           commit_message: "Build site to docs [skip ci]"
           file_pattern: docs/**
 
-      # 9) Final explicit summary
+      # 9) 🔁 Trigger Cloudflare Pages rebuild via Deploy Hook
+      - name: 🔁 Trigger Cloudflare Pages rebuild
+        run: |
+          echo "🌐 Triggering Cloudflare rebuild..."
+          curl -sS -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/16d76f49-835a-46d2-a2ba-d6a6ba9e6ad7" \
+          | tee /tmp/cf_response.json
+          echo "🧪 Cloudflare response:"; cat /tmp/cf_response.json
+          jq -e '.success == true' /tmp/cf_response.json > /dev/null 2>&1 && echo "✅ Cloudflare rebuild confirmed." || (echo "❌ Cloudflare rebuild failed"; exit 1)
+
+      # 10) Final explicit summary
       - name: 📣 Summary
         run: |
           echo "✅ Build completed."
