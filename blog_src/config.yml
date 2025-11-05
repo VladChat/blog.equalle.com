@@ -22,6 +22,7 @@ buildDrafts: false
 buildFuture: true
 buildExpired: false
 enableGitInfo: true
+enableSRI: false
 
 frontmatter:
   date:
