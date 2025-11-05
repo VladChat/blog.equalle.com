@@ -1,5 +1,5 @@
 /* blog_src/content/sandpaper/sandpaper.css */
-/* === eQualle Sandpaper — Minimal Landing v10.1 (stable hero) === */
+/* === eQualle Sandpaper — Minimal Landing v10.2 (stable hero + anti-flicker) === */
 
 :root {
   --brand-blue: #004b6b;
@@ -10,6 +10,15 @@
   --btn-text-light: #ffffff;
   --btn-text-dark: #0f0f0f;
   color-scheme: light dark;
+}
+
+/* === Disable global fade animations (only this page) === */
+.nko-container, .nko-container *,
+.fade-in, .js-fade, [data-fade], .reveal-on-scroll {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: none !important;
 }
 
 /* === Base === */
