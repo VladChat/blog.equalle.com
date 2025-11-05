@@ -14,6 +14,15 @@ draft: false
 <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/dist/lite-yt-embed.js" defer></script>
 
 <main class="nko-container">
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.customElements && !customElements.get("lite-youtube")) {
+    import("https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.2/dist/lite-yt-embed.esm.js")
+      .catch(() => console.warn("Lite YouTube script failed to load."));
+  }
+});
+</script>
+
 
 <!-- 🛠 HERO -->
 <section class="nko-section nko-hero" aria-label="eQualle Sandpaper">
