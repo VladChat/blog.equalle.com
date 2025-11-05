@@ -1,11 +1,9 @@
-# ============================================================
-# File: .github/workflows/blog-build.yml
+# .github/workflows/blog-build.yml
 # Full path: /.github/workflows/blog-build.yml
 # Purpose: Build Hugo site from blog_src → docs, commit docs back to repo,
 # and print detailed logs after EVERY step.
 # NOTE: Paths trigger only on blog_src/** changes to avoid loops when we
 # commit docs/** from CI.
-# ============================================================
 
 name: Build Blog
 
@@ -137,14 +135,7 @@ jobs:
           commit_message: "Build site to docs [skip ci]"
           file_pattern: docs/**
 
-      # 9) 🔁 Trigger Cloudflare Pages rebuild via Deploy Hook
-      - name: 🔁 Trigger Cloudflare Pages rebuild
-        run: |
-          echo "🌐 Triggering Cloudflare rebuild..."
-          curl -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/16d76f49-835a-46d2-a2ba-d6a6ba9e6ad7"
-          echo "✅ Cloudflare rebuild triggered."
-
-      # 10) Final explicit summary
+      # 9) Final explicit summary
       - name: 📣 Summary
         run: |
           echo "✅ Build completed."
