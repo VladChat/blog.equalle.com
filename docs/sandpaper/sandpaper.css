@@ -1,5 +1,5 @@
 /* blog_src/content/sandpaper/sandpaper.css */
-/* === eQualle Sandpaper — v7 (Lite YouTube + responsive video grid) === */
+/* === eQualle Sandpaper — v9 (final optimized, responsive + Lite YouTube fix) === */
 
 :root {
   --brand-blue: #004b6b;
@@ -15,10 +15,10 @@
 /* === Anti-Flicker === */
 .nko-container, .nko-container *,
 .fade-in, .js-fade, [data-fade], .reveal-on-scroll {
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: none !important;
-  transition: none !important;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: none;
 }
 
 /* === Layout === */
@@ -28,7 +28,7 @@
 .nko-h1 { font-size:clamp(32px,5vw,46px); font-weight:800; color:var(--brand-blue); margin:12px 0 10px; }
 .nko-lead { font-size:1.05rem; line-height:1.6; color:#333; max-width:800px; }
 
-/* === HERO (fixed height and fit) === */
+/* === HERO === */
 .nko-hero {
   position: relative;
   border-radius: 20px;
@@ -47,12 +47,15 @@
 .nko-hero-box { display: none !important; }
 
 /* === Headings === */
+.nko-h2,
+.nko-h3 {
+  color: var(--brand-blue);
+  position: relative;
+}
 .nko-h2 {
   font-size: clamp(1.6rem,2.2vw,2rem);
   font-weight: 800;
   margin: 0 0 1rem;
-  color: var(--brand-blue);
-  position: relative;
 }
 .nko-h2::after {
   content:"";
@@ -64,14 +67,26 @@
   border-radius:2px;
   background: linear-gradient(90deg,var(--brand-blue),var(--brand-cyan));
 }
-.nko-h3 { font-size:clamp(1.1rem,1.8vw,1.25rem); font-weight:700; color:var(--brand-blue); margin:.25rem 0 .75rem; }
+.nko-h3 {
+  font-size:clamp(1.1rem,1.8vw,1.25rem);
+  font-weight:700;
+  margin:.25rem 0 .75rem;
+}
 
 /* === Media row === */
 .nko-media-row {
-  display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:16px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  justify-content:center;
+  margin-top:16px;
 }
 .nko-media-item img {
-  width:100%; max-width:300px; border-radius:14px; object-fit:cover; display:block;
+  width:100%;
+  max-width:300px;
+  border-radius:14px;
+  object-fit:cover;
+  display:block;
   transition:transform .25s ease, box-shadow .25s ease;
 }
 .nko-media-item img:hover {
@@ -79,27 +94,47 @@
   box-shadow:0 6px 16px rgba(0,75,107,.25);
 }
 
-/* === VIDEO ROW — responsive grid (Lite YouTube or iframe) === */
+/* === VIDEO ROW — responsive grid (Lite YouTube / iframe) === */
 .nko-video-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 1.5rem;
   margin-top: 1rem;
   align-items: start;
+  justify-items: center;
 }
 
-/* Keep 16:9, rounded corners, subtle shadow */
 .nko-video-row lite-youtube,
 .nko-video-row iframe {
   width: 100%;
+  max-width: 700px;
+  min-height: 220px;
   aspect-ratio: 16 / 9;
   border-radius: 14px;
   overflow: hidden;
   background: var(--entry, #f4f4f4);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform .3s ease, box-shadow .3s ease;
+  transition: transform .3s cubic-bezier(.25,.1,.25,1), box-shadow .3s ease;
+  contain: layout paint;
+  display: block;
 }
 
+/* Скругляем внутренние слои Lite YouTube */
+.nko-video-row lite-youtube .lt-embed,
+.nko-video-row lite-youtube .lt-thumbnail,
+.nko-video-row lite-youtube iframe {
+  border-radius: 14px;
+}
+
+/* Не обрезать содержимое iframe */
+.nko-video-row lite-youtube iframe {
+  width: 100% !important;
+  height: auto !important;
+  border: 0;
+  display: block;
+}
+
+/* Hover эффект */
 .nko-video-row lite-youtube:hover,
 .nko-video-row iframe:hover {
   transform: translateY(-3px);
@@ -107,8 +142,15 @@
 }
 
 /* Stack vertically on narrow screens */
-@media (max-width: 860px) {
-  .nko-video-row { grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+  .nko-video-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .nko-video-row lite-youtube,
+  .nko-video-row iframe {
+    max-width: 100%;
+  }
 }
 
 /* === CTA === */
@@ -127,12 +169,31 @@
   display:block;
 }
 
+/* Better CTA adaptivity */
+@media (max-width:1000px) {
+  .nko-cta {
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .nko-cta img {
+    order:-1;
+    max-width:480px;
+    margin:0 auto;
+  }
+}
+
 /* === Button === */
 .nko-btn {
-  display:inline-flex; align-items:center; justify-content:center; gap:8px;
-  font-weight:700; padding:12px 26px; border-radius:30px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  font-weight:700;
+  padding:12px 26px;
+  border-radius:30px;
   background:linear-gradient(135deg,var(--brand-blue),var(--brand-cyan));
-  color:var(--btn-text-light)!important; text-decoration:none;
+  color:var(--btn-text-light)!important;
+  text-decoration:none;
   box-shadow:0 3px 10px rgba(0,75,107,.25);
   transition:all .25s ease;
 }
@@ -143,14 +204,31 @@
 }
 
 /* === Dark theme === */
-html.dark .nko-h2,body.dark .nko-h2,
-html.dark .nko-h3,body.dark .nko-h3 { color:#f5f5f5; }
-html.dark .nko-card,body.dark .nko-card { background:#141619;border-color:#222; }
-html.dark .nko-lead,body.dark .nko-lead { color:#cfd8dc; }
-html.dark .nko-btn,body.dark .nko-btn {
+html.dark .nko-h2,
+body.dark .nko-h2,
+html.dark .nko-h3,
+body.dark .nko-h3 { color:#f5f5f5; }
+
+html.dark .nko-card,
+body.dark .nko-card {
+  background:#141619;
+  border-color:#222;
+}
+
+html.dark .nko-lead,
+body.dark .nko-lead { color:#cfd8dc; }
+
+html.dark .nko-btn,
+body.dark .nko-btn {
   background:linear-gradient(135deg,var(--brand-cyan),#47d1ef);
   color:var(--btn-text-dark)!important;
   box-shadow:0 3px 10px rgba(27,167,198,.35);
+}
+
+/* Slightly dim images in dark mode for comfort */
+body.dark img {
+  filter: brightness(0.95);
+  transition: filter .3s ease;
 }
 
 /* === Responsive (misc) === */
@@ -162,5 +240,13 @@ html.dark .nko-btn,body.dark .nko-btn {
   .nko-section{margin:36px 0;}
 }
 
-/* Optional: dark hero background to avoid light gaps under image */
-.nko-hero { background: #000000; }
+/* === Motion preference === */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* === Optional: dark hero background to avoid light gaps === */
+.nko-hero { background:#000; }
