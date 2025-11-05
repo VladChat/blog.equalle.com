@@ -15,7 +15,7 @@
 /* === Anti-Flicker === */
 .nko-container, .nko-container *,
 .fade-in, .js-fade, [data-fade], .reveal-on-scroll {
-  opacity: 1;
+  opacity: 1 !important;  
   visibility: visible;
   transform: none;
   transition: none;
