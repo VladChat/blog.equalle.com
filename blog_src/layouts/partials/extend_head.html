@@ -158,7 +158,4 @@ body.dark .post-single .post-header { box-shadow:0 6px 22px rgba(0,0,0,.35); }
 {{ $style := resources.Get "css/custom/homepage.css" }}
 {{ $tmpl  := $style | resources.ExecuteAsTemplate "css/custom/homepage.generated.css" . }}
 {{ $home  := $tmpl | resources.Minify | resources.Fingerprint }}
-
-<link rel="stylesheet" href="{{ "/css/blog-index.css" | relURL }}">
-
 <link rel="stylesheet" href="{{ $home.Permalink }}" integrity="{{ $home.Data.Integrity }}">
