@@ -1,5 +1,5 @@
 /* blog_src/content/sandpaper/sandpaper.css */
-/* === eQualle Sandpaper — v9.3 (auto-fit video + contain images, final stable) === */
+/* === eQualle Sandpaper — v9.2 (auto-fit YouTube, no cropping, final stable) === */
 
 :root {
   --brand-blue: #004b6b;
@@ -81,23 +81,11 @@
   justify-content:center;
   margin-top:16px;
 }
-.nko-media-item {
-  flex: 1 1 240px;
-  max-width: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--brand-light);
-  border-radius:14px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.1);
-  overflow: hidden;
-}
 .nko-media-item img {
   width:100%;
-  height:100%;
-  object-fit: contain;         /* ✅ показываем полностью */
-  object-position:center;
+  max-width:300px;
   border-radius:14px;
+  object-fit:cover;
   display:block;
   transition:transform .25s ease, box-shadow .25s ease;
 }
