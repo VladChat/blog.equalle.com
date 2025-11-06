@@ -1,5 +1,5 @@
 {
-  "category_index": 21,
+  "category_index": 22,
   "per_category": {
     "wood-sanding": {
       "core_idx": 2,
@@ -87,7 +87,7 @@
     },
     "grit-guide-education": {
       "core_idx": 0,
-      "longtail_idx": 1
+      "longtail_idx": 2
     },
     "grit-range-classification": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 1
     }
   },
-  "brandimg_index": 0,
+  "brandimg_index": 2,
   "brandimg_used": [
-    "10.webp",
-    "11.webp",
     "12.webp",
     "13.webp",
     "14.webp",
@@ -171,7 +169,9 @@
     "26.webp",
     "27.webp",
     "28.webp",
-    "29.webp"
+    "29.webp",
+    "01.webp",
+    "02.webp"
   ],
   "used_pairs": [
     {
@@ -405,57 +405,62 @@
     {
       "seed": "dustless sanding",
       "longtail": "choose hose diameter for best suction"
+    },
+    {
+      "seed": "sandpaper grit chart",
+      "longtail": "how to choose a starting grit"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "100_pack_Grit 100",
-    "50_pack_Grit 150",
-    "50_pack_Grit 240",
-    "25_pack_Grit 800",
-    "10_pack_Grit 150",
-    "100_pack_Grit 180",
-    "50_pack_Grit 320",
-    "10_pack_Grit 120",
-    "25_pack_Grit 80",
     "25_pack_Grit 400",
+    "10_pack_Grit 320",
+    "100_pack_Grit 320",
+    "10_pack_Grit 180",
     "50_pack_Grit 180",
     "50_pack_Grit 100",
-    "25_pack_Grit 120",
-    "10_pack_Grit 280",
-    "50_pack_Grit 220",
-    "100_pack_Grit 150",
-    "25_pack_Grit 100",
-    "100_pack_Grit 1500",
-    "100_pack_Grit 1000",
-    "50_pack_Grit 120",
     "50_pack_Grit 280",
-    "10_pack_Grit 180",
+    "10_pack_Grit 1000",
+    "100_pack_Grit 1500",
     "50_pack_Grit 800",
-    "25_pack_Grit 280",
-    "10_pack_Grit 220",
-    "100_pack_Grit 120",
-    "10_pack_Grit 100",
-    "50_pack_Grit 1500",
-    "10_pack_Grit 320",
     "25_pack_Grit 1000",
     "100_pack_Grit 240",
-    "10_pack_Grit 1000",
-    "25_pack_Grit 220",
-    "10_pack_Grit 1500",
-    "100_pack_Grit 80",
-    "100_pack_Grit 220",
-    "100_pack_Grit 280",
-    "10_pack_Grit 240",
     "25_pack_Grit 240",
-    "100_pack_Grit 320",
-    "25_pack_Grit 320",
+    "100_pack_Grit 280",
+    "25_pack_Grit 80",
+    "100_pack_Grit 120",
+    "100_pack_Grit 1000",
+    "10_pack_Grit 1500",
     "25_pack_Grit 180",
-    "25_pack_Grit 150",
     "50_pack_Grit 80",
-    "50_pack_Grit 1000",
+    "25_pack_Grit 150",
+    "25_pack_Grit 280",
+    "50_pack_Grit 1500",
+    "100_pack_Grit 220",
+    "10_pack_Grit 80",
+    "25_pack_Grit 120",
+    "10_pack_Grit 240",
+    "10_pack_Grit 280",
+    "100_pack_Grit 180",
+    "10_pack_Grit 120",
+    "50_pack_Grit 120",
     "10_pack_Grit 800",
+    "100_pack_Grit 100",
+    "10_pack_Grit 100",
+    "25_pack_Grit 220",
+    "25_pack_Grit 1500",
+    "50_pack_Grit 150",
+    "25_pack_Grit 320",
+    "10_pack_Grit 150",
+    "50_pack_Grit 240",
     "100_pack_Grit 800",
-    "25_pack_Grit 1500"
+    "25_pack_Grit 800",
+    "100_pack_Grit 150",
+    "50_pack_Grit 1000",
+    "100_pack_Grit 80",
+    "50_pack_Grit 320",
+    "50_pack_Grit 220",
+    "10_pack_Grit 220",
+    "25_pack_Grit 100"
   ]
 }
