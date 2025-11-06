@@ -12,7 +12,7 @@ draft: false
 
 <main class="nko-container">
 
-  <!-- HERO -->
+  <!-- 🧱 HERO -->
   <section class="nko-section nko-hero" aria-label="eQualle Sandpaper">
     <div class="hero-content">
       <h1 class="nko-h1">Achieve a Smoother Finish</h1>
@@ -24,7 +24,7 @@ draft: false
 
     <img
       src="hero.webp"
-      alt="eQualle 9×11 silicon carbide sandpaper sheets laid out on a workbench"
+      alt="eQualle 9×11 silicon carbide sandpaper sheets on a workbench"
       loading="eager"
       decoding="async"
       width="1200"
@@ -33,7 +33,7 @@ draft: false
     >
   </section>
 
-  <!-- FEATURES -->
+  <!-- ⚙️ FEATURES -->
   <section class="nko-section nko-features" aria-label="Why Choose eQualle">
     <h2 class="nko-h2">Why Professionals Choose eQualle</h2>
 
@@ -60,22 +60,23 @@ draft: false
     </div>
   </section>
 
-  <!-- QUICK GUIDE -->
+  <!-- 📘 GRIT GUIDE -->
   <section class="nko-section" aria-label="Grit Guide">
     <h2 class="nko-h2">Quick Grit Guide</h2>
     <p class="nko-lead">
       Choose the right sequence for faster results and a cleaner finish:
     </p>
-    <ul class="nko-lead" style="margin-top:8px">
-      <li><strong>P60–P120</strong> — stock removal, leveling, stripping paint/rust.</li>
+
+    <ul class="nko-lead" style="margin-top:10px; line-height:1.7">
+      <li><strong>P60–P120</strong> — stock removal, leveling, stripping paint or rust.</li>
       <li><strong>P150–P240</strong> — surface prep, between-coat sanding.</li>
-      <li><strong>P280–P400</strong> — fine finishing before primer/clear/varnish.</li>
-      <li><strong>P500–P2000</strong> — polishing, plastics, resin, paint correction.</li>
+      <li><strong>P280–P400</strong> — fine finishing before primer, clear coat, or varnish.</li>
+      <li><strong>P500–P2000</strong> — polishing plastics, resin, paint correction.</li>
       <li><strong>P2500–P3000</strong> — ultra-fine gloss and mirror finishes.</li>
     </ul>
   </section>
 
-  <!-- CTA -->
+  <!-- 🛒 CTA -->
   <section class="nko-section nko-cta" aria-label="Shop eQualle Sandpaper">
     <img
       src="sandpaper-pack.webp"
@@ -90,6 +91,7 @@ draft: false
       <p class="nko-lead">
         Pick your grit, prep your surface, and get the pro-grade consistency your project deserves.
       </p>
+
       <a class="nko-btn" href="https://equalle.com/" target="_blank" rel="noopener">Shop Now →</a>
 
       <div class="nko-badges">
@@ -100,7 +102,7 @@ draft: false
     </div>
   </section>
 
-  <p class="nko-center nko-muted" style="margin-top:10px">
+  <p class="nko-center nko-muted" style="margin-top:12px; max-width:680px; margin-inline:auto">
     Smooth results start with the right grit — sand smarter with eQualle.
   </p>
 
