@@ -21,7 +21,7 @@ draft: false
 
 <!-- 🧰 USE CASES -->
 <section class="nko-section" aria-label="Built for multiple materials">
-  <h2 class="nko-h2">Built for Wood, Auto Body, Metal & More</h2>
+  <h3 class="nko-h3">Built for Wood, Auto Body, Metal & More</h3>
   <p class="nko-lead">From aggressive removal to mirror-finish polishing, our 9×11 sheets deliver uniform scratch patterns and predictable results at every stage.</p>
 
 </section>
@@ -39,7 +39,7 @@ draft: false
 
 <!-- 🎥 VIDEO -->
 <section id="video" class="nko-section anchor" aria-label="How to use eQualle sandpaper">
-  <h2 class="nko-h2">How to Use for Best Results</h2>
+  <h3 class="nko-h2">How to Use for Best Results</h3>
   <div class="nko-video-row">
     <lite-youtube videoid="kmYQNiuXEnM" params="rel=0&modestbranding=1" title="Workflow Demo"></lite-youtube>
     <lite-youtube videoid="MLymLKIKVRk" params="rel=0&modestbranding=1" title="Product Overview"></lite-youtube>
@@ -48,7 +48,7 @@ draft: false
 
 <!-- 📦 WHAT'S IN THE PACK -->
 <section id="specs" class="nko-section anchor">
-  <h2 class="nko-h2">What You Get</h2>
+  <h3 class="nko-h2">What You Get</h3>
   <ul class="nko-lead">
     <li><strong>Material:</strong> Silicon Carbide Abrasive (professional grade).</li>
     <li><strong>Size:</strong> 9×11 inches (fold, wrap, or cut as needed).</li>
