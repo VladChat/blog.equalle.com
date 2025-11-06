@@ -24,9 +24,9 @@ draft: false
   <h2 class="nko-h2">Built for Wood, Auto Body, Metal & More</h2>
   <p class="nko-lead">From aggressive removal to mirror-finish polishing, our 9×11 sheets deliver uniform scratch patterns and predictable results at every stage.</p>
   <div class="nko-media-row">
-    <div class="nko-media-item"><img src="og-equalle-50kb.webp" alt="Sanding wood surface with silicon carbide sheets" loading="lazy" width="300" height="200"></div>
+    <div class="nko-media-item"><img src="og-equalle2.webp" alt="Sanding wood surface with silicon carbide sheets" loading="lazy" width="300" height="200"></div>
     <div class="nko-media-item"><img src="sandpaper-pack.webp" alt="Automotive sanding and headlight restoration example" loading="lazy" width="300" height="200"></div>
-    <div class="nko-media-item"><img src="og-equalle2.webp" alt="eQualle sandpaper packshot 9x11 in" loading="lazy" width="300" height="200"></div>
+    <div class="nko-media-item"><img src="og-equalle-50kb.webp" alt="eQualle sandpaper packshot 9x11 in" loading="lazy" width="300" height="200"></div>
   </div>
 </section>
 
