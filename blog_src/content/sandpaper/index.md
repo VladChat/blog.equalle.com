@@ -23,22 +23,9 @@ draft: false
 <section class="nko-section" aria-label="Built for multiple materials">
   <h2 class="nko-h2">Built for Wood, Auto Body, Metal & More</h2>
   <p class="nko-lead">From aggressive removal to mirror-finish polishing, our 9×11 sheets deliver uniform scratch patterns and predictable results at every stage.</p>
-  <div class="nko-media-row">
-    <div class="nko-media-item"><img src="og-equalle2.webp" alt="Sanding wood surface with silicon carbide sheets" loading="lazy" width="300" height="200"></div>
-    <div class="nko-media-item"><img src="sandpaper-pack.webp" alt="Automotive sanding and headlight restoration example" loading="lazy" width="300" height="200"></div>
-    <div class="nko-media-item"><img src="og-equalle-50kb.webp" alt="eQualle sandpaper packshot 9x11 in" loading="lazy" width="300" height="200"></div>
-  </div>
+
 </section>
 
-<!-- ✅ BENEFITS -->
-<section id="benefits" class="nko-section anchor">
-  <h2 class="nko-h2">Why Pros Choose eQualle</h2>
-  <div class="nko-features">
-    <div class="nko-feature"><div class="f-ttl">Wet or Dry</div><div class="nko-muted">Use with water or dry for dust control and longer life.</div></div>
-    <div class="nko-feature"><div class="f-ttl">Fast Cutting SiC</div><div class="nko-muted">Silicon Carbide grains cut quickly and leave a fine, consistent scratch.</div></div>
-    <div class="nko-feature"><div class="f-ttl">Wide Grit Range</div><div class="nko-muted">From P60 for heavy removal to P3000 for ultra-fine finishing.</div></div>
-    <div class="nko-feature"><div class="f-ttl">Trim-to-Fit</div><div class="nko-muted">9×11 sheets fold or cut easily for blocks and detail sanders.</div></div>
-  </div>
 
   <h3 class="nko-h3">Suggested Grit Sequence</h3>
   <ul class="nko-lead">
