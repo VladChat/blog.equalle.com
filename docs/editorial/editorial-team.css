@@ -1,81 +1,82 @@
-/* === eQualle Editorial Team Page Styles (responsive fixed, 2025-11) === */
-.authors {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/* File: blog_src/content/editorial/editorial-team.css */
+/* === eQualle Editorial Team — responsive grid, namespaced (2025-11) === */
+
+/* Контейнер страницы: создаём неймспейс, чтобы перебить стили темы */
+.eq-editorial { margin-top: 0.5rem; }
+
+/* Сетка карточек авторов: стабильные ряды на десктопе, авто-перенос ниже */
+.eq-editorial .authors{
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  gap: 1.75rem;
   align-items: stretch;
-  gap: 2rem;
-  margin-top: 2rem;
-  padding: 0 1rem;
 }
 
-/* Каждая карточка автора */
-.author {
-  background: var(--surface, #f9faf9);
+/* Сброс возможных глобальных правил темы на .author */
+.eq-editorial .author{
+  display: flex !important;          /* вертикальная карточка */
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: none;
+  background: var(--surface, rgba(255,255,255,0.04));
+  border: 1px solid rgba(0,0,0,0.06);
   border-radius: 14px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-  text-align: center;
-  flex: 1 1 calc(25% - 2rem); /* 4 в ряд при ширине экрана > 1200px */
-  max-width: 280px;
-  min-width: 220px;
-  padding: 1.5rem 1rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.author:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+.eq-editorial .author:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
 }
 
-.author img {
+/* Изображение и тексты внутри карточки */
+.eq-editorial .author img{
   width: 100%;
   max-width: 220px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  margin-bottom: .8rem;
 }
 
-.author h4 {
-  margin: 0.5rem 0;
-  color: var(--brand-blue, #004b6b);
-  font-size: 1.1rem;
-  font-weight: 600;
+.eq-editorial .author h4{
+  margin: .4rem 0 .2rem;
+  font-weight: 700;
+  font-size: 1.06rem;
+  color: var(--brand-blue, #7BB661);
 }
 
-.author p {
-  font-size: 0.95rem;
-  color: var(--secondary-text, #444);
+.eq-editorial .author p{
+  margin: 0;
+  font-size: .95rem;
   line-height: 1.6;
-  margin: 0 auto;
-  max-width: 95%;
+  color: var(--secondary-text, #cfcfcf);
   text-align: justify;
+  max-width: 95%;
 }
 
-/* === РЕСПОНСИВНОСТЬ === */
-
-/* 3 в ряд на средних экранах */
-@media (max-width: 1200px) {
-  .author {
-    flex: 1 1 calc(33.333% - 2rem);
+/* ======= Брейкпоинты ======= */
+/* 3 колонки на широких планшетах */
+@media (max-width: 1200px){
+  .eq-editorial .authors{
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
   }
 }
-
-/* 2 в ряд на планшетах */
-@media (max-width: 900px) {
-  .author {
-    flex: 1 1 calc(50% - 2rem);
+/* 2 колонки на планшетах и малых ноутбуках */
+@media (max-width: 900px){
+  .eq-editorial .authors{
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
   }
 }
-
-/* 1 в ряд на телефонах */
-@media (max-width: 600px) {
-  .author {
-    flex: 1 1 100%;
-    max-width: none;
-  }
-  .authors {
-    gap: 1.5rem;
-    padding: 0;
+/* 1 колонка на мобильных */
+@media (max-width: 600px){
+  .eq-editorial .authors{
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }
