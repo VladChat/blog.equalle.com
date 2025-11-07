@@ -1,4 +1,3 @@
-<!-- File: blog_src/content/editorial/index.md -->
 ---
 title: "Editorial Team"
 layout: "page"
