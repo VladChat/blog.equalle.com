@@ -1,5 +1,5 @@
 # ============================================================
-# File: .github/workflows/blog-writer.yml
+# File: blog-writer.yml
 # Full path: /.github/workflows/blog-writer.yml
 # ============================================================
 
@@ -7,8 +7,8 @@ name: Blog Writer
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 13,14,15,16 * * *'   # every day at 13:00, 14:00, 15:00, and 16:00 UTC
+  # schedule:                    # ⛔ отключено — расписание перенесено в отдельный blog-trigger.yml
+  #   - cron: '0 13,14,15,16 * * *'   # (удалено, чтобы не дублировался запуск)
 
 permissions:
   contents: write

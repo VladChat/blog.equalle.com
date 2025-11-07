@@ -1,0 +1,56 @@
+# ============================================================
+# File: .github/workflows/blog-trigger.yml
+# Purpose: Randomly trigger the blog-writer workflow 1–4 times per day
+# ============================================================
+
+name: Blog Trigger
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # один раз в день в 13:00 UTC (~08:00 CST)
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Randomly dispatch Blog Writer 1–4 times
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # ===========================================
+          # 🔹 Количество запусков в день (1–4)
+          runs=$((1 + RANDOM % 4))
+          echo "📅 Will trigger the Blog Writer $runs times today."
+
+          # 🔹 Минимальная и максимальная задержка между вызовами (в минутах)
+          min_delay=45
+          max_delay=340
+
+          # ===========================================
+          for ((i=1; i<=runs; i++)); do
+            if [ $i -gt 1 ]; then
+              delay=$((min_delay + RANDOM % (max_delay - min_delay + 1)))
+              echo "⏳ Waiting $delay minutes before triggering next run..."
+              sleep $((delay * 60))
+            fi
+
+            echo "🚀 Dispatching Blog Writer run #$i..."
+            curl -X POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              https://api.github.com/repos/${{ github.repository }}/actions/workflows/blog-writer.yml/dispatches \
+              -d '{"ref": "main"}'
+
+            echo "✅ Triggered run #$i at $(date '+%H:%M:%S')."
+            echo "----------------------------------------"
+          done
+
+      - name: Done
+        run: echo "🎯 All scheduled Blog Writer triggers completed."
