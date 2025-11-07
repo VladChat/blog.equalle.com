@@ -1,9 +1,12 @@
+<!-- File: blog_src/content/editorial/index.md -->
 ---
 title: "Editorial Team"
 layout: "page"
 description: "Meet the eQualle Editorial Team — experts in abrasives, sanding, and surface finishing who share practical guides, tutorials, and professional insights."
 css: ["editorial-team.css"]
 ---
+
+<section class="eq-editorial">
 
 ### eQualle Editorial Team
 
@@ -43,7 +46,6 @@ Our goal is simple: to help DIYers, woodworkers, and professionals achieve flawl
 </div>
 
 ---
-
 ### ⚙️ What We Do
 - Write expert articles on sanding, polishing, and surface preparation  
 - Test and review abrasives, tools, and finishing accessories  
@@ -51,7 +53,6 @@ Our goal is simple: to help DIYers, woodworkers, and professionals achieve flawl
 - Explore sustainable and efficient ways to achieve professional results  
 
 ---
-
 ### 🌐 Connect With Us
 Follow our updates, tutorials, and sanding innovations:  
 - 🌍 [Website](https://equalle.com)  
@@ -59,3 +60,5 @@ Follow our updates, tutorials, and sanding innovations:
 - 💚 [Facebook](https://www.facebook.com/eQualleAbrasives/)  
 - 📺 [YouTube](https://www.youtube.com/@eQualle-Sandpaper)  
 - 💌 [contact@equalle.com](mailto:admin@equalle.com)
+
+</section>
