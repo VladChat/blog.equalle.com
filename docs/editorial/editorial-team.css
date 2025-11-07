@@ -1,31 +1,45 @@
-/* === eQualle Editorial Team Page Styles (optimized, 2025-11) === */
+/* === eQualle Editorial Team Page Styles (responsive fixed, 2025-11) === */
 .authors {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
   justify-content: center;
-  margin-top: 1rem;
+  align-items: stretch;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
+/* Каждая карточка автора */
 .author {
+  background: var(--surface, #f9faf9);
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
   text-align: center;
-  max-width: 260px;
-  flex: 1 1 240px;
+  flex: 1 1 calc(25% - 2rem); /* 4 в ряд при ширине экрана > 1200px */
+  max-width: 280px;
+  min-width: 220px;
+  padding: 1.5rem 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.author:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
 }
 
 .author img {
   width: 100%;
-  max-width: 260px;
+  max-width: 220px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  margin-bottom: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
 }
 
 .author h4 {
   margin: 0.5rem 0;
   color: var(--brand-blue, #004b6b);
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -33,16 +47,35 @@
   font-size: 0.95rem;
   color: var(--secondary-text, #444);
   line-height: 1.6;
-  text-align: justify;
   margin: 0 auto;
+  max-width: 95%;
+  text-align: justify;
 }
 
-@media (min-width: 900px) {
-  .authors {
-    justify-content: center;
-    gap: 2.5rem;
-  }
+/* === РЕСПОНСИВНОСТЬ === */
+
+/* 3 в ряд на средних экранах */
+@media (max-width: 1200px) {
   .author {
-    max-width: 260px;
+    flex: 1 1 calc(33.333% - 2rem);
+  }
+}
+
+/* 2 в ряд на планшетах */
+@media (max-width: 900px) {
+  .author {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+/* 1 в ряд на телефонах */
+@media (max-width: 600px) {
+  .author {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+  .authors {
+    gap: 1.5rem;
+    padding: 0;
   }
 }
