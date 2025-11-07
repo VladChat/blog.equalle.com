@@ -1,49 +1,82 @@
-/* === eQualle Editorial Team Page Styles (Stable Layout) === */
+/* File: blog_src/content/editorial/editorial-team.css */
+/* === eQualle Editorial Team — responsive grid, namespaced (2025-11) === */
 
-.authors {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 1rem;
+/* Контейнер страницы: создаём неймспейс, чтобы перебить стили темы */
+.eq-editorial { margin-top: 0.5rem; }
+
+/* Сетка карточек авторов: стабильные ряды на десктопе, авто-перенос ниже */
+.eq-editorial .authors{
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
 }
 
-.author {
-  text-align: center;
-  max-width: 260px;
-  flex: 1 1 240px;
-}
-
-.author img {
+/* Сброс возможных глобальных правил темы на .author */
+.eq-editorial .author{
+  display: flex !important;          /* вертикальная карточка */
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
-  max-width: 260px;
+  max-width: none;
+  background: var(--surface, rgba(255,255,255,0.04));
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 14px;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.eq-editorial .author:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+/* Изображение и тексты внутри карточки */
+.eq-editorial .author img{
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  margin-bottom: 0.8rem;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  margin-bottom: .8rem;
 }
 
-.author h4 {
-  margin: 0.5rem 0;
-  color: var(--brand-blue);
-  font-weight: 600;
+.eq-editorial .author h4{
+  margin: .4rem 0 .2rem;
+  font-weight: 700;
+  font-size: 1.06rem;
+  color: var(--brand-blue, #7BB661);
 }
 
-.author p {
-  font-size: 0.95rem;
-  color: var(--secondary-text);
+.eq-editorial .author p{
+  margin: 0;
+  font-size: .95rem;
   line-height: 1.6;
+  color: var(--secondary-text, #cfcfcf);
   text-align: justify;
-  margin: 0 auto;
+  max-width: 95%;
 }
 
-/* Keep perfect grid on larger screens */
-@media (min-width: 900px) {
-  .authors {
-    justify-content: center;
-    gap: 2.5rem;
+/* ======= Брейкпоинты ======= */
+/* 3 колонки на широких планшетах */
+@media (max-width: 1200px){
+  .eq-editorial .authors{
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
   }
-  .author {
-    max-width: 260px;
+}
+/* 2 колонки на планшетах и малых ноутбуках */
+@media (max-width: 900px){
+  .eq-editorial .authors{
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+}
+/* 1 колонка на мобильных */
+@media (max-width: 600px){
+  .eq-editorial .authors{
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }
