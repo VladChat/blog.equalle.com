@@ -1,82 +1,61 @@
-/* File: blog_src/content/editorial/editorial-team.css */
-/* === eQualle Editorial Team — responsive grid, namespaced (2025-11) === */
+---
+title: "Editorial Team"
+layout: "page"
+description: "Meet the eQualle Editorial Team — experts in abrasives, sanding, and surface finishing who share practical guides, tutorials, and professional insights."
+css: ["editorial-team.css"]
+---
 
-/* Контейнер страницы: создаём неймспейс, чтобы перебить стили темы */
-.eq-editorial { margin-top: 0.5rem; }
+### eQualle Editorial Team
 
-/* Сетка карточек авторов: стабильные ряды на десктопе, авто-перенос ниже */
-.eq-editorial .authors{
-  display: grid !important;
-  grid-template-columns: repeat(4, minmax(240px, 1fr));
-  gap: 1.75rem;
-  align-items: stretch;
-}
+🪶 Welcome to the minds behind **eQualle Blog** — a team of professionals, makers, and writers passionate about precision craftsmanship.  
+Our goal is simple: to help DIYers, woodworkers, and professionals achieve flawless finishes through knowledge, quality tools, and hands-on experience.
 
-/* Сброс возможных глобальных правил темы на .author */
-.eq-editorial .author{
-  display: flex !important;          /* вертикальная карточка */
-  flex-direction: column !important;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: none;
-  background: var(--surface, rgba(255,255,255,0.04));
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 14px;
-  padding: 1.25rem 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
+---
 
-.eq-editorial .author:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
-}
+### ✍️ Meet Our Authors
 
-/* Изображение и тексты внутри карточки */
-.eq-editorial .author img{
-  width: 100%;
-  max-width: 220px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,.2);
-  margin-bottom: .8rem;
-}
+<div class="authors">
 
-.eq-editorial .author h4{
-  margin: .4rem 0 .2rem;
-  font-weight: 700;
-  font-size: 1.06rem;
-  color: var(--brand-blue, #7BB661);
-}
+  <div class="author">
+    <img src="author1.webp" alt="Mark Jensen — eQualle Editorial" width="260" height="260" loading="lazy" decoding="async">
+    <h4>Mark Jensen</h4>
+    <p>🪶 Senior Technical Writer — specializes in abrasives, sanding workflows, and finishing methods. Mark brings over 25 years of industry experience to every article.</p>
+  </div>
 
-.eq-editorial .author p{
-  margin: 0;
-  font-size: .95rem;
-  line-height: 1.6;
-  color: var(--secondary-text, #cfcfcf);
-  text-align: justify;
-  max-width: 95%;
-}
+  <div class="author">
+    <img src="author2.webp" alt="David Chen — eQualle Editorial" width="260" height="260" loading="lazy" decoding="async">
+    <h4>David Chen</h4>
+    <p>🪶 Product Engineer & Reviewer — evaluates performance and design of abrasive tools. David’s deep technical insight ensures accuracy and reliability in every review.</p>
+  </div>
 
-/* ======= Брейкпоинты ======= */
-/* 3 колонки на широких планшетах */
-@media (max-width: 1200px){
-  .eq-editorial .authors{
-    grid-template-columns: repeat(3, minmax(240px, 1fr));
-  }
-}
-/* 2 колонки на планшетах и малых ноутбуках */
-@media (max-width: 900px){
-  .eq-editorial .authors{
-    grid-template-columns: repeat(2, minmax(240px, 1fr));
-  }
-}
-/* 1 колонка на мобильных */
-@media (max-width: 600px){
-  .eq-editorial .authors{
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-}
+  <div class="author">
+    <img src="author3.webp" alt="Lucas Moreno — eQualle Editorial" width="260" height="260" loading="lazy" decoding="async">
+    <h4>Lucas Moreno</h4>
+    <p>🪶 Workshop & DIY Specialist — creates step-by-step sanding tutorials and project guides. Lucas makes technical concepts simple and actionable for everyday users.</p>
+  </div>
+
+  <div class="author">
+    <img src="author4.webp" alt="Emily Novak — eQualle Editorial" width="260" height="260" loading="lazy" decoding="async">
+    <h4>Emily Novak</h4>
+    <p>🪶 Content Editor & Research Lead — ensures all articles are accurate, clear, and educational. Emily bridges the gap between technical detail and reader clarity.</p>
+  </div>
+
+</div>
+
+---
+
+### ⚙️ What We Do
+- Write expert articles on sanding, polishing, and surface preparation  
+- Test and review abrasives, tools, and finishing accessories  
+- Share step-by-step guides for woodworking, auto repair, and metal finishing  
+- Explore sustainable and efficient ways to achieve professional results  
+
+---
+
+### 🌐 Connect With Us
+Follow our updates, tutorials, and sanding innovations:  
+- 🌍 [Website](https://equalle.com)  
+- 📸 [Instagram](https://www.instagram.com/equalleabrasives/)  
+- 💚 [Facebook](https://www.facebook.com/eQualleAbrasives/)  
+- 📺 [YouTube](https://www.youtube.com/@eQualle-Sandpaper)  
+- 💌 [contact@equalle.com](mailto:admin@equalle.com)
