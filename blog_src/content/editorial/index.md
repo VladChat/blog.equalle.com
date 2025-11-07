@@ -65,4 +65,4 @@ Follow our updates, tutorials, and sanding innovations:
 - 📸 [Instagram](https://www.instagram.com/equalleabrasives/)  
 - 💚 [Facebook](https://www.facebook.com/eQualleAbrasives/)  
 - 📺 [YouTube](https://www.youtube.com/@eQualle-Sandpaper)  
-- 💌 [contact@equalle.com](mailto:admin@equalle.com)
+- 💌 [admin@equalle.com](mailto:admin@equalle.com)
