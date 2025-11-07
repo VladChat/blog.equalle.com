@@ -1,5 +1,4 @@
-/* === eQualle Editorial Team Page Styles (Stable Layout) === */
-
+/* === eQualle Editorial Team Page Styles (optimized, 2025-11) === */
 .authors {
   display: flex;
   flex-wrap: wrap;
@@ -18,26 +17,26 @@
 .author img {
   width: 100%;
   max-width: 260px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   margin-bottom: 0.8rem;
 }
 
 .author h4 {
   margin: 0.5rem 0;
-  color: var(--brand-blue);
+  color: var(--brand-blue, #004b6b);
   font-weight: 600;
 }
 
 .author p {
   font-size: 0.95rem;
-  color: var(--secondary-text);
+  color: var(--secondary-text, #444);
   line-height: 1.6;
   text-align: justify;
   margin: 0 auto;
 }
 
-/* Keep perfect grid on larger screens */
 @media (min-width: 900px) {
   .authors {
     justify-content: center;
