@@ -1,6 +1,6 @@
 # ============================================================
 # File: .github/workflows/blog-writer.yml
-# Purpose: Run the blog writer 2–4 random times per day
+# Purpose: Run the blog writer 1–4 random times per day
 # ============================================================
 
 name: Blog Writer
@@ -43,8 +43,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r blog_src/scripts/requirements.txt
 
-      # === 4. Запускаем writer случайное количество раз с паузами ===
-      - name: Run writer randomly 2–4 times during the day
+      # === 4. Запускаем writer случайное количество раз с паузами (1–4 между 08:00–12:00 CST) ===
+      - name: Run writer randomly 1–4 times during the morning
         env:
           TZ: America/Chicago   # чтобы sleep ориентировался по центральному времени
         run: |
@@ -55,8 +55,8 @@ jobs:
           echo "📅 Will run the blog writer $runs times today."
 
           # 🔹 Минимальная и максимальная задержка между запусками (в минутах)
-          # min_delay — минимальное ожидание (например, 60 мин = 1 час)
-          # max_delay — максимальное ожидание (например, 360 мин = 6 часов)
+          # min_delay — минимальное ожидание (0 = сразу)
+          # max_delay — максимальное ожидание (например, 240 мин = 4 часа)
           min_delay=45
           max_delay=360
 
@@ -64,7 +64,7 @@ jobs:
           for ((i=1; i<=runs; i++)); do
             if [ $i -gt 1 ]; then
               # для второго и последующих запусков добавляем случайную задержку
-              delay=$((min_delay + RANDOM % (max_delay - min_delay)))
+              delay=$((min_delay + RANDOM % (max_delay - min_delay + 1)))
               echo "⏳ Waiting $delay minutes before next run..."
               sleep $((delay * 60))
             fi
