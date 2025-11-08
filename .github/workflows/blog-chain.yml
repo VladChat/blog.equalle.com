@@ -8,9 +8,9 @@
 name: Blog Chain
 
 on:
-  # Срабатывает после завершения workflow с именем "Blog Writer"
-  workflow_run:
-    workflows: ["Blog Writer"]   # Должно ТЕХНИЧЕСКИ совпадать с `name:` внутри blog-writer.yml
+  workflow_dispatch:      # ручной запуск (кнопка Run workflow)
+  workflow_run:           # автоматический запуск после Blog Writer
+    workflows: ["Blog Writer"]   # ДОЛЖНО совпадать с name: в blog-writer.yml
     types: [completed]
 
 permissions:
@@ -19,8 +19,8 @@ permissions:
 
 jobs:
   trigger_build:
-    # Запускаем только если Blog Writer завершился успешно
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    # авто: ждём успешный Blog Writer; ручной: разрешаем выполнение сразу
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -36,12 +36,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT_GITHUB }}
         run: |
-          echo "🚀 Blog Writer completed successfully. Triggering Blog Build..."
-
-          # Ветка, из которой собирать (измени на нужную при необходимости)
+          echo "🚀 ${GITHUB_WORKFLOW} is triggering Build Blog..."
           REF_BRANCH="main"
 
-          # Вызов workflow_dispatch по имени файла workflow (blog-build.yml)
           curl -sS -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${GH_TOKEN}" \
@@ -52,7 +49,6 @@ jobs:
           echo "🧪 API response:"
           cat /tmp/dispatch_response.json || true
 
-          # Базовая проверка, что ошибок нет (если GitHub вернул объект с message — подсветим)
           if grep -qi '"message":' /tmp/dispatch_response.json; then
             echo "⚠️ GitHub API returned a message (inspect above)."
           fi
