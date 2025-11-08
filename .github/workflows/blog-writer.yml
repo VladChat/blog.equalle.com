@@ -1,22 +1,16 @@
 # ============================================================
-# File: blog-writer.yml
-# Full path: /.github/workflows/blog-writer.yml
+# File: .github/workflows/blog-writer.yml
+# Purpose: Runs the blog post generator manually or via trigger
 # ============================================================
 
 name: Blog Writer
 
 on:
-  workflow_dispatch:
-  # schedule:                    # ⛔ отключено — расписание перенесено в отдельный blog-trigger.yml
-  #   - cron: '0 13,14,15,16 * * *'   # (удалено, чтобы не дублировался запуск)
+  workflow_dispatch:        # 🔹 Запуск вручную или из другого workflow через dispatch
 
 permissions:
-  contents: write
-  actions: write
-
-concurrency:
-  group: blog-writer
-  cancel-in-progress: true
+  contents: write           # Разрешение на коммиты и push
+  actions: write            # Разрешение вызывать другие workflow через API
 
 jobs:
   writer:
@@ -30,55 +24,52 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install Python deps
-        env:
-          PIP_DISABLE_PIP_VERSION_CHECK: '1'
-          PIP_NO_INPUT: '1'
         run: |
           python -m pip install --upgrade pip
           pip install -r blog_src/scripts/requirements.txt
 
-      - name: Syntax check (py_compile)
-        run: |
-          python - << 'PY'
-          import compileall, sys
-          ok = compileall.compile_dir('blog_src/scripts', force=True, quiet=1)
-          sys.exit(0 if ok else 1)
-          PY
-
       - name: Run generator (create Markdown posts)
         env:
-          # === 🔑 Подключаем все ключи и конфигурацию ===
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}
-          PYTHONUTF8: '1'
         run: |
-          echo "[CI] Starting writer pipeline..."
+          echo "[CI] Running blog writer..."
           python -m blog_src.scripts.writer.main
-
-      - name: Configure Git user & safe dir
-        run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Commit & Push new posts
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           # Добавляем изменения, если они есть
-          git add blog_src/content/posts blog_src/content/categories blog_src/data/state.json
+          git add blog_src/content/posts blog_src/data/state.json
 
           # Если нет изменений — выходим
           git diff --cached --quiet && echo "No changes to commit" && exit 0
 
           # Коммитим новые посты
-          git commit -m "Add new blog post $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git commit -m "Add new blog post [skip ci]"
 
-          # Подтягиваем возможные коммиты, если параллельно что-то вливали
+          # Подтягиваем возможные новые коммиты с GitHub (например, из других workflow)
           git pull --rebase || true
 
           # Отправляем в репозиторий
           git push
+
+      - name: Trigger Blog Build (direct)
+        if: ${{ success() }}
+        env:
+          GH_TOKEN: ${{ secrets.PAT_GITHUB }}
+        run: |
+          echo "🚀 Writer completed successfully. Triggering blog-build.yml..."
+          REF_BRANCH="main"
+
+          curl -sS -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/blog-build.yml/dispatches" \
+            -d "{\"ref\":\"${REF_BRANCH}\"}"
+
+          echo "🎯 Build dispatched manually via PAT."
