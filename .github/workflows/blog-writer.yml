@@ -7,36 +7,42 @@ name: Blog Writer
 
 on:
   workflow_dispatch:
-    inputs: {}        # 👈 позволяет корректно вызывать workflow через API (из триггера)
-  workflow_call:      # 👈 разрешает проброс всех секретов при вызове
-    secrets: inherit  # 👈 унаследует GOOGLE_API_KEY, YT_API_KEY и т. д. от вызывающего workflow
+    inputs: {}        # позволяет корректно вызывать workflow через API (из триггера)
+  workflow_call:      # разрешает проброс секретов от вызывающего workflow
+    secrets:
+      GOOGLE_API_KEY:
+        required: true
+      GOOGLE_CSE_ID:
+        required: true
+      YT_API_KEY:
+        required: true
+      OPENAI_API_KEY:
+        required: true
+      PAT_GITHUB:
+        required: true
 
 permissions:
-  contents: write           # нужно для коммитов
-  actions: write            # нужно для вызова blog-build.yml через API
+  contents: write
+  actions: write
 
 jobs:
   writer:
     runs-on: ubuntu-latest
 
     steps:
-      # === 1. Клонируем репозиторий ===
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # === 2. Настраиваем Python ===
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # === 3. Устанавливаем зависимости ===
       - name: Install Python deps
         run: |
           python -m pip install --upgrade pip
           pip install -r blog_src/scripts/requirements.txt
 
-      # === 4. Запускаем генератор постов ===
       - name: Run generator (create Markdown posts)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -47,28 +53,17 @@ jobs:
           echo "[CI] Running blog writer..."
           python -m blog_src.scripts.writer.main
 
-      # === 5. Коммитим и пушим изменения ===
       - name: Commit & Push new posts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Добавляем изменения, если они есть
           git add blog_src/content/posts blog_src/data/state.json
-
-          # Если нет изменений — выходим
           git diff --cached --quiet && echo "No changes to commit" && exit 0
-
-          # Коммитим новые посты
           git commit -m "Add new blog post [skip ci]"
-
-          # Подтягиваем возможные изменения (если были параллельные коммиты)
           git pull --rebase || true
-
-          # Отправляем в репозиторий
           git push
 
-      # === 6. Запускаем билд блога ===
       - name: Trigger Blog Build (direct)
         if: ${{ success() }}
         env:
