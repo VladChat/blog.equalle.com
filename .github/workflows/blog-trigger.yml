@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Randomly dispatch Blog Writer 1–4 times
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_GITHUB }}
         run: |
           # ===========================================
           # 🔹 Количество запусков в день (1–4)
