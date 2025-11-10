@@ -102,13 +102,33 @@ Last Updated: 2025-11-10
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end }}</description>
       <summary>{{ .Summary | html }}</summary>
 
-      {{- /* --- Include image --- */ -}}
+      {{- /* ============================================================
+           Smart image selector for RSS
+           Picks a meaningful in-article image (not icons or SVGs)
+      ============================================================ */ -}}
+      {{- $img := "" }}
       {{- with .Params.image }}
-        <media:content url="{{ . | absURL }}" medium="image" />
+        {{- $img = . | absURL }}
       {{- else }}
         {{- with .Resources.GetMatch "hero*" }}
-          <media:content url="{{ .Permalink }}" medium="image" />
+          {{- $img = .Permalink }}
+        {{- else }}
+          {{- range .Resources.ByType "image" }}
+            {{- if and (not (strings.HasSuffix .Name ".svg")) (gt .Width 600) }}
+              {{- $img = .Permalink }}
+              {{- break }}
+            {{- end }}
+          {{- end }}
+          {{- if eq $img "" }}
+            {{- $matches := findRE `https://blog\.equalle\.com/images/[^"]+\.(?:webp|jpg|jpeg|png)` .Content 1 }}
+            {{- if gt (len $matches) 0 }}
+              {{- $img = index $matches 0 }}
+            {{- end }}
+          {{- end }}
         {{- end }}
+      {{- end }}
+      {{- if $img }}
+        <media:content url="{{ $img }}" medium="image" />
       {{- end }}
 
       {{- /* --- Optional: estimated reading time --- */ -}}
