@@ -29,8 +29,8 @@ jobs:
           echo "📅 Will trigger the Blog Writer $runs times today."
 
           # 🔹 Минимальная и максимальная задержка между вызовами (в минутах)
-          min_delay=45
-          max_delay=340
+          min_delay=30
+          max_delay=120
 
           # ===========================================
           for ((i=1; i<=runs; i++)); do
@@ -54,3 +54,4 @@ jobs:
 
       - name: Done
         run: echo "🎯 All scheduled Blog Writer triggers completed."
+
