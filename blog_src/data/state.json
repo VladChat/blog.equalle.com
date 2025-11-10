@@ -1,5 +1,5 @@
 {
-  "category_index": 4,
+  "category_index": 5,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -18,7 +18,7 @@
       "longtail_idx": 0
     },
     "floor-deck-sanding": {
-      "core_idx": 2,
+      "core_idx": 3,
       "longtail_idx": 0
     },
     "auto-body-sanding": {
@@ -150,10 +150,8 @@
       "longtail_idx": 2
     }
   },
-  "brandimg_index": 11,
+  "brandimg_index": 13,
   "brandimg_used": [
-    "21.webp",
-    "22.webp",
     "23.webp",
     "24.webp",
     "25.webp",
@@ -171,7 +169,9 @@
     "08.webp",
     "09.webp",
     "10.webp",
-    "11.webp"
+    "11.webp",
+    "12.webp",
+    "13.webp"
   ],
   "used_pairs": [
     {
@@ -485,10 +485,15 @@
     {
       "seed": "wall finishing",
       "longtail": "level 4 versus level 5 wall finish explained"
+    },
+    {
+      "seed": "wood floor prep",
+      "longtail": "moisture and acclimation checks before floor sanding"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
+    "25_pack_Grit 220",
     "25_pack_Grit 800"
   ]
 }
