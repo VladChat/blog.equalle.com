@@ -23,6 +23,7 @@ from .video_helpers import (
 from .llm import call_llm as call_llm_local
 from .brandimg_injector import inject_brand_images
 from .taxonomy.auto_tag import build_tags
+    # Note: build_video_embed is imported but not used below
 from .video_utils import build_video_embed
 from .link_injector import inject_product_link_after_video_source  # вставляем ТОЛЬКО если есть видео
 from . import posts  # для QA (qa_check_proxy)
@@ -269,13 +270,13 @@ def main() -> None:
 
     fm = (
         "---\n"
-        f'title: "{title_escaped}"\n"
+        f'title: "{title_escaped}"\n'
         f"date: {now.isoformat()}\n"
         "draft: false\n"
-        f'slug: "{safe_slug}"\n"
+        f'slug: "{safe_slug}"\n'
         f"{categories_line}\n"
         f"tags: [{tags_yaml}]\n"
-        f'author: "{author_name}"\n"
+        f'author: "{author_name}"\n'
         f'image: "{image_url}"\n'
         f"{description_line}"
         "---\n\n"
