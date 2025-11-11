@@ -1,5 +1,5 @@
 {
-  "category_index": 6,
+  "category_index": 7,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -26,7 +26,7 @@
       "longtail_idx": 0
     },
     "wet-sanding-clear-coat": {
-      "core_idx": 2,
+      "core_idx": 3,
       "longtail_idx": 0
     },
     "headlight-restoration": {
@@ -150,10 +150,8 @@
       "longtail_idx": 2
     }
   },
-  "brandimg_index": 15,
+  "brandimg_index": 17,
   "brandimg_used": [
-    "25.webp",
-    "26.webp",
     "27.webp",
     "28.webp",
     "29.webp",
@@ -171,7 +169,9 @@
     "12.webp",
     "13.webp",
     "14.webp",
-    "15.webp"
+    "15.webp",
+    "16.webp",
+    "17.webp"
   ],
   "used_pairs": [
     {
@@ -493,12 +493,17 @@
     {
       "seed": "primer sanding",
       "longtail": "best grit to sand epoxy primer before filler or sealer"
+    },
+    {
+      "seed": "paint polishing",
+      "longtail": "compound versus polish differences for clear coat finishing"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "25_pack_Grit 800",
     "25_pack_Grit 80",
+    "25_pack_Grit 800",
+    "50_pack_Grit 800",
     "25_pack_Grit 220"
   ]
 }
