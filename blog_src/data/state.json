@@ -1,5 +1,5 @@
 {
-  "category_index": 7,
+  "category_index": 8,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -30,7 +30,7 @@
       "longtail_idx": 0
     },
     "headlight-restoration": {
-      "core_idx": 2,
+      "core_idx": 3,
       "longtail_idx": 0
     },
     "metal-polishing-rust-repair": {
@@ -150,10 +150,8 @@
       "longtail_idx": 2
     }
   },
-  "brandimg_index": 17,
+  "brandimg_index": 19,
   "brandimg_used": [
-    "27.webp",
-    "28.webp",
     "29.webp",
     "01.webp",
     "02.webp",
@@ -171,7 +169,9 @@
     "14.webp",
     "15.webp",
     "16.webp",
-    "17.webp"
+    "17.webp",
+    "18.webp",
+    "19.webp"
   ],
   "used_pairs": [
     {
@@ -497,13 +497,18 @@
     {
       "seed": "paint polishing",
       "longtail": "compound versus polish differences for clear coat finishing"
+    },
+    {
+      "seed": "plastic headlight polishing",
+      "longtail": "compound versus polish to remove 2000 grit sanding marks"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
     "25_pack_Grit 80",
+    "100_pack_Grit 800",
+    "25_pack_Grit 220",
     "25_pack_Grit 800",
-    "50_pack_Grit 800",
-    "25_pack_Grit 220"
+    "50_pack_Grit 800"
   ]
 }
