@@ -1,5 +1,5 @@
 {
-  "category_index": 10,
+  "category_index": 11,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -43,7 +43,7 @@
     },
     "between-coats-sanding": {
       "core_idx": 0,
-      "longtail_idx": 2
+      "longtail_idx": 3
     },
     "polishing-finishing": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 2
     }
   },
-  "brandimg_index": 23,
+  "brandimg_index": 25,
   "brandimg_used": [
-    "04.webp",
-    "05.webp",
     "06.webp",
     "07.webp",
     "08.webp",
@@ -171,7 +169,9 @@
     "20.webp",
     "21.webp",
     "22.webp",
-    "23.webp"
+    "23.webp",
+    "24.webp",
+    "25.webp"
   ],
   "used_pairs": [
     {
@@ -509,15 +509,20 @@
     {
       "seed": "coating removal",
       "longtail": "strip failing polyurethane then sand residue before refinishing"
+    },
+    {
+      "seed": "between coats sanding",
+      "longtail": "remove dust nibs between clear coat layers"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
     "100_pack_Grit 800",
-    "25_pack_Grit 80",
+    "25_pack_Grit 150",
+    "50_pack_Grit 800",
     "25_pack_Grit 800",
     "25_pack_Grit 220",
-    "25_pack_Grit 150",
-    "50_pack_Grit 800"
+    "25_pack_Grit 320",
+    "25_pack_Grit 80"
   ]
 }
