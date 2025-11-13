@@ -1,5 +1,5 @@
 {
-  "category_index": 13,
+  "category_index": 14,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -55,7 +55,7 @@
     },
     "detail-sander-sheets": {
       "core_idx": 0,
-      "longtail_idx": 2
+      "longtail_idx": 3
     },
     "sanding-blocks": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 2
     }
   },
-  "brandimg_index": 0,
+  "brandimg_index": 2,
   "brandimg_used": [
-    "10.webp",
-    "11.webp",
     "12.webp",
     "13.webp",
     "14.webp",
@@ -171,7 +169,9 @@
     "26.webp",
     "27.webp",
     "28.webp",
-    "29.webp"
+    "29.webp",
+    "01.webp",
+    "02.webp"
   ],
   "used_pairs": [
     {
@@ -521,18 +521,23 @@
     {
       "seed": "random orbital sanding",
       "longtail": "select correct orbit size for performance"
+    },
+    {
+      "seed": "detail sander sheets",
+      "longtail": "replace triangle sheets cleanly and quickly"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "25_pack_Grit 320",
-    "25_pack_Grit 220",
-    "50_pack_Grit 220",
-    "50_pack_Grit 800",
-    "25_pack_Grit 150",
-    "25_pack_Grit 800",
-    "25_pack_Grit 80",
     "10_pack_Grit 800",
-    "100_pack_Grit 800"
+    "100_pack_Grit 220",
+    "50_pack_Grit 220",
+    "25_pack_Grit 80",
+    "25_pack_Grit 220",
+    "100_pack_Grit 800",
+    "25_pack_Grit 150",
+    "25_pack_Grit 320",
+    "25_pack_Grit 800",
+    "50_pack_Grit 800"
   ]
 }
