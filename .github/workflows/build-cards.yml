@@ -1,7 +1,7 @@
 # File: .github/workflows/build-cards.yml
 # ============================================
 # Workflow: Build Social Cards
-# Runs build_all_cards.py to generate all cards
+# Runs build_all_cards.py and pushes changes
 # ============================================
 
 name: Build Cards
@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -34,3 +37,11 @@ jobs:
       - name: Run card generator
         run: |
           python3 -m blog_src.scripts.cards.build_all_cards
+
+      - name: Commit and push new cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Update cards [auto]" || echo "No changes to commit"
+          git push
