@@ -33,4 +33,4 @@ jobs:
 
       - name: Run card generator
         run: |
-          python3 blog_src/scripts/cards/build_all_cards.py
+          python3 -m blog_src.scripts.cards.build_all_cards
