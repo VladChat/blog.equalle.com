@@ -16,3 +16,15 @@ tenacity>=8.2.0
 # === YouTube API and environment support ===
 google-api-python-client>=2.121.0
 python-dotenv>=1.0.1
+
+# === NEW: Required by post_loader.py ===
+python-frontmatter>=1.0.0        # needed for parsing frontmatter
+
+# === NEW: Image processing (used in card generator) ===
+Pillow>=10.0.0                   # for image loading, drawing, text
+
+# === NEW: Date and time formatting ===
+python-dateutil>=2.8.2           # widely used in scheduling/time utilities
+
+# === NEW: Optional but very useful for parsing / HTML / utils ===
+lxml>=4.9.3                      # for stable HTML/XML processing
