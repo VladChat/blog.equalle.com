@@ -1,0 +1,36 @@
+# File: .github/workflows/build-cards.yml
+# ============================================
+# Workflow: Build Social Cards
+# Runs build_all_cards.py to generate all cards
+# ============================================
+
+name: Build Cards
+
+on:
+  workflow_dispatch: {}          # manual run
+  schedule:
+    - cron: "0 1 * * *"          # 19:00 Chicago (01:00 UTC)
+
+permissions:
+  contents: write
+
+jobs:
+  build-cards:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r blog_src/scripts/requirements.txt
+
+      - name: Run card generator
+        run: |
+          python3 blog_src/scripts/cards/build_all_cards.py
