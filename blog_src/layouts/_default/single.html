@@ -48,34 +48,6 @@
 
   </header>
 
-  {{- with .Params.cards }}
-  <section class="post-social-cards" aria-label="Social media cards">
-    {{- with .facebook }}
-    <a href="{{ . }}" class="post-social-card post-social-card--facebook" target="_blank" rel="noopener">
-      <img src="{{ . }}" alt="Facebook social card for {{ $.Title }}" loading="lazy" decoding="async">
-    </a>
-    {{- end }}
-
-    {{- with .instagram }}
-    <a href="{{ . }}" class="post-social-card post-social-card--instagram" target="_blank" rel="noopener">
-      <img src="{{ . }}" alt="Instagram social card for {{ $.Title }}" loading="lazy" decoding="async">
-    </a>
-    {{- end }}
-
-    {{- with .pinterest }}
-    <a href="{{ . }}" class="post-social-card post-social-card--pinterest" target="_blank" rel="noopener">
-      <img src="{{ . }}" alt="Pinterest social card for {{ $.Title }}" loading="lazy" decoding="async">
-    </a>
-    {{- end }}
-
-    {{- with .twitter }}
-    <a href="{{ . }}" class="post-social-card post-social-card--twitter" target="_blank" rel="noopener">
-      <img src="{{ . }}" alt="Twitter social card for {{ $.Title }}" loading="lazy" decoding="async">
-    </a>
-    {{- end }}
-  </section>
-  {{- end }}
-
   {{/* 🔸 Реклама только для постов */}}
   {{ if or (eq .Section "posts") (eq .Type "posts") }}
  <!--   {{ partial "custom/aff-rotator.html" . }} -->
