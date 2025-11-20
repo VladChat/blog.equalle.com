@@ -19,13 +19,12 @@ BASE_URL = "https://blog.equalle.com"
 # ========= helpers =========
 
 def _parse_date_value(raw) -> Optional[datetime]:
-    """Преобразует значение date из front matter в datetime, если возможно."""
+    """Преобразует значение date из front matter в datetime."""
     if raw is None:
         return None
     if isinstance(raw, datetime):
         return raw
     try:
-        # поддержка формата с Z на конце
         return datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
     except Exception:
         return None
@@ -34,7 +33,7 @@ def _parse_date_value(raw) -> Optional[datetime]:
 # ========= поиск постов и дат =========
 
 def find_all_md_posts() -> List[Path]:
-    """Находит ВСЕ .md файлы постов (кроме index.md)."""
+    """Находит ВСЕ .md файлы (кроме index.md)."""
     return [
         p for p in CONTENT_ROOT.rglob("*.md")
         if p.name != "index.md"
@@ -42,7 +41,7 @@ def find_all_md_posts() -> List[Path]:
 
 
 def parse_post_date(md_path: Path) -> Optional[datetime]:
-    """Читает дату из front matter поста для сортировки."""
+    """Читает дату из front matter для сортировки."""
     try:
         fm = frontmatter.load(md_path)
     except Exception:
@@ -53,11 +52,7 @@ def parse_post_date(md_path: Path) -> Optional[datetime]:
 # ========= работа с карточками =========
 
 def _cards_root_for(slug: str, date: datetime) -> Path:
-    """
-    Строит корневую директорию карточек по реальной структуре:
-
-    blog_src/content/posts/YYYY/MM/DD/slug/cards
-    """
+    """Структура: posts/YYYY/MM/DD/slug/cards"""
     y = f"{date.year:04d}"
     m = f"{date.month:02d}"
     d = f"{date.day:02d}"
@@ -66,10 +61,7 @@ def _cards_root_for(slug: str, date: datetime) -> Path:
 
 
 def cards_exist(slug: str, date: datetime) -> bool:
-    """
-    Проверяет существование карточек по структуре:
-    posts/YYYY/MM/DD/slug/cards/<platform>/<slug>.jpg
-    """
+    """Проверяет существование карточек в реальных папках."""
     cards_root = _cards_root_for(slug, date)
 
     needed = [
@@ -82,16 +74,15 @@ def cards_exist(slug: str, date: datetime) -> bool:
 
 
 def build_card_urls(slug: str, date: datetime) -> dict:
-    """
-    Строит URL'ы карточек по структуре:
-
-    /posts/YYYY/MM/DD/slug/cards/<platform>/<slug>.jpg
-    """
+    """Строит ПОЛНЫЕ (absolute) URL'ы карточек."""
     cards_root = _cards_root_for(slug, date)
 
     # относительный путь "posts/2025/11/20/slug/cards"
     rel_cards = cards_root.relative_to(CONTENT_ROOT.parent).as_posix()
-    rel_cards = "/" + rel_cards  # добавить ведущий слэш
+    rel_cards = "/" + rel_cards
+
+    # абсолютный URL
+    full = f"{BASE_URL}{rel_cards}"
 
     return {
         "facebook":  f"{full}/facebook/{slug}.jpg",
@@ -112,8 +103,7 @@ def update_front_matter(md_path: Path):
         print(f"[skip] No slug in {md_path}")
         return
 
-    raw_date = post.metadata.get("date")
-    date = _parse_date_value(raw_date)
+    date = _parse_date_value(post.metadata.get("date"))
     if not date:
         print(f"[skip] No valid date in {md_path}")
         return
@@ -122,8 +112,7 @@ def update_front_matter(md_path: Path):
         print(f"[skip] No cards for {slug}")
         return
 
-    card_urls = build_card_urls(slug, date)
-    post.metadata["cards"] = card_urls
+    post.metadata["cards"] = build_card_urls(slug, date)
 
     with md_path.open("w", encoding="utf-8") as f:
         frontmatter.dump(post, f)
@@ -143,7 +132,6 @@ def main():
         if dt:
             dated.append((dt, md))
 
-    # от новых к старым
     dated.sort(key=lambda x: x[0], reverse=True)
 
     latest_posts = [md for _, md in dated[:5]]
