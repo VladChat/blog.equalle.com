@@ -8,8 +8,7 @@ from __future__ import annotations
 import frontmatter
 from pathlib import Path
 
-# Базовая директория контента для постов (Hugo content/)
-CONTENT_ROOT = Path("content/posts")
+CONTENT_ROOT = Path("blog_src/content/posts")
 
 
 def find_posts() -> list[Path]:
@@ -22,21 +21,21 @@ def build_card_urls(post_dir: Path, slug: str) -> dict:
     Строит словарь URL карточек для front matter:
 
     cards:
-      facebook:  /posts/.../cards/facebook/slug.jpg
-      twitter:   /posts/.../cards/facebook/slug.jpg
-      instagram: /posts/.../cards/instagram/slug.jpg
-      pinterest: /posts/.../cards/pinterest/slug.jpg
+      facebook: /posts/.../cards/facebook/slug.jpg
+      twitter:  /posts/.../cards/facebook/slug.jpg
+      instagram:...
+      pinterest:...
     """
 
     # Путь вида /posts/YYYY/MM/DD/slug
-    # content/ убираем, оставляя только сайт-путь
-    rel_post_path = "/" + str(post_dir.relative_to("content")).replace("\\", "/")
+    # blog_src/content убираем, оставляя только сайт-путь
+    rel_post_path = "/" + str(post_dir.relative_to("blog_src/content")).replace("\\", "/")
 
     cards = {
-        "facebook":  f"{rel_post_path}/cards/facebook/{slug}.jpg",
-        "twitter":   f"{rel_post_path}/cards/facebook/{slug}.jpg",  # twitter = facebook
-        "instagram": f"{rel_post_path}/cards/instagram/{slug}.jpg",
-        "pinterest": f"{rel_post_path}/cards/pinterest/{slug}.jpg",
+        "facebook":   f"{rel_post_path}/cards/facebook/{slug}.jpg",
+        "twitter":    f"{rel_post_path}/cards/facebook/{slug}.jpg",  # twitter = facebook
+        "instagram":  f"{rel_post_path}/cards/instagram/{slug}.jpg",
+        "pinterest":  f"{rel_post_path}/cards/pinterest/{slug}.jpg",
     }
 
     return cards
@@ -55,8 +54,8 @@ def cards_exist(post_dir: Path, slug: str) -> bool:
     return all(path.exists() for path in needed)
 
 
-def update_front_matter(md_path: Path) -> None:
-    """Обновляет YAML-шапку Markdown-файла наличием cards: {...}."""
+def update_front_matter(md_path: Path):
+    """Обновляет YAML-шапку Markdown-файла наличием cards: {...}"""
     post_dir = md_path.parent
 
     # Загружаем markdown
@@ -85,7 +84,7 @@ def update_front_matter(md_path: Path) -> None:
     print(f"[update] Updated cards for: {slug}")
 
 
-def main() -> None:
+def main():
     posts = find_posts()
     print(f"[info] Found {len(posts)} posts")
 
