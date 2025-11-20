@@ -1,13 +1,27 @@
 ---
-title: "Keep Surfaces Wet To Control Heat"
-date: 2025-11-19T13:37:28.565691+00:00
+author: Lucas Moreno
+cards:
+  facebook: /posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/facebook/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
+  instagram: /posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/instagram/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
+  pinterest: /posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/pinterest/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/facebook/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
+categories:
+- Glass & Ceramics Sanding
+date: 2025-11-19 13:37:28.565691+00:00
+description: Learn expert glass sanding techniques—why water matters, how to control
+  heat, avoid cracks, and get a flawless edge with safe, practical workshop setups.
 draft: false
-slug: "keep-surfaces-wet-to-control-heat-glass-sanding"
-categories: ['Glass & Ceramics Sanding']
-tags: ['grit-100', 'grit-280', 'grit-320', 'grit-600', 'grit-1200', 'wet sanding', 'dry sanding']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/03.webp"
-description: "Learn expert glass sanding techniques—why water matters, how to control heat, avoid cracks, and get a flawless edge with safe, practical workshop setups."
+image: https://blog.equalle.com/images/brand/03.webp
+slug: keep-surfaces-wet-to-control-heat-glass-sanding
+tags:
+- grit-100
+- grit-280
+- grit-320
+- grit-600
+- grit-1200
+- wet sanding
+- dry sanding
+title: Keep Surfaces Wet To Control Heat
 ---
 
 # Glass Sanding: Keep Surfaces Wet to Control Heat

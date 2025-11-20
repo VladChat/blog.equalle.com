@@ -1,13 +1,25 @@
 ---
-title: "Densifier Timing For Stronger Surface"
-date: 2025-11-19T15:46:00.622686+00:00
+author: Mark Jensen
+cards:
+  facebook: /posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/facebook/densifier-timing-for-stronger-surface-concrete-polishing.jpg
+  instagram: /posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/instagram/densifier-timing-for-stronger-surface-concrete-polishing.jpg
+  pinterest: /posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/pinterest/densifier-timing-for-stronger-surface-concrete-polishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/facebook/densifier-timing-for-stronger-surface-concrete-polishing.jpg
+categories:
+- Stone & Concrete Polishing
+date: 2025-11-19 15:46:00.622686+00:00
+description: Master densifier timing in concrete polishing to unlock higher hardness,
+  gloss, and abrasion resistance with reliable, step-by-step workflow guidance.
 draft: false
-slug: "densifier-timing-for-stronger-surface-concrete-polishing"
-categories: ['Stone & Concrete Polishing']
-tags: ['grit-40', 'grit-50', 'grit-60', 'grit-120', 'grit-1000']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/07.webp"
-description: "Master densifier timing in concrete polishing to unlock higher hardness, gloss, and abrasion resistance with reliable, step-by-step workflow guidance."
+image: https://blog.equalle.com/images/brand/07.webp
+slug: densifier-timing-for-stronger-surface-concrete-polishing
+tags:
+- grit-40
+- grit-50
+- grit-60
+- grit-120
+- grit-1000
+title: Densifier Timing For Stronger Surface
 ---
 
 # Densifier Timing for Stronger Concrete Polishing

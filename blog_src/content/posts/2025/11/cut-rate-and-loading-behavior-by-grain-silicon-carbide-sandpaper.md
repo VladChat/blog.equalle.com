@@ -1,13 +1,30 @@
 ---
-title: "Cut Rate And Loading Behavior By Grain"
-date: 2025-11-20T00:57:05.319866+00:00
+author: David Chen
+cards:
+  facebook: /posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/facebook/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
+  instagram: /posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/instagram/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
+  pinterest: /posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/pinterest/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/facebook/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
+categories:
+- Abrasive Materials & Compounds
+date: 2025-11-20 00:57:05.319866+00:00
+description: Engineer’s guide to silicon carbide sandpaper—cut rate, loading, grain
+  physics, and practical tips to choose the right abrasive for paint, metal, and
 draft: false
-slug: "cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper"
-categories: ['Abrasive Materials & Compounds']
-tags: ['grit-150', 'grit-800', 'grit-1000', 'grit-1500', 'grit-2000', 'grit-3000', 'wet sanding', 'clear coat', 'orbital sander', 'dry sanding']
-author: "David Chen"
-image: "https://blog.equalle.com/images/brand/09.webp"
-description: "Engineer’s guide to silicon carbide sandpaper—cut rate, loading, grain physics, and practical tips to choose the right abrasive for paint, metal, and"
+image: https://blog.equalle.com/images/brand/09.webp
+slug: cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper
+tags:
+- grit-150
+- grit-800
+- grit-1000
+- grit-1500
+- grit-2000
+- grit-3000
+- wet sanding
+- clear coat
+- orbital sander
+- dry sanding
+title: Cut Rate And Loading Behavior By Grain
 ---
 
 # Silicon Carbide Sandpaper: Cut Rate and Loading

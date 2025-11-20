@@ -1,13 +1,30 @@
 ---
-title: "Grit Selection For Antifouling Paint Prep"
-date: 2025-11-19T14:20:36.529180+00:00
+author: Emily Novak
+cards:
+  facebook: /posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/facebook/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
+  instagram: /posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/instagram/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
+  pinterest: /posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/pinterest/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/facebook/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
+categories:
+- Marine Sanding
+date: 2025-11-19 14:20:36.529180+00:00
+description: Learn how to choose the right sanding grits for antifouling prep. Clear
+  steps, pro tips, and safety for smooth, durable bottom paint results.
 draft: false
-slug: "grit-selection-for-antifouling-paint-prep-boat-sanding"
-categories: ['Marine Sanding']
-tags: ['grit-60', 'grit-70', 'grit-80', 'grit-100', 'grit-120', 'grit-180', 'grit-280', 'dust control', 'paint prep', 'orbital sander']
-author: "Emily Novak"
-image: "https://blog.equalle.com/images/brand/05.webp"
-description: "Learn how to choose the right sanding grits for antifouling prep. Clear steps, pro tips, and safety for smooth, durable bottom paint results."
+image: https://blog.equalle.com/images/brand/05.webp
+slug: grit-selection-for-antifouling-paint-prep-boat-sanding
+tags:
+- grit-60
+- grit-70
+- grit-80
+- grit-100
+- grit-120
+- grit-180
+- grit-280
+- dust control
+- paint prep
+- orbital sander
+title: Grit Selection For Antifouling Paint Prep
 ---
 
 # Boat Sanding Grit Guide for Antifouling Prep

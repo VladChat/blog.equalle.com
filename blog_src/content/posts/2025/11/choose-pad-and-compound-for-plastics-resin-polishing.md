@@ -1,13 +1,29 @@
 ---
-title: "Choose Pad And Compound For Plastics"
-date: 2025-11-18T13:37:22.906103+00:00
+author: David Chen
+cards:
+  facebook: /posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/facebook/choose-pad-and-compound-for-plastics-resin-polishing.jpg
+  instagram: /posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/instagram/choose-pad-and-compound-for-plastics-resin-polishing.jpg
+  pinterest: /posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/pinterest/choose-pad-and-compound-for-plastics-resin-polishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/facebook/choose-pad-and-compound-for-plastics-resin-polishing.jpg
+categories:
+- Resin Polishing
+date: 2025-11-18 13:37:22.906103+00:00
+description: 'Engineer’s guide to resin polishing: pick the right pad and compound
+  for acrylic, polycarbonate, and epoxy. Tested combos, heat control, and pro tips.'
 draft: false
-slug: "choose-pad-and-compound-for-plastics-resin-polishing"
-categories: ['Resin Polishing']
-tags: ['grit-600', 'grit-800', 'grit-1000', 'grit-1500', 'grit-2000', 'grit-3000', 'grit progression', 'sanding block', 'polishing pads']
-author: "David Chen"
-image: "https://blog.equalle.com/images/brand/01.webp"
-description: "Engineer’s guide to resin polishing: pick the right pad and compound for acrylic, polycarbonate, and epoxy. Tested combos, heat control, and pro tips."
+image: https://blog.equalle.com/images/brand/01.webp
+slug: choose-pad-and-compound-for-plastics-resin-polishing
+tags:
+- grit-600
+- grit-800
+- grit-1000
+- grit-1500
+- grit-2000
+- grit-3000
+- grit progression
+- sanding block
+- polishing pads
+title: Choose Pad And Compound For Plastics
 ---
 
 # Resin polishing: Pads and compounds for plastics
