@@ -19,7 +19,6 @@ BASE_URL = "https://blog.equalle.com"
 # ========= helpers =========
 
 def _parse_date_value(raw) -> Optional[datetime]:
-    """Преобразует значение date из front matter в datetime."""
     if raw is None:
         return None
     if isinstance(raw, datetime):
@@ -33,7 +32,6 @@ def _parse_date_value(raw) -> Optional[datetime]:
 # ========= поиск постов и дат =========
 
 def find_all_md_posts() -> List[Path]:
-    """Находит ВСЕ .md файлы (кроме index.md)."""
     return [
         p for p in CONTENT_ROOT.rglob("*.md")
         if p.name != "index.md"
@@ -41,7 +39,6 @@ def find_all_md_posts() -> List[Path]:
 
 
 def parse_post_date(md_path: Path) -> Optional[datetime]:
-    """Читает дату из front matter для сортировки."""
     try:
         fm = frontmatter.load(md_path)
     except Exception:
@@ -52,36 +49,28 @@ def parse_post_date(md_path: Path) -> Optional[datetime]:
 # ========= работа с карточками =========
 
 def _cards_root_for(slug: str, date: datetime) -> Path:
-    """Структура: posts/YYYY/MM/DD/slug/cards"""
     y = f"{date.year:04d}"
     m = f"{date.month:02d}"
     d = f"{date.day:02d}"
-
     return CONTENT_ROOT / y / m / d / slug / "cards"
 
 
 def cards_exist(slug: str, date: datetime) -> bool:
-    """Проверяет существование карточек в реальных папках."""
     cards_root = _cards_root_for(slug, date)
-
     needed = [
         cards_root / "facebook" / f"{slug}.jpg",
         cards_root / "instagram" / f"{slug}.jpg",
         cards_root / "pinterest" / f"{slug}.jpg",
     ]
-
     return all(p.exists() for p in needed)
 
 
 def build_card_urls(slug: str, date: datetime) -> dict:
-    """Строит ПОЛНЫЕ (absolute) URL'ы карточек."""
     cards_root = _cards_root_for(slug, date)
 
-    # относительный путь "posts/2025/11/20/slug/cards"
     rel_cards = cards_root.relative_to(CONTENT_ROOT.parent).as_posix()
     rel_cards = "/" + rel_cards
 
-    # абсолютный URL
     full = f"{BASE_URL}{rel_cards}"
 
     return {
@@ -95,7 +84,6 @@ def build_card_urls(slug: str, date: datetime) -> dict:
 # ========= обновление front matter =========
 
 def update_front_matter(md_path: Path):
-    """Добавляет cards: {...} в front matter указанного поста."""
     post = frontmatter.load(md_path)
 
     slug = post.metadata.get("slug")
@@ -114,7 +102,8 @@ def update_front_matter(md_path: Path):
 
     post.metadata["cards"] = build_card_urls(slug, date)
 
-    with md_path.open("w", encoding="utf-8") as f:
+    # FIX: open in BINARY MODE ("wb")
+    with md_path.open("wb") as f:
         frontmatter.dump(post, f)
 
     print(f"[update] Added cards: {slug}")
