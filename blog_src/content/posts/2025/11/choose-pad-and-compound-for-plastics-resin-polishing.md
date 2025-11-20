@@ -1,9 +1,9 @@
 ---
 author: David Chen
 cards:
-  facebook: /posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/facebook/choose-pad-and-compound-for-plastics-resin-polishing.jpg
-  instagram: /posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/instagram/choose-pad-and-compound-for-plastics-resin-polishing.jpg
-  pinterest: /posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/pinterest/choose-pad-and-compound-for-plastics-resin-polishing.jpg
+  facebook: https://blog.equalle.com/posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/facebook/choose-pad-and-compound-for-plastics-resin-polishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/instagram/choose-pad-and-compound-for-plastics-resin-polishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/pinterest/choose-pad-and-compound-for-plastics-resin-polishing.jpg
   twitter: https://blog.equalle.com/posts/2025/11/18/choose-pad-and-compound-for-plastics-resin-polishing/cards/facebook/choose-pad-and-compound-for-plastics-resin-polishing.jpg
 categories:
 - Resin Polishing

@@ -1,9 +1,9 @@
 ---
 author: Lucas Moreno
 cards:
-  facebook: /posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/facebook/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
-  instagram: /posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/instagram/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
-  pinterest: /posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/pinterest/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
+  facebook: https://blog.equalle.com/posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/facebook/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/instagram/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/pinterest/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
   twitter: https://blog.equalle.com/posts/2025/11/19/keep-surfaces-wet-to-control-heat-glass-sanding/cards/facebook/keep-surfaces-wet-to-control-heat-glass-sanding.jpg
 categories:
 - Glass & Ceramics Sanding

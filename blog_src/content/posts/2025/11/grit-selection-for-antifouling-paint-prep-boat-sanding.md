@@ -1,9 +1,9 @@
 ---
 author: Emily Novak
 cards:
-  facebook: /posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/facebook/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
-  instagram: /posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/instagram/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
-  pinterest: /posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/pinterest/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
+  facebook: https://blog.equalle.com/posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/facebook/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/instagram/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/pinterest/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
   twitter: https://blog.equalle.com/posts/2025/11/19/grit-selection-for-antifouling-paint-prep-boat-sanding/cards/facebook/grit-selection-for-antifouling-paint-prep-boat-sanding.jpg
 categories:
 - Marine Sanding

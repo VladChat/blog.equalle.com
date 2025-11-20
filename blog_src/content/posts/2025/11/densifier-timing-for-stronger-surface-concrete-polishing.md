@@ -1,9 +1,9 @@
 ---
 author: Mark Jensen
 cards:
-  facebook: /posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/facebook/densifier-timing-for-stronger-surface-concrete-polishing.jpg
-  instagram: /posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/instagram/densifier-timing-for-stronger-surface-concrete-polishing.jpg
-  pinterest: /posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/pinterest/densifier-timing-for-stronger-surface-concrete-polishing.jpg
+  facebook: https://blog.equalle.com/posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/facebook/densifier-timing-for-stronger-surface-concrete-polishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/instagram/densifier-timing-for-stronger-surface-concrete-polishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/pinterest/densifier-timing-for-stronger-surface-concrete-polishing.jpg
   twitter: https://blog.equalle.com/posts/2025/11/19/densifier-timing-for-stronger-surface-concrete-polishing/cards/facebook/densifier-timing-for-stronger-surface-concrete-polishing.jpg
 categories:
 - Stone & Concrete Polishing

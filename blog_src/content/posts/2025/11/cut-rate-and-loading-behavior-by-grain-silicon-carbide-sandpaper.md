@@ -1,9 +1,9 @@
 ---
 author: David Chen
 cards:
-  facebook: /posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/facebook/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
-  instagram: /posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/instagram/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
-  pinterest: /posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/pinterest/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
+  facebook: https://blog.equalle.com/posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/facebook/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/instagram/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/pinterest/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
   twitter: https://blog.equalle.com/posts/2025/11/20/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper/cards/facebook/cut-rate-and-loading-behavior-by-grain-silicon-carbide-sandpaper.jpg
 categories:
 - Abrasive Materials & Compounds
