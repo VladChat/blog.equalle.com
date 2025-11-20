@@ -54,7 +54,7 @@ def parse_post_date(md_path: Path) -> Optional[datetime]:
 
 def _cards_root_for(slug: str, date: datetime) -> Path:
     """
-    Строит корневую директорию карточек по структуре:
+    Строит корневую директорию карточек по реальной структуре:
 
     blog_src/content/posts/YYYY/MM/DD/slug/cards
     """
@@ -94,10 +94,10 @@ def build_card_urls(slug: str, date: datetime) -> dict:
     rel_cards = "/" + rel_cards  # добавить ведущий слэш
 
     return {
-        "facebook":  f"{rel_cards}/facebook/{slug}.jpg",
-        "twitter":   f"{BASE_URL}{rel_cards}/facebook/{slug}.jpg",
-        "instagram": f"{rel_cards}/instagram/{slug}.jpg",
-        "pinterest": f"{rel_cards}/pinterest/{slug}.jpg",
+        "facebook":  f"{full}/facebook/{slug}.jpg",
+        "twitter":   f"{full}/facebook/{slug}.jpg",
+        "instagram": f"{full}/instagram/{slug}.jpg",
+        "pinterest": f"{full}/pinterest/{slug}.jpg",
     }
 
 
@@ -125,9 +125,8 @@ def update_front_matter(md_path: Path):
     card_urls = build_card_urls(slug, date)
     post.metadata["cards"] = card_urls
 
-    # ВАЖНО: используем dumps() → строка → write_text()
-    text = frontmatter.dumps(post)
-    md_path.write_text(text, encoding="utf-8")
+    with md_path.open("w", encoding="utf-8") as f:
+        frontmatter.dump(post, f)
 
     print(f"[update] Added cards: {slug}")
 
