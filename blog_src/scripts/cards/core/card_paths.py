@@ -9,14 +9,14 @@ from pathlib import Path
 
 from .models import PlatformConfig, Post
 
-# Базовая директория контента для постов
-CONTENT_ROOT = Path("blog_src/content/posts")
+# Базовая директория контента для постов (Hugo content/)
+CONTENT_ROOT = Path("content/posts")
 
 
 def _get_post_dir(post: Post) -> Path:
     """
     Директория конкретного поста:
-    blog_src/content/posts/<year>/<month>/<day>/<slug>/
+    content/posts/<year>/<month>/<day>/<slug>/
     """
     year = post.date.strftime("%Y")
     month = post.date.strftime("%m")
@@ -31,7 +31,7 @@ def _build_card_path(config: PlatformConfig, post: Post, ensure_dirs: bool) -> P
     Внутренняя функция, формирующая путь к карточке.
 
     Итоговый путь:
-      blog_src/content/posts/<year>/<month>/<day>/<slug>/cards/<platform>/<slug>.jpg
+      content/posts/<year>/<month>/<day>/<slug>/cards/<platform>/<slug>.jpg
     """
     post_dir = _get_post_dir(post)
     platform_name = config.name
