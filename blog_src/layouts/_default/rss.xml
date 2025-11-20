@@ -102,7 +102,7 @@ Last Updated: 2025-11-10
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end }}</description>
       <summary>{{ .Summary | html }}</summary>
 
-      {{- /* --- Include image --- */ -}}
+      {{- /* --- Include main image --- */ -}}
       {{- with .Params.image }}
         <media:content url="{{ . | absURL }}" medium="image" />
       {{- else }}
@@ -112,36 +112,75 @@ Last Updated: 2025-11-10
       {{- end }}
 
       <!-- === Social Cards (eQualle) === -->
-      {{- $year := .Date.Format "2006" }}
-      {{- $month := .Date.Format "01" }}
-      {{- $day := .Date.Format "02" }}
-      {{- $slug := .Slug }}
+      {{- with .Params.cards }}
+        {{- with .facebook }}
+          {{- $u := . | absURL }}
+          <media:content url="{{ $u }}" medium="image" />
+          <media:thumbnail url="{{ $u }}" />
+          <enclosure url="{{ $u }}" type="image/jpeg" />
+        {{- end }}
 
-      {{- $cardsPath := printf "blog_src/content/posts/%s/%s/%s/%s/cards" $year $month $day $slug }}
-      {{- $cardsURL := printf "%s/posts/%s/%s/%s/%s/cards" site.BaseURL $year $month $day $slug $slug }}
+        {{- with .instagram }}
+          {{- $u := . | absURL }}
+          <media:content url="{{ $u }}" medium="image" />
+          <media:thumbnail url="{{ $u }}" />
+          <enclosure url="{{ $u }}" type="image/jpeg" />
+        {{- end }}
 
-      <!-- Facebook -->
-      {{- $fb := printf "%s/facebook/%s.jpg" $cardsPath $slug }}
-      {{- if fileExists $fb }}
-        <media:content url="{{ printf "%s/facebook/%s.jpg" $cardsURL $slug }}" medium="image" />
-        <media:thumbnail url="{{ printf "%s/facebook/%s.jpg" $cardsURL $slug }}" />
-        <enclosure url="{{ printf "%s/facebook/%s.jpg" $cardsURL $slug }}" type="image/jpeg" />
-      {{- end }}
+        {{- with .pinterest }}
+          {{- $u := . | absURL }}
+          <media:content url="{{ $u }}" medium="image" />
+          <media:thumbnail url="{{ $u }}" />
+          <enclosure url="{{ $u }}" type="image/jpeg" />
+        {{- end }}
 
-      <!-- Instagram -->
-      {{- $ig := printf "%s/instagram/%s.jpg" $cardsPath $slug }}
-      {{- if fileExists $ig }}
-        <media:content url="{{ printf "%s/instagram/%s.jpg" $cardsURL $slug }}" medium="image" />
-        <media:thumbnail url="{{ printf "%s/instagram/%s.jpg" $cardsURL $slug }}" />
-        <enclosure url="{{ printf "%s/instagram/%s.jpg" $cardsURL $slug }}" type="image/jpeg" />
-      {{- end }}
+        {{- with .twitter }}
+          {{- $u := . | absURL }}
+          <media:content url="{{ $u }}" medium="image" />
+          <media:thumbnail url="{{ $u }}" />
+          <enclosure url="{{ $u }}" type="image/jpeg" />
+        {{- end }}
+      {{- else }}
+        {{- /* Fallback: старый вариант по файловой системе */ -}}
+        {{- $year := .Date.Format "2006" }}
+        {{- $month := .Date.Format "01" }}
+        {{- $day := .Date.Format "02" }}
+        {{- $slug := .Slug }}
 
-      <!-- Pinterest -->
-      {{- $pin := printf "%s/pinterest/%s.jpg" $cardsPath $slug }}
-      {{- if fileExists $pin }}
-        <media:content url="{{ printf "%s/pinterest/%s.jpg" $cardsURL $slug }}" medium="image" />
-        <media:thumbnail url="{{ printf "%s/pinterest/%s.jpg" $cardsURL $slug }}" />
-        <enclosure url="{{ printf "%s/pinterest/%s.jpg" $cardsURL $slug }}" type="image/jpeg" />
+        {{- $cardsPath := printf "blog_src/content/posts/%s/%s/%s/%s/cards" $year $month $day $slug }}
+        {{- $cardsURL := printf "%s/posts/%s/%s/%s/%s/cards" site.BaseURL $year $month $day $slug $slug }}
+
+        <!-- Facebook -->
+        {{- $fb := printf "%s/facebook/%s.jpg" $cardsPath $slug }}
+        {{- if fileExists $fb }}
+          {{- $fbURL := printf "%s/facebook/%s.jpg" $cardsURL $slug }}
+          <media:content url="{{ $fbURL }}" medium="image" />
+          <media:thumbnail url="{{ $fbURL }}" />
+          <enclosure url="{{ $fbURL }}" type="image/jpeg" />
+
+          <!-- Twitter (используем ту же карточку, что и для Facebook) -->
+          <media:content url="{{ $fbURL }}" medium="image" />
+          <media:thumbnail url="{{ $fbURL }}" />
+          <enclosure url="{{ $fbURL }}" type="image/jpeg" />
+        {{- end }}
+
+        <!-- Instagram -->
+        {{- $ig := printf "%s/instagram/%s.jpg" $cardsPath $slug }}
+        {{- if fileExists $ig }}
+          {{- $igURL := printf "%s/instagram/%s.jpg" $cardsURL $slug }}
+          <media:content url="{{ $igURL }}" medium="image" />
+          <media:thumbnail url="{{ $igURL }}" />
+          <enclosure url="{{ $igURL }}" type="image/jpeg" />
+        {{- end }}
+
+        <!-- Pinterest -->
+        {{- $pin := printf "%s/pinterest/%s.jpg" $cardsPath $slug }}
+        {{- if fileExists $pin }}
+          {{- $pinURL := printf "%s/pinterest/%s.jpg" $cardsURL $slug }}
+          <media:content url="{{ $pinURL }}" medium="image" />
+          <media:thumbnail url="{{ $pinURL }}" />
+          <enclosure url="{{ $pinURL }}" type="image/jpeg" />
+        {{- end }}
       {{- end }}
 
       {{- /* --- Optional: estimated reading time --- */ -}}
