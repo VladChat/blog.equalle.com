@@ -120,17 +120,57 @@ def load_all_posts() -> List[Post]:
 
 
 def get_latest_posts(limit: int = 5) -> List[Post]:
-    """Возвращает последние N постов по дате."""
-    print(f"[cards][post_loader] === Получаем последние {limit} постов ===")
-    all_posts = load_all_posts()
+    """Возвращает последние N постов по дате, парся только эти N файлов.
 
-    if not all_posts:
-        print("[cards][post_loader][WARN] Посты не найдены, возвращаем пустой список.")
+    Логика:
+      - сканируем все markdown-файлы, но
+      - по пути (год/месяц/slug) отбираем только последние `limit`,
+      - парсим front matter только у этих файлов,
+      - сортируем их по дате (meta['date']) и возвращаем.
+    """
+    print(f"[cards][post_loader] === Получаем последние {limit} постов ===")
+
+    md_files = list(_iter_markdown_files(CONTENT_POSTS_ROOT))
+    if not md_files:
+        print("[cards][post_loader][WARN] Markdown-файлы не найдены, возвращаем пустой список.")
         return []
 
-    all_posts.sort(key=lambda p: p.date, reverse=True)
+    # md_files уже отсортирован в _iter_markdown_files, но на всякий случай ещё раз:
+    md_files = sorted(md_files)
 
-    latest = all_posts[:limit]
+    # Берём только последние `limit` файлов (самые новые по структуре пути: /YYYY/MM/slug.md)
+    if limit > 0:
+        selected_files = md_files[-limit:]
+    else:
+        selected_files = md_files
+
+    print(f"[cards][post_loader] Отбираем файлы для последних постов (по пути):")
+    for p in selected_files:
+        print(f"[cards][post_loader]  - {p}")
+
+    posts: List[Post] = []
+
+    # Парсим только выбранные файлы
+    for md_path in selected_files:
+        print(f"[cards][post_loader] Обработка файла (latest): {md_path}")
+        try:
+            meta = _parse_front_matter(md_path)
+            post = _build_post_from_meta(meta, md_path)
+            posts.append(post)
+            print(f"[cards][post_loader] OK (latest): {md_path} -> slug={post.slug!r}")
+        except Exception as e:
+            print(f"[cards][post_loader][ERROR] Ошибка при обработке (latest) {md_path}")
+            print(f"[cards][post_loader][ERROR] {e}")
+            raise
+
+    if not posts:
+        print("[cards][post_loader][WARN] Не удалось собрать ни одного поста из отобранных файлов.")
+        return []
+
+    # Дополнительно сортируем по дате (meta['date']), чтобы гарантировать порядок
+    posts.sort(key=lambda p: p.date, reverse=True)
+
+    latest = posts
     print(f"[cards][post_loader] Отобрано постов: {len(latest)}")
 
     for p in latest:
