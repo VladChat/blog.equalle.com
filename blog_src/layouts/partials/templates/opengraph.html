@@ -1,0 +1,107 @@
+{{/* ============================================================
+   File: layouts/partials/templates/opengraph.html
+   Purpose: Unified OpenGraph + Twitter Cards (Best Practice)
+   Author: eQualle System
+   Updated: 2025-11-20
+============================================================ */}}
+
+{{- $isProd := or hugo.IsProduction (eq site.Params.env "production") -}}
+{{- if not $isProd }}{{ return }}{{ end }}
+
+{{/* ------------------------------------------------------------
+     1) DESCRIPTION (truncate to ~200 chars)
+------------------------------------------------------------ */}}
+{{- $descBase := .Description | default (plainify .Summary) -}}
+{{- $desc := cond (gt (len $descBase) 200) (truncate 200 $descBase) $descBase -}}
+
+{{/* ------------------------------------------------------------
+     2) IMAGE SELECTION PRIORITY:
+        1) .Params.cards (facebook/instagram/twitter/pinterest)
+        2) .Params.image
+        3) hero* resource
+        4) site.Params.defaultOGImage
+        5) fallback "/images/equalle-cover-16x9.webp"
+------------------------------------------------------------ */}}
+
+{{- $ogImg := "" }}
+
+{{/* 1) Social cards (highest priority) */}}
+{{- with .Params.cards }}
+  {{- if .facebook }}
+    {{- $ogImg = .facebook -}}
+  {{- else if .twitter }}
+    {{- $ogImg = .twitter -}}
+  {{- else if .instagram }}
+    {{- $ogImg = .instagram -}}
+  {{- else if .pinterest }}
+    {{- $ogImg = .pinterest -}}
+  {{- end }}
+{{- end }}
+
+{{/* 2) .Params.image */}}
+{{- if not $ogImg }}
+  {{- with .Params.image }}
+    {{- $ogImg = . | absURL -}}
+  {{- end }}
+{{- end }}
+
+{{/* 3) hero-* resource */}}
+{{- if not $ogImg }}
+  {{- with .Resources.GetMatch "hero*" }}
+    {{- $ogImg = .Permalink -}}
+  {{- end }}
+{{- end }}
+
+{{/* 4) site default image */}}
+{{- if not $ogImg }}
+  {{- with site.Params.defaultOGImage }}
+    {{- $ogImg = . | absURL -}}
+  {{- end }}
+{{- end }}
+
+{{/* 5) Hard fallback */}}
+{{- if not $ogImg }}
+  {{- $ogImg = "/images/equalle-cover-16x9.webp" | absURL }}
+{{- end }}
+
+{{/* ------------------------------------------------------------
+     3) Emit OG + Twitter tags
+------------------------------------------------------------ */}}
+
+<!-- === OpenGraph === -->
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ .Title | plainify }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:locale" content="{{ .Language.Lang }}">
+<meta property="og:type" content="article">
+
+<meta property="og:image" content="{{ $ogImg }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+{{- with .Params.categories }}
+  {{- range . }}
+    <meta property="article:section" content="{{ . }}">
+  {{- end }}
+{{- end }}
+
+{{- with .Params.tags }}
+  {{- range . }}
+    <meta property="article:tag" content="{{ . }}">
+  {{- end }}
+{{- end }}
+
+{{- if .PublishDate }}
+  <meta property="article:published_time" content="{{ .PublishDate }}">
+{{- end }}
+
+{{- if .Lastmod }}
+  <meta property="article:modified_time" content="{{ .Lastmod }}">
+{{- end }}
+
+<!-- === Twitter (use OG image) === -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title | plainify }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $ogImg }}">
