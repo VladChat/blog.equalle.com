@@ -1,5 +1,5 @@
 {
-  "category_index": 31,
+  "category_index": 32,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -127,7 +127,7 @@
     },
     "abrasive-materials-compounds": {
       "core_idx": 0,
-      "longtail_idx": 2
+      "longtail_idx": 3
     },
     "backing-types-coatings": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 2
     }
   },
-  "brandimg_index": 7,
+  "brandimg_index": 9,
   "brandimg_used": [
-    "17.webp",
-    "18.webp",
     "19.webp",
     "20.webp",
     "21.webp",
@@ -171,7 +169,9 @@
     "04.webp",
     "05.webp",
     "06.webp",
-    "07.webp"
+    "07.webp",
+    "08.webp",
+    "09.webp"
   ],
   "used_pairs": [
     {
@@ -593,36 +593,41 @@
     {
       "seed": "concrete polishing",
       "longtail": "densifier timing for stronger surface"
+    },
+    {
+      "seed": "silicon carbide sandpaper",
+      "longtail": "cut rate and loading behavior by grain"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "50_pack_Grit 240",
-    "100_pack_Grit 220",
-    "50_pack_Grit 180",
-    "100_pack_Grit 1000",
-    "25_pack_Grit 320",
-    "10_pack_Grit 800",
-    "100_pack_Grit 240",
-    "100_pack_Grit 800",
-    "10_pack_Grit 280",
-    "10_pack_Grit 180",
-    "25_pack_Grit 240",
-    "25_pack_Grit 80",
-    "50_pack_Grit 800",
-    "25_pack_Grit 280",
-    "50_pack_Grit 280",
     "25_pack_Grit 180",
-    "25_pack_Grit 800",
-    "100_pack_Grit 280",
-    "10_pack_Grit 220",
-    "50_pack_Grit 1000",
-    "25_pack_Grit 220",
-    "50_pack_Grit 320",
+    "25_pack_Grit 320",
+    "100_pack_Grit 1000",
     "25_pack_Grit 150",
-    "50_pack_Grit 220",
-    "100_pack_Grit 180",
+    "10_pack_Grit 280",
+    "50_pack_Grit 240",
     "10_pack_Grit 240",
-    "25_pack_Grit 1000"
+    "10_pack_Grit 180",
+    "25_pack_Grit 80",
+    "100_pack_Grit 220",
+    "50_pack_Grit 220",
+    "50_pack_Grit 320",
+    "10_pack_Grit 800",
+    "50_pack_Grit 800",
+    "100_pack_Grit 280",
+    "50_pack_Grit 280",
+    "25_pack_Grit 280",
+    "100_pack_Grit 800",
+    "50_pack_Grit 150",
+    "10_pack_Grit 220",
+    "50_pack_Grit 180",
+    "100_pack_Grit 240",
+    "25_pack_Grit 1000",
+    "25_pack_Grit 240",
+    "50_pack_Grit 1000",
+    "100_pack_Grit 180",
+    "25_pack_Grit 800",
+    "25_pack_Grit 220"
   ]
 }
