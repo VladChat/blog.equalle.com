@@ -1,4 +1,4 @@
-﻿<!-- File: layouts/partials/head.html -->
+<!-- File: layouts/partials/head.html -->
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -214,8 +214,7 @@
 {{- if $isProd }}
   {{- partial "google_analytics.html" . }}
   {{- partial "templates/opengraph.html" . }}
-  {{- partial "templates/twitter_cards.html" . }}
   {{- if (and (not .Params.blogPosting) (not .Params.faq)) -}}
-    {{- partial "templates/schema_json.html" . }}
+  {{- partial "templates/schema_json.html" . }}
   {{- end -}}
 {{- end -}}
