@@ -4,7 +4,7 @@ name: Build Cards
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "0 1 * * *"   # 19:00 Chicago (01:00 UTC)
 
 permissions:
   contents: write
@@ -26,21 +26,24 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r blog_src/scripts/requirements.txt
+        run: |
+          pip install -r blog_src/scripts/requirements.txt
 
       - name: Generate social cards
-        run: python3 -m blog_src.scripts.cards.build_all_cards
+        run: |
+          python3 -m blog_src.scripts.cards.build_all_cards
 
       - name: Update front matter with card URLs
-        run: python3 -m blog_src.scripts.cards.update_front_matter
+        run: |
+          python3 -m blog_src.scripts.cards.update_front_matter
 
       - name: Commit and push new cards
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git pull --rebase
-
           git add .
           git commit -m "Update cards [auto]" || echo "No changes to commit"
+
+          git pull --rebase
           git push
