@@ -6,15 +6,34 @@
 
 from __future__ import annotations
 
-import frontmatter
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+from typing import List, Optional
+
+import frontmatter
 
 CONTENT_ROOT = Path("blog_src/content/posts")
 BASE_URL = "https://blog.equalle.com"
 
 
-def find_all_md_posts() -> list[Path]:
+# ========= helpers =========
+
+def _parse_date_value(raw) -> Optional[datetime]:
+    """Преобразует значение date из front matter в datetime, если возможно."""
+    if raw is None:
+        return None
+    if isinstance(raw, datetime):
+        return raw
+    try:
+        # поддержка формата с Z на конце
+        return datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
+# ========= поиск постов и дат =========
+
+def find_all_md_posts() -> List[Path]:
     """Находит ВСЕ .md файлы постов (кроме index.md)."""
     return [
         p for p in CONTENT_ROOT.rglob("*.md")
@@ -22,43 +41,36 @@ def find_all_md_posts() -> list[Path]:
     ]
 
 
-def parse_post_date(md_path: Path) -> datetime | None:
-    """Читает дату из front matter."""
+def parse_post_date(md_path: Path) -> Optional[datetime]:
+    """Читает дату из front matter поста для сортировки."""
     try:
         fm = frontmatter.load(md_path)
-        raw = fm.get("date")
-        if isinstance(raw, datetime):
-            return raw
-        return datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
     except Exception:
         return None
+    return _parse_date_value(fm.get("date"))
 
 
-def build_card_urls(md_path: Path, slug: str) -> dict:
+# ========= работа с карточками =========
+
+def _cards_root_for(slug: str, date: datetime) -> Path:
     """
-    Делаем ссылки по актуальной структуре:
-    /YYYY/MM/DD/<slug>/cards/<platform>/<slug>.jpg
+    Строит корневую директорию карточек по реальной структуре:
+
+    blog_src/content/posts/YYYY/MM/DD/slug/cards
     """
-    # путь типа: /posts/2025/11/20/<slug>
-    rel_post_dir = "/" + str(md_path.parent.relative_to(CONTENT_ROOT.parent)).replace("\\", "/")
+    y = f"{date.year:04d}"
+    m = f"{date.month:02d}"
+    d = f"{date.day:02d}"
 
-    # путь карточек: /posts/YYYY/MM/DD/<slug>/cards/<platform>/<slug>.jpg
-    cards_base = f"{rel_post_dir}/{slug}/cards"
-
-    return {
-        "facebook":  f"{cards_base}/facebook/{slug}.jpg",
-        "twitter":   f"{BASE_URL}{cards_base}/facebook/{slug}.jpg",
-        "instagram": f"{cards_base}/instagram/{slug}.jpg",
-        "pinterest": f"{cards_base}/pinterest/{slug}.jpg",
-    }
+    return CONTENT_ROOT / y / m / d / slug / "cards"
 
 
-def cards_exist(md_path: Path, slug: str) -> bool:
+def cards_exist(slug: str, date: datetime) -> bool:
     """
-    Проверяем существование карточек по реальной структуре:
-    md_path.parent / slug / cards / <platform> / slug.jpg
+    Проверяет существование карточек по структуре:
+    posts/YYYY/MM/DD/slug/cards/<platform>/<slug>.jpg
     """
-    cards_root = md_path.parent / slug / "cards"
+    cards_root = _cards_root_for(slug, date)
 
     needed = [
         cards_root / "facebook" / f"{slug}.jpg",
@@ -69,20 +81,48 @@ def cards_exist(md_path: Path, slug: str) -> bool:
     return all(p.exists() for p in needed)
 
 
-def update_front_matter(md_path: Path):
-    """Добавляет cards: {...} в front matter."""
-    post = frontmatter.load(md_path)
-    slug = post.metadata.get("slug")
+def build_card_urls(slug: str, date: datetime) -> dict:
+    """
+    Строит URL'ы карточек по структуре:
 
+    /posts/YYYY/MM/DD/slug/cards/<platform>/<slug>.jpg
+    """
+    cards_root = _cards_root_for(slug, date)
+
+    # относительный путь "posts/2025/11/20/slug/cards"
+    rel_cards = cards_root.relative_to(CONTENT_ROOT.parent).as_posix()
+    rel_cards = "/" + rel_cards  # добавить ведущий слэш
+
+    return {
+        "facebook":  f"{rel_cards}/facebook/{slug}.jpg",
+        "twitter":   f"{BASE_URL}{rel_cards}/facebook/{slug}.jpg",
+        "instagram": f"{rel_cards}/instagram/{slug}.jpg",
+        "pinterest": f"{rel_cards}/pinterest/{slug}.jpg",
+    }
+
+
+# ========= обновление front matter =========
+
+def update_front_matter(md_path: Path):
+    """Добавляет cards: {...} в front matter указанного поста."""
+    post = frontmatter.load(md_path)
+
+    slug = post.metadata.get("slug")
     if not slug:
         print(f"[skip] No slug in {md_path}")
         return
 
-    if not cards_exist(md_path, slug):
+    raw_date = post.metadata.get("date")
+    date = _parse_date_value(raw_date)
+    if not date:
+        print(f"[skip] No valid date in {md_path}")
+        return
+
+    if not cards_exist(slug, date):
         print(f"[skip] No cards for {slug}")
         return
 
-    card_urls = build_card_urls(md_path, slug)
+    card_urls = build_card_urls(slug, date)
     post.metadata["cards"] = card_urls
 
     with md_path.open("w", encoding="utf-8") as f:
@@ -91,18 +131,21 @@ def update_front_matter(md_path: Path):
     print(f"[update] Added cards: {slug}")
 
 
+# ========= main =========
+
 def main():
     posts = find_all_md_posts()
     print(f"[info] Found {len(posts)} markdown posts")
 
-    # сортируем последние 5
-    dated = []
+    dated: List[tuple[datetime, Path]] = []
     for md in posts:
         dt = parse_post_date(md)
         if dt:
             dated.append((dt, md))
 
+    # от новых к старым
     dated.sort(key=lambda x: x[0], reverse=True)
+
     latest_posts = [md for _, md in dated[:5]]
 
     print("[info] Latest 5 posts to update:")
