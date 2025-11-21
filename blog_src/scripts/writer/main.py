@@ -38,6 +38,9 @@ except Exception:
 # === Online config (CI/CD) ===
 from .config_loader import load_writer_config  # используем общий загрузчик конфигурации для онлайн-среды
 
+# === Social cards integration ===
+from .social_cards import generate_cards_and_update_markdown
+
 # === Авторская ротация (как в локальной версии) ===
 AUTHORS = [
     {
@@ -469,7 +472,7 @@ def main() -> None:
         f'title: "{title_escaped}"\n'
         f"date: {now.isoformat()}\n"
         "draft: false\n"
-        f'slug: "{safe_slug}"\n'
+        f'slug: "{safe_slug}"\n"
         f"{categories_line}\n"
         f"tags: [{tags_yaml}]\n"
         f'author: "{author_name}"\n'
@@ -483,6 +486,17 @@ def main() -> None:
     print("🧾 Front-matter preview:")
     print(fm)
     print(f"[eQualle SAVE][OK] ✅ {out_path}")
+
+    # === Генерация соц-карточек и обновление front matter ===
+    try:
+        generate_cards_and_update_markdown(
+            slug=safe_slug,
+            title=title_tc,
+            date=now,
+            md_path=out_path,
+        )
+    except Exception as e:
+        print(f"[eQualle CARDS][WARN] ⚠️ Failed to generate social cards: {e}")
 
     # === Обновляем state для пары ===
     record_used_pair(state_path, seed, longtail)
