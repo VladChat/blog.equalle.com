@@ -3,8 +3,6 @@ name: Build Cards
 
 on:
   workflow_dispatch: {}
-  schedule:
-    - cron: "0 1 * * *"   # 19:00 Chicago (01:00 UTC)
 
 permissions:
   contents: write
