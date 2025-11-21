@@ -1,12 +1,29 @@
 ---
-title: "Use Diamond Or Sic For Glass Edges"
-date: 2025-11-03T23:29:24.166329+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/use-diamond-or-sic-for-glass-edges-glass-sanding/cards/facebook/use-diamond-or-sic-for-glass-edges-glass-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/use-diamond-or-sic-for-glass-edges-glass-sanding/cards/instagram/use-diamond-or-sic-for-glass-edges-glass-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/use-diamond-or-sic-for-glass-edges-glass-sanding/cards/pinterest/use-diamond-or-sic-for-glass-edges-glass-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/use-diamond-or-sic-for-glass-edges-glass-sanding/cards/facebook/use-diamond-or-sic-for-glass-edges-glass-sanding.jpg
+categories:
+- Glass & Ceramics Sanding
+date: 2025-11-03 23:29:24.166329+00:00
+description: Technical guide to glass sanding for chip‑free edges using diamond or
+  SiC abrasives, with grit sequences, coolant control, and polishing workflows.
 draft: false
-slug: "use-diamond-or-sic-for-glass-edges-glass-sanding"
-categories: ['Glass & Ceramics Sanding']
-tags: ['grit-100', 'grit-240', 'grit-280', 'grit-320', 'grit-600', 'grit-800', 'grit-1200', 'grit-2500', 'grit-3000', 'wet sanding']
-author: "Mark Jensen"
-description: "Technical guide to glass sanding for chip‑free edges using diamond or SiC abrasives, with grit sequences, coolant control, and polishing workflows."
+slug: use-diamond-or-sic-for-glass-edges-glass-sanding
+tags:
+- grit-100
+- grit-240
+- grit-280
+- grit-320
+- grit-600
+- grit-800
+- grit-1200
+- grit-2500
+- grit-3000
+- wet sanding
+title: Use Diamond Or Sic For Glass Edges
 ---
 
 # Glass sanding for clean, safe edges: diamond vs SiC

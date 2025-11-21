@@ -1,12 +1,26 @@
 ---
-title: "Best Grit For Drywall Sanding Before Paint"
-date: 2025-11-02T20:40:05.101325+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/best-grit-for-drywall-sanding-before-paint-drywall-sanding/cards/facebook/best-grit-for-drywall-sanding-before-paint-drywall-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/best-grit-for-drywall-sanding-before-paint-drywall-sanding/cards/instagram/best-grit-for-drywall-sanding-before-paint-drywall-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/best-grit-for-drywall-sanding-before-paint-drywall-sanding/cards/pinterest/best-grit-for-drywall-sanding-before-paint-drywall-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/best-grit-for-drywall-sanding-before-paint-drywall-sanding/cards/facebook/best-grit-for-drywall-sanding-before-paint-drywall-sanding.jpg
+categories:
+- Drywall Sanding
+date: 2025-11-02 20:40:05.101325+00:00
+description: Discover expert tips and best practices for drywall sanding to achieve
+  a perfect paint-ready surface. Learn about grit selection and techniques.
 draft: false
-slug: "best-grit-for-drywall-sanding-before-paint-drywall-sanding"
-categories: ['Drywall Sanding']
-tags: ['grit-120', 'grit-180', 'grit-220', 'wet sanding', 'dust control', 'joint compound', 'sanding block']
-author: "Lucas Moreno"
-description: "Discover expert tips and best practices for drywall sanding to achieve a perfect paint-ready surface. Learn about grit selection and techniques."
+slug: best-grit-for-drywall-sanding-before-paint-drywall-sanding
+tags:
+- grit-120
+- grit-180
+- grit-220
+- wet sanding
+- dust control
+- joint compound
+- sanding block
+title: Best Grit For Drywall Sanding Before Paint
 ---
 
 # Mastering Drywall Sanding for a Flawless Finish

@@ -1,12 +1,23 @@
 ---
-title: "Grit Steps For Honing And Polishing"
-date: 2025-11-08T01:11:57.476536+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/08/grit-steps-for-honing-and-polishing-concrete-polishing/cards/facebook/grit-steps-for-honing-and-polishing-concrete-polishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/08/grit-steps-for-honing-and-polishing-concrete-polishing/cards/instagram/grit-steps-for-honing-and-polishing-concrete-polishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/08/grit-steps-for-honing-and-polishing-concrete-polishing/cards/pinterest/grit-steps-for-honing-and-polishing-concrete-polishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/08/grit-steps-for-honing-and-polishing-concrete-polishing/cards/facebook/grit-steps-for-honing-and-polishing-concrete-polishing.jpg
+categories:
+- Stone & Concrete Polishing
+date: 2025-11-08 01:11:57.476536+00:00
+description: Learn the exact grit sequences for honing and concrete polishing, from
+  metal-bond cuts to high-gloss finishes, with practical tips and pro-level clarity.
 draft: false
-slug: "grit-steps-for-honing-and-polishing-concrete-polishing"
-categories: ['Stone & Concrete Polishing']
-tags: ['grit-400', 'grit-2000', 'dust control', 'grit progression']
-author: "Emily Novak"
-description: "Learn the exact grit sequences for honing and concrete polishing, from metal-bond cuts to high-gloss finishes, with practical tips and pro-level clarity."
+slug: grit-steps-for-honing-and-polishing-concrete-polishing
+tags:
+- grit-400
+- grit-2000
+- dust control
+- grit progression
+title: Grit Steps For Honing And Polishing
 ---
 
 # Grit Steps That Unlock Beautiful Concrete Polishing

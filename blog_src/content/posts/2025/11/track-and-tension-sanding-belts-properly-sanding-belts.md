@@ -1,12 +1,23 @@
 ---
-title: "Track And Tension Sanding Belts Properly"
-date: 2025-11-05T18:06:04.334765+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/track-and-tension-sanding-belts-properly-sanding-belts/cards/facebook/track-and-tension-sanding-belts-properly-sanding-belts.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/track-and-tension-sanding-belts-properly-sanding-belts/cards/instagram/track-and-tension-sanding-belts-properly-sanding-belts.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/track-and-tension-sanding-belts-properly-sanding-belts/cards/pinterest/track-and-tension-sanding-belts-properly-sanding-belts.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/track-and-tension-sanding-belts-properly-sanding-belts/cards/facebook/track-and-tension-sanding-belts-properly-sanding-belts.jpg
+categories:
+- Sanding Belts & Machines
+date: 2025-11-05 18:06:04.334765+00:00
+description: Engineer-tested methods to track and tension sanding belts for stable
+  cuts, longer life, and better finishes—plus diagnostics, calibration, and material
 draft: false
-slug: "track-and-tension-sanding-belts-properly-sanding-belts"
-categories: ['Sanding Belts & Machines']
-tags: ['grit-80', 'grit-100', 'grit-150', 'dry sanding']
-author: "David Chen"
-description: "Engineer-tested methods to track and tension sanding belts for stable cuts, longer life, and better finishes—plus diagnostics, calibration, and material"
+slug: track-and-tension-sanding-belts-properly-sanding-belts
+tags:
+- grit-80
+- grit-100
+- grit-150
+- dry sanding
+title: Track And Tension Sanding Belts Properly
 ---
 
 # How to Track and Tension Sanding Belts Right

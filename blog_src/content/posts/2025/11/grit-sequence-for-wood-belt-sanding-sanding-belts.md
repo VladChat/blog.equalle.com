@@ -1,12 +1,28 @@
 ---
-title: "Grit Sequence For Wood Belt Sanding"
-date: 2025-11-03T04:05:03.424814+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/grit-sequence-for-wood-belt-sanding-sanding-belts/cards/facebook/grit-sequence-for-wood-belt-sanding-sanding-belts.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/grit-sequence-for-wood-belt-sanding-sanding-belts/cards/instagram/grit-sequence-for-wood-belt-sanding-sanding-belts.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/grit-sequence-for-wood-belt-sanding-sanding-belts/cards/pinterest/grit-sequence-for-wood-belt-sanding-sanding-belts.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/grit-sequence-for-wood-belt-sanding-sanding-belts/cards/facebook/grit-sequence-for-wood-belt-sanding-sanding-belts.jpg
+categories:
+- Sanding Belts & Machines
+date: 2025-11-03 04:05:03.424814+00:00
+description: Master the optimal grit sequence for wood belt sanding. Learn how sanding
+  belts, machine setup, and workflow choices deliver flat, finish-ready surfaces.
 draft: false
-slug: "grit-sequence-for-wood-belt-sanding-sanding-belts"
-categories: ['Sanding Belts & Machines']
-tags: ['grit-60', 'grit-80', 'grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit progression']
-author: "Mark Jensen"
-description: "Master the optimal grit sequence for wood belt sanding. Learn how sanding belts, machine setup, and workflow choices deliver flat, finish-ready surfaces."
+slug: grit-sequence-for-wood-belt-sanding-sanding-belts
+tags:
+- grit-60
+- grit-80
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit progression
+title: Grit Sequence For Wood Belt Sanding
 ---
 
 # Wood Belt Sanding: Grit Sequence for Sanding Belts

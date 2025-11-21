@@ -1,12 +1,26 @@
 ---
-title: "Coarse Medium Fine And Ultra Fine Definitions"
-date: 2025-11-03T05:39:06.466654+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit/cards/facebook/coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit/cards/instagram/coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit/cards/pinterest/coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit/cards/facebook/coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit.jpg
+categories:
+- Grit Range & Classification
+date: 2025-11-03 05:39:06.466654+00:00
+description: Understand coarse, medium, fine, and ultra fine sandpaper grit with practical
+  steps, pro tips, and troubleshooting for flawless surfaces.
 draft: false
-slug: "coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit"
-categories: ['Grit Range & Classification']
-tags: ['grit-101', 'grit-120', 'grit-180', 'clear coat', 'sanding block', 'wet sanding', 'grit progression']
-author: "Lucas Moreno"
-description: "Understand coarse, medium, fine, and ultra fine sandpaper grit with practical steps, pro tips, and troubleshooting for flawless surfaces."
+slug: coarse-medium-fine-and-ultra-fine-definitions-sandpaper-grit
+tags:
+- grit-101
+- grit-120
+- grit-180
+- clear coat
+- sanding block
+- wet sanding
+- grit progression
+title: Coarse Medium Fine And Ultra Fine Definitions
 ---
 
 # Coarse to Ultra Fine: Sandpaper Grit Decoded

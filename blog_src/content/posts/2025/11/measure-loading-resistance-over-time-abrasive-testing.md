@@ -1,12 +1,20 @@
 ---
-title: "Measure Loading Resistance Over Time"
-date: 2025-11-10T13:36:44.010321+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/10/measure-loading-resistance-over-time-abrasive-testing/cards/facebook/measure-loading-resistance-over-time-abrasive-testing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/10/measure-loading-resistance-over-time-abrasive-testing/cards/instagram/measure-loading-resistance-over-time-abrasive-testing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/10/measure-loading-resistance-over-time-abrasive-testing/cards/pinterest/measure-loading-resistance-over-time-abrasive-testing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/10/measure-loading-resistance-over-time-abrasive-testing/cards/facebook/measure-loading-resistance-over-time-abrasive-testing.jpg
+categories:
+- Abrasive Innovation & Testing
+date: 2025-11-10 13:36:44.010321+00:00
+description: A practical engineer’s guide to abrasive testing for tracking loading
+  resistance over time, with test design, standards, data analysis, and field validation.
 draft: false
-slug: "measure-loading-resistance-over-time-abrasive-testing"
-categories: ['Abrasive Innovation & Testing']
-tags: ['grit-500']
-author: "David Chen"
-description: "A practical engineer’s guide to abrasive testing for tracking loading resistance over time, with test design, standards, data analysis, and field validation."
+slug: measure-loading-resistance-over-time-abrasive-testing
+tags:
+- grit-500
+title: Measure Loading Resistance Over Time
 ---
 
 # Abrasive testing to measure loading resistance over time

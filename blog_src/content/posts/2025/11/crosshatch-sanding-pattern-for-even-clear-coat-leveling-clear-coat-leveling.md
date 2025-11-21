@@ -1,12 +1,27 @@
 ---
-title: "Crosshatch Sanding Pattern For Even Clear Coat Leveling"
-date: 2025-11-05T00:59:26.985341+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling/cards/facebook/crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling/cards/instagram/crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling/cards/pinterest/crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling/cards/facebook/crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling.jpg
+categories:
+- Wet Sanding Clear Coat
+date: 2025-11-05 00:59:26.985341+00:00
+description: Learn the crosshatch sanding pattern for even clear coat leveling—tools,
+  grits, steps, and pro tips for a flat, glossy, mirror-like finish.
 draft: false
-slug: "crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling"
-categories: ['Wet Sanding Clear Coat']
-tags: ['grit-120', 'grit-1500', 'grit-2000', 'grit-2500', 'grit-3000', 'clear coat', 'wet sanding', 'sanding block']
-author: "Emily Novak"
-description: "Learn the crosshatch sanding pattern for even clear coat leveling—tools, grits, steps, and pro tips for a flat, glossy, mirror-like finish."
+slug: crosshatch-sanding-pattern-for-even-clear-coat-leveling-clear-coat-leveling
+tags:
+- grit-120
+- grit-1500
+- grit-2000
+- grit-2500
+- grit-3000
+- clear coat
+- wet sanding
+- sanding block
+title: Crosshatch Sanding Pattern For Even Clear Coat Leveling
 ---
 
 # Crosshatch Sanding for Clear Coat Leveling

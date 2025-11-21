@@ -1,12 +1,25 @@
 ---
-title: "Choose Hose Diameter For Best Suction"
-date: 2025-11-06T14:24:00.642506+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/06/choose-hose-diameter-for-best-suction-dustless-sanding/cards/facebook/choose-hose-diameter-for-best-suction-dustless-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/06/choose-hose-diameter-for-best-suction-dustless-sanding/cards/instagram/choose-hose-diameter-for-best-suction-dustless-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/06/choose-hose-diameter-for-best-suction-dustless-sanding/cards/pinterest/choose-hose-diameter-for-best-suction-dustless-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/06/choose-hose-diameter-for-best-suction-dustless-sanding/cards/facebook/choose-hose-diameter-for-best-suction-dustless-sanding.jpg
+categories:
+- Dust Extraction Systems
+date: 2025-11-06 14:24:00.642506+00:00
+description: An engineer’s guide to hose diameter for dustless sanding—get the best
+  suction, cleaner air, and faster finishing with data-driven choices.
 draft: false
-slug: "choose-hose-diameter-for-best-suction-dustless-sanding"
-categories: ['Dust Extraction Systems']
-tags: ['grit-80', 'grit-120', 'dry sanding', 'orbital sander', 'sanding block', 'joint compound']
-author: "David Chen"
-description: "An engineer’s guide to hose diameter for dustless sanding—get the best suction, cleaner air, and faster finishing with data-driven choices."
+slug: choose-hose-diameter-for-best-suction-dustless-sanding
+tags:
+- grit-80
+- grit-120
+- dry sanding
+- orbital sander
+- sanding block
+- joint compound
+title: Choose Hose Diameter For Best Suction
 ---
 
 # Dustless Sanding: Pick the Right Hose Diameter

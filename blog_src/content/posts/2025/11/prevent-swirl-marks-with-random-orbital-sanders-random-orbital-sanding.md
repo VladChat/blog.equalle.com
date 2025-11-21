@@ -1,12 +1,28 @@
 ---
-title: "Prevent Swirl Marks With Random Orbital Sanders"
-date: 2025-11-03T02:33:16.702054+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding/cards/facebook/prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding/cards/instagram/prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding/cards/pinterest/prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding/cards/facebook/prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding.jpg
+categories:
+- Random Orbital Sanding
+date: 2025-11-03 02:33:16.702054+00:00
+description: Learn expert workflows to eliminate swirl marks with random orbital sanding—covering
+  surface prep, abrasives, dust control, and inspection.
 draft: false
-slug: "prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding"
-categories: ['Random Orbital Sanding']
-tags: ['grit-150', 'grit-220', 'grit-400', 'grit-800', 'dust control', 'grit progression', 'dry sanding', 'clear coat', 'orbital sander']
-author: "Mark Jensen"
-description: "Learn expert workflows to eliminate swirl marks with random orbital sanding—covering surface prep, abrasives, dust control, and inspection."
+slug: prevent-swirl-marks-with-random-orbital-sanders-random-orbital-sanding
+tags:
+- grit-150
+- grit-220
+- grit-400
+- grit-800
+- dust control
+- grit progression
+- dry sanding
+- clear coat
+- orbital sander
+title: Prevent Swirl Marks With Random Orbital Sanders
 ---
 
 # Prevent Swirl Marks with Random Orbital Sanding

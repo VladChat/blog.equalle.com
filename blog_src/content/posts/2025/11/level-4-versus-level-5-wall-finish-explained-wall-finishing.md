@@ -1,12 +1,27 @@
 ---
-title: "Level 4 Versus Level 5 Wall Finish Explained"
-date: 2025-11-10T21:32:57.616559+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/10/level-4-versus-level-5-wall-finish-explained-wall-finishing/cards/facebook/level-4-versus-level-5-wall-finish-explained-wall-finishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/10/level-4-versus-level-5-wall-finish-explained-wall-finishing/cards/instagram/level-4-versus-level-5-wall-finish-explained-wall-finishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/10/level-4-versus-level-5-wall-finish-explained-wall-finishing/cards/pinterest/level-4-versus-level-5-wall-finish-explained-wall-finishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/10/level-4-versus-level-5-wall-finish-explained-wall-finishing/cards/facebook/level-4-versus-level-5-wall-finish-explained-wall-finishing.jpg
+categories:
+- Drywall Sanding
+date: 2025-11-10 21:32:57.616559+00:00
+description: 'Engineer’s guide to Level 4 vs Level 5 drywall: optics, materials, costs,
+  tests, and tips to choose the right wall finishing for paint and lighting.'
 draft: false
-slug: "level-4-versus-level-5-wall-finish-explained-wall-finishing"
-categories: ['Drywall Sanding']
-tags: ['grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-800', 'joint compound', 'clear coat']
-author: "David Chen"
-description: "Engineer’s guide to Level 4 vs Level 5 drywall: optics, materials, costs, tests, and tips to choose the right wall finishing for paint and lighting."
+slug: level-4-versus-level-5-wall-finish-explained-wall-finishing
+tags:
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-800
+- joint compound
+- clear coat
+title: Level 4 Versus Level 5 Wall Finish Explained
 ---
 
 # Level 4 vs Level 5 Wall Finishing Explained

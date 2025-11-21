@@ -1,12 +1,24 @@
 ---
-title: "Proper Panel Degreasing Before Sanding And Painting"
-date: 2025-11-05T00:02:33.445378+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/proper-panel-degreasing-before-sanding-and-painting-car-surface-prep/cards/facebook/proper-panel-degreasing-before-sanding-and-painting-car-surface-prep.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/proper-panel-degreasing-before-sanding-and-painting-car-surface-prep/cards/instagram/proper-panel-degreasing-before-sanding-and-painting-car-surface-prep.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/proper-panel-degreasing-before-sanding-and-painting-car-surface-prep/cards/pinterest/proper-panel-degreasing-before-sanding-and-painting-car-surface-prep.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/proper-panel-degreasing-before-sanding-and-painting-car-surface-prep/cards/facebook/proper-panel-degreasing-before-sanding-and-painting-car-surface-prep.jpg
+categories:
+- Auto Body Sanding
+date: 2025-11-05 00:02:33.445378+00:00
+description: 'Learn proper panel degreasing for car surface prep: the solvents, steps,
+  and shop tips to avoid fisheyes and get paint to stick like it should.'
 draft: false
-slug: "proper-panel-degreasing-before-sanding-and-painting-car-surface-prep"
-categories: ['Auto Body Sanding']
-tags: ['grit-80', 'grit-400', 'grit-600', 'paint prep', 'dust control']
-author: "Lucas Moreno"
-description: "Learn proper panel degreasing for car surface prep: the solvents, steps, and shop tips to avoid fisheyes and get paint to stick like it should."
+slug: proper-panel-degreasing-before-sanding-and-painting-car-surface-prep
+tags:
+- grit-80
+- grit-400
+- grit-600
+- paint prep
+- dust control
+title: Proper Panel Degreasing Before Sanding And Painting
 ---
 
 # Car Surface Prep: Proper Panel Degreasing

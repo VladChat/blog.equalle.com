@@ -1,12 +1,29 @@
 ---
-title: "Fepa Versus Cami Grit Equivalence"
-date: 2025-11-03T05:30:23.782441+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/fepa-versus-cami-grit-equivalence-sandpaper-grit-chart/cards/facebook/fepa-versus-cami-grit-equivalence-sandpaper-grit-chart.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/fepa-versus-cami-grit-equivalence-sandpaper-grit-chart/cards/instagram/fepa-versus-cami-grit-equivalence-sandpaper-grit-chart.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/fepa-versus-cami-grit-equivalence-sandpaper-grit-chart/cards/pinterest/fepa-versus-cami-grit-equivalence-sandpaper-grit-chart.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/fepa-versus-cami-grit-equivalence-sandpaper-grit-chart/cards/facebook/fepa-versus-cami-grit-equivalence-sandpaper-grit-chart.jpg
+categories:
+- Grit Guide & Education
+date: 2025-11-03 05:30:23.782441+00:00
+description: Engineer’s guide to FEPA vs CAMI grit equivalence with a practical sandpaper
+  grit chart, testing data, and clear tips for wood, metal, and auto finishes.
 draft: false
-slug: "fepa-versus-cami-grit-equivalence-sandpaper-grit-chart"
-categories: ['Grit Guide & Education']
-tags: ['grit chart', 'abrasive standards', 'grit progression', 'grit-60', 'grit-80', 'grit-120', 'grit-180', 'grit-220', 'grit-240', 'grit-320']
-author: "David Chen"
-description: "Engineer’s guide to FEPA vs CAMI grit equivalence with a practical sandpaper grit chart, testing data, and clear tips for wood, metal, and auto finishes."
+slug: fepa-versus-cami-grit-equivalence-sandpaper-grit-chart
+tags:
+- grit chart
+- abrasive standards
+- grit progression
+- grit-60
+- grit-80
+- grit-120
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+title: Fepa Versus Cami Grit Equivalence
 ---
 
 # FEPA vs CAMI: A Practical Sandpaper Grit Chart

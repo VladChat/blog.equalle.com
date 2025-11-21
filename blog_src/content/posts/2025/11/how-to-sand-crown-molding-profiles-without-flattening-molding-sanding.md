@@ -1,12 +1,27 @@
 ---
-title: "How To Sand Crown Molding Profiles Without Flattening"
-date: 2025-11-04T16:44:08.562953+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/how-to-sand-crown-molding-profiles-without-flattening-molding-sanding/cards/facebook/how-to-sand-crown-molding-profiles-without-flattening-molding-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/how-to-sand-crown-molding-profiles-without-flattening-molding-sanding/cards/instagram/how-to-sand-crown-molding-profiles-without-flattening-molding-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/how-to-sand-crown-molding-profiles-without-flattening-molding-sanding/cards/pinterest/how-to-sand-crown-molding-profiles-without-flattening-molding-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/how-to-sand-crown-molding-profiles-without-flattening-molding-sanding/cards/facebook/how-to-sand-crown-molding-profiles-without-flattening-molding-sanding.jpg
+categories:
+- Trim & Molding Sanding
+date: 2025-11-04 16:44:08.562953+00:00
+description: Learn how to sand crown molding without flattening profiles. Tools, techniques,
+  and tips for crisp edges, smooth finishes, and pro-level results.
 draft: false
-slug: "how-to-sand-crown-molding-profiles-without-flattening-molding-sanding"
-categories: ['Trim & Molding Sanding']
-tags: ['grit-220', 'grit-320', 'grit-400', 'grit-600', 'sanding block', 'primer coat', 'dust control', 'grit progression']
-author: "Emily Novak"
-description: "Learn how to sand crown molding without flattening profiles. Tools, techniques, and tips for crisp edges, smooth finishes, and pro-level results."
+slug: how-to-sand-crown-molding-profiles-without-flattening-molding-sanding
+tags:
+- grit-220
+- grit-320
+- grit-400
+- grit-600
+- sanding block
+- primer coat
+- dust control
+- grit progression
+title: How To Sand Crown Molding Profiles Without Flattening
 ---
 
 # Molding sanding: keep crown profiles crisp

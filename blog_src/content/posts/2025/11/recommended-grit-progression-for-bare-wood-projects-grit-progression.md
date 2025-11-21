@@ -1,26 +1,27 @@
 ---
-title: Recommended Grit Progression For Bare Wood Projects
-date: 2025-11-21 03:27:43.699967+00:00
-draft: false
-slug: recommended-grit-progression-for-bare-wood-projects-grit-progression
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/21/recommended-grit-progression-for-bare-wood-projects-grit-progression/cards/facebook/recommended-grit-progression-for-bare-wood-projects-grit-progression.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/21/recommended-grit-progression-for-bare-wood-projects-grit-progression/cards/instagram/recommended-grit-progression-for-bare-wood-projects-grit-progression.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/21/recommended-grit-progression-for-bare-wood-projects-grit-progression/cards/pinterest/recommended-grit-progression-for-bare-wood-projects-grit-progression.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/21/recommended-grit-progression-for-bare-wood-projects-grit-progression/cards/facebook/recommended-grit-progression-for-bare-wood-projects-grit-progression.jpg
 categories:
 - Wood sanding
+date: 2025-11-21 03:27:43.699967+00:00
+description: Learn the best grit progression for bare wood. Clear steps, tool tips,
+  and finish-specific advice to get smooth, even surfaces and professional results.
+draft: false
+image: https://blog.equalle.com/images/brand/21.webp
+slug: recommended-grit-progression-for-bare-wood-projects-grit-progression
 tags:
 - grit-80
 - grit-120
 - grit-150
 - grit progression
 - clear coat
-author: Emily Novak
-image: https://blog.equalle.com/images/brand/21.webp
-description: Learn the best grit progression for bare wood. Clear steps, tool tips,
-  and finish-specific advice to get smooth, even surfaces and professional results.
-cards:
-  facebook: https://blog.equalle.com/posts/2025/11/21/recommended-grit-progression-for-bare-wood-projects-grit-progression/cards/facebook/recommended-grit-progression-for-bare-wood-projects-grit-progression.jpg
-  twitter: https://blog.equalle.com/posts/2025/11/21/recommended-grit-progression-for-bare-wood-projects-grit-progression/cards/facebook/recommended-grit-progression-for-bare-wood-projects-grit-progression.jpg
-  instagram: https://blog.equalle.com/posts/2025/11/21/recommended-grit-progression-for-bare-wood-projects-grit-progression/cards/instagram/recommended-grit-progression-for-bare-wood-projects-grit-progression.jpg
-  pinterest: https://blog.equalle.com/posts/2025/11/21/recommended-grit-progression-for-bare-wood-projects-grit-progression/cards/pinterest/recommended-grit-progression-for-bare-wood-projects-grit-progression.jpg
+title: Recommended Grit Progression For Bare Wood Projects
 ---
+
 # Grit Progression for Bare Wood: A Practical Guide
 
 The shop is quiet except for the low thrum of the dust collector warming up. A mug of coffee cools on the bench while you run your fingertips across a fresh board—straight from the planer, faint ridges under the grain. Last time, you started too fine and paid for it with stubborn tear-out lines that only became visible after stain. This time you want a better plan. You want a clear grit progression that fits the wood, the project, and the finish you’ve chosen.

@@ -1,12 +1,23 @@
 ---
-title: "Multi Hole Pattern Discs For Dust Extraction"
-date: 2025-11-05T19:36:13.413487+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs/cards/facebook/multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs/cards/instagram/multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs/cards/pinterest/multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs/cards/facebook/multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs.jpg
+categories:
+- Hook-and-Loop Discs
+date: 2025-11-05 19:36:13.413487+00:00
+description: Master dust extraction with multi-hole pattern, hook and loop sanding
+  discs. Pro tips for setup, technique, and troubleshooting cleaner, faster sanding.
 draft: false
-slug: "multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs"
-categories: ['Hook-and-Loop Discs']
-tags: ['grit-100', 'grit-180', 'dust control', 'grit progression']
-author: "Lucas Moreno"
-description: "Master dust extraction with multi-hole pattern, hook and loop sanding discs. Pro tips for setup, technique, and troubleshooting cleaner, faster sanding."
+slug: multi-hole-pattern-discs-for-dust-extraction-hook-and-loop-sanding-discs
+tags:
+- grit-100
+- grit-180
+- dust control
+- grit progression
+title: Multi Hole Pattern Discs For Dust Extraction
 ---
 
 # Multi-Hole Dust Control with Hook and Loop Sanding Discs

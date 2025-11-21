@@ -1,12 +1,28 @@
 ---
-title: "How To Choose A Starting Grit"
-date: 2025-11-06T15:25:52.454251+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/06/how-to-choose-a-starting-grit-sandpaper-grit-chart/cards/facebook/how-to-choose-a-starting-grit-sandpaper-grit-chart.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/06/how-to-choose-a-starting-grit-sandpaper-grit-chart/cards/instagram/how-to-choose-a-starting-grit-sandpaper-grit-chart.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/06/how-to-choose-a-starting-grit-sandpaper-grit-chart/cards/pinterest/how-to-choose-a-starting-grit-sandpaper-grit-chart.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/06/how-to-choose-a-starting-grit-sandpaper-grit-chart/cards/facebook/how-to-choose-a-starting-grit-sandpaper-grit-chart.jpg
+categories:
+- Grit Guide & Education
+date: 2025-11-06 15:25:52.454251+00:00
+description: Learn how to choose your starting grit with a clear sandpaper grit chart,
+  shop-tested sequences, and pro tips for clean, fast, and flat sanding.
 draft: false
-slug: "how-to-choose-a-starting-grit-sandpaper-grit-chart"
-categories: ['Grit Guide & Education']
-tags: ['grit chart', 'abrasive standards', 'grit progression', 'grit-60', 'grit-80', 'grit-101', 'grit-120', 'clear coat', 'orbital sander']
-author: "Lucas Moreno"
-description: "Learn how to choose your starting grit with a clear sandpaper grit chart, shop-tested sequences, and pro tips for clean, fast, and flat sanding."
+slug: how-to-choose-a-starting-grit-sandpaper-grit-chart
+tags:
+- grit chart
+- abrasive standards
+- grit progression
+- grit-60
+- grit-80
+- grit-101
+- grit-120
+- clear coat
+- orbital sander
+title: How To Choose A Starting Grit
 ---
 
 # Sandpaper Grit Chart: Choose the Right Starting Grit

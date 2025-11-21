@@ -1,12 +1,29 @@
 ---
-title: "Wet Sanding To Control Marine Dust"
-date: 2025-11-08T00:54:10.449241+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/08/wet-sanding-to-control-marine-dust-boat-sanding/cards/facebook/wet-sanding-to-control-marine-dust-boat-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/08/wet-sanding-to-control-marine-dust-boat-sanding/cards/instagram/wet-sanding-to-control-marine-dust-boat-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/08/wet-sanding-to-control-marine-dust-boat-sanding/cards/pinterest/wet-sanding-to-control-marine-dust-boat-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/08/wet-sanding-to-control-marine-dust-boat-sanding/cards/facebook/wet-sanding-to-control-marine-dust-boat-sanding.jpg
+categories:
+- Marine Sanding
+date: 2025-11-08 00:54:10.449241+00:00
+description: Learn wet boat sanding to cut toxic dust, protect waterways, and prep
+  your hull right. Tools, grits, workflow, slurry control, and pro tips inside.
 draft: false
-slug: "wet-sanding-to-control-marine-dust-boat-sanding"
-categories: ['Marine Sanding']
-tags: ['grit-60', 'grit-100', 'grit-180', 'grit-1000', 'grit-1500', 'wet sanding', 'orbital sander', 'dry sanding', 'sanding block', 'mirror finish']
-author: "Lucas Moreno"
-description: "Learn wet boat sanding to cut toxic dust, protect waterways, and prep your hull right. Tools, grits, workflow, slurry control, and pro tips inside."
+slug: wet-sanding-to-control-marine-dust-boat-sanding
+tags:
+- grit-60
+- grit-100
+- grit-180
+- grit-1000
+- grit-1500
+- wet sanding
+- orbital sander
+- dry sanding
+- sanding block
+- mirror finish
+title: Wet Sanding To Control Marine Dust
 ---
 
 # Boat Sanding: Wet Techniques to Control Marine Dust

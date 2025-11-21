@@ -1,12 +1,23 @@
 ---
-title: "Sand Tight Corners With Mouse Sander"
-date: 2025-11-05T14:24:31.520932+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/sand-tight-corners-with-mouse-sander-detail-sander-sheets/cards/facebook/sand-tight-corners-with-mouse-sander-detail-sander-sheets.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/sand-tight-corners-with-mouse-sander-detail-sander-sheets/cards/instagram/sand-tight-corners-with-mouse-sander-detail-sander-sheets.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/sand-tight-corners-with-mouse-sander-detail-sander-sheets/cards/pinterest/sand-tight-corners-with-mouse-sander-detail-sander-sheets.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/sand-tight-corners-with-mouse-sander-detail-sander-sheets/cards/facebook/sand-tight-corners-with-mouse-sander-detail-sander-sheets.jpg
+categories:
+- Detail Sander Sheets
+date: 2025-11-05 14:24:31.520932+00:00
+description: Learn how to sand tight corners with a mouse sander and detail sander
+  sheets. Step-by-step techniques, grit guides, and pro tips for perfect finishes.
 draft: false
-slug: "sand-tight-corners-with-mouse-sander-detail-sander-sheets"
-categories: ['Detail Sander Sheets']
-tags: ['grit-60', 'grit-80', 'grit-120', 'grit progression']
-author: "Lucas Moreno"
-description: "Learn how to sand tight corners with a mouse sander and detail sander sheets. Step-by-step techniques, grit guides, and pro tips for perfect finishes."
+slug: sand-tight-corners-with-mouse-sander-detail-sander-sheets
+tags:
+- grit-60
+- grit-80
+- grit-120
+- grit progression
+title: Sand Tight Corners With Mouse Sander
 ---
 
 # Detail Sander Sheets: Sand Tight Corners with a Mouse

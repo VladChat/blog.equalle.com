@@ -1,12 +1,24 @@
 ---
-title: "Consistency Of Scratch Pattern By Brand"
-date: 2025-11-08T16:24:24.299567+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/08/consistency-of-scratch-pattern-by-brand-best-sandpaper-brand/cards/facebook/consistency-of-scratch-pattern-by-brand-best-sandpaper-brand.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/08/consistency-of-scratch-pattern-by-brand-best-sandpaper-brand/cards/instagram/consistency-of-scratch-pattern-by-brand-best-sandpaper-brand.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/08/consistency-of-scratch-pattern-by-brand-best-sandpaper-brand/cards/pinterest/consistency-of-scratch-pattern-by-brand-best-sandpaper-brand.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/08/consistency-of-scratch-pattern-by-brand-best-sandpaper-brand/cards/facebook/consistency-of-scratch-pattern-by-brand-best-sandpaper-brand.jpg
+categories:
+- Brand & Quality Comparison
+date: 2025-11-08 16:24:24.299567+00:00
+description: Get uniform finishes. We compare brands, test scratch patterns, and show
+  how to choose the best sandpaper brand with pro shop tips.
 draft: false
-slug: "consistency-of-scratch-pattern-by-brand-best-sandpaper-brand"
-categories: ['Brand & Quality Comparison']
-tags: ['grit-80', 'grit-100', 'grit-400', 'clear coat', 'dust control']
-author: "Lucas Moreno"
-description: "Get uniform finishes. We compare brands, test scratch patterns, and show how to choose the best sandpaper brand with pro shop tips."
+slug: consistency-of-scratch-pattern-by-brand-best-sandpaper-brand
+tags:
+- grit-80
+- grit-100
+- grit-400
+- clear coat
+- dust control
+title: Consistency Of Scratch Pattern By Brand
 ---
 
 # Best Sandpaper Brand: Scratch Patterns Compared

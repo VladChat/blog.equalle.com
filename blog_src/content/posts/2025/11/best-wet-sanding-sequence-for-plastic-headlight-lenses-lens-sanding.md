@@ -1,12 +1,29 @@
 ---
-title: "Best Wet Sanding Sequence For Plastic Headlight Lenses"
-date: 2025-11-05T03:51:43.471110+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding/cards/facebook/best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding/cards/instagram/best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding/cards/pinterest/best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding/cards/facebook/best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding.jpg
+categories:
+- Headlight Restoration
+date: 2025-11-05 03:51:43.471110+00:00
+description: A precise, technical guide to wet lens sanding for plastic headlights—abrasives,
+  workflows, and UV protection to restore clear, durable optics.
 draft: false
-slug: "best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding"
-categories: ['Headlight Restoration']
-tags: ['grit-600', 'grit-800', 'grit-1000', 'grit-1200', 'grit-1500', 'grit-2000', 'grit-2500', 'grit-3000', 'wet sanding', 'dry sanding']
-author: "Mark Jensen"
-description: "A precise, technical guide to wet lens sanding for plastic headlights—abrasives, workflows, and UV protection to restore clear, durable optics."
+slug: best-wet-sanding-sequence-for-plastic-headlight-lenses-lens-sanding
+tags:
+- grit-600
+- grit-800
+- grit-1000
+- grit-1200
+- grit-1500
+- grit-2000
+- grit-2500
+- grit-3000
+- wet sanding
+- dry sanding
+title: Best Wet Sanding Sequence For Plastic Headlight Lenses
 ---
 
 # Best Lens Sanding Sequence for Plastic Headlights

@@ -1,12 +1,25 @@
 ---
-title: "How To Level Uneven Wood Panels By Sanding Only"
-date: 2025-11-10T14:29:42.045846+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/10/how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling/cards/facebook/how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/10/how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling/cards/instagram/how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/10/how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling/cards/pinterest/how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/10/how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling/cards/facebook/how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling.jpg
+categories:
+- Wood sanding
+date: 2025-11-10 14:29:42.045846+00:00
+description: Learn pro sanding techniques for surface leveling. Flatten uneven wood
+  panels by hand—no planer, no drama. Tools, grits, tips, and fixes from a pro.
 draft: false
-slug: "how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling"
-categories: ['Wood sanding']
-tags: ['grit-60', 'grit-80', 'grit-500', 'sanding block', 'dust control', 'grit progression']
-author: "Lucas Moreno"
-description: "Learn pro sanding techniques for surface leveling. Flatten uneven wood panels by hand—no planer, no drama. Tools, grits, tips, and fixes from a pro."
+slug: how-to-level-uneven-wood-panels-by-sanding-only-surface-leveling
+tags:
+- grit-60
+- grit-80
+- grit-500
+- sanding block
+- dust control
+- grit progression
+title: How To Level Uneven Wood Panels By Sanding Only
 ---
 
 # Surface Leveling: Sanding Uneven Wood Panels Flat

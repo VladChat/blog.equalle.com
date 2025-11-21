@@ -1,12 +1,29 @@
 ---
-title: "Difference Between Da And Random Orbital Sanding"
-date: 2025-11-05T13:35:28.637728+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/difference-between-da-and-random-orbital-sanding-random-orbital-sanding/cards/facebook/difference-between-da-and-random-orbital-sanding-random-orbital-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/difference-between-da-and-random-orbital-sanding-random-orbital-sanding/cards/instagram/difference-between-da-and-random-orbital-sanding-random-orbital-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/difference-between-da-and-random-orbital-sanding-random-orbital-sanding/cards/pinterest/difference-between-da-and-random-orbital-sanding-random-orbital-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/difference-between-da-and-random-orbital-sanding-random-orbital-sanding/cards/facebook/difference-between-da-and-random-orbital-sanding-random-orbital-sanding.jpg
+categories:
+- Random Orbital Sanding
+date: 2025-11-05 13:35:28.637728+00:00
+description: An engineer’s guide to the difference between DA and random orbital sanding,
+  with test-based advice on speed, finish, abrasives, and setup.
 draft: false
-slug: "difference-between-da-and-random-orbital-sanding-random-orbital-sanding"
-categories: ['Random Orbital Sanding']
-tags: ['grit-80', 'grit-100', 'grit-120', 'grit-180', 'grit-240', 'grit-320', 'grit-400', 'dust control', 'clear coat', 'orbital sander']
-author: "David Chen"
-description: "An engineer’s guide to the difference between DA and random orbital sanding, with test-based advice on speed, finish, abrasives, and setup."
+slug: difference-between-da-and-random-orbital-sanding-random-orbital-sanding
+tags:
+- grit-80
+- grit-100
+- grit-120
+- grit-180
+- grit-240
+- grit-320
+- grit-400
+- dust control
+- clear coat
+- orbital sander
+title: Difference Between Da And Random Orbital Sanding
 ---
 
 # DA vs random orbital sanding: an engineer’s guide

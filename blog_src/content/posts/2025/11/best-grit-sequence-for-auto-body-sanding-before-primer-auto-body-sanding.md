@@ -1,12 +1,21 @@
 ---
-title: "Best Grit Sequence For Auto Body Sanding Before Primer"
-date: 2025-11-02T23:00:27.167797+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding/cards/facebook/best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding/cards/instagram/best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding/cards/pinterest/best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding/cards/facebook/best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding.jpg
+categories:
+- Auto Body Sanding
+date: 2025-11-02 23:00:27.167797+00:00
+description: Discover the best grit sequence for auto body sanding before primer.
+  Expert tips for achieving a flawless finish every time.
 draft: false
-slug: "best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding"
-categories: ['Auto Body Sanding']
-tags: ['grit-400', 'wet sanding']
-author: "Lucas Moreno"
-description: "Discover the best grit sequence for auto body sanding before primer. Expert tips for achieving a flawless finish every time."
+slug: best-grit-sequence-for-auto-body-sanding-before-primer-auto-body-sanding
+tags:
+- grit-400
+- wet sanding
+title: Best Grit Sequence For Auto Body Sanding Before Primer
 ---
 
 # Best Grit Sequence for Auto Body Sanding

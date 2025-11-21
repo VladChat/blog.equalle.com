@@ -1,12 +1,20 @@
 ---
-title: "Standardize Cut Rate Test Procedures"
-date: 2025-11-04T03:45:12.513877+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/standardize-cut-rate-test-procedures-abrasive-testing/cards/facebook/standardize-cut-rate-test-procedures-abrasive-testing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/standardize-cut-rate-test-procedures-abrasive-testing/cards/instagram/standardize-cut-rate-test-procedures-abrasive-testing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/standardize-cut-rate-test-procedures-abrasive-testing/cards/pinterest/standardize-cut-rate-test-procedures-abrasive-testing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/standardize-cut-rate-test-procedures-abrasive-testing/cards/facebook/standardize-cut-rate-test-procedures-abrasive-testing.jpg
+categories:
+- Abrasive Innovation & Testing
+date: 2025-11-04 03:45:12.513877+00:00
+description: Learn how to standardize cut rate test procedures for abrasives with
+  precise protocols, controlled variables, and reproducible data across labs.
 draft: false
-slug: "standardize-cut-rate-test-procedures-abrasive-testing"
-categories: ['Abrasive Innovation & Testing']
-tags: ['grit-320']
-author: "Mark Jensen"
-description: "Learn how to standardize cut rate test procedures for abrasives with precise protocols, controlled variables, and reproducible data across labs."
+slug: standardize-cut-rate-test-procedures-abrasive-testing
+tags:
+- grit-320
+title: Standardize Cut Rate Test Procedures
 ---
 
 # Standardizing Abrasive Testing for Cut Rate

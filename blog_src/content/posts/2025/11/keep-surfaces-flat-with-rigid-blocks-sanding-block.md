@@ -1,12 +1,29 @@
 ---
-title: "Keep Surfaces Flat With Rigid Blocks"
-date: 2025-11-05T15:23:32.741113+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/keep-surfaces-flat-with-rigid-blocks-sanding-block/cards/facebook/keep-surfaces-flat-with-rigid-blocks-sanding-block.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/keep-surfaces-flat-with-rigid-blocks-sanding-block/cards/instagram/keep-surfaces-flat-with-rigid-blocks-sanding-block.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/keep-surfaces-flat-with-rigid-blocks-sanding-block/cards/pinterest/keep-surfaces-flat-with-rigid-blocks-sanding-block.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/keep-surfaces-flat-with-rigid-blocks-sanding-block/cards/facebook/keep-surfaces-flat-with-rigid-blocks-sanding-block.jpg
+categories:
+- Sanding Blocks
+date: 2025-11-05 15:23:32.741113+00:00
+description: Learn how rigid sanding blocks keep surfaces flat, when to use them,
+  and the techniques, materials, and tips that deliver flawless, true results.
 draft: false
-slug: "keep-surfaces-flat-with-rigid-blocks-sanding-block"
-categories: ['Sanding Blocks']
-tags: ['grit-80', 'grit-100', 'grit-150', 'grit-180', 'grit-220', 'grit-320', 'grit-400', 'grit-600', 'grit-1000', 'sanding block']
-author: "Emily Novak"
-description: "Learn how rigid sanding blocks keep surfaces flat, when to use them, and the techniques, materials, and tips that deliver flawless, true results."
+slug: keep-surfaces-flat-with-rigid-blocks-sanding-block
+tags:
+- grit-80
+- grit-100
+- grit-150
+- grit-180
+- grit-220
+- grit-320
+- grit-400
+- grit-600
+- grit-1000
+- sanding block
+title: Keep Surfaces Flat With Rigid Blocks
 ---
 
 # Keep Surfaces Flat with a Rigid Sanding Block

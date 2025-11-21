@@ -1,13 +1,24 @@
 ---
-title: "Avoid Burn Marks With Belt Sanders"
-date: 2025-11-14T13:35:38.474336+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/14/avoid-burn-marks-with-belt-sanders-sanding-belts/cards/facebook/avoid-burn-marks-with-belt-sanders-sanding-belts.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/14/avoid-burn-marks-with-belt-sanders-sanding-belts/cards/instagram/avoid-burn-marks-with-belt-sanders-sanding-belts.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/14/avoid-burn-marks-with-belt-sanders-sanding-belts/cards/pinterest/avoid-burn-marks-with-belt-sanders-sanding-belts.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/14/avoid-burn-marks-with-belt-sanders-sanding-belts/cards/facebook/avoid-burn-marks-with-belt-sanders-sanding-belts.jpg
+categories:
+- Sanding Belts & Machines
+date: 2025-11-14 13:35:38.474336+00:00
+description: Stop burn marks with belt sanders. Choose the right sanding belts, dial
+  in speed and pressure, and use heat-smart techniques for pro-grade finishes.
 draft: false
-slug: "avoid-burn-marks-with-belt-sanders-sanding-belts"
-categories: ['Sanding Belts & Machines']
-tags: ['grit-80', 'grit-100', 'grit-120', 'grit-240']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/08.webp"
-description: "Stop burn marks with belt sanders. Choose the right sanding belts, dial in speed and pressure, and use heat-smart techniques for pro-grade finishes."
+image: https://blog.equalle.com/images/brand/08.webp
+slug: avoid-burn-marks-with-belt-sanders-sanding-belts
+tags:
+- grit-80
+- grit-100
+- grit-120
+- grit-240
+title: Avoid Burn Marks With Belt Sanders
 ---
 
 # Stop Burn Marks: Master Belt Sanders & Sanding Belts

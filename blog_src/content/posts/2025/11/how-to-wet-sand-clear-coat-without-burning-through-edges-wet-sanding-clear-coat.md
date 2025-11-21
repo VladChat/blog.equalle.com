@@ -1,12 +1,25 @@
 ---
-title: "How To Wet Sand Clear Coat Without Burning Through Edges"
-date: 2025-11-02T23:14:03.510829+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat/cards/facebook/how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat/cards/instagram/how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat/cards/pinterest/how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat/cards/facebook/how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat.jpg
+categories:
+- Wet Sanding Clear Coat
+date: 2025-11-02 23:14:03.510829+00:00
+description: Learn the art of wet sanding clear coat to achieve a flawless finish
+  without burning through edges. Expert tips and step-by-step guidance included.
 draft: false
-slug: "how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat"
-categories: ['Wet Sanding Clear Coat']
-tags: ['grit-1500', 'grit-3000', 'wet sanding', 'clear coat', 'sanding block', 'grit progression']
-author: "Lucas Moreno"
-description: "Learn the art of wet sanding clear coat to achieve a flawless finish without burning through edges. Expert tips and step-by-step guidance included."
+slug: how-to-wet-sand-clear-coat-without-burning-through-edges-wet-sanding-clear-coat
+tags:
+- grit-1500
+- grit-3000
+- wet sanding
+- clear coat
+- sanding block
+- grit progression
+title: How To Wet Sand Clear Coat Without Burning Through Edges
 ---
 
 # Mastering Wet Sanding Clear Coat Without Burn-Through

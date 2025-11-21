@@ -1,13 +1,30 @@
 ---
-title: "Choose Cork Or Rubber Blocks For Even Pressure"
-date: 2025-11-13T16:32:32.296529+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/13/choose-cork-or-rubber-blocks-for-even-pressure-sanding-block/cards/facebook/choose-cork-or-rubber-blocks-for-even-pressure-sanding-block.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/13/choose-cork-or-rubber-blocks-for-even-pressure-sanding-block/cards/instagram/choose-cork-or-rubber-blocks-for-even-pressure-sanding-block.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/13/choose-cork-or-rubber-blocks-for-even-pressure-sanding-block/cards/pinterest/choose-cork-or-rubber-blocks-for-even-pressure-sanding-block.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/13/choose-cork-or-rubber-blocks-for-even-pressure-sanding-block/cards/facebook/choose-cork-or-rubber-blocks-for-even-pressure-sanding-block.jpg
+categories:
+- Sanding Blocks
+date: 2025-11-13 16:32:32.296529+00:00
+description: Decide between cork and rubber sanding block for even pressure. Learn
+  surface prep physics, grit workflows, and tips for flawless, repeatable finishes.
 draft: false
-slug: "choose-cork-or-rubber-blocks-for-even-pressure-sanding-block"
-categories: ['Sanding Blocks']
-tags: ['grit-80', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400', 'grit-600', 'sanding block']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/04.webp"
-description: "Decide between cork and rubber sanding block for even pressure. Learn surface prep physics, grit workflows, and tips for flawless, repeatable finishes."
+image: https://blog.equalle.com/images/brand/04.webp
+slug: choose-cork-or-rubber-blocks-for-even-pressure-sanding-block
+tags:
+- grit-80
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+- grit-600
+- sanding block
+title: Choose Cork Or Rubber Blocks For Even Pressure
 ---
 
 # Cork vs Rubber Sanding Block: Even Pressure, Better Finish

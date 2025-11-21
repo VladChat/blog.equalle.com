@@ -1,12 +1,21 @@
 ---
-title: "Film Backed Sheets For Uniform Scratch"
-date: 2025-11-07T15:23:44.264991+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/07/film-backed-sheets-for-uniform-scratch-microfinishing-film/cards/facebook/film-backed-sheets-for-uniform-scratch-microfinishing-film.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/07/film-backed-sheets-for-uniform-scratch-microfinishing-film/cards/instagram/film-backed-sheets-for-uniform-scratch-microfinishing-film.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/07/film-backed-sheets-for-uniform-scratch-microfinishing-film/cards/pinterest/film-backed-sheets-for-uniform-scratch-microfinishing-film.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/07/film-backed-sheets-for-uniform-scratch-microfinishing-film/cards/facebook/film-backed-sheets-for-uniform-scratch-microfinishing-film.jpg
+categories:
+- Specialty Abrasives
+date: 2025-11-07 15:23:44.264991+00:00
+description: Learn how film-backed microfinishing film sheets deliver uniform scratch
+  patterns with step-by-step techniques, grit selection, and pro tips for flawless
 draft: false
-slug: "film-backed-sheets-for-uniform-scratch-microfinishing-film"
-categories: ['Specialty Abrasives']
-tags: ['grit-2000', 'clear coat']
-author: "Lucas Moreno"
-description: "Learn how film-backed microfinishing film sheets deliver uniform scratch patterns with step-by-step techniques, grit selection, and pro tips for flawless"
+slug: film-backed-sheets-for-uniform-scratch-microfinishing-film
+tags:
+- grit-2000
+- clear coat
+title: Film Backed Sheets For Uniform Scratch
 ---
 
 # Microfinishing Film: Uniform Scratch Every Time

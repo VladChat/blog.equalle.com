@@ -1,12 +1,20 @@
 ---
-title: "Best Grit Sequence For Hardwood Floor Sanding"
-date: 2025-11-02T21:13:10.124565+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/best-grit-sequence-for-hardwood-floor-sanding-floor-sanding/cards/facebook/best-grit-sequence-for-hardwood-floor-sanding-floor-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/best-grit-sequence-for-hardwood-floor-sanding-floor-sanding/cards/instagram/best-grit-sequence-for-hardwood-floor-sanding-floor-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/best-grit-sequence-for-hardwood-floor-sanding-floor-sanding/cards/pinterest/best-grit-sequence-for-hardwood-floor-sanding-floor-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/best-grit-sequence-for-hardwood-floor-sanding-floor-sanding/cards/facebook/best-grit-sequence-for-hardwood-floor-sanding-floor-sanding.jpg
+categories:
+- Floor & Deck Sanding
+date: 2025-11-02 21:13:10.124565+00:00
+description: Discover the ultimate grit sequence for hardwood floor sanding to achieve
+  smooth, professional results in your DIY projects.
 draft: false
-slug: "best-grit-sequence-for-hardwood-floor-sanding-floor-sanding"
-categories: ['Floor & Deck Sanding']
-tags: ['grit progression']
-author: "Lucas Moreno"
-description: "Discover the ultimate grit sequence for hardwood floor sanding to achieve smooth, professional results in your DIY projects."
+slug: best-grit-sequence-for-hardwood-floor-sanding-floor-sanding
+tags:
+- grit progression
+title: Best Grit Sequence For Hardwood Floor Sanding
 ---
 
 # Best Grit Sequence for Hardwood Floor Sanding

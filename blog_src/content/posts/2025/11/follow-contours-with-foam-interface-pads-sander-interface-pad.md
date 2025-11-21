@@ -1,13 +1,30 @@
 ---
-title: "Follow Contours With Foam Interface Pads"
-date: 2025-11-15T13:28:35.151455+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/15/follow-contours-with-foam-interface-pads-sander-interface-pad/cards/facebook/follow-contours-with-foam-interface-pads-sander-interface-pad.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/15/follow-contours-with-foam-interface-pads-sander-interface-pad/cards/instagram/follow-contours-with-foam-interface-pads-sander-interface-pad.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/15/follow-contours-with-foam-interface-pads-sander-interface-pad/cards/pinterest/follow-contours-with-foam-interface-pads-sander-interface-pad.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/15/follow-contours-with-foam-interface-pads-sander-interface-pad/cards/facebook/follow-contours-with-foam-interface-pads-sander-interface-pad.jpg
+categories:
+- Interface Pads & Backing Pads
+date: 2025-11-15 13:28:35.151455+00:00
+description: 'Engineer-tested guide to sander interface pads: foam science, thickness
+  choices, test data, and techniques for flawless curves and edges.'
 draft: false
-slug: "follow-contours-with-foam-interface-pads-sander-interface-pad"
-categories: ['Interface Pads & Backing Pads']
-tags: ['grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400', 'clear coat', 'wet sanding', 'grit progression']
-author: "David Chen"
-image: "https://blog.equalle.com/images/brand/14.webp"
-description: "Engineer-tested guide to sander interface pads: foam science, thickness choices, test data, and techniques for flawless curves and edges."
+image: https://blog.equalle.com/images/brand/14.webp
+slug: follow-contours-with-foam-interface-pads-sander-interface-pad
+tags:
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+- clear coat
+- wet sanding
+- grit progression
+title: Follow Contours With Foam Interface Pads
 ---
 
 # Sander interface pad guide: follow contours better

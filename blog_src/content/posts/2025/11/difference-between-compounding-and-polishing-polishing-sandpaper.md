@@ -1,12 +1,29 @@
 ---
-title: "Difference Between Compounding And Polishing"
-date: 2025-11-03T02:16:29.610851+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/difference-between-compounding-and-polishing-polishing-sandpaper/cards/facebook/difference-between-compounding-and-polishing-polishing-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/difference-between-compounding-and-polishing-polishing-sandpaper/cards/instagram/difference-between-compounding-and-polishing-polishing-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/difference-between-compounding-and-polishing-polishing-sandpaper/cards/pinterest/difference-between-compounding-and-polishing-polishing-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/difference-between-compounding-and-polishing-polishing-sandpaper/cards/facebook/difference-between-compounding-and-polishing-polishing-sandpaper.jpg
+categories:
+- Polishing & Finishing
+date: 2025-11-03 02:16:29.610851+00:00
+description: Learn the difference between compounding and polishing, how to choose
+  polishing sandpaper and pads, and the step-by-step process for flawless finishes.
 draft: false
-slug: "difference-between-compounding-and-polishing-polishing-sandpaper"
-categories: ['Polishing & Finishing']
-tags: ['mirror finish', 'polishing pads', 'grit progression', 'grit-800', 'grit-1000', 'grit-1200', 'grit-1500', 'grit-2000', 'grit-3000', 'clear coat']
-author: "Emily Novak"
-description: "Learn the difference between compounding and polishing, how to choose polishing sandpaper and pads, and the step-by-step process for flawless finishes."
+slug: difference-between-compounding-and-polishing-polishing-sandpaper
+tags:
+- mirror finish
+- polishing pads
+- grit progression
+- grit-800
+- grit-1000
+- grit-1200
+- grit-1500
+- grit-2000
+- grit-3000
+- clear coat
+title: Difference Between Compounding And Polishing
 ---
 
 # Compounding vs Polishing: Guide to Polishing Sandpaper

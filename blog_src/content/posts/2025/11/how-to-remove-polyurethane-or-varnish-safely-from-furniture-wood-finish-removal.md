@@ -1,12 +1,24 @@
 ---
-title: "How To Remove Polyurethane Or Varnish Safely From Furniture"
-date: 2025-11-10T18:54:49.802208+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/10/how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal/cards/facebook/how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/10/how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal/cards/instagram/how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/10/how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal/cards/pinterest/how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/10/how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal/cards/facebook/how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal.jpg
+categories:
+- Furniture Refinishing
+date: 2025-11-10 18:54:49.802208+00:00
+description: Learn safe, practical wood finish removal for furniture—strip polyurethane
+  or varnish without damage. Tools, safety, steps, tips, and troubleshooting.
 draft: false
-slug: "how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal"
-categories: ['Furniture Refinishing']
-tags: ['grit-100', 'grit-400', 'grit-2000', 'grit progression', 'orbital sander']
-author: "Emily Novak"
-description: "Learn safe, practical wood finish removal for furniture—strip polyurethane or varnish without damage. Tools, safety, steps, tips, and troubleshooting."
+slug: how-to-remove-polyurethane-or-varnish-safely-from-furniture-wood-finish-removal
+tags:
+- grit-100
+- grit-400
+- grit-2000
+- grit progression
+- orbital sander
+title: How To Remove Polyurethane Or Varnish Safely From Furniture
 ---
 
 # Safe Wood Finish Removal for Furniture

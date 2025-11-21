@@ -1,13 +1,25 @@
 ---
-title: "Multi Hole Discs Improve Airflow And Cut"
-date: 2025-11-15T14:04:48.106906+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/15/multi-hole-discs-improve-airflow-and-cut-dustless-sanding/cards/facebook/multi-hole-discs-improve-airflow-and-cut-dustless-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/15/multi-hole-discs-improve-airflow-and-cut-dustless-sanding/cards/instagram/multi-hole-discs-improve-airflow-and-cut-dustless-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/15/multi-hole-discs-improve-airflow-and-cut-dustless-sanding/cards/pinterest/multi-hole-discs-improve-airflow-and-cut-dustless-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/15/multi-hole-discs-improve-airflow-and-cut-dustless-sanding/cards/facebook/multi-hole-discs-improve-airflow-and-cut-dustless-sanding.jpg
+categories:
+- Dust Extraction Systems
+date: 2025-11-15 14:04:48.106906+00:00
+description: Learn how multi-hole discs boost airflow, cut rate, and surface finish
+  while keeping dustless sanding clean and precise in wood, auto, and drywall jobs.
 draft: false
-slug: "multi-hole-discs-improve-airflow-and-cut-dustless-sanding"
-categories: ['Dust Extraction Systems']
-tags: ['grit-80', 'grit-100', 'grit-180', 'joint compound', 'orbital sander']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/16.webp"
-description: "Learn how multi-hole discs boost airflow, cut rate, and surface finish while keeping dustless sanding clean and precise in wood, auto, and drywall jobs."
+image: https://blog.equalle.com/images/brand/16.webp
+slug: multi-hole-discs-improve-airflow-and-cut-dustless-sanding
+tags:
+- grit-80
+- grit-100
+- grit-180
+- joint compound
+- orbital sander
+title: Multi Hole Discs Improve Airflow And Cut
 ---
 
 # Dustless sanding: multi-hole discs that cut faster

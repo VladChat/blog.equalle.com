@@ -1,12 +1,20 @@
 ---
-title: "Apply Psa Discs Without Air Bubbles"
-date: 2025-11-03T05:01:14.485115+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/apply-psa-discs-without-air-bubbles-psa-sanding-discs/cards/facebook/apply-psa-discs-without-air-bubbles-psa-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/apply-psa-discs-without-air-bubbles-psa-sanding-discs/cards/instagram/apply-psa-discs-without-air-bubbles-psa-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/apply-psa-discs-without-air-bubbles-psa-sanding-discs/cards/pinterest/apply-psa-discs-without-air-bubbles-psa-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/apply-psa-discs-without-air-bubbles-psa-sanding-discs/cards/facebook/apply-psa-discs-without-air-bubbles-psa-sanding-discs.jpg
+categories:
+- PSA Discs
+date: 2025-11-03 05:01:14.485115+00:00
+description: Learn a pro’s step-by-step method to apply PSA sanding discs without
+  bubbles. Get clean adhesion, longer disc life, and flatter finishes every time.
 draft: false
-slug: "apply-psa-discs-without-air-bubbles-psa-sanding-discs"
-categories: ['PSA Discs']
-tags: ['grit-240']
-author: "Lucas Moreno"
-description: "Learn a pro’s step-by-step method to apply PSA sanding discs without bubbles. Get clean adhesion, longer disc life, and flatter finishes every time."
+slug: apply-psa-discs-without-air-bubbles-psa-sanding-discs
+tags:
+- grit-240
+title: Apply Psa Discs Without Air Bubbles
 ---
 
 # Bubble-Free Perfection with PSA Sanding Discs

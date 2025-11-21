@@ -1,12 +1,26 @@
 ---
-title: "Longer Life Versus Standard Abrasives"
-date: 2025-11-07T13:31:19.741484+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/07/longer-life-versus-standard-abrasives-ceramic-sanding-discs/cards/facebook/longer-life-versus-standard-abrasives-ceramic-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/07/longer-life-versus-standard-abrasives-ceramic-sanding-discs/cards/instagram/longer-life-versus-standard-abrasives-ceramic-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/07/longer-life-versus-standard-abrasives-ceramic-sanding-discs/cards/pinterest/longer-life-versus-standard-abrasives-ceramic-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/07/longer-life-versus-standard-abrasives-ceramic-sanding-discs/cards/facebook/longer-life-versus-standard-abrasives-ceramic-sanding-discs.jpg
+categories:
+- Ceramic & Premium Abrasives
+date: 2025-11-07 13:31:19.741484+00:00
+description: Compare ceramic sanding discs to standard abrasives, with actionable
+  setup tips, workflows, and cost math to extend life and elevate surface quality.
 draft: false
-slug: "longer-life-versus-standard-abrasives-ceramic-sanding-discs"
-categories: ['Ceramic & Premium Abrasives']
-tags: ['grit-60', 'grit-100', 'grit-120', 'grit-220', 'grit-360', 'dust control', 'grit progression']
-author: "Mark Jensen"
-description: "Compare ceramic sanding discs to standard abrasives, with actionable setup tips, workflows, and cost math to extend life and elevate surface quality."
+slug: longer-life-versus-standard-abrasives-ceramic-sanding-discs
+tags:
+- grit-60
+- grit-100
+- grit-120
+- grit-220
+- grit-360
+- dust control
+- grit progression
+title: Longer Life Versus Standard Abrasives
 ---
 
 # Ceramic sanding discs vs standard: longer life

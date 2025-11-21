@@ -1,12 +1,26 @@
 ---
-title: "Remove 1500–2000 Grit Marks On Resin"
-date: 2025-11-07T23:56:25.334599+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/07/remove-1500-2000-grit-marks-on-resin-resin-polishing/cards/facebook/remove-1500-2000-grit-marks-on-resin-resin-polishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/07/remove-1500-2000-grit-marks-on-resin-resin-polishing/cards/instagram/remove-1500-2000-grit-marks-on-resin-resin-polishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/07/remove-1500-2000-grit-marks-on-resin-resin-polishing/cards/pinterest/remove-1500-2000-grit-marks-on-resin-resin-polishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/07/remove-1500-2000-grit-marks-on-resin-resin-polishing/cards/facebook/remove-1500-2000-grit-marks-on-resin-resin-polishing.jpg
+categories:
+- Resin Polishing
+date: 2025-11-07 23:56:25.334599+00:00
+description: Expert workflows to remove 1500–2000 grit marks on resin and achieve
+  optical clarity with the right abrasives, compounds, and heat control.
 draft: false
-slug: "remove-1500-2000-grit-marks-on-resin-resin-polishing"
-categories: ['Resin Polishing']
-tags: ['grit-1000', 'grit-1200', 'grit-1500', 'grit-2000', 'grit-2500', 'grit-3000', 'dust control']
-author: "Mark Jensen"
-description: "Expert workflows to remove 1500–2000 grit marks on resin and achieve optical clarity with the right abrasives, compounds, and heat control."
+slug: remove-1500-2000-grit-marks-on-resin-resin-polishing
+tags:
+- grit-1000
+- grit-1200
+- grit-1500
+- grit-2000
+- grit-2500
+- grit-3000
+- dust control
+title: Remove 1500–2000 Grit Marks On Resin
 ---
 
 # Resin Polishing: Erasing 1500–2000 Grit Scratches

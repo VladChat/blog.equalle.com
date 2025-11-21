@@ -1,12 +1,20 @@
 ---
-title: "Complete Headlight Restoration Steps From Sanding To Coating"
-date: 2025-11-02T23:31:00.907353+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati/cards/facebook/complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati/cards/instagram/complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati/cards/pinterest/complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati/cards/facebook/complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati.jpg
+categories:
+- Headlight Restoration
+date: 2025-11-02 23:31:00.907353+00:00
+description: Learn how to restore your headlights to their original clarity with our
+  step-by-step guide, covering everything from sanding to protective coating.
 draft: false
-slug: "complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati"
-categories: ['Headlight Restoration']
-tags: ['wet sanding']
-author: "Lucas Moreno"
-description: "Learn how to restore your headlights to their original clarity with our step-by-step guide, covering everything from sanding to protective coating."
+slug: complete-headlight-restoration-steps-from-sanding-to-coating-headlight-restorati
+tags:
+- wet sanding
+title: Complete Headlight Restoration Steps From Sanding To Coating
 ---
 
 # Mastering Headlight Restoration: From Sanding to Coating

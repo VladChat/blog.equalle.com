@@ -1,13 +1,28 @@
 ---
-title: "How To Sand Baseboards Before Repainting Rooms"
-date: 2025-11-10T21:17:16.708349+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/10/how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding/cards/facebook/how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/10/how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding/cards/instagram/how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/10/how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding/cards/pinterest/how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/10/how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding/cards/facebook/how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding.jpg
+categories:
+- Trim & Molding Sanding
+date: 2025-11-10 21:17:16.708349+00:00
+description: 'Learn expert baseboard sanding workflows for repainting: grit selection,
+  tools, dust control, and pro prep steps for flawless trim coatings.'
 draft: false
-slug: "how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding"
-categories: ['Trim & Molding Sanding']
-tags: ['grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-320', 'grit-400', 'dust control']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/01.webp"
-description: "Learn expert baseboard sanding workflows for repainting: grit selection, tools, dust control, and pro prep steps for flawless trim coatings."
+image: https://blog.equalle.com/images/brand/01.webp
+slug: how-to-sand-baseboards-before-repainting-rooms-baseboard-sanding
+tags:
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-320
+- grit-400
+- dust control
+title: How To Sand Baseboards Before Repainting Rooms
 ---
 
 # Baseboard Sanding: Pro Workflow for Repainting Rooms

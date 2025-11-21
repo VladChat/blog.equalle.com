@@ -1,13 +1,24 @@
 ---
-title: "Compound Versus Polish To Remove 2000 Grit Sanding Marks"
-date: 2025-11-11T13:37:28.969883+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/11/compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis/cards/facebook/compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/11/compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis/cards/instagram/compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/11/compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis/cards/pinterest/compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/11/compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis/cards/facebook/compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis.jpg
+categories:
+- Headlight Restoration
+date: 2025-11-11 13:37:28.969883+00:00
+description: 'Engineer’s guide to plastic headlight polishing: compound or polish
+  to remove 2000 grit sanding marks? Real tests, pad choices, and protection.'
 draft: false
-slug: "compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis"
-categories: ['Headlight Restoration']
-tags: ['grit-800', 'grit-2000', 'grit-3000', 'clear coat']
-author: "David Chen"
-image: "https://blog.equalle.com/images/brand/19.webp"
-description: "Engineer’s guide to plastic headlight polishing: compound or polish to remove 2000 grit sanding marks? Real tests, pad choices, and protection."
+image: https://blog.equalle.com/images/brand/19.webp
+slug: compound-versus-polish-to-remove-2000-grit-sanding-marks-plastic-headlight-polis
+tags:
+- grit-800
+- grit-2000
+- grit-3000
+- clear coat
+title: Compound Versus Polish To Remove 2000 Grit Sanding Marks
 ---
 
 # Plastic Headlight Polishing: Compound vs Polish

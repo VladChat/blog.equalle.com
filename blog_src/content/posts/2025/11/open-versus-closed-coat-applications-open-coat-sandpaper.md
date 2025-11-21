@@ -1,12 +1,29 @@
 ---
-title: "Open Versus Closed Coat Applications"
-date: 2025-11-04T03:03:10.979132+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/open-versus-closed-coat-applications-open-coat-sandpaper/cards/facebook/open-versus-closed-coat-applications-open-coat-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/open-versus-closed-coat-applications-open-coat-sandpaper/cards/instagram/open-versus-closed-coat-applications-open-coat-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/open-versus-closed-coat-applications-open-coat-sandpaper/cards/pinterest/open-versus-closed-coat-applications-open-coat-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/open-versus-closed-coat-applications-open-coat-sandpaper/cards/facebook/open-versus-closed-coat-applications-open-coat-sandpaper.jpg
+categories:
+- Backing Types & Coatings
+date: 2025-11-04 03:03:10.979132+00:00
+description: Learn when to use open vs closed coat sandpaper for cleaner cuts, faster
+  stock removal, and flawless finishes across wood, metal, and composites.
 draft: false
-slug: "open-versus-closed-coat-applications-open-coat-sandpaper"
-categories: ['Backing Types & Coatings']
-tags: ['grit-60', 'grit-80', 'grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400']
-author: "Mark Jensen"
-description: "Learn when to use open vs closed coat sandpaper for cleaner cuts, faster stock removal, and flawless finishes across wood, metal, and composites."
+slug: open-versus-closed-coat-applications-open-coat-sandpaper
+tags:
+- grit-60
+- grit-80
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+title: Open Versus Closed Coat Applications
 ---
 
 # Open Coat Sandpaper vs Closed Coat: Pro Workflows

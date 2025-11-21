@@ -1,13 +1,22 @@
 ---
-title: "Use Graded Micron Steps For Polishing"
-date: 2025-11-17T13:37:17.562465+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/17/use-graded-micron-steps-for-polishing-microfinishing-film/cards/facebook/use-graded-micron-steps-for-polishing-microfinishing-film.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/17/use-graded-micron-steps-for-polishing-microfinishing-film/cards/instagram/use-graded-micron-steps-for-polishing-microfinishing-film.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/17/use-graded-micron-steps-for-polishing-microfinishing-film/cards/pinterest/use-graded-micron-steps-for-polishing-microfinishing-film.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/17/use-graded-micron-steps-for-polishing-microfinishing-film/cards/facebook/use-graded-micron-steps-for-polishing-microfinishing-film.jpg
+categories:
+- Specialty Abrasives
+date: 2025-11-17 13:37:17.562465+00:00
+description: Learn how to use graded micron steps with microfinishing film to achieve
+  flawless, repeatable polishing on knives, tools, jewelry, and precision parts.
 draft: false
-slug: "use-graded-micron-steps-for-polishing-microfinishing-film"
-categories: ['Specialty Abrasives']
-tags: ['grit-1000', 'mirror finish']
-author: "Emily Novak"
-image: "https://blog.equalle.com/images/brand/26.webp"
-description: "Learn how to use graded micron steps with microfinishing film to achieve flawless, repeatable polishing on knives, tools, jewelry, and precision parts."
+image: https://blog.equalle.com/images/brand/26.webp
+slug: use-graded-micron-steps-for-polishing-microfinishing-film
+tags:
+- grit-1000
+- mirror finish
+title: Use Graded Micron Steps For Polishing
 ---
 
 # Master Micron Steps with microfinishing film

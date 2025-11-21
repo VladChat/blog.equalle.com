@@ -1,12 +1,25 @@
 ---
-title: "Set Up Hepa Dust Extractors For Sanding"
-date: 2025-11-03T05:22:40.488530+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/set-up-hepa-dust-extractors-for-sanding-dustless-sanding/cards/facebook/set-up-hepa-dust-extractors-for-sanding-dustless-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/set-up-hepa-dust-extractors-for-sanding-dustless-sanding/cards/instagram/set-up-hepa-dust-extractors-for-sanding-dustless-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/set-up-hepa-dust-extractors-for-sanding-dustless-sanding/cards/pinterest/set-up-hepa-dust-extractors-for-sanding-dustless-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/set-up-hepa-dust-extractors-for-sanding-dustless-sanding/cards/facebook/set-up-hepa-dust-extractors-for-sanding-dustless-sanding.jpg
+categories:
+- Dust Extraction Systems
+date: 2025-11-03 05:22:40.488530+00:00
+description: Learn how to configure HEPA dust extractors for dustless sanding, optimize
+  airflow, and choose abrasives for superior surface prep and cleaner results.
 draft: false
-slug: "set-up-hepa-dust-extractors-for-sanding-dustless-sanding"
-categories: ['Dust Extraction Systems']
-tags: ['grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'dust control']
-author: "Mark Jensen"
-description: "Learn how to configure HEPA dust extractors for dustless sanding, optimize airflow, and choose abrasives for superior surface prep and cleaner results."
+slug: set-up-hepa-dust-extractors-for-sanding-dustless-sanding
+tags:
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- dust control
+title: Set Up Hepa Dust Extractors For Sanding
 ---
 
 # Dustless Sanding Setup with HEPA Dust Extractors

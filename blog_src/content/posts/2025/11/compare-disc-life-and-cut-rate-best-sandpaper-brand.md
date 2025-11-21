@@ -1,12 +1,27 @@
 ---
-title: "Compare Disc Life And Cut Rate"
-date: 2025-11-04T03:12:55.809186+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/compare-disc-life-and-cut-rate-best-sandpaper-brand/cards/facebook/compare-disc-life-and-cut-rate-best-sandpaper-brand.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/compare-disc-life-and-cut-rate-best-sandpaper-brand/cards/instagram/compare-disc-life-and-cut-rate-best-sandpaper-brand.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/compare-disc-life-and-cut-rate-best-sandpaper-brand/cards/pinterest/compare-disc-life-and-cut-rate-best-sandpaper-brand.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/compare-disc-life-and-cut-rate-best-sandpaper-brand/cards/facebook/compare-disc-life-and-cut-rate-best-sandpaper-brand.jpg
+categories:
+- Brand & Quality Comparison
+date: 2025-11-04 03:12:55.809186+00:00
+description: Engineer’s test comparing disc life and cut rate to pick the best sandpaper
+  brand, with tips, brand picks, and methods for wood and finish sanding.
 draft: false
-slug: "compare-disc-life-and-cut-rate-best-sandpaper-brand"
-categories: ['Brand & Quality Comparison']
-tags: ['grit-80', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-320', 'grit-400', 'dust control']
-author: "David Chen"
-description: "Engineer’s test comparing disc life and cut rate to pick the best sandpaper brand, with tips, brand picks, and methods for wood and finish sanding."
+slug: compare-disc-life-and-cut-rate-best-sandpaper-brand
+tags:
+- grit-80
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-320
+- grit-400
+- dust control
+title: Compare Disc Life And Cut Rate
 ---
 
 # Best sandpaper brand: disc life vs cut rate

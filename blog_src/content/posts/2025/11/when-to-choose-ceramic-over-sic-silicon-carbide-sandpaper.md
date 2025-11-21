@@ -1,12 +1,30 @@
 ---
-title: "When To Choose Ceramic Over Sic"
-date: 2025-11-08T02:26:28.707944+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/08/when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper/cards/facebook/when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/08/when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper/cards/instagram/when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/08/when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper/cards/pinterest/when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/08/when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper/cards/facebook/when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper.jpg
+categories:
+- Abrasive Materials & Compounds
+date: 2025-11-08 02:26:28.707944+00:00
+description: Learn when ceramic abrasives outperform silicon carbide sandpaper for
+  metals, composites, and coatings, with actionable workflows and pro surface-prep
+  tips.
 draft: false
-slug: "when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper"
-categories: ['Abrasive Materials & Compounds']
-tags: ['grit-60', 'grit-80', 'grit-120', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400', 'grit-600', 'grit-800']
-author: "Mark Jensen"
-description: "Learn when ceramic abrasives outperform silicon carbide sandpaper for metals, composites, and coatings, with actionable workflows and pro surface-prep tips."
+slug: when-to-choose-ceramic-over-sic-silicon-carbide-sandpaper
+tags:
+- grit-60
+- grit-80
+- grit-120
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+- grit-600
+- grit-800
+title: When To Choose Ceramic Over Sic
 ---
 
 # Choosing Ceramic vs Silicon Carbide Sandpaper

@@ -1,12 +1,23 @@
 ---
-title: "Raise The Grain With Water Before Final Sanding"
-date: 2025-11-04T13:36:49.955463+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/raise-the-grain-with-water-before-final-sanding-grain-preparation/cards/facebook/raise-the-grain-with-water-before-final-sanding-grain-preparation.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/raise-the-grain-with-water-before-final-sanding-grain-preparation/cards/instagram/raise-the-grain-with-water-before-final-sanding-grain-preparation.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/raise-the-grain-with-water-before-final-sanding-grain-preparation/cards/pinterest/raise-the-grain-with-water-before-final-sanding-grain-preparation.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/raise-the-grain-with-water-before-final-sanding-grain-preparation/cards/facebook/raise-the-grain-with-water-before-final-sanding-grain-preparation.jpg
+categories:
+- Wood sanding
+date: 2025-11-04 13:36:49.955463+00:00
+description: 'Engineer-tested methods for grain preparation: why wet-raising wood
+  before final sanding improves stain uniformity and surface smoothness.'
 draft: false
-slug: "raise-the-grain-with-water-before-final-sanding-grain-preparation"
-categories: ['Wood sanding']
-tags: ['grit-220', 'grit-320', 'grit-1000', 'grit progression']
-author: "David Chen"
-description: "Engineer-tested methods for grain preparation: why wet-raising wood before final sanding improves stain uniformity and surface smoothness."
+slug: raise-the-grain-with-water-before-final-sanding-grain-preparation
+tags:
+- grit-220
+- grit-320
+- grit-1000
+- grit progression
+title: Raise The Grain With Water Before Final Sanding
 ---
 
 # Grain Preparation: Raise the Grain Before Final Sanding

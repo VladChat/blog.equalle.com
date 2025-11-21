@@ -1,13 +1,22 @@
 ---
-title: "Clean Hook And Loop Pads To Extend Life"
-date: 2025-11-14T15:26:13.947880+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/14/clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs/cards/facebook/clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/14/clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs/cards/instagram/clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/14/clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs/cards/pinterest/clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/14/clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs/cards/facebook/clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs.jpg
+categories:
+- Hook-and-Loop Discs
+date: 2025-11-14 15:26:13.947880+00:00
+description: Clean hook and loop pads to extend the life of hook and loop sanding
+  discs. Practical steps, tools, and habits for smoother, longer‑lasting sanding.
 draft: false
-slug: "clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs"
-categories: ['Hook-and-Loop Discs']
-tags: ['grit-240', 'grit progression']
-author: "Emily Novak"
-image: "https://blog.equalle.com/images/brand/10.webp"
-description: "Clean hook and loop pads to extend the life of hook and loop sanding discs. Practical steps, tools, and habits for smoother, longer‑lasting sanding."
+image: https://blog.equalle.com/images/brand/10.webp
+slug: clean-hook-and-loop-pads-to-extend-life-hook-and-loop-sanding-discs
+tags:
+- grit-240
+- grit progression
+title: Clean Hook And Loop Pads To Extend Life
 ---
 
 # Extend Life of Hook and Loop Sanding Discs and Pads

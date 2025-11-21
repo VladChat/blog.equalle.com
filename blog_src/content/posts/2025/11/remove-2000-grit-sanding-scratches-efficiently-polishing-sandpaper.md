@@ -1,12 +1,25 @@
 ---
-title: "Remove 2000 Grit Sanding Scratches Efficiently"
-date: 2025-11-05T05:18:58.734987+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper/cards/facebook/remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper/cards/instagram/remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper/cards/pinterest/remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper/cards/facebook/remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper.jpg
+categories:
+- Polishing & Finishing
+date: 2025-11-05 05:18:58.734987+00:00
+description: Learn how to remove 2000-grit sanding scratches fast with precise workflows,
+  polishing sandpaper selection, and pro-level compounding techniques.
 draft: false
-slug: "remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper"
-categories: ['Polishing & Finishing']
-tags: ['mirror finish', 'polishing pads', 'grit progression', 'grit-1500', 'grit-2000', 'wet sanding']
-author: "Mark Jensen"
-description: "Learn how to remove 2000-grit sanding scratches fast with precise workflows, polishing sandpaper selection, and pro-level compounding techniques."
+slug: remove-2000-grit-sanding-scratches-efficiently-polishing-sandpaper
+tags:
+- mirror finish
+- polishing pads
+- grit progression
+- grit-1500
+- grit-2000
+- wet sanding
+title: Remove 2000 Grit Sanding Scratches Efficiently
 ---
 
 # Polishing Sandpaper: Erasing 2000-Grit Scratches

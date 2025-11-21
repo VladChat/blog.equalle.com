@@ -1,12 +1,29 @@
 ---
-title: "When To Use Soft Versus Firm Interface Pads"
-date: 2025-11-03T05:14:43.575969+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/when-to-use-soft-versus-firm-interface-pads-sander-interface-pad/cards/facebook/when-to-use-soft-versus-firm-interface-pads-sander-interface-pad.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/when-to-use-soft-versus-firm-interface-pads-sander-interface-pad/cards/instagram/when-to-use-soft-versus-firm-interface-pads-sander-interface-pad.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/when-to-use-soft-versus-firm-interface-pads-sander-interface-pad/cards/pinterest/when-to-use-soft-versus-firm-interface-pads-sander-interface-pad.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/when-to-use-soft-versus-firm-interface-pads-sander-interface-pad/cards/facebook/when-to-use-soft-versus-firm-interface-pads-sander-interface-pad.jpg
+categories:
+- Interface Pads & Backing Pads
+date: 2025-11-03 05:14:43.575969+00:00
+description: Learn when to use soft vs firm sander interface pads for smoother finishes,
+  faster leveling, and fewer defects across woodworking and auto refinishing.
 draft: false
-slug: "when-to-use-soft-versus-firm-interface-pads-sander-interface-pad"
-categories: ['Interface Pads & Backing Pads']
-tags: ['grit-80', 'grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400', 'clear coat']
-author: "Emily Novak"
-description: "Learn when to use soft vs firm sander interface pads for smoother finishes, faster leveling, and fewer defects across woodworking and auto refinishing."
+slug: when-to-use-soft-versus-firm-interface-pads-sander-interface-pad
+tags:
+- grit-80
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+- clear coat
+title: When To Use Soft Versus Firm Interface Pads
 ---
 
 # Soft vs Firm Sander Interface Pad: When to Choose

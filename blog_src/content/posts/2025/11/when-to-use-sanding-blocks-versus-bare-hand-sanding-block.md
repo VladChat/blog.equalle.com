@@ -1,12 +1,27 @@
 ---
-title: "When To Use Sanding Blocks Versus Bare Hand"
-date: 2025-11-03T02:57:35.724164+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/when-to-use-sanding-blocks-versus-bare-hand-sanding-block/cards/facebook/when-to-use-sanding-blocks-versus-bare-hand-sanding-block.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/when-to-use-sanding-blocks-versus-bare-hand-sanding-block/cards/instagram/when-to-use-sanding-blocks-versus-bare-hand-sanding-block.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/when-to-use-sanding-blocks-versus-bare-hand-sanding-block/cards/pinterest/when-to-use-sanding-blocks-versus-bare-hand-sanding-block.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/when-to-use-sanding-blocks-versus-bare-hand-sanding-block/cards/facebook/when-to-use-sanding-blocks-versus-bare-hand-sanding-block.jpg
+categories:
+- Sanding Blocks
+date: 2025-11-03 02:57:35.724164+00:00
+description: Learn when to use a sanding block versus bare-hand sanding for flawless
+  finishes. Step-by-step advice, pro tips, grits, and techniques that work.
 draft: false
-slug: "when-to-use-sanding-blocks-versus-bare-hand-sanding-block"
-categories: ['Sanding Blocks']
-tags: ['grit-120', 'grit-150', 'grit-220', 'grit-320', 'grit-400', 'sanding block', 'dry sanding', 'grit progression']
-author: "Lucas Moreno"
-description: "Learn when to use a sanding block versus bare-hand sanding for flawless finishes. Step-by-step advice, pro tips, grits, and techniques that work."
+slug: when-to-use-sanding-blocks-versus-bare-hand-sanding-block
+tags:
+- grit-120
+- grit-150
+- grit-220
+- grit-320
+- grit-400
+- sanding block
+- dry sanding
+- grit progression
+title: When To Use Sanding Blocks Versus Bare Hand
 ---
 
 # Sanding Block vs Hand: When Each Wins

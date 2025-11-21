@@ -1,13 +1,30 @@
 ---
-title: "Scratch Pattern Control For Metal Panels Before Primer"
-date: 2025-11-11T15:09:37.670928+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/11/scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding/cards/facebook/scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/11/scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding/cards/instagram/scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/11/scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding/cards/pinterest/scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/11/scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding/cards/facebook/scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding.jpg
+categories:
+- Metal Polishing & Rust Repair
+date: 2025-11-11 15:09:37.670928+00:00
+description: Learn expert scratch pattern control for metal panels before primer with
+  step-by-step sanding, tool choices, and troubleshooting from a pro workshop
 draft: false
-slug: "scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding"
-categories: ['Metal Polishing & Rust Repair']
-tags: ['grit-80', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400', 'grit-600', 'grit-800']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/21.webp"
-description: "Learn expert scratch pattern control for metal panels before primer with step-by-step sanding, tool choices, and troubleshooting from a pro workshop"
+image: https://blog.equalle.com/images/brand/21.webp
+slug: scratch-pattern-control-for-metal-panels-before-primer-metal-surface-sanding
+tags:
+- grit-80
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+- grit-600
+- grit-800
+title: Scratch Pattern Control For Metal Panels Before Primer
 ---
 
 # Metal Surface Sanding: Scratch Control Before Primer

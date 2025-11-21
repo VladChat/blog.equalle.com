@@ -1,12 +1,21 @@
 ---
-title: "Progress From Metal Bond To Resin Pads"
-date: 2025-11-04T01:54:08.926155+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/progress-from-metal-bond-to-resin-pads-concrete-polishing/cards/facebook/progress-from-metal-bond-to-resin-pads-concrete-polishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/progress-from-metal-bond-to-resin-pads-concrete-polishing/cards/instagram/progress-from-metal-bond-to-resin-pads-concrete-polishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/progress-from-metal-bond-to-resin-pads-concrete-polishing/cards/pinterest/progress-from-metal-bond-to-resin-pads-concrete-polishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/progress-from-metal-bond-to-resin-pads-concrete-polishing/cards/facebook/progress-from-metal-bond-to-resin-pads-concrete-polishing.jpg
+categories:
+- Stone & Concrete Polishing
+date: 2025-11-04 01:54:08.926155+00:00
+description: Learn how to progress from metal bond to resin pads in concrete polishing
+  with clear grit sequences, on-site tips, and pro workflows that deliver mirror
 draft: false
-slug: "progress-from-metal-bond-to-resin-pads-concrete-polishing"
-categories: ['Stone & Concrete Polishing']
-tags: ['grit-1000', 'grit progression']
-author: "Lucas Moreno"
-description: "Learn how to progress from metal bond to resin pads in concrete polishing with clear grit sequences, on-site tips, and pro workflows that deliver mirror"
+slug: progress-from-metal-bond-to-resin-pads-concrete-polishing
+tags:
+- grit-1000
+- grit progression
+title: Progress From Metal Bond To Resin Pads
 ---
 
 # Concrete Polishing: Metal to Resin Pad Mastery

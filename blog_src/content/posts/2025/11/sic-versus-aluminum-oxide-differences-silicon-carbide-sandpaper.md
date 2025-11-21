@@ -1,12 +1,28 @@
 ---
-title: "Sic Versus Aluminum Oxide Differences"
-date: 2025-11-04T02:51:33.340283+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper/cards/facebook/sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper/cards/instagram/sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper/cards/pinterest/sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper/cards/facebook/sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper.jpg
+categories:
+- Abrasive Materials & Compounds
+date: 2025-11-04 02:51:33.340283+00:00
+description: Compare silicon carbide sandpaper and aluminum oxide to choose the right
+  abrasive for wood, metal, and paint. Clear, practical tips for better finishes.
 draft: false
-slug: "sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper"
-categories: ['Abrasive Materials & Compounds']
-tags: ['grit-120', 'grit-150', 'grit-1000', 'grit-2000', 'wet sanding', 'dry sanding', 'clear coat', 'orbital sander', 'sanding block']
-author: "Emily Novak"
-description: "Compare silicon carbide sandpaper and aluminum oxide to choose the right abrasive for wood, metal, and paint. Clear, practical tips for better finishes."
+slug: sic-versus-aluminum-oxide-differences-silicon-carbide-sandpaper
+tags:
+- grit-120
+- grit-150
+- grit-1000
+- grit-2000
+- wet sanding
+- dry sanding
+- clear coat
+- orbital sander
+- sanding block
+title: Sic Versus Aluminum Oxide Differences
 ---
 
 # Silicon Carbide Sandpaper vs Aluminum Oxide Guide

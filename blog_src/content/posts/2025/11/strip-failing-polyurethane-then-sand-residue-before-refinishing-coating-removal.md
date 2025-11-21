@@ -1,13 +1,27 @@
 ---
-title: "Strip Failing Polyurethane Then Sand Residue Before Refinishing"
-date: 2025-11-12T13:37:09.292879+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/12/strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal/cards/facebook/strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/12/strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal/cards/instagram/strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/12/strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal/cards/pinterest/strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/12/strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal/cards/facebook/strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal.jpg
+categories:
+- Paint Removal & Surface Prep
+date: 2025-11-12 13:37:09.292879+00:00
+description: Learn expert steps for coating removal, sanding residue, and refinishing
+  wood for durable, beautiful results with safe methods, tools, and pro tips.
 draft: false
-slug: "strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal"
-categories: ['Paint Removal & Surface Prep']
-tags: ['paint prep', 'rust removal', 'primer coat', 'sanding block', 'grit-120', 'grit-400', 'grit-1500']
-author: "Emily Novak"
-image: "https://blog.equalle.com/images/brand/23.webp"
-description: "Learn expert steps for coating removal, sanding residue, and refinishing wood for durable, beautiful results with safe methods, tools, and pro tips."
+image: https://blog.equalle.com/images/brand/23.webp
+slug: strip-failing-polyurethane-then-sand-residue-before-refinishing-coating-removal
+tags:
+- paint prep
+- rust removal
+- primer coat
+- sanding block
+- grit-120
+- grit-400
+- grit-1500
+title: Strip Failing Polyurethane Then Sand Residue Before Refinishing
 ---
 
 # Coating Removal and Refinishing Failing Polyurethane

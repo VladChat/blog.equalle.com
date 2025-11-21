@@ -1,13 +1,30 @@
 ---
-title: "Start Grit For Leveling High Spots"
-date: 2025-11-17T15:18:37.217378+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/17/start-grit-for-leveling-high-spots-epoxy-sanding/cards/facebook/start-grit-for-leveling-high-spots-epoxy-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/17/start-grit-for-leveling-high-spots-epoxy-sanding/cards/instagram/start-grit-for-leveling-high-spots-epoxy-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/17/start-grit-for-leveling-high-spots-epoxy-sanding/cards/pinterest/start-grit-for-leveling-high-spots-epoxy-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/17/start-grit-for-leveling-high-spots-epoxy-sanding/cards/facebook/start-grit-for-leveling-high-spots-epoxy-sanding.jpg
+categories:
+- Plastic & Epoxy Sanding
+date: 2025-11-17 15:18:37.217378+00:00
+description: Learn the ideal start grit to level epoxy high spots, avoid clogging,
+  and build a clean sanding workflow for flat, finish-ready surfaces.
 draft: false
-slug: "start-grit-for-leveling-high-spots-epoxy-sanding"
-categories: ['Plastic & Epoxy Sanding']
-tags: ['grit-60', 'grit-80', 'grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-280', 'grit-320', 'grit-400']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/28.webp"
-description: "Learn the ideal start grit to level epoxy high spots, avoid clogging, and build a clean sanding workflow for flat, finish-ready surfaces."
+image: https://blog.equalle.com/images/brand/28.webp
+slug: start-grit-for-leveling-high-spots-epoxy-sanding
+tags:
+- grit-60
+- grit-80
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-280
+- grit-320
+- grit-400
+title: Start Grit For Leveling High Spots
 ---
 
 # Epoxy sanding: best start grit for high spots

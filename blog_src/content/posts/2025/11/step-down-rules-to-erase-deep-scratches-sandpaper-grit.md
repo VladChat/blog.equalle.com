@@ -1,13 +1,30 @@
 ---
-title: "Step Down Rules To Erase Deep Scratches"
-date: 2025-11-15T16:51:30.702501+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/15/step-down-rules-to-erase-deep-scratches-sandpaper-grit/cards/facebook/step-down-rules-to-erase-deep-scratches-sandpaper-grit.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/15/step-down-rules-to-erase-deep-scratches-sandpaper-grit/cards/instagram/step-down-rules-to-erase-deep-scratches-sandpaper-grit.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/15/step-down-rules-to-erase-deep-scratches-sandpaper-grit/cards/pinterest/step-down-rules-to-erase-deep-scratches-sandpaper-grit.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/15/step-down-rules-to-erase-deep-scratches-sandpaper-grit/cards/facebook/step-down-rules-to-erase-deep-scratches-sandpaper-grit.jpg
+categories:
+- Grit Range & Classification
+date: 2025-11-15 16:51:30.702501+00:00
+description: Pro techniques for stepping down sandpaper grit to erase deep scratches
+  on wood, metal, and plastic with precise workflows and abrasive selection.
 draft: false
-slug: "step-down-rules-to-erase-deep-scratches-sandpaper-grit"
-categories: ['Grit Range & Classification']
-tags: ['grit-80', 'grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400', 'grit-600']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/20.webp"
-description: "Pro techniques for stepping down sandpaper grit to erase deep scratches on wood, metal, and plastic with precise workflows and abrasive selection."
+image: https://blog.equalle.com/images/brand/20.webp
+slug: step-down-rules-to-erase-deep-scratches-sandpaper-grit
+tags:
+- grit-80
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+- grit-600
+title: Step Down Rules To Erase Deep Scratches
 ---
 
 # Mastering sandpaper grit for deep scratch removal

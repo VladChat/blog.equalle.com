@@ -1,13 +1,29 @@
 ---
-title: "Choose Wool Foam Or Microfiber Pads"
-date: 2025-11-12T16:03:08.273884+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/12/choose-wool-foam-or-microfiber-pads-polishing-sandpaper/cards/facebook/choose-wool-foam-or-microfiber-pads-polishing-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/12/choose-wool-foam-or-microfiber-pads-polishing-sandpaper/cards/instagram/choose-wool-foam-or-microfiber-pads-polishing-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/12/choose-wool-foam-or-microfiber-pads-polishing-sandpaper/cards/pinterest/choose-wool-foam-or-microfiber-pads-polishing-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/12/choose-wool-foam-or-microfiber-pads-polishing-sandpaper/cards/facebook/choose-wool-foam-or-microfiber-pads-polishing-sandpaper.jpg
+categories:
+- Polishing & Finishing
+date: 2025-11-12 16:03:08.273884+00:00
+description: Engineer-tested guide to choosing wool, foam, or microfiber pads—and
+  when to pair them with polishing sandpaper—for faster, safer, glossier results.
 draft: false
-slug: "choose-wool-foam-or-microfiber-pads-polishing-sandpaper"
-categories: ['Polishing & Finishing']
-tags: ['mirror finish', 'polishing pads', 'grit progression', 'grit-800', 'grit-2000', 'grit-2500', 'grit-3000', 'clear coat', 'sanding block']
-author: "David Chen"
-image: "https://blog.equalle.com/images/brand/27.webp"
-description: "Engineer-tested guide to choosing wool, foam, or microfiber pads—and when to pair them with polishing sandpaper—for faster, safer, glossier results."
+image: https://blog.equalle.com/images/brand/27.webp
+slug: choose-wool-foam-or-microfiber-pads-polishing-sandpaper
+tags:
+- mirror finish
+- polishing pads
+- grit progression
+- grit-800
+- grit-2000
+- grit-2500
+- grit-3000
+- clear coat
+- sanding block
+title: Choose Wool Foam Or Microfiber Pads
 ---
 
 # Wool, Foam, or Microfiber Pads with Polishing Sandpaper

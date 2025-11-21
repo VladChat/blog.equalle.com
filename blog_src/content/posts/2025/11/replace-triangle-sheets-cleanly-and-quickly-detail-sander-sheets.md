@@ -1,13 +1,24 @@
 ---
-title: "Replace Triangle Sheets Cleanly And Quickly"
-date: 2025-11-13T13:38:22.663099+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/13/replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets/cards/facebook/replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/13/replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets/cards/instagram/replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/13/replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets/cards/pinterest/replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/13/replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets/cards/facebook/replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets.jpg
+categories:
+- Detail Sander Sheets
+date: 2025-11-13 13:38:22.663099+00:00
+description: Learn how to replace triangular detail sander sheets quickly and cleanly
+  with pro tips on fit, dust control, and pad care for smooth, precise results.
 draft: false
-slug: "replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets"
-categories: ['Detail Sander Sheets']
-tags: ['grit-220', 'dust control', 'grit progression', 'dry sanding']
-author: "Emily Novak"
-image: "https://blog.equalle.com/images/brand/02.webp"
-description: "Learn how to replace triangular detail sander sheets quickly and cleanly with pro tips on fit, dust control, and pad care for smooth, precise results."
+image: https://blog.equalle.com/images/brand/02.webp
+slug: replace-triangle-sheets-cleanly-and-quickly-detail-sander-sheets
+tags:
+- grit-220
+- dust control
+- grit progression
+- dry sanding
+title: Replace Triangle Sheets Cleanly And Quickly
 ---
 
 # How to Swap Detail Sander Sheets Fast and Clean

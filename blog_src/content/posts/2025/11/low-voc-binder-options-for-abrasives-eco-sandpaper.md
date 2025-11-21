@@ -1,12 +1,29 @@
 ---
-title: "Low Voc Binder Options For Abrasives"
-date: 2025-11-04T03:24:31.780964+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/low-voc-binder-options-for-abrasives-eco-sandpaper/cards/facebook/low-voc-binder-options-for-abrasives-eco-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/low-voc-binder-options-for-abrasives-eco-sandpaper/cards/instagram/low-voc-binder-options-for-abrasives-eco-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/low-voc-binder-options-for-abrasives-eco-sandpaper/cards/pinterest/low-voc-binder-options-for-abrasives-eco-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/low-voc-binder-options-for-abrasives-eco-sandpaper/cards/facebook/low-voc-binder-options-for-abrasives-eco-sandpaper.jpg
+categories:
+- Eco & Non-Toxic Abrasives
+date: 2025-11-04 03:24:31.780964+00:00
+description: 'Low-VOC binder guide for eco sandpaper: materials, performance tradeoffs,
+  and a step-by-step shop workflow for cleaner, pro-grade sanding.'
 draft: false
-slug: "low-voc-binder-options-for-abrasives-eco-sandpaper"
-categories: ['Eco & Non-Toxic Abrasives']
-tags: ['grit-80', 'grit-120', 'grit-150', 'grit-180', 'grit-240', 'grit-400', 'grit-800', 'sanding block', 'wet sanding', 'clear coat']
-author: "Lucas Moreno"
-description: "Low-VOC binder guide for eco sandpaper: materials, performance tradeoffs, and a step-by-step shop workflow for cleaner, pro-grade sanding."
+slug: low-voc-binder-options-for-abrasives-eco-sandpaper
+tags:
+- grit-80
+- grit-120
+- grit-150
+- grit-180
+- grit-240
+- grit-400
+- grit-800
+- sanding block
+- wet sanding
+- clear coat
+title: Low Voc Binder Options For Abrasives
 ---
 
 # Eco Sandpaper: Low-VOC Binder Options That Work

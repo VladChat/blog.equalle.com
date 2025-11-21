@@ -1,12 +1,20 @@
 ---
-title: "How To Sand Wood Without Swirl Marks"
-date: 2025-11-02T18:31:25.312574+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/how-to-sand-wood-without-swirl-marks-wood-sanding/cards/facebook/how-to-sand-wood-without-swirl-marks-wood-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/how-to-sand-wood-without-swirl-marks-wood-sanding/cards/instagram/how-to-sand-wood-without-swirl-marks-wood-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/how-to-sand-wood-without-swirl-marks-wood-sanding/cards/pinterest/how-to-sand-wood-without-swirl-marks-wood-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/how-to-sand-wood-without-swirl-marks-wood-sanding/cards/facebook/how-to-sand-wood-without-swirl-marks-wood-sanding.jpg
+categories:
+- Wood sanding
+date: 2025-11-02 18:31:25.312574+00:00
+description: Discover expert tips on wood sanding to avoid swirl marks. Enhance your
+  DIY projects and achieve a flawless finish with our detailed guide.
 draft: false
-slug: "how-to-sand-wood-without-swirl-marks-wood-sanding"
-categories: ['Wood sanding']
-tags: ['wet sanding']
-author: "Lucas Moreno"
-description: "Discover expert tips on wood sanding to avoid swirl marks. Enhance your DIY projects and achieve a flawless finish with our detailed guide."
+slug: how-to-sand-wood-without-swirl-marks-wood-sanding
+tags:
+- wet sanding
+title: How To Sand Wood Without Swirl Marks
 ---
 
 # Mastering Wood Sanding: Avoiding Swirl Marks

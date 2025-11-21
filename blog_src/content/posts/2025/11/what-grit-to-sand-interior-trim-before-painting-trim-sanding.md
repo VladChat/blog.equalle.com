@@ -1,12 +1,24 @@
 ---
-title: "What Grit To Sand Interior Trim Before Painting"
-date: 2025-11-02T20:12:53.038716+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/what-grit-to-sand-interior-trim-before-painting-trim-sanding/cards/facebook/what-grit-to-sand-interior-trim-before-painting-trim-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/what-grit-to-sand-interior-trim-before-painting-trim-sanding/cards/instagram/what-grit-to-sand-interior-trim-before-painting-trim-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/what-grit-to-sand-interior-trim-before-painting-trim-sanding/cards/pinterest/what-grit-to-sand-interior-trim-before-painting-trim-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/what-grit-to-sand-interior-trim-before-painting-trim-sanding/cards/facebook/what-grit-to-sand-interior-trim-before-painting-trim-sanding.jpg
+categories:
+- Trim & Molding Sanding
+date: 2025-11-02 20:12:53.038716+00:00
+description: Discover expert tips on what grit to sand interior trim before painting.
+  Achieve a flawless finish with our comprehensive sanding guide.
 draft: false
-slug: "what-grit-to-sand-interior-trim-before-painting-trim-sanding"
-categories: ['Trim & Molding Sanding']
-tags: ['grit-60', 'grit-120', 'grit-180', 'grit-220', 'sanding block']
-author: "Lucas Moreno"
-description: "Discover expert tips on what grit to sand interior trim before painting. Achieve a flawless finish with our comprehensive sanding guide."
+slug: what-grit-to-sand-interior-trim-before-painting-trim-sanding
+tags:
+- grit-60
+- grit-120
+- grit-180
+- grit-220
+- sanding block
+title: What Grit To Sand Interior Trim Before Painting
 ---
 
 # Mastering Trim Sanding for Perfect Paint Finish

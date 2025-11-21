@@ -1,12 +1,29 @@
 ---
-title: "Reduce Swirls By Pairing Pad And Grit Correctly"
-date: 2025-11-06T13:34:29.762629+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/06/reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad/cards/facebook/reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/06/reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad/cards/instagram/reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/06/reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad/cards/pinterest/reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/06/reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad/cards/facebook/reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad.jpg
+categories:
+- Interface Pads & Backing Pads
+date: 2025-11-06 13:34:29.762629+00:00
+description: Learn how pairing a sander interface pad with the right grits reduces
+  swirls, improves cut control, and optimizes dust extraction for flawless finishes.
 draft: false
-slug: "reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad"
-categories: ['Interface Pads & Backing Pads']
-tags: ['grit-60', 'grit-80', 'grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400']
-author: "Mark Jensen"
-description: "Learn how pairing a sander interface pad with the right grits reduces swirls, improves cut control, and optimizes dust extraction for flawless finishes."
+slug: reduce-swirls-by-pairing-pad-and-grit-correctly-sander-interface-pad
+tags:
+- grit-60
+- grit-80
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+title: Reduce Swirls By Pairing Pad And Grit Correctly
 ---
 
 # Mastering the sander interface pad to erase swirls

@@ -1,12 +1,27 @@
 ---
-title: "Best Grit Sponges For Trim And Profiles"
-date: 2025-11-03T03:21:23.354159+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/best-grit-sponges-for-trim-and-profiles-sanding-sponge/cards/facebook/best-grit-sponges-for-trim-and-profiles-sanding-sponge.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/best-grit-sponges-for-trim-and-profiles-sanding-sponge/cards/instagram/best-grit-sponges-for-trim-and-profiles-sanding-sponge.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/best-grit-sponges-for-trim-and-profiles-sanding-sponge/cards/pinterest/best-grit-sponges-for-trim-and-profiles-sanding-sponge.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/best-grit-sponges-for-trim-and-profiles-sanding-sponge/cards/facebook/best-grit-sponges-for-trim-and-profiles-sanding-sponge.jpg
+categories:
+- Sanding Sponges
+date: 2025-11-03 03:21:23.354159+00:00
+description: Find the best sanding sponge grits for trim and profiles. Learn grit
+  selection, shapes, steps, and tips for flawless, durable finishes.
 draft: false
-slug: "best-grit-sponges-for-trim-and-profiles-sanding-sponge"
-categories: ['Sanding Sponges']
-tags: ['grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-320', 'grit-600', 'dry sanding']
-author: "Emily Novak"
-description: "Find the best sanding sponge grits for trim and profiles. Learn grit selection, shapes, steps, and tips for flawless, durable finishes."
+slug: best-grit-sponges-for-trim-and-profiles-sanding-sponge
+tags:
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-320
+- grit-600
+- dry sanding
+title: Best Grit Sponges For Trim And Profiles
 ---
 
 # Best Sanding Sponge Grits for Trim and Profiles

@@ -1,13 +1,28 @@
 ---
-title: "Compound Versus Polish Differences For Clear Coat Finishing"
-date: 2025-11-11T05:56:37.191448+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/11/compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing/cards/facebook/compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/11/compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing/cards/instagram/compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/11/compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing/cards/pinterest/compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/11/compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing/cards/facebook/compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing.jpg
+categories:
+- Wet Sanding Clear Coat
+date: 2025-11-11 05:56:37.191448+00:00
+description: Understand compound vs polish for clear coat finishing with sanding workflows,
+  abrasive selection, and process control for defect-free paint polishing.
 draft: false
-slug: "compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing"
-categories: ['Wet Sanding Clear Coat']
-tags: ['grit-800', 'grit-1000', 'grit-1500', 'grit-2000', 'grit-2500', 'grit-3000', 'clear coat', 'wet sanding']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/17.webp"
-description: "Understand compound vs polish for clear coat finishing with sanding workflows, abrasive selection, and process control for defect-free paint polishing."
+image: https://blog.equalle.com/images/brand/17.webp
+slug: compound-versus-polish-differences-for-clear-coat-finishing-paint-polishing
+tags:
+- grit-800
+- grit-1000
+- grit-1500
+- grit-2000
+- grit-2500
+- grit-3000
+- clear coat
+- wet sanding
+title: Compound Versus Polish Differences For Clear Coat Finishing
 ---
 
 # Paint polishing: compound vs polish for clear coat

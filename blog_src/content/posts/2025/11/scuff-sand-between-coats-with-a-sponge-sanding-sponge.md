@@ -1,13 +1,24 @@
 ---
-title: "Scuff Sand Between Coats With A Sponge"
-date: 2025-11-14T06:26:49.735183+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/14/scuff-sand-between-coats-with-a-sponge-sanding-sponge/cards/facebook/scuff-sand-between-coats-with-a-sponge-sanding-sponge.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/14/scuff-sand-between-coats-with-a-sponge-sanding-sponge/cards/instagram/scuff-sand-between-coats-with-a-sponge-sanding-sponge.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/14/scuff-sand-between-coats-with-a-sponge-sanding-sponge/cards/pinterest/scuff-sand-between-coats-with-a-sponge-sanding-sponge.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/14/scuff-sand-between-coats-with-a-sponge-sanding-sponge/cards/facebook/scuff-sand-between-coats-with-a-sponge-sanding-sponge.jpg
+categories:
+- Sanding Sponges
+date: 2025-11-14 06:26:49.735183+00:00
+description: Engineer-tested guide to scuff sanding between coats using a sanding
+  sponge—grit, pressure, foam chemistry, and pro tips for flawless finishes.
 draft: false
-slug: "scuff-sand-between-coats-with-a-sponge-sanding-sponge"
-categories: ['Sanding Sponges']
-tags: ['grit-220', 'grit-320', 'grit-400', 'grit-600']
-author: "David Chen"
-image: "https://blog.equalle.com/images/brand/06.webp"
-description: "Engineer-tested guide to scuff sanding between coats using a sanding sponge—grit, pressure, foam chemistry, and pro tips for flawless finishes."
+image: https://blog.equalle.com/images/brand/06.webp
+slug: scuff-sand-between-coats-with-a-sponge-sanding-sponge
+tags:
+- grit-220
+- grit-320
+- grit-400
+- grit-600
+title: Scuff Sand Between Coats With A Sponge
 ---
 
 # How to Scuff Sand Between Coats with a Sanding Sponge

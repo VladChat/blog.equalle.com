@@ -1,12 +1,19 @@
 ---
-title: "How To Scuff Sand Between Finish Coats"
-date: 2025-11-03T01:45:42.817018+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/how-to-scuff-sand-between-finish-coats-between-coats-sanding/cards/facebook/how-to-scuff-sand-between-finish-coats-between-coats-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/how-to-scuff-sand-between-finish-coats-between-coats-sanding/cards/instagram/how-to-scuff-sand-between-finish-coats-between-coats-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/how-to-scuff-sand-between-finish-coats-between-coats-sanding/cards/pinterest/how-to-scuff-sand-between-finish-coats-between-coats-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/how-to-scuff-sand-between-finish-coats-between-coats-sanding/cards/facebook/how-to-scuff-sand-between-finish-coats-between-coats-sanding.jpg
+categories:
+- Between-Coats Sanding
+date: 2025-11-03 01:45:42.817018+00:00
+description: Discover the art of between coats sanding for flawless finishes. Get
+  expert tips and step-by-step instructions for a smooth woodworking experience.
 draft: false
-slug: "how-to-scuff-sand-between-finish-coats-between-coats-sanding"
-categories: ['Between-Coats Sanding']
+slug: how-to-scuff-sand-between-finish-coats-between-coats-sanding
 tags: []
-author: "Lucas Moreno"
-description: "Discover the art of between coats sanding for flawless finishes. Get expert tips and step-by-step instructions for a smooth woodworking experience."
+title: How To Scuff Sand Between Finish Coats
 ---
 
 # Mastering Between Coats Sanding for Perfect Finishes

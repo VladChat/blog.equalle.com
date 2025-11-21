@@ -1,12 +1,26 @@
 ---
-title: "Best Grit For Deck Sanding Before Staining"
-date: 2025-11-04T19:32:49.391682+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/best-grit-for-deck-sanding-before-staining-deck-sanding/cards/facebook/best-grit-for-deck-sanding-before-staining-deck-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/best-grit-for-deck-sanding-before-staining-deck-sanding/cards/instagram/best-grit-for-deck-sanding-before-staining-deck-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/best-grit-for-deck-sanding-before-staining-deck-sanding/cards/pinterest/best-grit-for-deck-sanding-before-staining-deck-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/best-grit-for-deck-sanding-before-staining-deck-sanding/cards/facebook/best-grit-for-deck-sanding-before-staining-deck-sanding.jpg
+categories:
+- Floor & Deck Sanding
+date: 2025-11-04 19:32:49.391682+00:00
+description: Engineer-tested guide to the best grit for deck sanding before staining,
+  with abrasive science, tool choices, and proven sanding sequences.
 draft: false
-slug: "best-grit-for-deck-sanding-before-staining-deck-sanding"
-categories: ['Floor & Deck Sanding']
-tags: ['grit-60', 'grit-80', 'grit-100', 'grit-120', 'grit-320', 'deck sanding', 'grit progression']
-author: "David Chen"
-description: "Engineer-tested guide to the best grit for deck sanding before staining, with abrasive science, tool choices, and proven sanding sequences."
+slug: best-grit-for-deck-sanding-before-staining-deck-sanding
+tags:
+- grit-60
+- grit-80
+- grit-100
+- grit-120
+- grit-320
+- deck sanding
+- grit progression
+title: Best Grit For Deck Sanding Before Staining
 ---
 
 # Best Grit for Deck Sanding Before Staining

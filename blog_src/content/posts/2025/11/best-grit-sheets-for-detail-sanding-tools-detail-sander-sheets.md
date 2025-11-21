@@ -1,12 +1,29 @@
 ---
-title: "Best Grit Sheets For Detail Sanding Tools"
-date: 2025-11-03T02:40:19.437951+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets/cards/facebook/best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets/cards/instagram/best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets/cards/pinterest/best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets/cards/facebook/best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets.jpg
+categories:
+- Detail Sander Sheets
+date: 2025-11-03 02:40:19.437951+00:00
+description: 'Engineer-tested guide to detail sander sheets: grit selection, backings,
+  dust control, and brand picks for wood, paint, and plastics.'
 draft: false
-slug: "best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets"
-categories: ['Detail Sander Sheets']
-tags: ['grit-80', 'grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400', 'paint prep']
-author: "David Chen"
-description: "Engineer-tested guide to detail sander sheets: grit selection, backings, dust control, and brand picks for wood, paint, and plastics."
+slug: best-grit-sheets-for-detail-sanding-tools-detail-sander-sheets
+tags:
+- grit-80
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+- paint prep
+title: Best Grit Sheets For Detail Sanding Tools
 ---
 
 # Best Grit Detail Sander Sheets: An Engineer’s Guide

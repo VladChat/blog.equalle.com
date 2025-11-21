@@ -1,12 +1,22 @@
 ---
-title: "How To Repair Chipped Or Lifting Veneer Before Refinishing"
-date: 2025-11-04T15:40:12.143602+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration/cards/facebook/how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration/cards/instagram/how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration/cards/pinterest/how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration/cards/facebook/how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration.jpg
+categories:
+- Furniture Refinishing
+date: 2025-11-04 15:40:12.143602+00:00
+description: Learn how to repair chipped or lifting veneer before refinishing. A pro’s
+  step-by-step furniture restoration guide with tools, glue choices, and sanding tips.
 draft: false
-slug: "how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration"
-categories: ['Furniture Refinishing']
-tags: ['grit-220', 'grit-320', 'grit-1000']
-author: "Lucas Moreno"
-description: "Learn how to repair chipped or lifting veneer before refinishing. A pro’s step-by-step furniture restoration guide with tools, glue choices, and sanding tips."
+slug: how-to-repair-chipped-or-lifting-veneer-before-refinishing-furniture-restoration
+tags:
+- grit-220
+- grit-320
+- grit-1000
+title: How To Repair Chipped Or Lifting Veneer Before Refinishing
 ---
 
 # Furniture Restoration: Fixing Chipped and Lifting Veneer

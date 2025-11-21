@@ -1,12 +1,28 @@
 ---
-title: "When Ceramic Outperforms Aluminum Oxide"
-date: 2025-11-03T13:34:14.438824+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs/cards/facebook/when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs/cards/instagram/when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs/cards/pinterest/when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs/cards/facebook/when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs.jpg
+categories:
+- Ceramic & Premium Abrasives
+date: 2025-11-03 13:34:14.438824+00:00
+description: 'Learn when ceramic sanding discs beat aluminum oxide: cut rate, heat
+  control, cost per part, and pro tips for metal, wood, and composites.'
 draft: false
-slug: "when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs"
-categories: ['Ceramic & Premium Abrasives']
-tags: ['grit-60', 'grit-80', 'grit-120', 'grit-180', 'wet sanding', 'dry sanding', 'clear coat', 'orbital sander', 'dust control']
-author: "Emily Novak"
-description: "Learn when ceramic sanding discs beat aluminum oxide: cut rate, heat control, cost per part, and pro tips for metal, wood, and composites."
+slug: when-ceramic-outperforms-aluminum-oxide-ceramic-sanding-discs
+tags:
+- grit-60
+- grit-80
+- grit-120
+- grit-180
+- wet sanding
+- dry sanding
+- clear coat
+- orbital sander
+- dust control
+title: When Ceramic Outperforms Aluminum Oxide
 ---
 
 # When Ceramic Sanding Discs Outperform Aluminum Oxide

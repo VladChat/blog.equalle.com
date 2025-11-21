@@ -1,12 +1,28 @@
 ---
-title: "Avoid Loading With Stearated Papers"
-date: 2025-11-03T20:47:55.378159+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/avoid-loading-with-stearated-papers-epoxy-sanding/cards/facebook/avoid-loading-with-stearated-papers-epoxy-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/avoid-loading-with-stearated-papers-epoxy-sanding/cards/instagram/avoid-loading-with-stearated-papers-epoxy-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/avoid-loading-with-stearated-papers-epoxy-sanding/cards/pinterest/avoid-loading-with-stearated-papers-epoxy-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/avoid-loading-with-stearated-papers-epoxy-sanding/cards/facebook/avoid-loading-with-stearated-papers-epoxy-sanding.jpg
+categories:
+- Plastic & Epoxy Sanding
+date: 2025-11-03 20:47:55.378159+00:00
+description: Master epoxy sanding without clogging. Use stearated papers wisely, control
+  heat and dust, and get flawless results with pro tips, steps, and tools.
 draft: false
-slug: "avoid-loading-with-stearated-papers-epoxy-sanding"
-categories: ['Plastic & Epoxy Sanding']
-tags: ['grit-280', 'grit-400', 'grit-600', 'grit-800', 'grit-2000', 'wet sanding', 'dust control', 'grit progression', 'dry sanding']
-author: "Lucas Moreno"
-description: "Master epoxy sanding without clogging. Use stearated papers wisely, control heat and dust, and get flawless results with pro tips, steps, and tools."
+slug: avoid-loading-with-stearated-papers-epoxy-sanding
+tags:
+- grit-280
+- grit-400
+- grit-600
+- grit-800
+- grit-2000
+- wet sanding
+- dust control
+- grit progression
+- dry sanding
+title: Avoid Loading With Stearated Papers
 ---
 
 # Epoxy sanding without clogs: stearate smarts

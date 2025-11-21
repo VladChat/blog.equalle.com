@@ -1,12 +1,29 @@
 ---
-title: "Washable Sanding Sponges For Longer Life"
-date: 2025-11-05T16:30:43.365846+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/washable-sanding-sponges-for-longer-life-sanding-sponge/cards/facebook/washable-sanding-sponges-for-longer-life-sanding-sponge.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/washable-sanding-sponges-for-longer-life-sanding-sponge/cards/instagram/washable-sanding-sponges-for-longer-life-sanding-sponge.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/washable-sanding-sponges-for-longer-life-sanding-sponge/cards/pinterest/washable-sanding-sponges-for-longer-life-sanding-sponge.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/washable-sanding-sponges-for-longer-life-sanding-sponge/cards/facebook/washable-sanding-sponges-for-longer-life-sanding-sponge.jpg
+categories:
+- Sanding Sponges
+date: 2025-11-05 16:30:43.365846+00:00
+description: Extend abrasive life with washable sanding sponges. Pro workflows for
+  cleaning, grit selection, and finishing quality across wood, drywall, and coatings.
 draft: false
-slug: "washable-sanding-sponges-for-longer-life-sanding-sponge"
-categories: ['Sanding Sponges']
-tags: ['grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'grit-400', 'grit-600', 'grit-800']
-author: "Mark Jensen"
-description: "Extend abrasive life with washable sanding sponges. Pro workflows for cleaning, grit selection, and finishing quality across wood, drywall, and coatings."
+slug: washable-sanding-sponges-for-longer-life-sanding-sponge
+tags:
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- grit-400
+- grit-600
+- grit-800
+title: Washable Sanding Sponges For Longer Life
 ---
 
 # Washable Sanding Sponge Strategies for Longer Life

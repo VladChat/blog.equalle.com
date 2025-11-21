@@ -1,13 +1,30 @@
 ---
-title: "Remove Dust Nibs Between Clear Coat Layers"
-date: 2025-11-12T14:29:42.762942+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/12/remove-dust-nibs-between-clear-coat-layers-between-coats-sanding/cards/facebook/remove-dust-nibs-between-clear-coat-layers-between-coats-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/12/remove-dust-nibs-between-clear-coat-layers-between-coats-sanding/cards/instagram/remove-dust-nibs-between-clear-coat-layers-between-coats-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/12/remove-dust-nibs-between-clear-coat-layers-between-coats-sanding/cards/pinterest/remove-dust-nibs-between-clear-coat-layers-between-coats-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/12/remove-dust-nibs-between-clear-coat-layers-between-coats-sanding/cards/facebook/remove-dust-nibs-between-clear-coat-layers-between-coats-sanding.jpg
+categories:
+- Between-Coats Sanding
+date: 2025-11-12 14:29:42.762942+00:00
+description: Expert guide to between coats sanding—how to remove dust nibs, choose
+  abrasives, and perfect clear coat finishes with pro-level workflows.
 draft: false
-slug: "remove-dust-nibs-between-clear-coat-layers-between-coats-sanding"
-categories: ['Between-Coats Sanding']
-tags: ['grit-320', 'grit-400', 'grit-500', 'grit-600', 'grit-800', 'grit-1000', 'grit-2000', 'clear coat', 'dust control', 'wet sanding']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/25.webp"
-description: "Expert guide to between coats sanding—how to remove dust nibs, choose abrasives, and perfect clear coat finishes with pro-level workflows."
+image: https://blog.equalle.com/images/brand/25.webp
+slug: remove-dust-nibs-between-clear-coat-layers-between-coats-sanding
+tags:
+- grit-320
+- grit-400
+- grit-500
+- grit-600
+- grit-800
+- grit-1000
+- grit-2000
+- clear coat
+- dust control
+- wet sanding
+title: Remove Dust Nibs Between Clear Coat Layers
 ---
 
 # between coats sanding: remove dust nibs in clear coats

@@ -1,12 +1,27 @@
 ---
-title: "Progressive Micron Steps For Clarity"
-date: 2025-11-08T00:41:16.919595+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/08/progressive-micron-steps-for-clarity-glass-sanding/cards/facebook/progressive-micron-steps-for-clarity-glass-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/08/progressive-micron-steps-for-clarity-glass-sanding/cards/instagram/progressive-micron-steps-for-clarity-glass-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/08/progressive-micron-steps-for-clarity-glass-sanding/cards/pinterest/progressive-micron-steps-for-clarity-glass-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/08/progressive-micron-steps-for-clarity-glass-sanding/cards/facebook/progressive-micron-steps-for-clarity-glass-sanding.jpg
+categories:
+- Glass & Ceramics Sanding
+date: 2025-11-08 00:41:16.919595+00:00
+description: Engineer-tested guide to glass sanding using progressive micron steps
+  for optical clarity, with media choices, wet technique, and polishing workflow.
 draft: false
-slug: "progressive-micron-steps-for-clarity-glass-sanding"
-categories: ['Glass & Ceramics Sanding']
-tags: ['grit-60', 'grit-500', 'grit-600', 'grit-1000', 'grit-2000', 'grit-3000', 'wet sanding', 'dry sanding']
-author: "David Chen"
-description: "Engineer-tested guide to glass sanding using progressive micron steps for optical clarity, with media choices, wet technique, and polishing workflow."
+slug: progressive-micron-steps-for-clarity-glass-sanding
+tags:
+- grit-60
+- grit-500
+- grit-600
+- grit-1000
+- grit-2000
+- grit-3000
+- wet sanding
+- dry sanding
+title: Progressive Micron Steps For Clarity
 ---
 
 # Glass Sanding: Progressive Micron Steps for Clarity

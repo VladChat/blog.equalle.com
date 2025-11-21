@@ -1,13 +1,24 @@
 ---
-title: "Reduced Heat And Loading On Tough Materials"
-date: 2025-11-16T13:30:01.694999+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/16/reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs/cards/facebook/reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/16/reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs/cards/instagram/reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/16/reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs/cards/pinterest/reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/16/reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs/cards/facebook/reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs.jpg
+categories:
+- Ceramic & Premium Abrasives
+date: 2025-11-16 13:30:01.694999+00:00
+description: Engineer-tested review of ceramic sanding discs—how they cut cooler,
+  resist loading, and last longer on stainless, hardwoods, and composites.
 draft: false
-slug: "reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs"
-categories: ['Ceramic & Premium Abrasives']
-tags: ['grit-80', 'grit-180', 'wet sanding', 'dry sanding']
-author: "David Chen"
-image: "https://blog.equalle.com/images/brand/22.webp"
-description: "Engineer-tested review of ceramic sanding discs—how they cut cooler, resist loading, and last longer on stainless, hardwoods, and composites."
+image: https://blog.equalle.com/images/brand/22.webp
+slug: reduced-heat-and-loading-on-tough-materials-ceramic-sanding-discs
+tags:
+- grit-80
+- grit-180
+- wet sanding
+- dry sanding
+title: Reduced Heat And Loading On Tough Materials
 ---
 
 # Ceramic Sanding Discs for Cooler, Cleaner Cuts

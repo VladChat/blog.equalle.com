@@ -1,12 +1,29 @@
 ---
-title: "Soap To Water Ratio For Lubrication"
-date: 2025-11-07T14:24:10.236601+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/07/soap-to-water-ratio-for-lubrication-wet-dry-sandpaper/cards/facebook/soap-to-water-ratio-for-lubrication-wet-dry-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/07/soap-to-water-ratio-for-lubrication-wet-dry-sandpaper/cards/instagram/soap-to-water-ratio-for-lubrication-wet-dry-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/07/soap-to-water-ratio-for-lubrication-wet-dry-sandpaper/cards/pinterest/soap-to-water-ratio-for-lubrication-wet-dry-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/07/soap-to-water-ratio-for-lubrication-wet-dry-sandpaper/cards/facebook/soap-to-water-ratio-for-lubrication-wet-dry-sandpaper.jpg
+categories:
+- Waterproof & Wet/Dry Paper
+date: 2025-11-07 14:24:10.236601+00:00
+description: Engineer-tested soap-to-water ratios for lubricating wet dry sandpaper
+  on paint, wood, and metal. Get precise mixes, tips, and troubleshooting.
 draft: false
-slug: "soap-to-water-ratio-for-lubrication-wet-dry-sandpaper"
-categories: ['Waterproof & Wet/Dry Paper']
-tags: ['grit-360', 'grit-400', 'grit-600', 'grit-1200', 'grit-1500', 'grit-2000', 'grit-2500', 'grit-3000', 'wet sanding', 'sanding block']
-author: "David Chen"
-description: "Engineer-tested soap-to-water ratios for lubricating wet dry sandpaper on paint, wood, and metal. Get precise mixes, tips, and troubleshooting."
+slug: soap-to-water-ratio-for-lubrication-wet-dry-sandpaper
+tags:
+- grit-360
+- grit-400
+- grit-600
+- grit-1200
+- grit-1500
+- grit-2000
+- grit-2500
+- grit-3000
+- wet sanding
+- sanding block
+title: Soap To Water Ratio For Lubrication
 ---
 
 # Optimal Soap to Water Ratio for Wet Dry Sandpaper

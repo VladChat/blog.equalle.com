@@ -1,13 +1,26 @@
 ---
-title: "Flush Slurry To Prevent Loading"
-date: 2025-11-16T15:10:09.157463+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/16/flush-slurry-to-prevent-loading-wet-dry-sandpaper/cards/facebook/flush-slurry-to-prevent-loading-wet-dry-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/16/flush-slurry-to-prevent-loading-wet-dry-sandpaper/cards/instagram/flush-slurry-to-prevent-loading-wet-dry-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/16/flush-slurry-to-prevent-loading-wet-dry-sandpaper/cards/pinterest/flush-slurry-to-prevent-loading-wet-dry-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/16/flush-slurry-to-prevent-loading-wet-dry-sandpaper/cards/facebook/flush-slurry-to-prevent-loading-wet-dry-sandpaper.jpg
+categories:
+- Waterproof & Wet/Dry Paper
+date: 2025-11-16 15:10:09.157463+00:00
+description: Learn how to flush slurry to prevent loading with wet dry sandpaper.
+  Practical setup, rinsing, and grit strategy for cleaner, faster, longer-lasting
+  sanding.
 draft: false
-slug: "flush-slurry-to-prevent-loading-wet-dry-sandpaper"
-categories: ['Waterproof & Wet/Dry Paper']
-tags: ['grit-280', 'clear coat', 'grit progression', 'wet sanding', 'sanding block']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/24.webp"
-description: "Learn how to flush slurry to prevent loading with wet dry sandpaper. Practical setup, rinsing, and grit strategy for cleaner, faster, longer-lasting sanding."
+image: https://blog.equalle.com/images/brand/24.webp
+slug: flush-slurry-to-prevent-loading-wet-dry-sandpaper
+tags:
+- grit-280
+- clear coat
+- grit progression
+- wet sanding
+- sanding block
+title: Flush Slurry To Prevent Loading
 ---
 
 # Flush Slurry with Wet Dry Sandpaper for Clean Cuts

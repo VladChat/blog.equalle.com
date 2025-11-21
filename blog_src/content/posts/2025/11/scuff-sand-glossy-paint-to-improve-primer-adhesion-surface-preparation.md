@@ -1,12 +1,28 @@
 ---
-title: "Scuff Sand Glossy Paint To Improve Primer Adhesion"
-date: 2025-11-05T04:18:59.709486+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation/cards/facebook/scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation/cards/instagram/scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation/cards/pinterest/scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation/cards/facebook/scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation.jpg
+categories:
+- Paint Removal & Surface Prep
+date: 2025-11-05 04:18:59.709486+00:00
+description: Learn how to scuff sand glossy paint for superior primer adhesion. Step-by-step
+  surface preparation, pro sanding tips, and clean results that last.
 draft: false
-slug: "scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation"
-categories: ['Paint Removal & Surface Prep']
-tags: ['paint prep', 'rust removal', 'primer coat', 'sanding block', 'grit-120', 'grit-220', 'grit-240', 'grit-320', 'dust control']
-author: "Lucas Moreno"
-description: "Learn how to scuff sand glossy paint for superior primer adhesion. Step-by-step surface preparation, pro sanding tips, and clean results that last."
+slug: scuff-sand-glossy-paint-to-improve-primer-adhesion-surface-preparation
+tags:
+- paint prep
+- rust removal
+- primer coat
+- sanding block
+- grit-120
+- grit-220
+- grit-240
+- grit-320
+- dust control
+title: Scuff Sand Glossy Paint To Improve Primer Adhesion
 ---
 
 # Surface Preparation: Scuff Sand Glossy Paint Right

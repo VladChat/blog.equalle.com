@@ -1,12 +1,25 @@
 ---
-title: "Film Backing For Uniform Fine Scratches"
-date: 2025-11-08T13:28:53.720900+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/08/film-backing-for-uniform-fine-scratches-open-coat-sandpaper/cards/facebook/film-backing-for-uniform-fine-scratches-open-coat-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/08/film-backing-for-uniform-fine-scratches-open-coat-sandpaper/cards/instagram/film-backing-for-uniform-fine-scratches-open-coat-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/08/film-backing-for-uniform-fine-scratches-open-coat-sandpaper/cards/pinterest/film-backing-for-uniform-fine-scratches-open-coat-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/08/film-backing-for-uniform-fine-scratches-open-coat-sandpaper/cards/facebook/film-backing-for-uniform-fine-scratches-open-coat-sandpaper.jpg
+categories:
+- Backing Types & Coatings
+date: 2025-11-08 13:28:53.720900+00:00
+description: Engineer-tested guidance on film-backed, open coat sandpaper for uniform
+  fine scratches, with data, setups, and grit sequencing tips.
 draft: false
-slug: "film-backing-for-uniform-fine-scratches-open-coat-sandpaper"
-categories: ['Backing Types & Coatings']
-tags: ['grit-220', 'grit-400', 'grit-600', 'grit-800', 'orbital sander', 'dry sanding']
-author: "David Chen"
-description: "Engineer-tested guidance on film-backed, open coat sandpaper for uniform fine scratches, with data, setups, and grit sequencing tips."
+slug: film-backing-for-uniform-fine-scratches-open-coat-sandpaper
+tags:
+- grit-220
+- grit-400
+- grit-600
+- grit-800
+- orbital sander
+- dry sanding
+title: Film Backing For Uniform Fine Scratches
 ---
 
 # Open coat sandpaper on film for fine scratches

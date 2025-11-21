@@ -1,12 +1,26 @@
 ---
-title: "Identify Surface Rust Versus Scale And Perforation"
-date: 2025-11-05T04:10:19.063027+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/identify-surface-rust-versus-scale-and-perforation-rust-repair/cards/facebook/identify-surface-rust-versus-scale-and-perforation-rust-repair.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/identify-surface-rust-versus-scale-and-perforation-rust-repair/cards/instagram/identify-surface-rust-versus-scale-and-perforation-rust-repair.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/identify-surface-rust-versus-scale-and-perforation-rust-repair/cards/pinterest/identify-surface-rust-versus-scale-and-perforation-rust-repair.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/identify-surface-rust-versus-scale-and-perforation-rust-repair/cards/facebook/identify-surface-rust-versus-scale-and-perforation-rust-repair.jpg
+categories:
+- Metal Polishing & Rust Repair
+date: 2025-11-05 04:10:19.063027+00:00
+description: Engineer’s guide to identify surface rust, scale, and perforation, with
+  testing methods, abrasives, and rust repair decisions for lasting results.
 draft: false
-slug: "identify-surface-rust-versus-scale-and-perforation-rust-repair"
-categories: ['Metal Polishing & Rust Repair']
-tags: ['grit-80', 'grit-180', 'grit-320', 'grit-400', 'grit-1500', 'wet sanding', 'rust removal']
-author: "David Chen"
-description: "Engineer’s guide to identify surface rust, scale, and perforation, with testing methods, abrasives, and rust repair decisions for lasting results."
+slug: identify-surface-rust-versus-scale-and-perforation-rust-repair
+tags:
+- grit-80
+- grit-180
+- grit-320
+- grit-400
+- grit-1500
+- wet sanding
+- rust removal
+title: Identify Surface Rust Versus Scale And Perforation
 ---
 
 # Rust Repair: Spotting Surface, Scale, and Perforation

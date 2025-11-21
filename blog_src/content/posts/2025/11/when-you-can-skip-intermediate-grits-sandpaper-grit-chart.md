@@ -1,13 +1,30 @@
 ---
-title: "When You Can Skip Intermediate Grits"
-date: 2025-11-15T15:50:19.168992+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/15/when-you-can-skip-intermediate-grits-sandpaper-grit-chart/cards/facebook/when-you-can-skip-intermediate-grits-sandpaper-grit-chart.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/15/when-you-can-skip-intermediate-grits-sandpaper-grit-chart/cards/instagram/when-you-can-skip-intermediate-grits-sandpaper-grit-chart.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/15/when-you-can-skip-intermediate-grits-sandpaper-grit-chart/cards/pinterest/when-you-can-skip-intermediate-grits-sandpaper-grit-chart.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/15/when-you-can-skip-intermediate-grits-sandpaper-grit-chart/cards/facebook/when-you-can-skip-intermediate-grits-sandpaper-grit-chart.jpg
+categories:
+- Grit Guide & Education
+date: 2025-11-15 15:50:19.168992+00:00
+description: Learn when to skip intermediate grits and use a sandpaper grit chart
+  for faster, flawless finishes on wood, paint, and metal.
 draft: false
-slug: "when-you-can-skip-intermediate-grits-sandpaper-grit-chart"
-categories: ['Grit Guide & Education']
-tags: ['grit chart', 'abrasive standards', 'grit progression', 'grit-40', 'grit-80', 'grit-100', 'grit-101', 'grit-120', 'grit-150', 'grit-180']
-author: "Emily Novak"
-image: "https://blog.equalle.com/images/brand/18.webp"
-description: "Learn when to skip intermediate grits and use a sandpaper grit chart for faster, flawless finishes on wood, paint, and metal."
+image: https://blog.equalle.com/images/brand/18.webp
+slug: when-you-can-skip-intermediate-grits-sandpaper-grit-chart
+tags:
+- grit chart
+- abrasive standards
+- grit progression
+- grit-40
+- grit-80
+- grit-100
+- grit-101
+- grit-120
+- grit-150
+- grit-180
+title: When You Can Skip Intermediate Grits
 ---
 
 # When You Can Skip Grits: A Sandpaper Grit Chart Guide

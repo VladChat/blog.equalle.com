@@ -1,12 +1,23 @@
 ---
-title: "Psa Versus Hook And Loop Sanding Use Cases"
-date: 2025-11-06T00:31:33.080258+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/06/psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs/cards/facebook/psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/06/psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs/cards/instagram/psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/06/psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs/cards/pinterest/psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/06/psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs/cards/facebook/psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs.jpg
+categories:
+- PSA Discs
+date: 2025-11-06 00:31:33.080258+00:00
+description: Compare PSA vs hook and loop sanding discs to choose the right system.
+  Learn when each excels, how to set up, and pro tips for flat, clean finishes.
 draft: false
-slug: "psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs"
-categories: ['PSA Discs']
-tags: ['grit-80', 'grit-120', 'grit-220', 'dry sanding']
-author: "Emily Novak"
-description: "Compare PSA vs hook and loop sanding discs to choose the right system. Learn when each excels, how to set up, and pro tips for flat, clean finishes."
+slug: psa-versus-hook-and-loop-sanding-use-cases-psa-sanding-discs
+tags:
+- grit-80
+- grit-120
+- grit-220
+- dry sanding
+title: Psa Versus Hook And Loop Sanding Use Cases
 ---
 
 # PSA Sanding Discs vs Hook and Loop: Smart Use Cases

@@ -1,12 +1,28 @@
 ---
-title: "How To Sand Wood By Hand For Smooth Finish"
-date: 2025-11-04T03:41:00.121423+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding/cards/facebook/how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding/cards/instagram/how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding/cards/pinterest/how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding/cards/facebook/how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding.jpg
+categories:
+- Hand Sanding Techniques
+date: 2025-11-04 03:41:00.121423+00:00
+description: Learn hand sanding techniques, grit progression, and pro tips to achieve
+  a flawless smooth wood finish with clear steps, tools, and troubleshooting.
 draft: false
-slug: "how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding"
-categories: ['Hand Sanding Techniques']
-tags: ['grit-100', 'grit-220', 'grit-400', 'grit-600', 'grit-1000', 'wet sanding', 'sanding block', 'grit progression', 'dry sanding']
-author: "Emily Novak"
-description: "Learn hand sanding techniques, grit progression, and pro tips to achieve a flawless smooth wood finish with clear steps, tools, and troubleshooting."
+slug: how-to-sand-wood-by-hand-for-smooth-finish-hand-sanding
+tags:
+- grit-100
+- grit-220
+- grit-400
+- grit-600
+- grit-1000
+- wet sanding
+- sanding block
+- grit progression
+- dry sanding
+title: How To Sand Wood By Hand For Smooth Finish
 ---
 
 # Hand sanding for a glass-smooth wood finish

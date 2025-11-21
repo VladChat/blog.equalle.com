@@ -1,12 +1,25 @@
 ---
-title: "How Long To Wait Before Sanding Joint Compound"
-date: 2025-11-04T17:23:25.810213+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/04/how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding/cards/facebook/how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/04/how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding/cards/instagram/how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/04/how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding/cards/pinterest/how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/04/how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding/cards/facebook/how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding.jpg
+categories:
+- Drywall Sanding
+date: 2025-11-04 17:23:25.810213+00:00
+description: Learn precise wait times, drying variables, and pro sanding workflows
+  to prevent gouges and dust when sanding joint compound.
 draft: false
-slug: "how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding"
-categories: ['Drywall Sanding']
-tags: ['grit-150', 'grit-180', 'grit-220', 'grit-320', 'joint compound', 'dust control']
-author: "Mark Jensen"
-description: "Learn precise wait times, drying variables, and pro sanding workflows to prevent gouges and dust when sanding joint compound."
+slug: how-long-to-wait-before-sanding-joint-compound-joint-compound-sanding
+tags:
+- grit-150
+- grit-180
+- grit-220
+- grit-320
+- joint compound
+- dust control
+title: How Long To Wait Before Sanding Joint Compound
 ---
 
 # How Long to Wait for Joint Compound Sanding

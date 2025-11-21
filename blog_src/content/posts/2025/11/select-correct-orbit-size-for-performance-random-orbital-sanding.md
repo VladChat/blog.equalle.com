@@ -1,13 +1,26 @@
 ---
-title: "Select Correct Orbit Size For Performance"
-date: 2025-11-12T18:01:30.136409+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/12/select-correct-orbit-size-for-performance-random-orbital-sanding/cards/facebook/select-correct-orbit-size-for-performance-random-orbital-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/12/select-correct-orbit-size-for-performance-random-orbital-sanding/cards/instagram/select-correct-orbit-size-for-performance-random-orbital-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/12/select-correct-orbit-size-for-performance-random-orbital-sanding/cards/pinterest/select-correct-orbit-size-for-performance-random-orbital-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/12/select-correct-orbit-size-for-performance-random-orbital-sanding/cards/facebook/select-correct-orbit-size-for-performance-random-orbital-sanding.jpg
+categories:
+- Random Orbital Sanding
+date: 2025-11-12 18:01:30.136409+00:00
+description: Learn how to pick the right orbit size for random orbital sanding to
+  boost speed, control, and surface quality, with pro tips, setups, and troubleshooting.
 draft: false
-slug: "select-correct-orbit-size-for-performance-random-orbital-sanding"
-categories: ['Random Orbital Sanding']
-tags: ['grit-100', 'grit-120', 'grit-180', 'grit-220', 'clear coat', 'orbital sander']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/29.webp"
-description: "Learn how to pick the right orbit size for random orbital sanding to boost speed, control, and surface quality, with pro tips, setups, and troubleshooting."
+image: https://blog.equalle.com/images/brand/29.webp
+slug: select-correct-orbit-size-for-performance-random-orbital-sanding
+tags:
+- grit-100
+- grit-120
+- grit-180
+- grit-220
+- clear coat
+- orbital sander
+title: Select Correct Orbit Size For Performance
 ---
 
 # Random Orbital Sanding: Choose the Right Orbit Size

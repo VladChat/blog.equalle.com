@@ -1,13 +1,21 @@
 ---
-title: "Remove Psa Residue From Backing Pads"
-date: 2025-11-14T16:14:05.036009+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/14/remove-psa-residue-from-backing-pads-psa-sanding-discs/cards/facebook/remove-psa-residue-from-backing-pads-psa-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/14/remove-psa-residue-from-backing-pads-psa-sanding-discs/cards/instagram/remove-psa-residue-from-backing-pads-psa-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/14/remove-psa-residue-from-backing-pads-psa-sanding-discs/cards/pinterest/remove-psa-residue-from-backing-pads-psa-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/14/remove-psa-residue-from-backing-pads-psa-sanding-discs/cards/facebook/remove-psa-residue-from-backing-pads-psa-sanding-discs.jpg
+categories:
+- PSA Discs
+date: 2025-11-14 16:14:05.036009+00:00
+description: Learn safe, effective methods to remove PSA adhesive residue from sander
+  backing pads without damage. Improve adhesion, surface quality, and shop workflow.
 draft: false
-slug: "remove-psa-residue-from-backing-pads-psa-sanding-discs"
-categories: ['PSA Discs']
-tags: ['grit-240']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/12.webp"
-description: "Learn safe, effective methods to remove PSA adhesive residue from sander backing pads without damage. Improve adhesion, surface quality, and shop workflow."
+image: https://blog.equalle.com/images/brand/12.webp
+slug: remove-psa-residue-from-backing-pads-psa-sanding-discs
+tags:
+- grit-240
+title: Remove Psa Residue From Backing Pads
 ---
 
 # Removing PSA Residue on Pads for psa sanding discs

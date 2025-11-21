@@ -1,12 +1,20 @@
 ---
-title: "Step By Step Furniture Refinishing Process At Home"
-date: 2025-11-02T18:44:29.646017+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/step-by-step-furniture-refinishing-process-at-home-furniture-refinishing/cards/facebook/step-by-step-furniture-refinishing-process-at-home-furniture-refinishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/step-by-step-furniture-refinishing-process-at-home-furniture-refinishing/cards/instagram/step-by-step-furniture-refinishing-process-at-home-furniture-refinishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/step-by-step-furniture-refinishing-process-at-home-furniture-refinishing/cards/pinterest/step-by-step-furniture-refinishing-process-at-home-furniture-refinishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/step-by-step-furniture-refinishing-process-at-home-furniture-refinishing/cards/facebook/step-by-step-furniture-refinishing-process-at-home-furniture-refinishing.jpg
+categories:
+- Furniture Refinishing
+date: 2025-11-02 18:44:29.646017+00:00
+description: Learn how to refinish furniture at home with expert tips, detailed steps,
+  and practical advice for a professional finish every time.
 draft: false
-slug: "step-by-step-furniture-refinishing-process-at-home-furniture-refinishing"
-categories: ['Furniture Refinishing']
-tags: ['sanding block']
-author: "Lucas Moreno"
-description: "Learn how to refinish furniture at home with expert tips, detailed steps, and practical advice for a professional finish every time."
+slug: step-by-step-furniture-refinishing-process-at-home-furniture-refinishing
+tags:
+- sanding block
+title: Step By Step Furniture Refinishing Process At Home
 ---
 
 # Mastering Furniture Refinishing at Home

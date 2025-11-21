@@ -1,12 +1,29 @@
 ---
-title: "Polish Epoxy Resin To Glass Like Finish"
-date: 2025-11-03T21:00:08.232100+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/polish-epoxy-resin-to-glass-like-finish-resin-polishing/cards/facebook/polish-epoxy-resin-to-glass-like-finish-resin-polishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/polish-epoxy-resin-to-glass-like-finish-resin-polishing/cards/instagram/polish-epoxy-resin-to-glass-like-finish-resin-polishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/polish-epoxy-resin-to-glass-like-finish-resin-polishing/cards/pinterest/polish-epoxy-resin-to-glass-like-finish-resin-polishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/polish-epoxy-resin-to-glass-like-finish-resin-polishing/cards/facebook/polish-epoxy-resin-to-glass-like-finish-resin-polishing.jpg
+categories:
+- Resin Polishing
+date: 2025-11-03 21:00:08.232100+00:00
+description: Learn how to polish epoxy resin to a glass-like finish with step-by-step
+  sanding, heat control, compounds, and pro tips for durable clarity.
 draft: false
-slug: "polish-epoxy-resin-to-glass-like-finish-resin-polishing"
-categories: ['Resin Polishing']
-tags: ['grit-100', 'grit-120', 'grit-180', 'grit-220', 'grit-320', 'grit-400', 'grit-600', 'grit-800', 'grit-1000', 'grit-1500']
-author: "Emily Novak"
-description: "Learn how to polish epoxy resin to a glass-like finish with step-by-step sanding, heat control, compounds, and pro tips for durable clarity."
+slug: polish-epoxy-resin-to-glass-like-finish-resin-polishing
+tags:
+- grit-100
+- grit-120
+- grit-180
+- grit-220
+- grit-320
+- grit-400
+- grit-600
+- grit-800
+- grit-1000
+- grit-1500
+title: Polish Epoxy Resin To Glass Like Finish
 ---
 
 # Resin Polishing for a Glass-Like Epoxy Finish

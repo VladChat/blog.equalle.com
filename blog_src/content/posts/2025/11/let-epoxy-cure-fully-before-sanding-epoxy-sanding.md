@@ -1,12 +1,27 @@
 ---
-title: "Let Epoxy Cure Fully Before Sanding"
-date: 2025-11-07T16:25:05.853132+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/07/let-epoxy-cure-fully-before-sanding-epoxy-sanding/cards/facebook/let-epoxy-cure-fully-before-sanding-epoxy-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/07/let-epoxy-cure-fully-before-sanding-epoxy-sanding/cards/instagram/let-epoxy-cure-fully-before-sanding-epoxy-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/07/let-epoxy-cure-fully-before-sanding-epoxy-sanding/cards/pinterest/let-epoxy-cure-fully-before-sanding-epoxy-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/07/let-epoxy-cure-fully-before-sanding-epoxy-sanding/cards/facebook/let-epoxy-cure-fully-before-sanding-epoxy-sanding.jpg
+categories:
+- Plastic & Epoxy Sanding
+date: 2025-11-07 16:25:05.853132+00:00
+description: Learn why letting epoxy fully cure before sanding is essential, plus
+  timelines, tests, grit progressions, and pro tips for flawless, clear finishes.
 draft: false
-slug: "let-epoxy-cure-fully-before-sanding-epoxy-sanding"
-categories: ['Plastic & Epoxy Sanding']
-tags: ['grit-320', 'grit-360', 'grit-600', 'grit-1000', 'grit-1500', 'grit progression', 'wet sanding', 'dry sanding']
-author: "Emily Novak"
-description: "Learn why letting epoxy fully cure before sanding is essential, plus timelines, tests, grit progressions, and pro tips for flawless, clear finishes."
+slug: let-epoxy-cure-fully-before-sanding-epoxy-sanding
+tags:
+- grit-320
+- grit-360
+- grit-600
+- grit-1000
+- grit-1500
+- grit progression
+- wet sanding
+- dry sanding
+title: Let Epoxy Cure Fully Before Sanding
 ---
 
 # Epoxy Sanding: Why Waiting to Cure Pays Off

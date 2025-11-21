@@ -1,12 +1,29 @@
 ---
-title: "Task Matching By Grit Range"
-date: 2025-11-06T16:30:50.800408+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/06/task-matching-by-grit-range-sandpaper-grit/cards/facebook/task-matching-by-grit-range-sandpaper-grit.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/06/task-matching-by-grit-range-sandpaper-grit/cards/instagram/task-matching-by-grit-range-sandpaper-grit.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/06/task-matching-by-grit-range-sandpaper-grit/cards/pinterest/task-matching-by-grit-range-sandpaper-grit.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/06/task-matching-by-grit-range-sandpaper-grit/cards/facebook/task-matching-by-grit-range-sandpaper-grit.jpg
+categories:
+- Grit Range & Classification
+date: 2025-11-06 16:30:50.800408+00:00
+description: Learn how to match tasks to sandpaper grit for wood, metal, and paint.
+  Clear ranges, tool pairings, and pro tips for smooth, consistent results.
 draft: false
-slug: "task-matching-by-grit-range-sandpaper-grit"
-categories: ['Grit Range & Classification']
-tags: ['grit-40', 'grit-60', 'grit-80', 'grit-100', 'grit-101', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240']
-author: "Emily Novak"
-description: "Learn how to match tasks to sandpaper grit for wood, metal, and paint. Clear ranges, tool pairings, and pro tips for smooth, consistent results."
+slug: task-matching-by-grit-range-sandpaper-grit
+tags:
+- grit-40
+- grit-60
+- grit-80
+- grit-100
+- grit-101
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+title: Task Matching By Grit Range
 ---
 
 # Task Matching by Sandpaper Grit: A Practical Guide

@@ -1,12 +1,29 @@
 ---
-title: "Choose Sanding Direction To Follow The Grain"
-date: 2025-11-09T18:57:00.009377+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/09/choose-sanding-direction-to-follow-the-grain-hand-sanding/cards/facebook/choose-sanding-direction-to-follow-the-grain-hand-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/09/choose-sanding-direction-to-follow-the-grain-hand-sanding/cards/instagram/choose-sanding-direction-to-follow-the-grain-hand-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/09/choose-sanding-direction-to-follow-the-grain-hand-sanding/cards/pinterest/choose-sanding-direction-to-follow-the-grain-hand-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/09/choose-sanding-direction-to-follow-the-grain-hand-sanding/cards/facebook/choose-sanding-direction-to-follow-the-grain-hand-sanding.jpg
+categories:
+- Hand Sanding Techniques
+date: 2025-11-09 18:57:00.009377+00:00
+description: Learn how to choose sanding direction, optimize abrasive performance,
+  and master hand sanding workflows for flawless, grain-aligned wood surfaces.
 draft: false
-slug: "choose-sanding-direction-to-follow-the-grain-hand-sanding"
-categories: ['Hand Sanding Techniques']
-tags: ['grit-60', 'grit-80', 'grit-100', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-320', 'grit-400', 'grit-500']
-author: "Mark Jensen"
-description: "Learn how to choose sanding direction, optimize abrasive performance, and master hand sanding workflows for flawless, grain-aligned wood surfaces."
+slug: choose-sanding-direction-to-follow-the-grain-hand-sanding
+tags:
+- grit-60
+- grit-80
+- grit-100
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-320
+- grit-400
+- grit-500
+title: Choose Sanding Direction To Follow The Grain
 ---
 
 # Hand Sanding With the Grain: Direction That Wins

@@ -1,12 +1,20 @@
 ---
-title: "Structured Abrasives For Predictable Cut"
-date: 2025-11-03T20:03:50.377665+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/structured-abrasives-for-predictable-cut-microfinishing-film/cards/facebook/structured-abrasives-for-predictable-cut-microfinishing-film.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/structured-abrasives-for-predictable-cut-microfinishing-film/cards/instagram/structured-abrasives-for-predictable-cut-microfinishing-film.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/structured-abrasives-for-predictable-cut-microfinishing-film/cards/pinterest/structured-abrasives-for-predictable-cut-microfinishing-film.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/structured-abrasives-for-predictable-cut-microfinishing-film/cards/facebook/structured-abrasives-for-predictable-cut-microfinishing-film.jpg
+categories:
+- Specialty Abrasives
+date: 2025-11-03 20:03:50.377665+00:00
+description: Engineer-tested guide to structured abrasives and microfinishing film
+  for predictable cut, selection, process control, and repeatable surface finish.
 draft: false
-slug: "structured-abrasives-for-predictable-cut-microfinishing-film"
-categories: ['Specialty Abrasives']
-tags: ['grit-800']
-author: "David Chen"
-description: "Engineer-tested guide to structured abrasives and microfinishing film for predictable cut, selection, process control, and repeatable surface finish."
+slug: structured-abrasives-for-predictable-cut-microfinishing-film
+tags:
+- grit-800
+title: Structured Abrasives For Predictable Cut
 ---
 
 # Structured Abrasives and Microfinishing Film Guide

@@ -1,12 +1,29 @@
 ---
-title: "What Grit To Remove Peeling Paint From Wood Trim"
-date: 2025-11-03T00:03:42.981327+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding/cards/facebook/what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding/cards/instagram/what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding/cards/pinterest/what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding/cards/facebook/what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding.jpg
+categories:
+- Paint Removal & Surface Prep
+date: 2025-11-03 00:03:42.981327+00:00
+description: Discover expert tips on paint removal sanding for wood trim. Achieve
+  a smooth, professional finish with our step-by-step guide.
 draft: false
-slug: "what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding"
-categories: ['Paint Removal & Surface Prep']
-tags: ['paint prep', 'rust removal', 'primer coat', 'sanding block', 'grit-60', 'grit-80', 'grit-120', 'grit-180', 'grit-220', 'grit-240']
-author: "Lucas Moreno"
-description: "Discover expert tips on paint removal sanding for wood trim. Achieve a smooth, professional finish with our step-by-step guide."
+slug: what-grit-to-remove-peeling-paint-from-wood-trim-paint-removal-sanding
+tags:
+- paint prep
+- rust removal
+- primer coat
+- sanding block
+- grit-60
+- grit-80
+- grit-120
+- grit-180
+- grit-220
+- grit-240
+title: What Grit To Remove Peeling Paint From Wood Trim
 ---
 
 # Mastering Paint Removal Sanding for Wood Trim

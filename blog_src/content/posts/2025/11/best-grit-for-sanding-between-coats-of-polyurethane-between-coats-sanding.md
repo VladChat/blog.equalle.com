@@ -1,12 +1,26 @@
 ---
-title: "Best Grit For Sanding Between Coats Of Polyurethane"
-date: 2025-11-05T04:59:16.418373+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/05/best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding/cards/facebook/best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/05/best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding/cards/instagram/best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/05/best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding/cards/pinterest/best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/05/best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding/cards/facebook/best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding.jpg
+categories:
+- Between-Coats Sanding
+date: 2025-11-05 04:59:16.418373+00:00
+description: Learn the best grit for sanding between coats of polyurethane, when to
+  sand, and how to get a flawless, dust-free finish with pro-tested techniques.
 draft: false
-slug: "best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding"
-categories: ['Between-Coats Sanding']
-tags: ['grit-220', 'grit-320', 'grit-400', 'grit-600', 'dry sanding', 'clear coat', 'sanding block']
-author: "Emily Novak"
-description: "Learn the best grit for sanding between coats of polyurethane, when to sand, and how to get a flawless, dust-free finish with pro-tested techniques."
+slug: best-grit-for-sanding-between-coats-of-polyurethane-between-coats-sanding
+tags:
+- grit-220
+- grit-320
+- grit-400
+- grit-600
+- dry sanding
+- clear coat
+- sanding block
+title: Best Grit For Sanding Between Coats Of Polyurethane
 ---
 
 # Between Coats Sanding: Best Grit for Polyurethane

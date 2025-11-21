@@ -1,13 +1,27 @@
 ---
-title: "Best Grit To Sand Epoxy Primer Before Filler Or Sealer"
-date: 2025-11-11T05:25:06.129424+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/11/best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding/cards/facebook/best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/11/best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding/cards/instagram/best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/11/best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding/cards/pinterest/best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/11/best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding/cards/facebook/best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding.jpg
+categories:
+- Auto Body Sanding
+date: 2025-11-11 05:25:06.129424+00:00
+description: Learn the best grit to sand epoxy primer before filler or sealer, with
+  pro techniques, workflows, and troubleshooting for a paint-ready surface.
 draft: false
-slug: "best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding"
-categories: ['Auto Body Sanding']
-tags: ['grit-60', 'grit-80', 'grit-120', 'grit-180', 'grit-200', 'grit-600', 'grit-800']
-author: "Emily Novak"
-image: "https://blog.equalle.com/images/brand/15.webp"
-description: "Learn the best grit to sand epoxy primer before filler or sealer, with pro techniques, workflows, and troubleshooting for a paint-ready surface."
+image: https://blog.equalle.com/images/brand/15.webp
+slug: best-grit-to-sand-epoxy-primer-before-filler-or-sealer-primer-sanding
+tags:
+- grit-60
+- grit-80
+- grit-120
+- grit-180
+- grit-200
+- grit-600
+- grit-800
+title: Best Grit To Sand Epoxy Primer Before Filler Or Sealer
 ---
 
 # Primer Sanding Grits for Epoxy Before Filler or Sealer

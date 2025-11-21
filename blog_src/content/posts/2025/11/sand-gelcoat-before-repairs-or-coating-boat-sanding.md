@@ -1,12 +1,29 @@
 ---
-title: "Sand Gelcoat Before Repairs Or Coating"
-date: 2025-11-03T23:56:18.628525+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/sand-gelcoat-before-repairs-or-coating-boat-sanding/cards/facebook/sand-gelcoat-before-repairs-or-coating-boat-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/sand-gelcoat-before-repairs-or-coating-boat-sanding/cards/instagram/sand-gelcoat-before-repairs-or-coating-boat-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/sand-gelcoat-before-repairs-or-coating-boat-sanding/cards/pinterest/sand-gelcoat-before-repairs-or-coating-boat-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/sand-gelcoat-before-repairs-or-coating-boat-sanding/cards/facebook/sand-gelcoat-before-repairs-or-coating-boat-sanding.jpg
+categories:
+- Marine Sanding
+date: 2025-11-03 23:56:18.628525+00:00
+description: 'Engineer-tested guide to boat sanding gelcoat for repairs or recoating:
+  grits, tools, wet vs dry, adhesion science, and step-by-step prep.'
 draft: false
-slug: "sand-gelcoat-before-repairs-or-coating-boat-sanding"
-categories: ['Marine Sanding']
-tags: ['grit-100', 'grit-120', 'grit-180', 'grit-220', 'grit-280', 'grit-320', 'grit-600', 'dry sanding', 'dust control', 'wet sanding']
-author: "David Chen"
-description: "Engineer-tested guide to boat sanding gelcoat for repairs or recoating: grits, tools, wet vs dry, adhesion science, and step-by-step prep."
+slug: sand-gelcoat-before-repairs-or-coating-boat-sanding
+tags:
+- grit-100
+- grit-120
+- grit-180
+- grit-220
+- grit-280
+- grit-320
+- grit-600
+- dry sanding
+- dust control
+- wet sanding
+title: Sand Gelcoat Before Repairs Or Coating
 ---
 
 # Boat sanding for gelcoat repairs: prep and technique

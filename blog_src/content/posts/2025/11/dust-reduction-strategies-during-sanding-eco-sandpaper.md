@@ -1,12 +1,24 @@
 ---
-title: "Dust Reduction Strategies During Sanding"
-date: 2025-11-09T13:28:15.176809+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/09/dust-reduction-strategies-during-sanding-eco-sandpaper/cards/facebook/dust-reduction-strategies-during-sanding-eco-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/09/dust-reduction-strategies-during-sanding-eco-sandpaper/cards/instagram/dust-reduction-strategies-during-sanding-eco-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/09/dust-reduction-strategies-during-sanding-eco-sandpaper/cards/pinterest/dust-reduction-strategies-during-sanding-eco-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/09/dust-reduction-strategies-during-sanding-eco-sandpaper/cards/facebook/dust-reduction-strategies-during-sanding-eco-sandpaper.jpg
+categories:
+- Eco & Non-Toxic Abrasives
+date: 2025-11-09 13:28:15.176809+00:00
+description: Cut dust at the source with smart sanding tactics, from vacuums and eco
+  sandpaper to room containment and cleanup. Clear steps for cleaner, safer projects.
 draft: false
-slug: "dust-reduction-strategies-during-sanding-eco-sandpaper"
-categories: ['Eco & Non-Toxic Abrasives']
-tags: ['grit-100', 'grit-400', 'dust control', 'dry sanding', 'grit progression']
-author: "Emily Novak"
-description: "Cut dust at the source with smart sanding tactics, from vacuums and eco sandpaper to room containment and cleanup. Clear steps for cleaner, safer projects."
+slug: dust-reduction-strategies-during-sanding-eco-sandpaper
+tags:
+- grit-100
+- grit-400
+- dust control
+- dry sanding
+- grit progression
+title: Dust Reduction Strategies During Sanding
 ---
 
 # Eco sandpaper and dust-free sanding strategies

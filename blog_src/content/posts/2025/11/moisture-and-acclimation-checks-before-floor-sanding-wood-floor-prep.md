@@ -1,13 +1,24 @@
 ---
-title: "Moisture And Acclimation Checks Before Floor Sanding"
-date: 2025-11-10T21:54:27.974604+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/10/moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep/cards/facebook/moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/10/moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep/cards/instagram/moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/10/moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep/cards/pinterest/moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/10/moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep/cards/facebook/moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep.jpg
+categories:
+- Floor & Deck Sanding
+date: 2025-11-10 21:54:27.974604+00:00
+description: Moisture and acclimation checks for wood floor prep. Learn how to test,
+  stabilize, and time sanding for flat, durable finishes and zero surprises.
 draft: false
-slug: "moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep"
-categories: ['Floor & Deck Sanding']
-tags: ['grit-80', 'grit-220', 'dry sanding', 'grit progression']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/13.webp"
-description: "Moisture and acclimation checks for wood floor prep. Learn how to test, stabilize, and time sanding for flat, durable finishes and zero surprises."
+image: https://blog.equalle.com/images/brand/13.webp
+slug: moisture-and-acclimation-checks-before-floor-sanding-wood-floor-prep
+tags:
+- grit-80
+- grit-220
+- dry sanding
+- grit progression
+title: Moisture And Acclimation Checks Before Floor Sanding
 ---
 
 # Wood floor prep: moisture and acclimation before sanding

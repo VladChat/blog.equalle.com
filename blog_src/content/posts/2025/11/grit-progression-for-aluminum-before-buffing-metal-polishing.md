@@ -1,12 +1,24 @@
 ---
-title: "Grit Progression For Aluminum Before Buffing"
-date: 2025-11-02T23:37:34.125322+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/02/grit-progression-for-aluminum-before-buffing-metal-polishing/cards/facebook/grit-progression-for-aluminum-before-buffing-metal-polishing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/02/grit-progression-for-aluminum-before-buffing-metal-polishing/cards/instagram/grit-progression-for-aluminum-before-buffing-metal-polishing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/02/grit-progression-for-aluminum-before-buffing-metal-polishing/cards/pinterest/grit-progression-for-aluminum-before-buffing-metal-polishing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/02/grit-progression-for-aluminum-before-buffing-metal-polishing/cards/facebook/grit-progression-for-aluminum-before-buffing-metal-polishing.jpg
+categories:
+- Metal Polishing & Rust Repair
+date: 2025-11-02 23:37:34.125322+00:00
+description: Learn grit progression for aluminum and master metal polishing. Achieve
+  a flawless finish with our step-by-step guide and expert tips.
 draft: false
-slug: "grit-progression-for-aluminum-before-buffing-metal-polishing"
-categories: ['Metal Polishing & Rust Repair']
-tags: ['metal polishing', 'grit progression', 'wet sanding', 'clear coat', 'sanding block']
-author: "Lucas Moreno"
-description: "Learn grit progression for aluminum and master metal polishing. Achieve a flawless finish with our step-by-step guide and expert tips."
+slug: grit-progression-for-aluminum-before-buffing-metal-polishing
+tags:
+- metal polishing
+- grit progression
+- wet sanding
+- clear coat
+- sanding block
+title: Grit Progression For Aluminum Before Buffing
 ---
 
 # Mastering Metal Polishing: Grit Progression for Aluminum

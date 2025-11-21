@@ -1,12 +1,29 @@
 ---
-title: "Soak Time For Wet Sanding Papers"
-date: 2025-11-03T19:47:57.606760+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/soak-time-for-wet-sanding-papers-wet-dry-sandpaper/cards/facebook/soak-time-for-wet-sanding-papers-wet-dry-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/soak-time-for-wet-sanding-papers-wet-dry-sandpaper/cards/instagram/soak-time-for-wet-sanding-papers-wet-dry-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/soak-time-for-wet-sanding-papers-wet-dry-sandpaper/cards/pinterest/soak-time-for-wet-sanding-papers-wet-dry-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/soak-time-for-wet-sanding-papers-wet-dry-sandpaper/cards/facebook/soak-time-for-wet-sanding-papers-wet-dry-sandpaper.jpg
+categories:
+- Waterproof & Wet/Dry Paper
+date: 2025-11-03 19:47:57.606760+00:00
+description: Learn the optimal soak times for wet dry sandpaper, how soaking affects
+  abrasive performance, and precise workflows for wood, paint, and metal.
 draft: false
-slug: "soak-time-for-wet-sanding-papers-wet-dry-sandpaper"
-categories: ['Waterproof & Wet/Dry Paper']
-tags: ['grit-280', 'grit-320', 'grit-600', 'grit-800', 'grit-1000', 'grit-1200', 'grit-1500', 'grit-2000', 'grit-3000', 'wet sanding']
-author: "Mark Jensen"
-description: "Learn the optimal soak times for wet dry sandpaper, how soaking affects abrasive performance, and precise workflows for wood, paint, and metal."
+slug: soak-time-for-wet-sanding-papers-wet-dry-sandpaper
+tags:
+- grit-280
+- grit-320
+- grit-600
+- grit-800
+- grit-1000
+- grit-1200
+- grit-1500
+- grit-2000
+- grit-3000
+- wet sanding
+title: Soak Time For Wet Sanding Papers
 ---
 
 # Wet Dry Sandpaper Soak Times: A Technical Guide

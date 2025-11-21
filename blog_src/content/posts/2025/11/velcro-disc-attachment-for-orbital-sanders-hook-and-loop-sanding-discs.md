@@ -1,12 +1,27 @@
 ---
-title: "Velcro Disc Attachment For Orbital Sanders"
-date: 2025-11-03T04:51:13.608301+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/03/velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs/cards/facebook/velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/03/velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs/cards/instagram/velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/03/velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs/cards/pinterest/velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/03/velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs/cards/facebook/velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs.jpg
+categories:
+- Hook-and-Loop Discs
+date: 2025-11-03 04:51:13.608301+00:00
+description: Engineer-tested guide to hook and loop sanding discs, from pad heat and
+  disc selection to failure modes, setup tips, and performance tests.
 draft: false
-slug: "velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs"
-categories: ['Hook-and-Loop Discs']
-tags: ['grit-80', 'grit-120', 'grit-150', 'grit-180', 'grit-220', 'grit-240', 'grit-320', 'orbital sander']
-author: "David Chen"
-description: "Engineer-tested guide to hook and loop sanding discs, from pad heat and disc selection to failure modes, setup tips, and performance tests."
+slug: velcro-disc-attachment-for-orbital-sanders-hook-and-loop-sanding-discs
+tags:
+- grit-80
+- grit-120
+- grit-150
+- grit-180
+- grit-220
+- grit-240
+- grit-320
+- orbital sander
+title: Velcro Disc Attachment For Orbital Sanders
 ---
 
 # Hook and Loop Sanding Discs for Orbital Sanders
