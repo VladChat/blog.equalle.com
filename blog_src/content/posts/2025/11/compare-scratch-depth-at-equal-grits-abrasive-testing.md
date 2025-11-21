@@ -1,13 +1,24 @@
 ---
-title: "Compare Scratch Depth At Equal Grits"
-date: 2025-11-21T02:06:34.054184+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/21/compare-scratch-depth-at-equal-grits-abrasive-testing/cards/facebook/compare-scratch-depth-at-equal-grits-abrasive-testing.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/21/compare-scratch-depth-at-equal-grits-abrasive-testing/cards/instagram/compare-scratch-depth-at-equal-grits-abrasive-testing.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/21/compare-scratch-depth-at-equal-grits-abrasive-testing/cards/pinterest/compare-scratch-depth-at-equal-grits-abrasive-testing.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/21/compare-scratch-depth-at-equal-grits-abrasive-testing/cards/facebook/compare-scratch-depth-at-equal-grits-abrasive-testing.jpg
+categories:
+- Abrasive Innovation & Testing
+date: 2025-11-21 02:06:34.054184+00:00
+description: Learn how to compare scratch depth at equal grits with practical abrasive
+  testing, real workshop steps, and pro tips for wood, metal, and composites.
 draft: false
-slug: "compare-scratch-depth-at-equal-grits-abrasive-testing"
-categories: ['Abrasive Innovation & Testing']
-tags: ['grit-120', 'grit-220', 'wet sanding', 'sanding block']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/19.webp"
-description: "Learn how to compare scratch depth at equal grits with practical abrasive testing, real workshop steps, and pro tips for wood, metal, and composites."
+image: https://blog.equalle.com/images/brand/19.webp
+slug: compare-scratch-depth-at-equal-grits-abrasive-testing
+tags:
+- grit-120
+- grit-220
+- wet sanding
+- sanding block
+title: Compare Scratch Depth At Equal Grits
 ---
 
 # Abrasive Testing: Compare Scratch Depth at Equal Grits
