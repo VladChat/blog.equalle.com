@@ -1,0 +1,125 @@
+{{/* ============================================================
+   File: layouts/partials/templates/opengraph.html
+   Purpose: Unified OpenGraph + Twitter Cards (Best Practice)
+   Author: eQualle System
+   Updated: 2025-11-20
+============================================================ */}}
+
+{{- $isProd := or hugo.IsProduction (eq site.Params.env "production") -}}
+{{- if not $isProd }}{{ return }}{{ end }}
+
+{{/* ------------------------------------------------------------
+     1) DESCRIPTION (~200 chars) с fallback на site.Params.description
+------------------------------------------------------------ */}}
+{{- $rawDesc := .Description | default (plainify .Summary) -}}
+{{- if not $rawDesc }}
+  {{- $rawDesc = site.Params.description | default site.Title -}}
+{{- end }}
+{{- $desc := cond (gt (len $rawDesc) 200) (truncate 200 $rawDesc) $rawDesc -}}
+
+{{/* ------------------------------------------------------------
+     2) IMAGE SELECTION PRIORITY:
+        1) .Params.cards (facebook / twitter / instagram / pinterest)
+        2) .Params.image
+        3) hero* resource
+        4) site.Params.defaultOGImage
+        5) fallback "/images/equalle-cover-16x9.webp"
+------------------------------------------------------------ */}}
+
+{{- $ogImg := "" }}
+
+{{/* 2.1) Social cards (highest priority) */}}
+{{- with .Params.cards }}
+  {{- if .facebook }}
+    {{- $ogImg = .facebook | absURL -}}
+  {{- else if .twitter }}
+    {{- $ogImg = .twitter | absURL -}}
+  {{- else if .instagram }}
+    {{- $ogImg = .instagram | absURL -}}
+  {{- else if .pinterest }}
+    {{- $ogImg = .pinterest | absURL -}}
+  {{- end }}
+{{- end }}
+
+{{/* 2.2) .Params.image */}}
+{{- if not $ogImg }}
+  {{- with .Params.image }}
+    {{- $ogImg = . | absURL -}}
+  {{- end }}
+{{- end }}
+
+{{/* 2.3) hero-* resource */}}
+{{- if not $ogImg }}
+  {{- with .Resources.GetMatch "hero*" }}
+    {{- $ogImg = .Permalink -}}
+  {{- end }}
+{{- end }}
+
+{{/* 2.4) site default image */}}
+{{- if not $ogImg }}
+  {{- with site.Params.defaultOGImage }}
+    {{- $ogImg = . | absURL -}}
+  {{- end }}
+{{- end }}
+
+{{/* 2.5) Hard fallback */}}
+{{- if not $ogImg }}
+  {{- $ogImg = "/images/equalle-cover-16x9.webp" | absURL }}
+{{- end }}
+
+{{/* Alt-текст для изображения (OG + Twitter) */}}
+{{- $ogImgAlt := .Params.ogImageAlt | default (printf "%s — %s" (.Title | plainify) site.Title) -}}
+
+{{/* ------------------------------------------------------------
+     3) Тип страницы для OpenGraph
+        - Главная/таксономии → website
+        - Обычные страницы/посты → article
+------------------------------------------------------------ */}}
+{{- $ogType := "website" -}}
+{{- if (and .IsPage (not .IsHome)) }}
+  {{- $ogType = "article" -}}
+{{- end }}
+
+{{/* ------------------------------------------------------------
+     4) Emit OG + Twitter tags
+------------------------------------------------------------ */}}
+
+<!-- === OpenGraph === -->
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ .Title | plainify }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:locale" content="{{ .Language.Lang }}">
+<meta property="og:type" content="{{ $ogType }}">
+
+<meta property="og:image" content="{{ $ogImg }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ $ogImgAlt }}">
+
+{{- with .Params.categories }}
+  {{- range . }}
+    <meta property="article:section" content="{{ . }}">
+  {{- end }}
+{{- end }}
+
+{{- with .Params.tags }}
+  {{- range . }}
+    <meta property="article:tag" content="{{ . }}">
+  {{- end }}
+{{- end }}
+
+{{- with .PublishDate }}
+  <meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+
+{{- with .Lastmod }}
+  <meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+
+<!-- === Twitter (reuse OG data) === -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title | plainify }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $ogImg }}">
+<meta name="twitter:image:alt" content="{{ $ogImgAlt }}">
