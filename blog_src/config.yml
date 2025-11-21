@@ -13,6 +13,9 @@ layoutDir: "layouts"
 server:
   baseURLRedirects: false
 
+services:
+  rss:
+    limit: 100
 
 pagination:
   pagerSize: 10
@@ -97,7 +100,6 @@ params:
     includeNewer: true
     sortByDate: false
 
-# Allow raw HTML in Markdown (for <figure>, <img>, etc.)
 markup:
   goldmark:
     renderer:
