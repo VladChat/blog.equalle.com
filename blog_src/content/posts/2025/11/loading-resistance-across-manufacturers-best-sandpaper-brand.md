@@ -1,13 +1,23 @@
 ---
-title: "Loading Resistance Across Manufacturers"
-date: 2025-11-20T13:36:23.259311+00:00
+author: Emily Novak
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/20/loading-resistance-across-manufacturers-best-sandpaper-brand/cards/facebook/loading-resistance-across-manufacturers-best-sandpaper-brand.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/20/loading-resistance-across-manufacturers-best-sandpaper-brand/cards/instagram/loading-resistance-across-manufacturers-best-sandpaper-brand.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/20/loading-resistance-across-manufacturers-best-sandpaper-brand/cards/pinterest/loading-resistance-across-manufacturers-best-sandpaper-brand.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/20/loading-resistance-across-manufacturers-best-sandpaper-brand/cards/facebook/loading-resistance-across-manufacturers-best-sandpaper-brand.jpg
+categories:
+- Brand & Quality Comparison
+date: 2025-11-20 13:36:23.259311+00:00
+description: Discover which sandpaper brands resist loading best and why—practical
+  tests, materials science, and pro tips to keep abrasives cutting longer.
 draft: false
-slug: "loading-resistance-across-manufacturers-best-sandpaper-brand"
-categories: ['Brand & Quality Comparison']
-tags: ['grit-150', 'joint compound', 'grit progression']
-author: "Emily Novak"
-image: "https://blog.equalle.com/images/brand/13.webp"
-description: "Discover which sandpaper brands resist loading best and why—practical tests, materials science, and pro tips to keep abrasives cutting longer."
+image: https://blog.equalle.com/images/brand/13.webp
+slug: loading-resistance-across-manufacturers-best-sandpaper-brand
+tags:
+- grit-150
+- joint compound
+- grit progression
+title: Loading Resistance Across Manufacturers
 ---
 
 # Best sandpaper brand for loading resistance

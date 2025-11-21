@@ -1,13 +1,24 @@
 ---
-title: "Hand Sanding Versus Power Sanding Comparison"
-date: 2025-11-20T16:50:43.339818+00:00
+author: David Chen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/20/hand-sanding-versus-power-sanding-comparison-hand-sanding/cards/facebook/hand-sanding-versus-power-sanding-comparison-hand-sanding.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/20/hand-sanding-versus-power-sanding-comparison-hand-sanding/cards/instagram/hand-sanding-versus-power-sanding-comparison-hand-sanding.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/20/hand-sanding-versus-power-sanding-comparison-hand-sanding/cards/pinterest/hand-sanding-versus-power-sanding-comparison-hand-sanding.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/20/hand-sanding-versus-power-sanding-comparison-hand-sanding/cards/facebook/hand-sanding-versus-power-sanding-comparison-hand-sanding.jpg
+categories:
+- Hand Sanding Techniques
+date: 2025-11-20 16:50:43.339818+00:00
+description: 'Engineer’s comparison of hand sanding and power sanding: surface finish,
+  speed, dust, cost, and workflow tips for wood, metal, and paint.'
 draft: false
-slug: "hand-sanding-versus-power-sanding-comparison-hand-sanding"
-categories: ['Hand Sanding Techniques']
-tags: ['grit-120', 'grit-180', 'grit-320', 'grit progression']
-author: "David Chen"
-image: "https://blog.equalle.com/images/brand/17.webp"
-description: "Engineer’s comparison of hand sanding and power sanding: surface finish, speed, dust, cost, and workflow tips for wood, metal, and paint."
+image: https://blog.equalle.com/images/brand/17.webp
+slug: hand-sanding-versus-power-sanding-comparison-hand-sanding
+tags:
+- grit-120
+- grit-180
+- grit-320
+- grit progression
+title: Hand Sanding Versus Power Sanding Comparison
 ---
 
 # Hand sanding vs power sanding: an engineer’s guide

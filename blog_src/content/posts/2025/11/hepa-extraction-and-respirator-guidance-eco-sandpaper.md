@@ -1,13 +1,25 @@
 ---
-title: "Hepa Extraction And Respirator Guidance"
-date: 2025-11-20T15:29:07.290530+00:00
+author: Mark Jensen
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/20/hepa-extraction-and-respirator-guidance-eco-sandpaper/cards/facebook/hepa-extraction-and-respirator-guidance-eco-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/20/hepa-extraction-and-respirator-guidance-eco-sandpaper/cards/instagram/hepa-extraction-and-respirator-guidance-eco-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/20/hepa-extraction-and-respirator-guidance-eco-sandpaper/cards/pinterest/hepa-extraction-and-respirator-guidance-eco-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/20/hepa-extraction-and-respirator-guidance-eco-sandpaper/cards/facebook/hepa-extraction-and-respirator-guidance-eco-sandpaper.jpg
+categories:
+- Eco & Non-Toxic Abrasives
+date: 2025-11-20 15:29:07.290530+00:00
+description: Practical HEPA extraction and respirator guidance for sanding workflows,
+  with eco sandpaper selection, fit testing, and lead-safe cleanup best practices.
 draft: false
-slug: "hepa-extraction-and-respirator-guidance-eco-sandpaper"
-categories: ['Eco & Non-Toxic Abrasives']
-tags: ['grit-100', 'grit-150', 'grit-180', 'grit-320', 'grit progression']
-author: "Mark Jensen"
-image: "https://blog.equalle.com/images/brand/15.webp"
-description: "Practical HEPA extraction and respirator guidance for sanding workflows, with eco sandpaper selection, fit testing, and lead-safe cleanup best practices."
+image: https://blog.equalle.com/images/brand/15.webp
+slug: hepa-extraction-and-respirator-guidance-eco-sandpaper
+tags:
+- grit-100
+- grit-150
+- grit-180
+- grit-320
+- grit progression
+title: Hepa Extraction And Respirator Guidance
 ---
 
 # HEPA Extraction and Respirators with eco sandpaper

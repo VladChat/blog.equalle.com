@@ -1,13 +1,25 @@
 ---
-title: "Paper Weight And Flexibility Differences"
-date: 2025-11-20T05:56:56.381256+00:00
+author: Lucas Moreno
+cards:
+  facebook: https://blog.equalle.com/posts/2025/11/20/paper-weight-and-flexibility-differences-open-coat-sandpaper/cards/facebook/paper-weight-and-flexibility-differences-open-coat-sandpaper.jpg
+  instagram: https://blog.equalle.com/posts/2025/11/20/paper-weight-and-flexibility-differences-open-coat-sandpaper/cards/instagram/paper-weight-and-flexibility-differences-open-coat-sandpaper.jpg
+  pinterest: https://blog.equalle.com/posts/2025/11/20/paper-weight-and-flexibility-differences-open-coat-sandpaper/cards/pinterest/paper-weight-and-flexibility-differences-open-coat-sandpaper.jpg
+  twitter: https://blog.equalle.com/posts/2025/11/20/paper-weight-and-flexibility-differences-open-coat-sandpaper/cards/facebook/paper-weight-and-flexibility-differences-open-coat-sandpaper.jpg
+categories:
+- Backing Types & Coatings
+date: 2025-11-20 05:56:56.381256+00:00
+description: Understand paper weight, flexibility, and when to use open coat sandpaper
+  for cleaner cuts, fewer clogs, and pro-grade finishes in wood and metalwork.
 draft: false
-slug: "paper-weight-and-flexibility-differences-open-coat-sandpaper"
-categories: ['Backing Types & Coatings']
-tags: ['grit-150', 'orbital sander', 'sanding block', 'grit progression', 'wet sanding']
-author: "Lucas Moreno"
-image: "https://blog.equalle.com/images/brand/11.webp"
-description: "Understand paper weight, flexibility, and when to use open coat sandpaper for cleaner cuts, fewer clogs, and pro-grade finishes in wood and metalwork."
+image: https://blog.equalle.com/images/brand/11.webp
+slug: paper-weight-and-flexibility-differences-open-coat-sandpaper
+tags:
+- grit-150
+- orbital sander
+- sanding block
+- grit progression
+- wet sanding
+title: Paper Weight And Flexibility Differences
 ---
 
 # Open Coat Sandpaper, Paper Weight, and Flexibility
