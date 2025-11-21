@@ -1,7 +1,7 @@
 # ============================================
 # File: blog_src/scripts/cards/update_front_matter.py
 # Purpose: Inject social card URLs into Markdown front matter
-# Works with single-file posts (*.md) and updates ONLY latest 5 posts
+# Now updates ALL posts (limit removed)
 # ============================================
 
 from __future__ import annotations
@@ -123,13 +123,13 @@ def main():
 
     dated.sort(key=lambda x: x[0], reverse=True)
 
-    latest_posts = [md for _, md in dated[:5]]
+    all_posts = [md for _, md in dated]
 
-    print("[info] Latest 5 posts to update:")
-    for p in latest_posts:
+    print("[info] Updating ALL posts:")
+    for p in all_posts:
         print(" -", p)
 
-    for md in latest_posts:
+    for md in all_posts:
         update_front_matter(md)
 
 

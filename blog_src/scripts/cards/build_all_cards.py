@@ -1,6 +1,6 @@
 # ============================================
 # File: scripts/cards/build_all_cards.py
-# Orchestrate card generation for latest posts
+# Orchestrate card generation for ALL posts
 # ============================================
 
 from __future__ import annotations
@@ -21,18 +21,20 @@ def ensure_output_dir(path: Path) -> None:
         parent.mkdir(parents=True, exist_ok=True)
 
 
-def build_all_cards(limit_posts: int = 5) -> None:
+def build_all_cards(limit_posts: int | None = None) -> None:
     """Основной сценарий:
-      - берём последние N постов,
+      - берём ВСЕ посты (лимит отключён),
       - для каждой зарегистрированной платформы проверяем наличие карточки,
       - если карточки нет — выбираем шаблон и генерируем.
 
     Карточки сохраняются по схеме:
-      blog_src/content/posts/<year>/<month>/cards/<platform>/<slug>.jpg
+      blog_src/content/posts/<year>/<month>/<day>/<slug>/cards/<platform>/<slug>.jpg
     """
-    print(f"[cards][build] === Старт генерации карточек для последних {limit_posts} постов ===")
 
-    posts = get_latest_posts(limit=limit_posts)
+    print("[cards][build] === Старт генерации карточек для ВСЕХ постов ===")
+
+    # Получаем все посты: limit=None → значит "все"
+    posts = get_latest_posts(limit=None)
     platforms = get_platforms()
 
     if not posts:
@@ -41,6 +43,7 @@ def build_all_cards(limit_posts: int = 5) -> None:
 
     platform_names = [p.config.name for p in platforms]
     print(f"[cards][build] Зарегистрированные платформы: {platform_names}")
+    print(f"[cards][build] Найдено постов: {len(posts)}")
 
     for post in posts:
         print(f"[cards][build] --- Обработка поста: {post.slug!r} | {post.date.isoformat()} ---")
@@ -75,4 +78,5 @@ def build_all_cards(limit_posts: int = 5) -> None:
 
 
 if __name__ == "__main__":
-    build_all_cards(limit_posts=5)
+    # Запуск без лимита: генерируем карточки для ВСЕХ постов
+    build_all_cards(limit_posts=None)
