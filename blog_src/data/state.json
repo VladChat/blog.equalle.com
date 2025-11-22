@@ -1,5 +1,5 @@
 {
-  "category_index": 6,
+  "category_index": 7,
   "per_category": {
     "wood-sanding": {
       "core_idx": 4,
@@ -26,7 +26,7 @@
       "longtail_idx": 0
     },
     "wet-sanding-clear-coat": {
-      "core_idx": 3,
+      "core_idx": 4,
       "longtail_idx": 0
     },
     "headlight-restoration": {
@@ -150,10 +150,8 @@
       "longtail_idx": 3
     }
   },
-  "brandimg_index": 2,
+  "brandimg_index": 4,
   "brandimg_used": [
-    "12.webp",
-    "13.webp",
     "14.webp",
     "15.webp",
     "16.webp",
@@ -171,7 +169,9 @@
     "28.webp",
     "29.webp",
     "01.webp",
-    "02.webp"
+    "02.webp",
+    "03.webp",
+    "04.webp"
   ],
   "used_pairs": [
     {
@@ -641,48 +641,53 @@
     {
       "seed": "block sanding",
       "longtail": "block sanding techniques to straighten wavy panels"
+    },
+    {
+      "seed": "orange peel removal",
+      "longtail": "full orange peel removal versus texture match to oem finish"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
     "25_pack_Grit 1000",
-    "50_pack_Grit 320",
     "50_pack_Grit 120",
-    "10_pack_Grit 220",
-    "25_pack_Grit 240",
-    "10_pack_Grit 180",
-    "50_pack_Grit 1000",
-    "25_pack_Grit 120",
-    "25_pack_Grit 100",
-    "50_pack_Grit 800",
-    "25_pack_Grit 80",
-    "25_pack_Grit 220",
-    "10_pack_Grit 320",
-    "10_pack_Grit 150",
-    "100_pack_Grit 120",
-    "50_pack_Grit 220",
     "100_pack_Grit 280",
-    "25_pack_Grit 800",
-    "50_pack_Grit 240",
-    "100_pack_Grit 180",
-    "100_pack_Grit 150",
-    "50_pack_Grit 280",
-    "25_pack_Grit 150",
-    "100_pack_Grit 320",
-    "50_pack_Grit 150",
-    "25_pack_Grit 180",
-    "100_pack_Grit 800",
-    "50_pack_Grit 80",
-    "10_pack_Grit 120",
-    "50_pack_Grit 180",
-    "100_pack_Grit 220",
-    "100_pack_Grit 240",
-    "10_pack_Grit 280",
-    "10_pack_Grit 1000",
-    "25_pack_Grit 280",
-    "10_pack_Grit 800",
-    "25_pack_Grit 320",
     "10_pack_Grit 240",
-    "100_pack_Grit 1000"
+    "25_pack_Grit 150",
+    "25_pack_Grit 800",
+    "25_pack_Grit 240",
+    "100_pack_Grit 240",
+    "10_pack_Grit 220",
+    "10_pack_Grit 320",
+    "25_pack_Grit 180",
+    "10_pack_Grit 180",
+    "25_pack_Grit 1500",
+    "100_pack_Grit 800",
+    "50_pack_Grit 150",
+    "10_pack_Grit 150",
+    "25_pack_Grit 220",
+    "10_pack_Grit 120",
+    "25_pack_Grit 280",
+    "50_pack_Grit 180",
+    "50_pack_Grit 320",
+    "50_pack_Grit 280",
+    "100_pack_Grit 1000",
+    "10_pack_Grit 800",
+    "100_pack_Grit 120",
+    "50_pack_Grit 800",
+    "10_pack_Grit 280",
+    "25_pack_Grit 100",
+    "25_pack_Grit 120",
+    "50_pack_Grit 80",
+    "25_pack_Grit 320",
+    "25_pack_Grit 80",
+    "100_pack_Grit 220",
+    "50_pack_Grit 1000",
+    "100_pack_Grit 180",
+    "50_pack_Grit 220",
+    "100_pack_Grit 150",
+    "100_pack_Grit 320",
+    "50_pack_Grit 240",
+    "10_pack_Grit 1000"
   ]
 }
