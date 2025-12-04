@@ -1,5 +1,5 @@
 {
-  "category_index": 31,
+  "category_index": 32,
   "per_category": {
     "wood-sanding": {
       "core_idx": 4,
@@ -127,7 +127,7 @@
     },
     "abrasive-materials-compounds": {
       "core_idx": 0,
-      "longtail_idx": 3
+      "longtail_idx": 4
     },
     "backing-types-coatings": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 3
     }
   },
-  "brandimg_index": 21,
+  "brandimg_index": 23,
   "brandimg_used": [
-    "02.webp",
-    "03.webp",
     "04.webp",
     "05.webp",
     "06.webp",
@@ -171,7 +169,9 @@
     "18.webp",
     "19.webp",
     "20.webp",
-    "21.webp"
+    "21.webp",
+    "22.webp",
+    "23.webp"
   ],
   "used_pairs": [
     {
@@ -737,11 +737,16 @@
     {
       "seed": "concrete polishing",
       "longtail": "slurry management during wet grinding"
+    },
+    {
+      "seed": "silicon carbide sandpaper",
+      "longtail": "open coat versus closed coat impacts"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
+    "25_pack_Grit 800",
     "25_pack_Grit 150",
-    "25_pack_Grit 800"
+    "25_pack_Grit 220"
   ]
 }
