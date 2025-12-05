@@ -1,5 +1,5 @@
 {
-  "category_index": 36,
+  "category_index": 0,
   "per_category": {
     "wood-sanding": {
       "core_idx": 4,
@@ -147,13 +147,11 @@
     },
     "abrasive-innovation-testing": {
       "core_idx": 0,
-      "longtail_idx": 3
+      "longtail_idx": 4
     }
   },
-  "brandimg_index": 2,
+  "brandimg_index": 4,
   "brandimg_used": [
-    "12.webp",
-    "13.webp",
     "14.webp",
     "15.webp",
     "16.webp",
@@ -171,7 +169,9 @@
     "28.webp",
     "29.webp",
     "01.webp",
-    "02.webp"
+    "02.webp",
+    "03.webp",
+    "04.webp"
   ],
   "used_pairs": [
     {
@@ -757,16 +757,21 @@
     {
       "seed": "hand sanding",
       "longtail": "wrap sandpaper around dowels for curved edges"
+    },
+    {
+      "seed": "abrasive testing",
+      "longtail": "microscope inspection of scratch patterns"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
+    "50_pack_Grit 240",
+    "25_pack_Grit 240",
+    "25_pack_Grit 220",
+    "100_pack_Grit 220",
+    "10_pack_Grit 220",
     "25_pack_Grit 150",
     "50_pack_Grit 220",
-    "25_pack_Grit 240",
-    "100_pack_Grit 220",
-    "25_pack_Grit 800",
-    "10_pack_Grit 220",
-    "25_pack_Grit 220"
+    "25_pack_Grit 800"
   ]
 }
