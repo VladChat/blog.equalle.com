@@ -1,5 +1,5 @@
 {
-  "category_index": 18,
+  "category_index": 19,
   "per_category": {
     "wood-sanding": {
       "core_idx": 0,
@@ -75,7 +75,7 @@
     },
     "psa-discs": {
       "core_idx": 0,
-      "longtail_idx": 4
+      "longtail_idx": 5
     },
     "interface-backing-pads": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 4
     }
   },
-  "brandimg_index": 11,
+  "brandimg_index": 13,
   "brandimg_used": [
-    "21.webp",
-    "22.webp",
     "23.webp",
     "24.webp",
     "25.webp",
@@ -171,7 +169,9 @@
     "08.webp",
     "09.webp",
     "10.webp",
-    "11.webp"
+    "11.webp",
+    "12.webp",
+    "13.webp"
   ],
   "used_pairs": [
     {
@@ -833,35 +833,40 @@
     {
       "seed": "hook and loop sanding discs",
       "longtail": "avoid edge lift at high rpm"
+    },
+    {
+      "seed": "psa sanding discs",
+      "longtail": "best grits for leveling primer"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "50_pack_Grit 280",
-    "50_pack_Grit 240",
-    "10_pack_Grit 280",
     "100_pack_Grit 240",
-    "25_pack_Grit 180",
-    "50_pack_Grit 220",
-    "10_pack_Grit 800",
-    "25_pack_Grit 240",
-    "100_pack_Grit 180",
-    "50_pack_Grit 800",
-    "25_pack_Grit 1000",
-    "10_pack_Grit 240",
-    "100_pack_Grit 280",
-    "50_pack_Grit 180",
-    "25_pack_Grit 220",
-    "25_pack_Grit 280",
-    "50_pack_Grit 150",
-    "25_pack_Grit 150",
+    "10_pack_Grit 220",
     "25_pack_Grit 80",
-    "25_pack_Grit 800",
-    "100_pack_Grit 800",
-    "25_pack_Grit 320",
-    "10_pack_Grit 180",
+    "10_pack_Grit 280",
     "100_pack_Grit 220",
+    "50_pack_Grit 220",
+    "100_pack_Grit 800",
+    "100_pack_Grit 180",
+    "25_pack_Grit 800",
+    "50_pack_Grit 180",
+    "50_pack_Grit 240",
+    "100_pack_Grit 280",
+    "25_pack_Grit 1000",
+    "50_pack_Grit 800",
+    "100_pack_Grit 150",
+    "25_pack_Grit 320",
+    "50_pack_Grit 150",
+    "25_pack_Grit 180",
+    "25_pack_Grit 150",
+    "25_pack_Grit 240",
+    "10_pack_Grit 180",
     "50_pack_Grit 1000",
-    "10_pack_Grit 220"
+    "10_pack_Grit 240",
+    "25_pack_Grit 280",
+    "25_pack_Grit 220",
+    "10_pack_Grit 800",
+    "50_pack_Grit 280"
   ]
 }
