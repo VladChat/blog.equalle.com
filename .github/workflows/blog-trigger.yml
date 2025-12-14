@@ -19,13 +19,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Randomly dispatch Blog Writer 1–4 times
+      - name: Randomly dispatch Blog Writer 1–3 times
         env:
           GH_TOKEN: ${{ secrets.PAT_GITHUB }}
         run: |
           # ===========================================
-          # 🔹 Количество запусков в день (1–4)
-          runs=$((1 + RANDOM % 4))
+          # 🔹 Количество запусков в день (1–3)
+          runs=$((1 + RANDOM % 3))
           echo "📅 Will trigger the Blog Writer $runs times today."
 
           # 🔹 Минимальная и максимальная задержка между вызовами (в минутах)
@@ -54,4 +54,5 @@ jobs:
 
       - name: Done
         run: echo "🎯 All scheduled Blog Writer triggers completed."
+
 
