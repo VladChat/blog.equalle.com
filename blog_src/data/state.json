@@ -1,5 +1,5 @@
 {
-  "category_index": 4,
+  "category_index": 5,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -18,7 +18,7 @@
       "longtail_idx": 1
     },
     "floor-deck-sanding": {
-      "core_idx": 0,
+      "core_idx": 1,
       "longtail_idx": 1
     },
     "auto-body-sanding": {
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 28,
+  "brandimg_index": 1,
   "brandimg_used": [
-    "09.webp",
-    "10.webp",
     "11.webp",
     "12.webp",
     "13.webp",
@@ -171,7 +169,9 @@
     "25.webp",
     "26.webp",
     "27.webp",
-    "28.webp"
+    "28.webp",
+    "29.webp",
+    "01.webp"
   ],
   "used_pairs": [
     {
@@ -925,57 +925,62 @@
     {
       "seed": "drywall sanding",
       "longtail": "mesh versus paper for sanding drywall joints"
+    },
+    {
+      "seed": "floor sanding",
+      "longtail": "how to sand floors without chatter marks"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "100_pack_Grit 100",
-    "25_pack_Grit 180",
-    "50_pack_Grit 100",
-    "100_pack_Grit 180",
-    "25_pack_Grit 120",
-    "50_pack_Grit 280",
-    "100_pack_Grit 80",
-    "25_pack_Grit 360",
-    "50_pack_Grit 1500",
-    "10_pack_Grit 280",
-    "50_pack_Grit 220",
-    "50_pack_Grit 320",
-    "50_pack_Grit 1000",
-    "50_pack_Grit 360",
-    "50_pack_Grit 180",
-    "10_pack_Grit 220",
-    "25_pack_Grit 1000",
-    "50_pack_Grit 150",
-    "100_pack_Grit 240",
-    "10_pack_Grit 800",
-    "100_pack_Grit 150",
-    "100_pack_Grit 220",
-    "25_pack_Grit 240",
-    "10_pack_Grit 320",
-    "50_pack_Grit 120",
-    "25_pack_Grit 280",
-    "100_pack_Grit 280",
-    "50_pack_Grit 800",
-    "25_pack_Grit 100",
-    "10_pack_Grit 120",
-    "25_pack_Grit 80",
-    "10_pack_Grit 150",
-    "100_pack_Grit 120",
-    "25_pack_Grit 320",
-    "100_pack_Grit 1000",
-    "10_pack_Grit 100",
-    "100_pack_Grit 800",
-    "10_pack_Grit 240",
-    "10_pack_Grit 80",
-    "25_pack_Grit 220",
     "100_pack_Grit 320",
-    "25_pack_Grit 150",
+    "50_pack_Grit 220",
+    "50_pack_Grit 280",
+    "25_pack_Grit 80",
+    "25_pack_Grit 800",
+    "25_pack_Grit 220",
+    "100_pack_Grit 800",
+    "10_pack_Grit 120",
+    "10_pack_Grit 320",
+    "25_pack_Grit 120",
     "10_pack_Grit 1000",
     "50_pack_Grit 80",
-    "10_pack_Grit 180",
-    "25_pack_Grit 1500",
+    "100_pack_Grit 220",
+    "10_pack_Grit 100",
+    "100_pack_Grit 180",
+    "25_pack_Grit 100",
+    "100_pack_Grit 100",
+    "50_pack_Grit 120",
+    "100_pack_Grit 280",
+    "10_pack_Grit 150",
+    "25_pack_Grit 240",
+    "25_pack_Grit 280",
+    "100_pack_Grit 80",
+    "25_pack_Grit 1000",
+    "25_pack_Grit 360",
+    "50_pack_Grit 100",
+    "10_pack_Grit 80",
+    "10_pack_Grit 800",
     "50_pack_Grit 240",
-    "25_pack_Grit 800"
+    "25_pack_Grit 150",
+    "50_pack_Grit 320",
+    "25_pack_Grit 1500",
+    "100_pack_Grit 240",
+    "25_pack_Grit 180",
+    "100_pack_Grit 150",
+    "50_pack_Grit 150",
+    "10_pack_Grit 220",
+    "50_pack_Grit 180",
+    "50_pack_Grit 360",
+    "100_pack_Grit 1000",
+    "50_pack_Grit 1000",
+    "50_pack_Grit 800",
+    "25_pack_Grit 320",
+    "10_pack_Grit 240",
+    "100_pack_Grit 360",
+    "10_pack_Grit 180",
+    "100_pack_Grit 120",
+    "50_pack_Grit 1500",
+    "10_pack_Grit 280"
   ]
 }
