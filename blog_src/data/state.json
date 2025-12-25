@@ -1,5 +1,5 @@
 {
-  "category_index": 5,
+  "category_index": 6,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -22,8 +22,8 @@
       "longtail_idx": 1
     },
     "auto-body-sanding": {
-      "core_idx": 5,
-      "longtail_idx": 0
+      "core_idx": 0,
+      "longtail_idx": 1
     },
     "wet-sanding-clear-coat": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 1,
+  "brandimg_index": 3,
   "brandimg_used": [
-    "11.webp",
-    "12.webp",
     "13.webp",
     "14.webp",
     "15.webp",
@@ -171,7 +169,9 @@
     "27.webp",
     "28.webp",
     "29.webp",
-    "01.webp"
+    "01.webp",
+    "02.webp",
+    "03.webp"
   ],
   "used_pairs": [
     {
@@ -929,58 +929,14 @@
     {
       "seed": "floor sanding",
       "longtail": "how to sand floors without chatter marks"
+    },
+    {
+      "seed": "DA vs RO sanding",
+      "longtail": "da sander versus random orbital for bodywork preparation"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "100_pack_Grit 320",
-    "50_pack_Grit 220",
-    "50_pack_Grit 280",
-    "25_pack_Grit 80",
-    "25_pack_Grit 800",
-    "25_pack_Grit 220",
-    "100_pack_Grit 800",
-    "10_pack_Grit 120",
-    "10_pack_Grit 320",
-    "25_pack_Grit 120",
-    "10_pack_Grit 1000",
-    "50_pack_Grit 80",
-    "100_pack_Grit 220",
-    "10_pack_Grit 100",
-    "100_pack_Grit 180",
-    "25_pack_Grit 100",
-    "100_pack_Grit 100",
-    "50_pack_Grit 120",
-    "100_pack_Grit 280",
-    "10_pack_Grit 150",
-    "25_pack_Grit 240",
-    "25_pack_Grit 280",
-    "100_pack_Grit 80",
-    "25_pack_Grit 1000",
-    "25_pack_Grit 360",
-    "50_pack_Grit 100",
-    "10_pack_Grit 80",
-    "10_pack_Grit 800",
-    "50_pack_Grit 240",
-    "25_pack_Grit 150",
-    "50_pack_Grit 320",
-    "25_pack_Grit 1500",
-    "100_pack_Grit 240",
-    "25_pack_Grit 180",
-    "100_pack_Grit 150",
-    "50_pack_Grit 150",
-    "10_pack_Grit 220",
-    "50_pack_Grit 180",
-    "50_pack_Grit 360",
-    "100_pack_Grit 1000",
-    "50_pack_Grit 1000",
-    "50_pack_Grit 800",
-    "25_pack_Grit 320",
-    "10_pack_Grit 240",
-    "100_pack_Grit 360",
-    "10_pack_Grit 180",
-    "100_pack_Grit 120",
-    "50_pack_Grit 1500",
-    "10_pack_Grit 280"
+    "25_pack_Grit 80"
   ]
 }
