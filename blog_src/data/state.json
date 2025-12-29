@@ -1,5 +1,5 @@
 {
-  "category_index": 10,
+  "category_index": 11,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -43,7 +43,7 @@
     },
     "between-coats-sanding": {
       "core_idx": 0,
-      "longtail_idx": 5
+      "longtail_idx": 6
     },
     "polishing-finishing": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 11,
+  "brandimg_index": 13,
   "brandimg_used": [
-    "21.webp",
-    "22.webp",
     "23.webp",
     "24.webp",
     "25.webp",
@@ -171,7 +169,9 @@
     "08.webp",
     "09.webp",
     "10.webp",
-    "11.webp"
+    "11.webp",
+    "12.webp",
+    "13.webp"
   ],
   "used_pairs": [
     {
@@ -949,14 +949,19 @@
     {
       "seed": "paint removal sanding",
       "longtail": "how to sand old paint without gouging the substrate"
+    },
+    {
+      "seed": "between coats sanding",
+      "longtail": "avoid cutting through color coats when sanding between"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
     "50_pack_Grit 800",
+    "25_pack_Grit 80",
     "25_pack_Grit 800",
+    "25_pack_Grit 320",
     "50_pack_Grit 220",
-    "25_pack_Grit 220",
-    "25_pack_Grit 80"
+    "25_pack_Grit 220"
   ]
 }
