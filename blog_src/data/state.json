@@ -1,5 +1,5 @@
 {
-  "category_index": 14,
+  "category_index": 15,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -59,7 +59,7 @@
     },
     "sanding-blocks": {
       "core_idx": 0,
-      "longtail_idx": 5
+      "longtail_idx": 6
     },
     "sanding-sponges": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 19,
+  "brandimg_index": 21,
   "brandimg_used": [
-    "29.webp",
-    "01.webp",
     "02.webp",
     "03.webp",
     "04.webp",
@@ -171,7 +169,9 @@
     "16.webp",
     "17.webp",
     "18.webp",
-    "19.webp"
+    "19.webp",
+    "20.webp",
+    "21.webp"
   ],
   "used_pairs": [
     {
@@ -965,18 +965,23 @@
     {
       "seed": "detail sander sheets",
       "longtail": "sequence grits for profiles and corners"
+    },
+    {
+      "seed": "sanding block",
+      "longtail": "cross sanding method for leveling panels"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "25_pack_Grit 800",
-    "100_pack_Grit 220",
-    "25_pack_Grit 320",
-    "50_pack_Grit 800",
-    "25_pack_Grit 220",
-    "25_pack_Grit 80",
-    "50_pack_Grit 220",
+    "10_pack_Grit 220",
     "100_pack_Grit 800",
-    "10_pack_Grit 220"
+    "25_pack_Grit 240",
+    "25_pack_Grit 320",
+    "25_pack_Grit 220",
+    "50_pack_Grit 800",
+    "25_pack_Grit 80",
+    "25_pack_Grit 800",
+    "50_pack_Grit 220",
+    "100_pack_Grit 220"
   ]
 }
