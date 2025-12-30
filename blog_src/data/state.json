@@ -1,5 +1,5 @@
 {
-  "category_index": 13,
+  "category_index": 14,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -55,7 +55,7 @@
     },
     "detail-sander-sheets": {
       "core_idx": 0,
-      "longtail_idx": 5
+      "longtail_idx": 6
     },
     "sanding-blocks": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 17,
+  "brandimg_index": 19,
   "brandimg_used": [
-    "27.webp",
-    "28.webp",
     "29.webp",
     "01.webp",
     "02.webp",
@@ -171,7 +169,9 @@
     "14.webp",
     "15.webp",
     "16.webp",
-    "17.webp"
+    "17.webp",
+    "18.webp",
+    "19.webp"
   ],
   "used_pairs": [
     {
@@ -961,17 +961,22 @@
     {
       "seed": "random orbital sanding",
       "longtail": "proper hand pressure and speed control"
+    },
+    {
+      "seed": "detail sander sheets",
+      "longtail": "sequence grits for profiles and corners"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "100_pack_Grit 800",
-    "25_pack_Grit 80",
-    "25_pack_Grit 320",
-    "100_pack_Grit 220",
     "25_pack_Grit 800",
-    "25_pack_Grit 220",
+    "100_pack_Grit 220",
+    "25_pack_Grit 320",
     "50_pack_Grit 800",
-    "50_pack_Grit 220"
+    "25_pack_Grit 220",
+    "25_pack_Grit 80",
+    "50_pack_Grit 220",
+    "100_pack_Grit 800",
+    "10_pack_Grit 220"
   ]
 }
