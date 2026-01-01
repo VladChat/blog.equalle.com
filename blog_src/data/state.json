@@ -1,5 +1,5 @@
 {
-  "category_index": 19,
+  "category_index": 20,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -79,7 +79,7 @@
     },
     "interface-backing-pads": {
       "core_idx": 0,
-      "longtail_idx": 5
+      "longtail_idx": 6
     },
     "dust-extraction-systems": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 0,
+  "brandimg_index": 2,
   "brandimg_used": [
-    "10.webp",
-    "11.webp",
     "12.webp",
     "13.webp",
     "14.webp",
@@ -171,7 +169,9 @@
     "26.webp",
     "27.webp",
     "28.webp",
-    "29.webp"
+    "29.webp",
+    "01.webp",
+    "02.webp"
   ],
   "used_pairs": [
     {
@@ -985,23 +985,28 @@
     {
       "seed": "psa sanding discs",
       "longtail": "prep backing pad before sticking psa"
+    },
+    {
+      "seed": "sander interface pad",
+      "longtail": "prevent edge burn through with softer pads"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "25_pack_Grit 80",
+    "50_pack_Grit 180",
     "10_pack_Grit 220",
     "25_pack_Grit 800",
-    "50_pack_Grit 220",
-    "100_pack_Grit 220",
-    "100_pack_Grit 240",
-    "25_pack_Grit 240",
+    "25_pack_Grit 220",
     "50_pack_Grit 240",
+    "25_pack_Grit 320",
+    "25_pack_Grit 240",
+    "50_pack_Grit 220",
     "10_pack_Grit 240",
     "50_pack_Grit 800",
     "25_pack_Grit 180",
     "100_pack_Grit 800",
-    "25_pack_Grit 220",
-    "25_pack_Grit 320"
+    "100_pack_Grit 240",
+    "100_pack_Grit 220",
+    "25_pack_Grit 80"
   ]
 }
