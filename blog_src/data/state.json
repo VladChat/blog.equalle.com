@@ -1,5 +1,5 @@
 {
-  "category_index": 21,
+  "category_index": 22,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -87,7 +87,7 @@
     },
     "grit-guide-education": {
       "core_idx": 0,
-      "longtail_idx": 5
+      "longtail_idx": 6
     },
     "grit-range-classification": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 4,
+  "brandimg_index": 6,
   "brandimg_used": [
-    "14.webp",
-    "15.webp",
     "16.webp",
     "17.webp",
     "18.webp",
@@ -171,7 +169,9 @@
     "01.webp",
     "02.webp",
     "03.webp",
-    "04.webp"
+    "04.webp",
+    "05.webp",
+    "06.webp"
   ],
   "used_pairs": [
     {
@@ -993,25 +993,30 @@
     {
       "seed": "dustless sanding",
       "longtail": "negative pressure setup to control dust spread"
+    },
+    {
+      "seed": "sandpaper grit chart",
+      "longtail": "grit sequence for hardwood versus softwood"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "100_pack_Grit 800",
-    "25_pack_Grit 180",
-    "50_pack_Grit 180",
-    "25_pack_Grit 320",
-    "10_pack_Grit 240",
-    "25_pack_Grit 80",
-    "50_pack_Grit 800",
-    "100_pack_Grit 220",
-    "25_pack_Grit 800",
-    "50_pack_Grit 240",
-    "25_pack_Grit 240",
-    "100_pack_Grit 180",
-    "25_pack_Grit 220",
-    "10_pack_Grit 220",
     "100_pack_Grit 240",
-    "50_pack_Grit 220"
+    "100_pack_Grit 220",
+    "25_pack_Grit 240",
+    "25_pack_Grit 320",
+    "100_pack_Grit 180",
+    "10_pack_Grit 180",
+    "50_pack_Grit 180",
+    "25_pack_Grit 80",
+    "10_pack_Grit 240",
+    "10_pack_Grit 220",
+    "25_pack_Grit 800",
+    "25_pack_Grit 220",
+    "50_pack_Grit 240",
+    "50_pack_Grit 800",
+    "50_pack_Grit 220",
+    "25_pack_Grit 180",
+    "100_pack_Grit 800"
   ]
 }
