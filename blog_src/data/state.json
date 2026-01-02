@@ -1,5 +1,5 @@
 {
-  "category_index": 20,
+  "category_index": 21,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -83,7 +83,7 @@
     },
     "dust-extraction-systems": {
       "core_idx": 0,
-      "longtail_idx": 5
+      "longtail_idx": 6
     },
     "grit-guide-education": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 2,
+  "brandimg_index": 4,
   "brandimg_used": [
-    "12.webp",
-    "13.webp",
     "14.webp",
     "15.webp",
     "16.webp",
@@ -171,7 +169,9 @@
     "28.webp",
     "29.webp",
     "01.webp",
-    "02.webp"
+    "02.webp",
+    "03.webp",
+    "04.webp"
   ],
   "used_pairs": [
     {
@@ -989,24 +989,29 @@
     {
       "seed": "sander interface pad",
       "longtail": "prevent edge burn through with softer pads"
+    },
+    {
+      "seed": "dustless sanding",
+      "longtail": "negative pressure setup to control dust spread"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "50_pack_Grit 180",
-    "10_pack_Grit 220",
-    "25_pack_Grit 800",
-    "25_pack_Grit 220",
-    "50_pack_Grit 240",
-    "25_pack_Grit 320",
-    "25_pack_Grit 240",
-    "50_pack_Grit 220",
-    "10_pack_Grit 240",
-    "50_pack_Grit 800",
-    "25_pack_Grit 180",
     "100_pack_Grit 800",
-    "100_pack_Grit 240",
+    "25_pack_Grit 180",
+    "50_pack_Grit 180",
+    "25_pack_Grit 320",
+    "10_pack_Grit 240",
+    "25_pack_Grit 80",
+    "50_pack_Grit 800",
     "100_pack_Grit 220",
-    "25_pack_Grit 80"
+    "25_pack_Grit 800",
+    "50_pack_Grit 240",
+    "25_pack_Grit 240",
+    "100_pack_Grit 180",
+    "25_pack_Grit 220",
+    "10_pack_Grit 220",
+    "100_pack_Grit 240",
+    "50_pack_Grit 220"
   ]
 }
