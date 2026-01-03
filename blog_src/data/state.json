@@ -1,5 +1,5 @@
 {
-  "category_index": 23,
+  "category_index": 24,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -95,7 +95,7 @@
     },
     "ceramic-premium-abrasives": {
       "core_idx": 0,
-      "longtail_idx": 5
+      "longtail_idx": 6
     },
     "waterproof-wet-dry-paper": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 5
     }
   },
-  "brandimg_index": 8,
+  "brandimg_index": 10,
   "brandimg_used": [
-    "18.webp",
-    "19.webp",
     "20.webp",
     "21.webp",
     "22.webp",
@@ -171,7 +169,9 @@
     "05.webp",
     "06.webp",
     "07.webp",
-    "08.webp"
+    "08.webp",
+    "09.webp",
+    "10.webp"
   ],
   "used_pairs": [
     {
@@ -1001,27 +1001,32 @@
     {
       "seed": "sandpaper grit",
       "longtail": "edge and profile grit selection"
+    },
+    {
+      "seed": "ceramic sanding discs",
+      "longtail": "film backed ceramics for uniform scratch"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "10_pack_Grit 240",
-    "100_pack_Grit 220",
-    "50_pack_Grit 240",
-    "50_pack_Grit 800",
-    "25_pack_Grit 220",
-    "10_pack_Grit 220",
+    "100_pack_Grit 180",
     "100_pack_Grit 800",
     "25_pack_Grit 180",
-    "25_pack_Grit 280",
-    "25_pack_Grit 320",
-    "100_pack_Grit 240",
-    "25_pack_Grit 240",
-    "10_pack_Grit 180",
-    "50_pack_Grit 180",
     "25_pack_Grit 800",
-    "100_pack_Grit 180",
+    "100_pack_Grit 220",
+    "25_pack_Grit 220",
+    "50_pack_Grit 240",
+    "100_pack_Grit 240",
+    "25_pack_Grit 80",
+    "50_pack_Grit 280",
+    "50_pack_Grit 800",
+    "10_pack_Grit 240",
+    "25_pack_Grit 280",
+    "50_pack_Grit 180",
     "50_pack_Grit 220",
-    "25_pack_Grit 80"
+    "25_pack_Grit 240",
+    "10_pack_Grit 220",
+    "10_pack_Grit 180",
+    "25_pack_Grit 320"
   ]
 }
