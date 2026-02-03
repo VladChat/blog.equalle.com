@@ -1,5 +1,5 @@
 {
-  "category_index": 4,
+  "category_index": 5,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -18,7 +18,7 @@
       "longtail_idx": 1
     },
     "floor-deck-sanding": {
-      "core_idx": 2,
+      "core_idx": 3,
       "longtail_idx": 1
     },
     "auto-body-sanding": {
@@ -150,10 +150,8 @@
       "longtail_idx": 7
     }
   },
-  "brandimg_index": 2,
+  "brandimg_index": 4,
   "brandimg_used": [
-    "12.webp",
-    "13.webp",
     "14.webp",
     "15.webp",
     "16.webp",
@@ -171,7 +169,9 @@
     "28.webp",
     "29.webp",
     "01.webp",
-    "02.webp"
+    "02.webp",
+    "03.webp",
+    "04.webp"
   ],
   "used_pairs": [
     {
@@ -1221,10 +1221,15 @@
     {
       "seed": "wall finishing",
       "longtail": "how to achieve paint ready wall smoothness"
+    },
+    {
+      "seed": "wood floor prep",
+      "longtail": "set nails and countersink fasteners before sanding"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "25_pack_Grit 800"
+    "25_pack_Grit 800",
+    "25_pack_Grit 220"
   ]
 }
