@@ -1,5 +1,5 @@
 {
-  "category_index": 6,
+  "category_index": 7,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -26,7 +26,7 @@
       "longtail_idx": 1
     },
     "wet-sanding-clear-coat": {
-      "core_idx": 2,
+      "core_idx": 3,
       "longtail_idx": 1
     },
     "headlight-restoration": {
@@ -150,10 +150,8 @@
       "longtail_idx": 7
     }
   },
-  "brandimg_index": 6,
+  "brandimg_index": 8,
   "brandimg_used": [
-    "16.webp",
-    "17.webp",
     "18.webp",
     "19.webp",
     "20.webp",
@@ -171,7 +169,9 @@
     "03.webp",
     "04.webp",
     "05.webp",
-    "06.webp"
+    "06.webp",
+    "07.webp",
+    "08.webp"
   ],
   "used_pairs": [
     {
@@ -1229,12 +1229,17 @@
     {
       "seed": "car surface prep",
       "longtail": "remove silicone and fisheye contaminants from panels"
+    },
+    {
+      "seed": "paint polishing",
+      "longtail": "choose wool foam or microfiber pads for paint correction"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "25_pack_Grit 220",
+    "50_pack_Grit 800",
     "25_pack_Grit 800",
+    "25_pack_Grit 220",
     "25_pack_Grit 80"
   ]
 }
