@@ -1,5 +1,5 @@
 {
-  "category_index": 22,
+  "category_index": 23,
   "per_category": {
     "wood-sanding": {
       "core_idx": 3,
@@ -91,7 +91,7 @@
     },
     "grit-range-classification": {
       "core_idx": 0,
-      "longtail_idx": 7
+      "longtail_idx": 8
     },
     "ceramic-premium-abrasives": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 7
     }
   },
-  "brandimg_index": 9,
+  "brandimg_index": 11,
   "brandimg_used": [
-    "19.webp",
-    "20.webp",
     "21.webp",
     "22.webp",
     "23.webp",
@@ -171,7 +169,9 @@
     "06.webp",
     "07.webp",
     "08.webp",
-    "09.webp"
+    "09.webp",
+    "10.webp",
+    "11.webp"
   ],
   "used_pairs": [
     {
@@ -1293,28 +1293,33 @@
     {
       "seed": "sandpaper grit chart",
       "longtail": "how many passes per grit are needed"
+    },
+    {
+      "seed": "sandpaper grit",
+      "longtail": "difference between paper and film at fine grits"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "50_pack_Grit 240",
-    "100_pack_Grit 800",
-    "10_pack_Grit 220",
-    "25_pack_Grit 800",
-    "10_pack_Grit 240",
     "10_pack_Grit 800",
-    "25_pack_Grit 240",
-    "25_pack_Grit 180",
-    "50_pack_Grit 180",
-    "100_pack_Grit 180",
-    "25_pack_Grit 1000",
-    "50_pack_Grit 220",
-    "10_pack_Grit 180",
     "25_pack_Grit 80",
     "25_pack_Grit 320",
+    "10_pack_Grit 240",
+    "25_pack_Grit 280",
+    "100_pack_Grit 180",
     "100_pack_Grit 240",
+    "25_pack_Grit 240",
+    "50_pack_Grit 240",
+    "25_pack_Grit 800",
+    "25_pack_Grit 1000",
     "50_pack_Grit 800",
     "25_pack_Grit 220",
-    "100_pack_Grit 220"
+    "100_pack_Grit 800",
+    "100_pack_Grit 220",
+    "25_pack_Grit 180",
+    "10_pack_Grit 220",
+    "10_pack_Grit 180",
+    "50_pack_Grit 220",
+    "50_pack_Grit 180"
   ]
 }
