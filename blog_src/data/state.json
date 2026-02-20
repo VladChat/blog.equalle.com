@@ -1,5 +1,5 @@
 {
-  "category_index": 6,
+  "category_index": 7,
   "per_category": {
     "wood-sanding": {
       "core_idx": 4,
@@ -26,7 +26,7 @@
       "longtail_idx": 1
     },
     "wet-sanding-clear-coat": {
-      "core_idx": 3,
+      "core_idx": 4,
       "longtail_idx": 1
     },
     "headlight-restoration": {
@@ -150,10 +150,8 @@
       "longtail_idx": 8
     }
   },
-  "brandimg_index": 22,
+  "brandimg_index": 24,
   "brandimg_used": [
-    "03.webp",
-    "04.webp",
     "05.webp",
     "06.webp",
     "07.webp",
@@ -171,7 +169,9 @@
     "19.webp",
     "20.webp",
     "21.webp",
-    "22.webp"
+    "22.webp",
+    "23.webp",
+    "24.webp"
   ],
   "used_pairs": [
     {
@@ -1377,6 +1377,10 @@
     {
       "seed": "primer sanding",
       "longtail": "how long to wait before sanding 2k primer surfacer"
+    },
+    {
+      "seed": "orange peel removal",
+      "longtail": "test spot to determine starting grit for peel removal"
     }
   ],
   "last_source": "amazon",
