@@ -1,5 +1,5 @@
 {
-  "category_index": 30,
+  "category_index": 31,
   "per_category": {
     "wood-sanding": {
       "core_idx": 4,
@@ -123,7 +123,7 @@
     },
     "stone-concrete-polishing": {
       "core_idx": 0,
-      "longtail_idx": 8
+      "longtail_idx": 9
     },
     "abrasive-materials-compounds": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 8
     }
   },
-  "brandimg_index": 12,
+  "brandimg_index": 14,
   "brandimg_used": [
-    "22.webp",
-    "23.webp",
     "24.webp",
     "25.webp",
     "26.webp",
@@ -171,7 +169,9 @@
     "09.webp",
     "10.webp",
     "11.webp",
-    "12.webp"
+    "12.webp",
+    "13.webp",
+    "14.webp"
   ],
   "used_pairs": [
     {
@@ -1473,11 +1473,16 @@
     {
       "seed": "boat sanding",
       "longtail": "avoid water intrusion during wet sanding"
+    },
+    {
+      "seed": "concrete polishing",
+      "longtail": "inspect gloss under uniform lighting"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
     "25_pack_Grit 800",
+    "50_pack_Grit 800",
     "25_pack_Grit 220"
   ]
 }
