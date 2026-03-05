@@ -1,5 +1,5 @@
 {
-  "category_index": 33,
+  "category_index": 34,
   "per_category": {
     "wood-sanding": {
       "core_idx": 4,
@@ -135,7 +135,7 @@
     },
     "brand-quality-comparison": {
       "core_idx": 0,
-      "longtail_idx": 8
+      "longtail_idx": 9
     },
     "eco-non-toxic-abrasives": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 8
     }
   },
-  "brandimg_index": 18,
+  "brandimg_index": 20,
   "brandimg_used": [
-    "28.webp",
-    "29.webp",
     "01.webp",
     "02.webp",
     "03.webp",
@@ -171,7 +169,9 @@
     "15.webp",
     "16.webp",
     "17.webp",
-    "18.webp"
+    "18.webp",
+    "19.webp",
+    "20.webp"
   ],
   "used_pairs": [
     {
@@ -1485,14 +1485,19 @@
     {
       "seed": "open coat sandpaper",
       "longtail": "hook performance on worn backing pads"
+    },
+    {
+      "seed": "best sandpaper brand",
+      "longtail": "film quality on premium product lines"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "50_pack_Grit 800",
     "100_pack_Grit 220",
+    "50_pack_Grit 800",
+    "10_pack_Grit 220",
+    "50_pack_Grit 220",
     "25_pack_Grit 220",
-    "25_pack_Grit 800",
-    "50_pack_Grit 220"
+    "25_pack_Grit 800"
   ]
 }
