@@ -1,5 +1,5 @@
 {
-  "category_index": 36,
+  "category_index": 0,
   "per_category": {
     "wood-sanding": {
       "core_idx": 4,
@@ -147,13 +147,11 @@
     },
     "abrasive-innovation-testing": {
       "core_idx": 0,
-      "longtail_idx": 8
+      "longtail_idx": 9
     }
   },
-  "brandimg_index": 24,
+  "brandimg_index": 26,
   "brandimg_used": [
-    "05.webp",
-    "06.webp",
     "07.webp",
     "08.webp",
     "09.webp",
@@ -171,7 +169,9 @@
     "21.webp",
     "22.webp",
     "23.webp",
-    "24.webp"
+    "24.webp",
+    "25.webp",
+    "26.webp"
   ],
   "used_pairs": [
     {
@@ -1497,17 +1497,22 @@
     {
       "seed": "hand sanding",
       "longtail": "avoid polishing or burnishing the surface too early"
+    },
+    {
+      "seed": "abrasive testing",
+      "longtail": "accelerated wear testing methods"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "25_pack_Grit 800",
-    "25_pack_Grit 240",
+    "50_pack_Grit 240",
+    "50_pack_Grit 800",
     "10_pack_Grit 220",
-    "100_pack_Grit 220",
     "50_pack_Grit 220",
     "25_pack_Grit 220",
     "100_pack_Grit 800",
-    "50_pack_Grit 800"
+    "100_pack_Grit 220",
+    "25_pack_Grit 800",
+    "25_pack_Grit 240"
   ]
 }
