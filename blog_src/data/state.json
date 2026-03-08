@@ -1,5 +1,5 @@
 {
-  "category_index": 2,
+  "category_index": 3,
   "per_category": {
     "wood-sanding": {
       "core_idx": 0,
@@ -10,8 +10,8 @@
       "longtail_idx": 2
     },
     "trim-molding-sanding": {
-      "core_idx": 4,
-      "longtail_idx": 1
+      "core_idx": 0,
+      "longtail_idx": 2
     },
     "drywall-sanding": {
       "core_idx": 4,
@@ -150,10 +150,8 @@
       "longtail_idx": 9
     }
   },
-  "brandimg_index": 1,
+  "brandimg_index": 3,
   "brandimg_used": [
-    "11.webp",
-    "12.webp",
     "13.webp",
     "14.webp",
     "15.webp",
@@ -171,7 +169,9 @@
     "27.webp",
     "28.webp",
     "29.webp",
-    "01.webp"
+    "01.webp",
+    "02.webp",
+    "03.webp"
   ],
   "used_pairs": [
     {
@@ -1509,20 +1509,25 @@
     {
       "seed": "stain preparation",
       "longtail": "raise the grain before staining to prevent roughness"
+    },
+    {
+      "seed": "sponge for trim",
+      "longtail": "extra fine sanding sponge between coats on trim paint"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
     "50_pack_Grit 240",
-    "25_pack_Grit 220",
+    "25_pack_Grit 1000",
+    "25_pack_Grit 800",
+    "10_pack_Grit 800",
+    "25_pack_Grit 320",
+    "100_pack_Grit 220",
     "100_pack_Grit 800",
     "10_pack_Grit 220",
-    "100_pack_Grit 220",
+    "25_pack_Grit 220",
     "50_pack_Grit 220",
-    "25_pack_Grit 1000",
-    "50_pack_Grit 800",
     "25_pack_Grit 240",
-    "25_pack_Grit 800",
-    "10_pack_Grit 800"
+    "50_pack_Grit 800"
   ]
 }
