@@ -1,5 +1,5 @@
 {
-  "category_index": 8,
+  "category_index": 9,
   "per_category": {
     "wood-sanding": {
       "core_idx": 0,
@@ -34,7 +34,7 @@
       "longtail_idx": 2
     },
     "metal-polishing-rust-repair": {
-      "core_idx": 0,
+      "core_idx": 1,
       "longtail_idx": 3
     },
     "paint-removal-surface-prep": {
@@ -150,10 +150,8 @@
       "longtail_idx": 9
     }
   },
-  "brandimg_index": 13,
+  "brandimg_index": 15,
   "brandimg_used": [
-    "23.webp",
-    "24.webp",
     "25.webp",
     "26.webp",
     "27.webp",
@@ -171,7 +169,9 @@
     "10.webp",
     "11.webp",
     "12.webp",
-    "13.webp"
+    "13.webp",
+    "14.webp",
+    "15.webp"
   ],
   "used_pairs": [
     {
@@ -1533,26 +1533,31 @@
     {
       "seed": "plastic oxidation removal",
       "longtail": "starting grit for severe oxidation removal on headlights"
+    },
+    {
+      "seed": "metal polishing",
+      "longtail": "how to avoid waves while polishing flat metal panels"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
     "100_pack_Grit 220",
+    "10_pack_Grit 800",
+    "50_pack_Grit 220",
+    "10_pack_Grit 220",
+    "50_pack_Grit 240",
+    "50_pack_Grit 1000",
+    "100_pack_Grit 800",
+    "100_pack_Grit 1000",
+    "25_pack_Grit 80",
+    "50_pack_Grit 800",
+    "25_pack_Grit 320",
+    "10_pack_Grit 240",
+    "10_pack_Grit 1000",
+    "25_pack_Grit 1000",
     "25_pack_Grit 220",
     "25_pack_Grit 240",
-    "10_pack_Grit 220",
-    "50_pack_Grit 800",
-    "50_pack_Grit 240",
-    "10_pack_Grit 240",
-    "100_pack_Grit 800",
-    "25_pack_Grit 80",
-    "10_pack_Grit 800",
-    "25_pack_Grit 800",
-    "25_pack_Grit 320",
-    "50_pack_Grit 1000",
-    "100_pack_Grit 1000",
-    "50_pack_Grit 220",
     "100_pack_Grit 240",
-    "25_pack_Grit 1000"
+    "25_pack_Grit 800"
   ]
 }
