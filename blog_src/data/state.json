@@ -1,5 +1,5 @@
 {
-  "category_index": 13,
+  "category_index": 14,
   "per_category": {
     "wood-sanding": {
       "core_idx": 0,
@@ -55,7 +55,7 @@
     },
     "detail-sander-sheets": {
       "core_idx": 0,
-      "longtail_idx": 9
+      "longtail_idx": 10
     },
     "sanding-blocks": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 9
     }
   },
-  "brandimg_index": 23,
+  "brandimg_index": 25,
   "brandimg_used": [
-    "04.webp",
-    "05.webp",
     "06.webp",
     "07.webp",
     "08.webp",
@@ -171,7 +169,9 @@
     "20.webp",
     "21.webp",
     "22.webp",
-    "23.webp"
+    "23.webp",
+    "24.webp",
+    "25.webp"
   ],
   "used_pairs": [
     {
@@ -1553,31 +1553,36 @@
     {
       "seed": "random orbital sanding",
       "longtail": "blend edges smoothly with orbital sander"
+    },
+    {
+      "seed": "detail sander sheets",
+      "longtail": "dust collection options for small sanders"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "100_pack_Grit 1000",
-    "25_pack_Grit 800",
-    "25_pack_Grit 1500",
-    "25_pack_Grit 240",
     "10_pack_Grit 240",
-    "100_pack_Grit 240",
-    "50_pack_Grit 180",
-    "10_pack_Grit 220",
-    "50_pack_Grit 800",
-    "50_pack_Grit 320",
-    "50_pack_Grit 240",
-    "25_pack_Grit 80",
-    "50_pack_Grit 220",
-    "25_pack_Grit 320",
-    "25_pack_Grit 220",
-    "10_pack_Grit 1000",
-    "100_pack_Grit 220",
-    "100_pack_Grit 800",
-    "25_pack_Grit 180",
-    "50_pack_Grit 1000",
+    "100_pack_Grit 180",
     "10_pack_Grit 800",
-    "25_pack_Grit 1000"
+    "100_pack_Grit 240",
+    "100_pack_Grit 1000",
+    "50_pack_Grit 320",
+    "25_pack_Grit 180",
+    "25_pack_Grit 220",
+    "100_pack_Grit 220",
+    "10_pack_Grit 220",
+    "50_pack_Grit 1000",
+    "25_pack_Grit 240",
+    "50_pack_Grit 240",
+    "50_pack_Grit 180",
+    "25_pack_Grit 800",
+    "50_pack_Grit 220",
+    "25_pack_Grit 80",
+    "25_pack_Grit 320",
+    "25_pack_Grit 1500",
+    "100_pack_Grit 800",
+    "25_pack_Grit 1000",
+    "50_pack_Grit 800",
+    "10_pack_Grit 1000"
   ]
 }
