@@ -1,5 +1,5 @@
 {
-  "category_index": 22,
+  "category_index": 23,
   "per_category": {
     "wood-sanding": {
       "core_idx": 0,
@@ -91,7 +91,7 @@
     },
     "grit-range-classification": {
       "core_idx": 0,
-      "longtail_idx": 9
+      "longtail_idx": 10
     },
     "ceramic-premium-abrasives": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 9
     }
   },
-  "brandimg_index": 12,
+  "brandimg_index": 14,
   "brandimg_used": [
-    "22.webp",
-    "23.webp",
     "24.webp",
     "25.webp",
     "26.webp",
@@ -171,7 +169,9 @@
     "09.webp",
     "10.webp",
     "11.webp",
-    "12.webp"
+    "12.webp",
+    "13.webp",
+    "14.webp"
   ],
   "used_pairs": [
     {
@@ -1589,6 +1589,10 @@
     {
       "seed": "sandpaper grit chart",
       "longtail": "reading scratch direction under light"
+    },
+    {
+      "seed": "sandpaper grit",
+      "longtail": "scratch visibility under different coatings"
     }
   ],
   "last_source": "amazon",
