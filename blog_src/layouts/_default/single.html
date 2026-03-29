@@ -62,10 +62,31 @@
 
   {{- if .Content }}
   <div class="post-content">
+    {{- $contentHTML := "" -}}
     {{- if not (.Param "disableAnchoredHeadings") -}}
-      {{- partial "anchored_headings.html" .Content -}}
+      {{- $contentHTML = partial "anchored_headings.html" .Content -}}
     {{- else -}}
-      {{ .Content }}
+      {{- $contentHTML = .Content -}}
+    {{- end -}}
+
+    {{- $isPostPage := and .IsPage (or (eq .Section "posts") (eq .Type "posts")) -}}
+    {{- $paragraphClosers := findRE `</p>` $contentHTML -}}
+
+    {{- if and $isPostPage (ge (len $paragraphClosers) 3) -}}
+      {{- $parts := split $contentHTML "</p>" -}}
+      {{- $lastIndex := sub (len $parts) 1 -}}
+      {{- range $i, $part := $parts -}}
+        {{- if lt $i $lastIndex -}}
+          {{- $part | safeHTML -}}</p>
+          {{- if eq $i 1 -}}
+            {{ partial "custom/adsense-inarticle.html" $ }}
+          {{- end -}}
+        {{- else -}}
+          {{- $part | safeHTML -}}
+        {{- end -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $contentHTML -}}
     {{- end -}}
   </div>
   {{ partial "custom/accordion-faq.html" . }}
