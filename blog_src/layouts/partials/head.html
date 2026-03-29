@@ -177,6 +177,11 @@
 {{- end -}}
 <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default">
 
+{{- if and .IsPage (or (eq .Section "posts") (eq .Type "posts")) -}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8353955052664176"
+     crossorigin="anonymous"></script>
+{{- end -}}
+
 <noscript>
   <style>
     #theme-toggle,
