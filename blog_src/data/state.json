@@ -1,5 +1,5 @@
 {
-  "category_index": 12,
+  "category_index": 13,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -51,7 +51,7 @@
     },
     "random-orbital-sanding": {
       "core_idx": 0,
-      "longtail_idx": 10
+      "longtail_idx": 11
     },
     "detail-sander-sheets": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 10
     }
   },
-  "brandimg_index": 8,
+  "brandimg_index": 10,
   "brandimg_used": [
-    "18.webp",
-    "19.webp",
     "20.webp",
     "21.webp",
     "22.webp",
@@ -171,7 +169,9 @@
     "05.webp",
     "06.webp",
     "07.webp",
-    "08.webp"
+    "08.webp",
+    "09.webp",
+    "10.webp"
   ],
   "used_pairs": [
     {
@@ -1697,13 +1697,18 @@
     {
       "seed": "polishing sandpaper",
       "longtail": "compound residue removal before inspection"
+    },
+    {
+      "seed": "random orbital sanding",
+      "longtail": "use guide coat with orbital sanding"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
+    "25_pack_Grit 800",
+    "50_pack_Grit 220",
     "25_pack_Grit 320",
     "25_pack_Grit 220",
-    "25_pack_Grit 800",
     "50_pack_Grit 800"
   ]
 }
