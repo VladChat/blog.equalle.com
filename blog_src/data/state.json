@@ -1,5 +1,5 @@
 {
-  "category_index": 19,
+  "category_index": 20,
   "per_category": {
     "wood-sanding": {
       "core_idx": 1,
@@ -79,7 +79,7 @@
     },
     "interface-backing-pads": {
       "core_idx": 0,
-      "longtail_idx": 10
+      "longtail_idx": 11
     },
     "dust-extraction-systems": {
       "core_idx": 0,
@@ -150,10 +150,8 @@
       "longtail_idx": 10
     }
   },
-  "brandimg_index": 22,
+  "brandimg_index": 24,
   "brandimg_used": [
-    "03.webp",
-    "04.webp",
     "05.webp",
     "06.webp",
     "07.webp",
@@ -171,7 +169,9 @@
     "19.webp",
     "20.webp",
     "21.webp",
-    "22.webp"
+    "22.webp",
+    "23.webp",
+    "24.webp"
   ],
   "used_pairs": [
     {
@@ -1725,20 +1725,25 @@
     {
       "seed": "psa sanding discs",
       "longtail": "choose paper versus film psa discs"
+    },
+    {
+      "seed": "sander interface pad",
+      "longtail": "use pad savers to prolong backing life"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "10_pack_Grit 220",
     "25_pack_Grit 220",
-    "25_pack_Grit 320",
-    "50_pack_Grit 800",
-    "50_pack_Grit 240",
-    "100_pack_Grit 220",
-    "25_pack_Grit 800",
-    "100_pack_Grit 240",
-    "25_pack_Grit 240",
+    "50_pack_Grit 220",
     "10_pack_Grit 240",
-    "50_pack_Grit 220"
+    "50_pack_Grit 800",
+    "25_pack_Grit 800",
+    "10_pack_Grit 220",
+    "50_pack_Grit 240",
+    "25_pack_Grit 320",
+    "25_pack_Grit 180",
+    "100_pack_Grit 220",
+    "100_pack_Grit 240",
+    "25_pack_Grit 240"
   ]
 }
