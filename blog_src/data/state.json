@@ -1,8 +1,8 @@
 {
-  "category_index": 0,
+  "category_index": 1,
   "per_category": {
     "wood-sanding": {
-      "core_idx": 1,
+      "core_idx": 2,
       "longtail_idx": 2
     },
     "furniture-refinishing": {
@@ -150,10 +150,8 @@
       "longtail_idx": 11
     }
   },
-  "brandimg_index": 0,
+  "brandimg_index": 2,
   "brandimg_used": [
-    "10.webp",
-    "11.webp",
     "12.webp",
     "13.webp",
     "14.webp",
@@ -171,7 +169,9 @@
     "26.webp",
     "27.webp",
     "28.webp",
-    "29.webp"
+    "29.webp",
+    "01.webp",
+    "02.webp"
   ],
   "used_pairs": [
     {
@@ -1797,38 +1797,43 @@
     {
       "seed": "abrasive testing",
       "longtail": "data logging for rpm and pressure"
+    },
+    {
+      "seed": "grain preparation",
+      "longtail": "dealing with reversing grain when sanding panels"
     }
   ],
-  "last_source": "equalle",
+  "last_source": "amazon",
   "used_links": [
-    "50_pack_Grit 150",
-    "10_pack_Grit 800",
-    "10_pack_Grit 240",
-    "50_pack_Grit 800",
-    "50_pack_Grit 1000",
-    "25_pack_Grit 240",
-    "100_pack_Grit 220",
-    "25_pack_Grit 280",
-    "50_pack_Grit 240",
-    "100_pack_Grit 280",
-    "100_pack_Grit 150",
-    "50_pack_Grit 280",
-    "50_pack_Grit 220",
-    "25_pack_Grit 220",
-    "100_pack_Grit 180",
-    "10_pack_Grit 1000",
-    "25_pack_Grit 180",
-    "50_pack_Grit 180",
-    "100_pack_Grit 800",
-    "25_pack_Grit 1000",
-    "25_pack_Grit 320",
-    "100_pack_Grit 1000",
-    "10_pack_Grit 180",
-    "10_pack_Grit 220",
-    "100_pack_Grit 240",
-    "25_pack_Grit 1500",
     "25_pack_Grit 150",
-    "25_pack_Grit 800",
-    "10_pack_Grit 280"
+    "50_pack_Grit 240",
+    "50_pack_Grit 800",
+    "100_pack_Grit 220",
+    "10_pack_Grit 220",
+    "10_pack_Grit 150",
+    "25_pack_Grit 280",
+    "10_pack_Grit 800",
+    "100_pack_Grit 240",
+    "100_pack_Grit 1000",
+    "50_pack_Grit 150",
+    "50_pack_Grit 180",
+    "25_pack_Grit 1000",
+    "25_pack_Grit 1500",
+    "50_pack_Grit 1000",
+    "100_pack_Grit 280",
+    "50_pack_Grit 220",
+    "100_pack_Grit 800",
+    "25_pack_Grit 220",
+    "10_pack_Grit 280",
+    "25_pack_Grit 240",
+    "25_pack_Grit 180",
+    "10_pack_Grit 180",
+    "10_pack_Grit 1000",
+    "50_pack_Grit 280",
+    "100_pack_Grit 150",
+    "10_pack_Grit 240",
+    "25_pack_Grit 320",
+    "100_pack_Grit 180",
+    "25_pack_Grit 800"
   ]
 }
