@@ -1,5 +1,5 @@
 {
-  "category_index": 5,
+  "category_index": 6,
   "per_category": {
     "wood-sanding": {
       "core_idx": 2,
@@ -22,8 +22,8 @@
       "longtail_idx": 2
     },
     "auto-body-sanding": {
-      "core_idx": 5,
-      "longtail_idx": 1
+      "core_idx": 0,
+      "longtail_idx": 2
     },
     "wet-sanding-clear-coat": {
       "core_idx": 1,
@@ -150,10 +150,8 @@
       "longtail_idx": 11
     }
   },
-  "brandimg_index": 10,
+  "brandimg_index": 12,
   "brandimg_used": [
-    "20.webp",
-    "21.webp",
     "22.webp",
     "23.webp",
     "24.webp",
@@ -171,7 +169,9 @@
     "07.webp",
     "08.webp",
     "09.webp",
-    "10.webp"
+    "10.webp",
+    "11.webp",
+    "12.webp"
   ],
   "used_pairs": [
     {
@@ -1817,43 +1817,48 @@
     {
       "seed": "deck sanding",
       "longtail": "how to sand weathered deck boards without gouging"
+    },
+    {
+      "seed": "DA vs RO sanding",
+      "longtail": "3 millimeter versus 5 millimeter orbit for auto sanding"
     }
   ],
-  "last_source": "amazon",
+  "last_source": "equalle",
   "used_links": [
-    "50_pack_Grit 240",
-    "100_pack_Grit 1000",
-    "10_pack_Grit 150",
-    "25_pack_Grit 320",
-    "50_pack_Grit 800",
-    "10_pack_Grit 180",
-    "10_pack_Grit 800",
-    "100_pack_Grit 800",
-    "100_pack_Grit 280",
-    "10_pack_Grit 220",
-    "25_pack_Grit 240",
-    "25_pack_Grit 800",
-    "100_pack_Grit 220",
-    "50_pack_Grit 150",
-    "25_pack_Grit 280",
-    "50_pack_Grit 280",
-    "50_pack_Grit 320",
     "100_pack_Grit 150",
+    "10_pack_Grit 220",
+    "25_pack_Grit 280",
+    "25_pack_Grit 1500",
     "10_pack_Grit 280",
     "100_pack_Grit 180",
-    "50_pack_Grit 180",
-    "25_pack_Grit 220",
-    "25_pack_Grit 1000",
-    "10_pack_Grit 1000",
-    "100_pack_Grit 240",
-    "10_pack_Grit 320",
-    "50_pack_Grit 1000",
     "10_pack_Grit 240",
-    "25_pack_Grit 150",
-    "25_pack_Grit 1500",
-    "100_pack_Grit 320",
-    "50_pack_Grit 1500",
+    "100_pack_Grit 220",
+    "10_pack_Grit 800",
+    "25_pack_Grit 240",
+    "50_pack_Grit 280",
+    "50_pack_Grit 800",
+    "100_pack_Grit 280",
+    "25_pack_Grit 800",
+    "50_pack_Grit 1000",
+    "50_pack_Grit 180",
+    "10_pack_Grit 1000",
+    "10_pack_Grit 320",
+    "25_pack_Grit 80",
+    "10_pack_Grit 150",
     "25_pack_Grit 180",
-    "50_pack_Grit 220"
+    "100_pack_Grit 240",
+    "25_pack_Grit 150",
+    "100_pack_Grit 800",
+    "50_pack_Grit 320",
+    "100_pack_Grit 1000",
+    "50_pack_Grit 1500",
+    "50_pack_Grit 220",
+    "25_pack_Grit 220",
+    "50_pack_Grit 150",
+    "50_pack_Grit 240",
+    "25_pack_Grit 1000",
+    "25_pack_Grit 320",
+    "10_pack_Grit 180",
+    "100_pack_Grit 320"
   ]
 }
